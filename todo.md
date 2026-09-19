@@ -54,27 +54,27 @@ Generated WAV File (outputs/generated.wav)
 ```
 
 ### Phase 4 세부 작업 목록
-- [ ] **Talker Autoregressive Generation (`ulm_live/talker/model.py`, `generator.py`)**:
+- [x] **Talker Autoregressive Generation (`ulm_live/talker/model.py`, `generator.py`)**:
   - `TalkerGenerationConfig`: `max_new_tokens`, `temperature`, `top_k`, `top_p`, `do_sample`, `max_audio_seconds`
   - `ULMTalker.generate()`: 자기회귀적 추론 루프 구현 (기존 causal mask 재사용, step-by-step next token 예측)
   - `sample_next_tokens()`: greedy argmax 및 stochastic sampling (temperature scaling, top-k, top-p filtering)
-- [ ] **Multi-Codebook Codec Token 정렬 및 특수 토큰 처리**:
+- [x] **Multi-Codebook Codec Token 정렬 및 특수 토큰 처리**:
   - 생성된 32개 코드북 토큰 `[B, 32, T]`이 Phase 1 `MimiCodec`의 유효 어휘 범위(`0 <= token < 2048`) 내에 존재하도록 보장
   - 시작 더미 토큰과 생성 토큰 정렬
-- [ ] **Talker Checkpoint 입출력 (`ulm_live/talker/checkpoint.py`)**:
+- [x] **Talker Checkpoint 입출력 (`ulm_live/talker/checkpoint.py`)**:
   - `save_talker_checkpoint()` & `load_talker_checkpoint()`
   - `model_state_dict`, `TalkerConfig`, `speaker2id`, `dialect2id`, `codec_metadata` 패키징
-- [ ] **End-to-End Speech Synthesis Engine (`ulm_live/talker/synthesizer.py`)**:
+- [x] **End-to-End Speech Synthesis Engine (`ulm_live/talker/synthesizer.py`)**:
   - `SpeechSynthesizer`: Thinker, Talker, Codec을 연결하는 고수준 합성 인터페이스
   - `SpeechGenerationResult`: `codec_tokens`, `waveform`, `sample_rate`, `duration`, `timings`, `rtf`
   - 시간 측정(Thinker, Talker, Decoder 시간) 및 Real-Time Factor(RTF) 산출
-- [ ] **CLI & 스크립트**:
+- [x] **CLI & 스크립트**:
   - `scripts/test_generation.py`: 가상 semantic states 기반 Talker generate → Codec decode → WAV 저장 빠른 테스트
   - `scripts/generate_audio.py`: 텍스트 프롬프트 기반 음성 생성 CLI (미학습 모델 경고 출력, 상세 통계 리포트 출력)
-- [ ] **Tests (`tests/`)**:
+- [x] **Tests (`tests/`)**:
   - `tests/test_talker_generation.py`: greedy, sampling, max tokens, output shape, token range, deterministic behavior
   - `tests/test_speech_synthesizer.py`: checkpoint save/load, synthesizer pipeline, WAV finite value / duration validation
-- [ ] **Docs & Architecture Record**:
+- [x] **Docs & Architecture Record**:
   - `docs/architecture.md`: 훈련(Training)과 추론(Generation)의 차이, 자기회귀 코덱 생성 원리, 디코더 결합, 미학습/학습 모델 차이, 향후 KV-cache TODO 문서화
   - `README.md`: Phase 4 로드맵 갱신 및 `generate_audio.py` 실행 가이드 추가
 

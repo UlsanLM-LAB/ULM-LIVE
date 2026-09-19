@@ -81,17 +81,51 @@ Phase 1에서 채택한 **Mimi 코덱**은 프레임당 32개의 RVQ 코드북(c
 | **Flattened Vocabulary / Interleaved** | 코드북 0..31을 시간축으로 직렬화하여 1스텝당 1코드북 예측 | 코드북 간의 순차적 종속성을 완전 모델링 | **시퀀스 길이가 32배로 팽창**하여 연산량 및 어텐션 메모리 1024배 증가 |
 | **Delayed Pattern (MusicGen)** | 코드북마다 1타임스텝씩 shift하여 엇갈리게 예측 | 병렬성과 순차성을 절충 | 캐시 관리 및 스트리밍 정렬 구현이 복잡함 |
 
-### 선택 사유
-Phase 3의 핵심 목표는 "semantic hidden states → Talker → codec logits → loss → backward"의 파이프라인 무결성을 실제 텐서 수준에서 입증하는 것입니다.
-**Independent Heads per Codebook** 방식은 32개의 코드북 예측을 단일 forward 패스로 효율적으로 처리할 수 있으며, 오디오 프레임 시퀀스 길이를 12.5 Hz 그대로 유지하여 LLM 컨텍스트 부하를 최소화합니다.
+---
+
+## 6. Training vs Inference (Phase 3 vs Phase 4)
+
+### Training (Phase 3)
+* **교사 강요 (Teacher-Forcing)**: 정답 오디오 토큰 시퀀스 $t_0, \dots, t_{T-1}$ 전체를 한 번에 모델에 입력하고, 다음 타임스텝의 타겟 $t_1, \dots, t_T$에 대한 크로스 엔트로피 손실을 병렬로 계산.
+* 인과적 마스크(Causal Mask)를 통해 미래 오디오 토큰을 보지 못하도록 제한.
+
+### Inference / Generation (Phase 4)
+* **자기회귀 생성 (Autoregressive Generation)**:
+  - 시작 시점에는 1프레임의 시작 토큰(BOS)으로 시작.
+  - 매 타임스텝마다 트랜스포머를 거쳐 32개 코드북 로짓 `[1, 32, 2048]`을 계산.
+  - Greedy(argmax) 또는 Stochastic Sampling(temperature, top-k, top-p)을 통해 32개 코드북 인덱스를 결정.
+  - 결정된 토큰을 시퀀스 끝에 붙여(`cur_codes = cat([cur_codes, next_token])`) 다음 스텝 입력으로 재사용.
+  - 목표 프레임 수(`max_new_tokens` 또는 `max_audio_seconds * 12.5`)에 도달할 때까지 루프 반복.
+
+```text
+Step 0: [Semantic Prefix] + [BOS]               → Predict Codec Token 0
+Step 1: [Semantic Prefix] + [BOS, Token 0]       → Predict Codec Token 1
+Step 2: [Semantic Prefix] + [BOS, Token 0, 1]    → Predict Codec Token 2
+...
+Result: [Token 0, Token 1, ..., Token T-1] (32 Codebooks x T Frames)
+        ↓
+        Phase 1 Mimi Codec Decoder
+        ↓
+        Synthesized Waveform (24kHz Mono WAV)
+```
 
 ---
 
-## 6. 현재 아키텍처의 한계 및 Phase 4 로드맵
+## 7. Trained vs Untrained Talker 모델 구분
 
-1. **Teacher-Forcing Next-Token 학습 중심**:
-   현재는 이전 정답 토큰을 입력받아 다음 토큰을 예측하는 훈련 루프가 구현되어 있으며, 자유 발화 추론을 위한 Key-Value(KV) 캐시 기반 autoregressive decoding 루프는 Phase 4에서 구축될 예정입니다.
-2. **코드북 간 계층적 종속성 보완**:
-   Independent heads 방식의 음질을 개선하기 위해, 향후 coarse semantic 코드북(0~7)과 fine acoustic 코드북(8~31)을 나누어 처리하는 2단계 Talker 구조(Moshi style hierarchical prediction)로의 확장이 가능합니다.
-3. **스트리밍 디코딩 연계**:
-   Mimi의 causal streaming cache와 연동하여 실시간 생성 오디오 청크를 WebSocket 클라이언트로 전송하는 통신 계층은 Phase 4 이후 구현됩니다.
+* **현재 상태**: Phase 4에서는 **추론 데이터 파이프라인(Inference Data Path)** 의 엔드투엔드 무결성을 검증하는 단계입니다.
+* **음질 기대치**:
+  - 학습된 Talker 체크포인트가 주어지지 않은 경우(Random initialization), 모델이 출력하는 토큰은 무작위 분포를 가지므로 디코딩된 오디오는 **화이트 노이즈 또는 무의미한 음향 신호**입니다.
+  - 이는 파이프라인의 오류가 아니며, 정상적인 추론 텐서 흐름 검증(`PIPELINE TEST ONLY`)에 해당합니다.
+  - 실제 명료한 울산 방언 음성은 향후 Phase 5에서 대규모 음성 코퍼스로 Talker 가중치를 본격 훈련한 이후 달성됩니다.
+
+---
+
+## 8. 현재 아키텍처의 한계 및 Future KV-Cache 로드맵
+
+1. **Non-incremental Decoding (현재)**:
+   현재 Phase 4는 정확성(correctness)을 최우선으로 하여, 매 타임스텝마다 전체 시퀀스를 다시 인코딩하는 Full-sequence recomputation 방식을 취하고 있습니다. (현재 2초 오디오 기준 RTF 약 0.32~0.65로 실시간보다 빠르나, 긴 오디오 생성 시 $O(T^2)$ 연산량 증가).
+2. **TODO: Incremental KV-Cache Generation**:
+   향후 실시간 스트리밍 대화를 위해 이미 계산된 과거 키/값 텐서를 캐싱(`past_key_values`)하여 매 스텝 1개의 신규 토큰만 연산하는 $O(T)$ 디코딩 루프로 최적화할 예정입니다.
+3. **Mimi Streaming Cache 연계**:
+   오프라인 일괄 디코딩(`codec.decode(all_codes)`)을 프레임 단위 또는 80ms 청크 단위 실시간 스트리밍 디코더로 연결하는 작업이 Phase 5에서 진행됩니다.

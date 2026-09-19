@@ -32,8 +32,9 @@ Speech (Ulsan Dialect)
 [x] Ulsan dataset pipeline
 [x] ULM Thinker adapter
 [x] Talker prototype
-[ ] Talker training
-[ ] Audio generation
+[x] Codec token generation
+[x] WAV synthesis pipeline
+[ ] Train Talker on Ulsan speech
 [ ] Streaming generation
 [ ] Speech input
 [ ] Barge-in
@@ -150,6 +151,61 @@ python scripts/train_talker.py \
 
 ---
 
+## Offline Speech Generation Pipeline (Phase 4)
+
+ULM Thinker의 semantic hidden state를 입력받아 Talker가 자기회귀적(autoregressive)으로 discrete 오디오 코덱 토큰을 생성하고, Phase 1 Mimi 코덱 디코더를 통해 WAV 파일로 합성하는 엔드투엔드 파이프라인입니다.
+
+> [!NOTE]
+> **Audio Quality Notice (Untrained Talker)**
+> Phase 4는 음성 합성 파이프라인의 **텐서 및 아키텍처 무결성 검증**(`Talker.generate() → MimiCodec.decode() → WAV`)을 위한 단계입니다. 학습된 체크포인트가 없는 상태(Random init)에서 생성된 오디오는 백색 잡음(white noise) 형태로 출력되며, 이는 정상적인 파이프라인 테스트 결과입니다 (`Audio quality: UNTRAINED / PIPELINE TEST ONLY`).
+
+### 1. Synthetic Semantic States 기반 빠른 파이프라인 검증
+
+```bash
+python scripts/test_generation.py --output outputs/test_generation.wav --frames 25
+```
+
+Output:
+```text
+=== Talker Generation & Codec Decode Test ===
+Frames:                25 (2.00s audio at 12.5 Hz)
+Device:                cuda
+Generated codes:       torch.Size([1, 32, 25]) (min=2, max=2047)
+Waveform:              torch.Size([1, 1, 48000]) (finite=True)
+WAV saved:             outputs/test_generation.wav
+Synthesis time:        0.65s (Talker: 0.32s, Codec Decode: 0.33s)
+RTF:                   0.32
+Pipeline status:       OK (Integrity verified)
+```
+
+### 2. End-to-End Text-to-Speech CLI
+
+```bash
+# 기본 실행 (Thinker semantic state 추출 → Talker 생성 → Mimi 디코딩 → WAV 저장)
+python scripts/generate_audio.py \
+  --text "밥 묵었나? 어디 가노?" \
+  --speaker ulsan_spk_01 \
+  --dialect ulsan \
+  --output outputs/generated.wav \
+  --max-seconds 2.0
+```
+
+주요 CLI 옵션:
+* `--thinker`: HuggingFace 모델 식별자 또는 로컬 디렉토리 경로 (기본값: `Qwen/Qwen3-1.7B`)
+* `--talker`: 학습된 Talker 체크포인트 (`.pt`) 파일 경로 (미지정 시 random init 모델 사용)
+* `--text`: 합성할 입력 텍스트 프롬프트
+* `--speaker`: 화자 식별자 (기본값: `default`)
+* `--dialect`: 방언 식별자 (기본값: `ulsan`)
+* `--output`: 출력 WAV 파일 경로 (기본값: `outputs/generated.wav`)
+* `--max-seconds`: 최대 생성 오디오 길이(초) (기본값: `2.0`, 프레임 수: `max_seconds * 12.5`)
+* `--temperature`: 샘플링 온도 (기본값: `1.0`, `0.0`일 경우 greedy decoding)
+* `--top-k`: Top-K 필터링 (기본값: `50`)
+* `--top-p`: Top-P (nucleus) 필터링 (기본값: `0.9`)
+* `--greedy`: Greedy argmax 디코딩 플래그
+* `--device`: 실행 디바이스 (`cuda` 또는 `cpu`, 기본값: 자동 감지)
+
+---
+
 ## Installation
 
 Requires Python 3.11+.
@@ -224,8 +280,11 @@ ULM-Live/
 │   │   └── adapter.py
 │   ├── talker/
 │   │   ├── __init__.py
+│   │   ├── checkpoint.py
 │   │   ├── data.py
-│   │   └── model.py
+│   │   ├── generator.py
+│   │   ├── model.py
+│   │   └── synthesizer.py
 │   └── utils/
 │       ├── __init__.py
 │       └── audio.py
@@ -236,7 +295,9 @@ ULM-Live/
 │   ├── prepare_dataset.py
 │   ├── inspect_thinker.py
 │   ├── test_talker_forward.py
-│   └── train_talker.py
+│   ├── train_talker.py
+│   ├── test_generation.py
+│   └── generate_audio.py
 ├── tests/
 │   ├── __init__.py
 │   ├── fixtures/
@@ -247,6 +308,8 @@ ULM-Live/
 │   ├── test_manifest.py
 │   ├── test_talker.py
 │   ├── test_talker_data.py
+│   ├── test_talker_generation.py
+│   ├── test_speech_synthesizer.py
 │   └── test_thinker.py
 └── samples/
     ├── .gitkeep
