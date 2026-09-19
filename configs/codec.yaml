@@ -1,0 +1,7 @@
+codec:
+  backend: "mimi"
+  model_id: "kyutai/mimi"
+  sample_rate: 24000
+  num_quantizers: 32
+  frame_rate: 12.5
+  device: "auto" # "auto", "cuda", "cpu"
