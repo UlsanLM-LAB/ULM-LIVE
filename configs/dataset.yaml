@@ -1,0 +1,92 @@
+dataset:
+  # Region detection & priority
+  region_priority:
+    - principal_residence
+    - birthplace
+    - current_residence
+    - region
+
+  region_aliases:
+    ulsan:
+      - "울산"
+      - "울산광역시"
+      - "울산시"
+      - "ulsan"
+    busan:
+      - "부산"
+      - "부산광역시"
+      - "부산시"
+      - "busan"
+    daegu:
+      - "대구"
+      - "대구광역시"
+      - "대구시"
+      - "daegu"
+    gyeongnam:
+      - "경남"
+      - "경상남도"
+      - "gyeongnam"
+    gyeongbuk:
+      - "경북"
+      - "경상북도"
+      - "gyeongbuk"
+
+  # Configurable field mappings for AI Hub metadata variants
+  field_mappings:
+    speaker_id_fields:
+      - speaker_id
+      - speaker
+      - spk_id
+      - id
+    speaker_container_fields:
+      - speaker
+      - speakers
+      - speaker_info
+      - speaker_profile
+    utterance_container_fields:
+      - utterance
+      - utterances
+      - sentences
+      - dialogues
+    text_fields:
+      - dialect_form
+      - form
+      - transcription
+      - text
+      - script
+    standard_text_fields:
+      - standard_form
+      - standard_text
+    start_fields:
+      - start
+      - start_time
+      - begin
+      - begin_time
+    end_fields:
+      - end
+      - end_time
+      - finish
+    audio_file_fields:
+      - audio_file
+      - audio_name
+      - file_name
+      - filename
+      - wav_file
+
+  # Audio quality filtering
+  filters:
+    min_duration: 1.0
+    max_duration: 20.0
+    min_sample_rate: 16000
+    target_sample_rate: 24000
+    max_silence_ratio: 0.6
+    min_text_len: 2
+    max_text_len: 200
+
+  # Split configuration
+  split:
+    strategy: "speaker"  # "speaker" (disjoint speakers, prevents leakage) or "utterance"
+    train_ratio: 0.8
+    val_ratio: 0.1
+    test_ratio: 0.1
+    seed: 42
