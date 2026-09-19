@@ -37,6 +37,10 @@ def compute_silence_ratio(
     if wav.ndim > 1:
         wav = wav.mean(dim=0) # convert to 1D for energy calculation
 
+    # If peak amplitude is negligible, signal is completely silent
+    if torch.max(torch.abs(wav)).item() < 1e-4:
+        return 1.0
+
     frame_len = int(sample_rate * (frame_length_ms / 1000.0))
     frame_shift = int(sample_rate * (frame_shift_ms / 1000.0))
 
@@ -46,14 +50,14 @@ def compute_silence_ratio(
     # Unfold into frames
     frames = wav.unfold(0, frame_len, frame_shift)
     # Root Mean Square per frame
-    rms = torch.sqrt(torch.mean(frames ** 2, dim=-1) + 1e-12)
+    rms = torch.sqrt(torch.mean(frames ** 2, dim=-1) + 1e-14)
     max_rms = torch.max(rms).item()
 
-    if max_rms < 1e-7:
+    if max_rms < 1e-4:
         return 1.0 # Completely silent
 
     # Relative decibels relative to peak frame RMS
-    db = 20.0 * torch.log10(rms / (max_rms + 1e-12))
+    db = 20.0 * torch.log10(rms / (max_rms + 1e-14))
     silent_frames = torch.sum(db < threshold_db).item()
     total_frames = frames.shape[0]
 

@@ -43,6 +43,7 @@ coverage.xml
 
 # Outputs & cache
 outputs/
+/data/
 *.wav
 !samples/*.wav
 .cache/
