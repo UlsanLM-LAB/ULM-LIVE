@@ -1,9 +1,9 @@
-# ULM-Live Phase 1 TODO
+# ULM-Live Phase 1 TODO & Progress
 
 ## 1. Phase 1 목표
-- Spoken Language Model(ULM-Live)의 기반이 되는 오디오 코덱 인터페이스 및 1개 이상의 실제 신경망 오디오 코덱 백엔드 구현
-- 핵심 성공 기준: **WAV → Neural Codec Encode → Discrete Codec Tokens → Decode → Reconstructed WAV** 실제 동작 검증
-- Talker, ULM-1.7B Thinker, 대화 데이터셋, WebSocket 등은 구현하지 않고 오직 코덱 파이프라인과 기초 음향 유틸리티에 집중
+- [x] Spoken Language Model(ULM-Live)의 기반이 되는 오디오 코덱 인터페이스 및 1개 이상의 실제 신경망 오디오 코덱 백엔드 구현
+- [x] 핵심 성공 기준: **WAV → Neural Codec Encode → Discrete Codec Tokens → Decode → Reconstructed WAV** 실제 동작 검증
+- [x] Talker, ULM-1.7B Thinker, 대화 데이터셋, WebSocket 등은 분리하고 오직 코덱 파이프라인과 기초 음향 유틸리티에 집중
 
 ## 2. Codec Backend 결정 및 조사 요약
 
@@ -25,49 +25,43 @@
   3. **라이선스 및 접근성**: 상업적 이용 가능한 CC-BY 4.0 가중치, Hugging Face `transformers` 내장으로 별도 복잡한 C 확장 컴파일 없이 안정적 구동.
   4. **확장성**: `AudioCodec` 추상 인터페이스를 통해 향후 EnCodec 등 대체 백엔드 플러그인 가능.
 
-## 3. 구현 파일 목록
-- `pyproject.toml`: 패키지 메타데이터, 의존성 (`torch`, `transformers`, `scipy`, `pyyaml`, `numpy`), CLI 엔트리포인트
-- `requirements.txt`: 기본 및 개발용 의존성 정의
-- `configs/codec.yaml`: 기본 코덱 설정 (backend, model_id, sample_rate, num_quantizers, device)
-- `ulm_live/__init__.py`: 패키지 초기화 및 버전 정보
-- `ulm_live/codec/base.py`: `AudioCodec` ABC, `EncodedAudio` dataclass
-- `ulm_live/codec/backend.py`: `MimiCodec` 구현체 (Hugging Face Transformers 기반, CPU/CUDA 자동 처리)
-- `ulm_live/codec/__init__.py`: 코덱 클래스 및 팩토리 함수 (`build_codec`) export
-- `ulm_live/utils/audio.py`: WAV loading, mono conversion, resampling (polyphase sinc), peak normalization, WAV saving, duration 계산
-- `ulm_live/utils/__init__.py`: 오디오 유틸리티 함수 export
-- `scripts/test_codec.py`: CLI reconstruction 파이프라인 (인자 파싱, 입출력 통계 및 벤치마크 시간 출력)
-- `scripts/inspect_codec.py`: 코덱 정보, 코드북 차원 및 토큰 레이트 분석 스크립트
-- `tests/test_audio_utils.py`: audio loading, mono, resampling, normalization, roundtrip 단위 테스트
-- `tests/test_codec.py`: 코덱 인스턴스화, Mock/Shape 단위 테스트, 실제 모델 로드 및 encode/decode 통합 테스트 (`@pytest.mark.integration`)
-- `README.md`: 프로젝트 개요, Phase 1 구현 현황 체크리스트, 설치 및 실행 가이드
-- `LICENSE`: Apache 2.0 라이선스
+## 3. 구현된 파일 목록
+- [x] `pyproject.toml`: 패키지 메타데이터, 의존성 (`torch`, `transformers`, `scipy`, `pyyaml`, `numpy`), pytest 설정
+- [x] `requirements.txt`: 의존성 정의
+- [x] `configs/codec.yaml`: 기본 코덱 설정 (backend: mimi, sample_rate: 24000, num_quantizers: 32)
+- [x] `ulm_live/__init__.py`: 패키지 진입점 및 주요 클래스 export
+- [x] `ulm_live/codec/base.py`: `AudioCodec` ABC, `EncodedAudio` dataclass
+- [x] `ulm_live/codec/backend.py`: `MimiCodec` 구현체 (Hugging Face Transformers 기반, CPU/CUDA 자동 감지)
+- [x] `ulm_live/codec/__init__.py`: 코덱 클래스 및 팩토리 함수 (`build_codec`) export
+- [x] `ulm_live/utils/audio.py`: WAV loading, mono conversion, resampling (polyphase sinc), peak normalization, WAV saving, duration 계산
+- [x] `ulm_live/utils/__init__.py`: 오디오 유틸리티 함수 export
+- [x] `scripts/test_codec.py`: CLI reconstruction 파이프라인 (표준 터미널 리포트 출력)
+- [x] `scripts/inspect_codec.py`: 코덱 파라미터 및 아키텍처 점검 스크립트
+- [x] `tests/test_audio_utils.py`: audio loading, mono, resampling, normalization, roundtrip 단위 테스트
+- [x] `tests/test_codec.py`: 코덱 인스턴스화, Mock 단위 테스트 및 Mimi 모델 통합 테스트 (`@pytest.mark.integration`)
+- [x] `README.md`: 담백하고 기술적인 프로젝트 문서
+- [x] `LICENSE`: Apache 2.0 라이선스
 
-## 4. 테스트 계획
-1. **단위 테스트 (Unit Tests)**:
-   - `test_load_and_save_wav`: 합성 사인파 WAV 파일 생성, 저장 및 로드 정확성 확인
-   - `test_to_mono`: 멀티채널(스테레오) 텐서의 단일 채널 변환 검증
-   - `test_resample`: 44.1kHz -> 24kHz, 16kHz -> 24kHz 고품질 리샘플링 후 길이 및 채널 유지 검증
-   - `test_peak_normalize`: 진폭 스케일링 범위 확인
-   - `test_codec_interface`: Base AudioCodec 및 EncodedAudio 속성 검증
-   - `test_codec_creation`: `build_codec` 팩토리 함수 정상 동작 확인
-2. **통합 테스트 (Integration Tests - `@pytest.mark.integration`)**:
-   - 실제 `kyutai/mimi` 가중치를 로드하여 1초 합성 음성 인코딩 및 디코딩 파이프라인 검증
-   - 인코딩된 토큰 텐서 차원 `[batch, num_quantizers, frames]` 검증
-   - 디코딩된 복원 음향의 샘플 레이트 및 waveform shape 검증
-3. **CLI 실행 테스트**:
-   - `python scripts/test_codec.py --input samples/input.wav --output outputs/reconstructed.wav`
-   - 터미널 출력 규격 (Input / Codec / Output 메타데이터 및 encode/decode 소요 시간) 확인
+## 4. 검증 결과
+- [x] `python -m compileall ulm_live`: 통과 (문법 에러 0건)
+- [x] `pytest`: 통과 (11 passed, 2 deselected in 4.60s)
+- [x] `pytest -m integration`: 통과 (2 passed, 11 deselected in 5.55s)
+- [x] `python scripts/test_codec.py --input samples/input.wav --output outputs/reconstructed.wav`: 통과
+  - Input: 24000Hz, 1 channel, 2.00s
+  - Codec: Mimi, shape (1, 32, 25), 400.0 tokens/s
+  - Output: 24000Hz, 2.00s, reconstructed.wav 생성 확인
 
-## 5. 성공 기준
-- `python -m compileall ulm_live` 에러 없이 통과
-- `pytest` 기본 실행 시 단위 테스트 전원 통과 (네트워크/다운로드 없는 순수 유닛 테스트)
-- `pytest -m integration` 또는 CLI 실행 시 실제 `kyutai/mimi`를 통한 WAV → Codec Tokens → WAV 복원 완료
-- CLI 출력 형식 준수
-- 논리적 단위의 git commits 완료
+## 5. 발견한 제한사항
+- **Mimi 고유 샘플레이트 고정**: Mimi는 24kHz 고정 샘플레이트로 훈련되어 있으므로, 16kHz/48kHz 오디오는 인코딩 전 polyphase resampling 및 디코딩 후 필요시 후처리가 수반됨 (유틸리티 레벨에서 자동 처리 완료).
+- **첫 웜업 추론 시간**: 모델 초기 로드 및 PyTorch/CUDA JIT 커널 초기화 시 첫 번째 encode에 약 1~2초가 소요되며, 이후 추론은 실시간(초당 수십 ms 이내)으로 수행됨.
+- **스트리밍 캐시 추론**: 현재 Phase 1은 파일 전체를 한 번에 인코딩/디코딩하는 오프라인 배치 파이프라인으로 구현됨. 실시간 마이크 입력을 프레임 단위로 처리하기 위해서는 Mimi의 causal conv state 및 streaming cache 관리가 필요함.
 
-## 6. 남아 있는 문제 (Phase 2+ 로 이관)
-- Ulsan 사투리 음성 데이터셋(AI Hub) 다운로드 및 전처리 파이프라인
-- ULM-1.7B Thinker (텍스트/음성 토큰 생성 언어 모델) 통합
-- ULM Talker (코덱 토큰 디인터리빙 및 음성 합성 모델) 개발
-- WebSocket 기반 실시간 풀듀플렉스(full-duplex) 스트리밍 서버 및 클라이언트
-- Causal chunk-by-chunk streaming inference 최적화 (Mimi streaming cache 활용)
+## 6. Phase 2 계획
+- **Ulsan 사투리 음성 데이터셋(AI Hub) 파이프라인**:
+  - 울산 사투리 오디오 정제, 24kHz 모노 변환 및 Mimi discrete token 사전 추출
+- **ULM-1.7B Thinker 통합**:
+  - 텍스트 입력과 울산 사투리 의미 토큰 연계
+- **ULM Talker 개발**:
+  - 음향 토큰(Acoustic Tokens, RVQ 1~8) 생성 및 인터리빙
+- **Streaming Audio Pipeline**:
+  - 청크(chunk) 단위 입출력 및 저지연 WebSocket 스트리밍 구현
