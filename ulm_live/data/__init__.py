@@ -11,6 +11,11 @@ from ulm_live.data.filters import (
     clean_transcript,
     compute_silence_ratio,
 )
+from ulm_live.data.manifest import (
+    compute_dataset_summary,
+    split_dataset,
+    write_jsonl,
+)
 from ulm_live.data.schema import DatasetItem, DatasetSummary, SpeakerInfo, UtteranceInfo
 from ulm_live.data.segment import AudioSegmenter, match_audio_file, slice_waveform
 
@@ -31,4 +36,7 @@ __all__ = [
     "AudioSegmenter",
     "slice_waveform",
     "match_audio_file",
+    "write_jsonl",
+    "split_dataset",
+    "compute_dataset_summary",
 ]
