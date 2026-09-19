@@ -257,3 +257,76 @@ class ULMTalker(nn.Module):
             loss = loss_sum / float(K)
 
         return TalkerOutput(logits=logits, loss=loss)
+
+    def generate(
+        self,
+        semantic_hidden_states: torch.Tensor,
+        speaker_ids: torch.Tensor,
+        dialect_ids: torch.Tensor,
+        generation_config: Any | None = None,
+        initial_audio_codes: torch.Tensor | None = None,
+        frame_rate: float = 12.5,
+    ) -> torch.Tensor:
+        """Autoregressively generate neural audio codec tokens.
+
+        Args:
+            semantic_hidden_states: (B, S, semantic_dim)
+            speaker_ids: (B,)
+            dialect_ids: (B,)
+            generation_config: Optional TalkerGenerationConfig
+            initial_audio_codes: Optional prompt audio codes of shape (B, K, T_init)
+            frame_rate: Codec frame rate in Hz (default: 12.5)
+
+        Returns:
+            Tensor of generated discrete codes of shape (B, K, num_frames) with dtype torch.long.
+        """
+        from ulm_live.talker.generator import TalkerGenerationConfig, sample_next_tokens
+
+        cfg = generation_config or TalkerGenerationConfig()
+        device = semantic_hidden_states.device
+        B = semantic_hidden_states.shape[0]
+        K = self.config.num_quantizers
+
+        # Determine target number of frames
+        if cfg.max_audio_seconds is not None:
+            target_frames = max(1, int(round(cfg.max_audio_seconds * frame_rate)))
+            num_steps = min(cfg.max_new_tokens, target_frames)
+        else:
+            num_steps = cfg.max_new_tokens
+
+        # Prepare initial codes
+        if initial_audio_codes is not None:
+            cur_codes = initial_audio_codes.to(device=device, dtype=torch.long)
+            skip_first = False
+        else:
+            # 1-frame start token
+            cur_codes = torch.zeros((B, K, 1), dtype=torch.long, device=device)
+            skip_first = True
+
+        S = semantic_hidden_states.shape[1]
+
+        was_training = self.training
+        self.eval()
+
+        with torch.no_grad():
+            for _ in range(num_steps):
+                if S + cur_codes.shape[-1] >= self.config.max_seq_len:
+                    break
+
+                out = self.forward(
+                    semantic_hidden_states=semantic_hidden_states,
+                    audio_codes=cur_codes,
+                    speaker_ids=speaker_ids,
+                    dialect_ids=dialect_ids,
+                )
+                last_logits = out.logits[:, :, -1, :] # (B, K, codebook_size)
+                next_tokens = sample_next_tokens(last_logits, cfg) # (B, K, 1)
+
+                cur_codes = torch.cat([cur_codes, next_tokens], dim=-1)
+
+        if was_training:
+            self.train()
+
+        generated = cur_codes[:, :, 1:] if skip_first else cur_codes
+        return generated
+

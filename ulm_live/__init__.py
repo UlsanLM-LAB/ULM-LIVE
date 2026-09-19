@@ -5,6 +5,7 @@ from ulm_live.talker import (
     TalkerCollator,
     TalkerConfig,
     TalkerDataset,
+    TalkerGenerationConfig,
     TalkerOutput,
     ULMTalker,
 )
@@ -28,6 +29,7 @@ __all__ = [
     "ULMThinker",
     "ULMTalker",
     "TalkerConfig",
+    "TalkerGenerationConfig",
     "TalkerOutput",
     "TalkerDataset",
     "TalkerCollator",
