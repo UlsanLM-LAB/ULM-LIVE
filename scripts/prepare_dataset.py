@@ -143,6 +143,8 @@ def main() -> None:
     target_region = args.region.strip()
 
     item_idx = 0
+    per_session_max = max(20, args.max_samples // 4) if args.max_samples > 0 else 999999999
+
     for jf in json_files:
         try:
             speakers, utterances, audio_hint = parser.parse_file(jf)
@@ -155,6 +157,7 @@ def main() -> None:
             rejections["audio_file_not_found"] = rejections.get("audio_file_not_found", 0) + len(utterances)
             continue
 
+        session_processed_count = 0
         # Filter utterances by target speaker region
         for utt in utterances:
             speaker_info = speakers.get(utt.speaker_id)
@@ -165,6 +168,11 @@ def main() -> None:
             else:
                 # If speaker info wasn't in file, check if file or utterance mentions target region
                 continue
+
+            # Ensure speaker_id is unique across sessions by prefixing with session ID if it is a local index
+            local_spk = utt.speaker_id
+            global_spk = f"{jf.stem}_{local_spk}" if not local_spk.startswith(jf.stem) else local_spk
+            utt.speaker_id = global_spk
 
             item_id = f"{target_region}_{item_idx:06d}"
             item, reason = segmenter.process_utterance(
@@ -177,7 +185,10 @@ def main() -> None:
             if item is not None:
                 processed_items.append(item)
                 item_idx += 1
+                session_processed_count += 1
                 if args.max_samples > 0 and len(processed_items) >= args.max_samples:
+                    break
+                if session_processed_count >= per_session_max:
                     break
             else:
                 key = reason or "unknown_rejection"

@@ -115,10 +115,11 @@ def split_dataset(
 
         # If test or val ended up empty due to very small speaker count (< 3),
         # fallback to utterance split for remainder
-        if not val_items and len(items) >= 2:
-            val_items.append(train_items.pop())
-        if not test_items and len(items) >= 3:
-            test_items.append(train_items.pop())
+        if n_spk < 3:
+            if not val_items and len(items) >= 2:
+                val_items.append(train_items.pop())
+            if not test_items and len(items) >= 3:
+                test_items.append(train_items.pop())
 
         return train_items, val_items, test_items
 

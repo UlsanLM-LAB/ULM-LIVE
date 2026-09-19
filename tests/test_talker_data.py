@@ -71,3 +71,23 @@ def test_talker_dataset_and_collator(tmp_path: Path) -> None:
     # Verify padding occurred on item1 (original len 15 -> shifted 14, remaining 10 are PAD)
     assert torch.all(batch["audio_codes"][0, :, 14:] == 2048)
     assert torch.all(batch["targets"][0, :, 14:] == 2048)
+
+
+def test_talker_dataset_strict_codec_error(tmp_path: Path) -> None:
+    manifest = [
+        {"id": "missing_codec", "text": "테스트", "codec_path": "codec/nonexistent.pt", "speaker_id": "spk_01", "dialect": "ulsan"},
+    ]
+    m_path = tmp_path / "manifest.jsonl"
+    with open(m_path, "w", encoding="utf-8") as f:
+        for it in manifest:
+            f.write(json.dumps(it) + "\n")
+
+    # Non-strict mode should create dummy zero tensor
+    dataset_lenient = TalkerDataset(m_path, base_dir=tmp_path, num_quantizers=8, strict_codec=False)
+    item = dataset_lenient[0]
+    assert item["audio_codes"].shape == (8, 1)
+
+    # Strict mode should raise RuntimeError
+    dataset_strict = TalkerDataset(m_path, base_dir=tmp_path, num_quantizers=8, strict_codec=True)
+    with pytest.raises(RuntimeError, match="Missing or invalid codec tokens"):
+        _ = dataset_strict[0]

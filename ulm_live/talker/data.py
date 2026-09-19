@@ -59,6 +59,7 @@ class TalkerDataset(Dataset):
         dialect2id: dict[str, int] | None = None,
         codec: AudioCodec | None = None,
         num_quantizers: int = 32,
+        strict_codec: bool = False,
     ) -> None:
         self.manifest_path = Path(manifest_path)
         if not self.manifest_path.is_file():
@@ -67,6 +68,7 @@ class TalkerDataset(Dataset):
         self.base_dir = Path(base_dir) if base_dir is not None else self.manifest_path.parent
         self.codec = codec
         self.num_quantizers = num_quantizers
+        self.strict_codec = strict_codec
 
         self.items: list[dict[str, Any]] = []
         with open(self.manifest_path, "r", encoding="utf-8") as f:
@@ -122,8 +124,12 @@ class TalkerDataset(Dataset):
                     enc = self.codec.encode(wav, sr, num_quantizers=self.num_quantizers)
                     audio_codes = enc.codes.squeeze(0).cpu()
 
-        # If still None, create dummy placeholder
+        # If still None, raise error in strict mode or create dummy placeholder
         if audio_codes is None:
+            if self.strict_codec:
+                raise RuntimeError(
+                    f"Missing or invalid codec tokens for sample '{item_id}' (codec_path: '{codec_rel}')"
+                )
             audio_codes = torch.zeros((self.num_quantizers, 1), dtype=torch.long)
 
         return {

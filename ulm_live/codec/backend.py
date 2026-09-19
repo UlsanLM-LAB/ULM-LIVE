@@ -157,7 +157,13 @@ class MimiCodec(AudioCodec):
         Returns:
             Tuple of (waveform, sample_rate). waveform has shape (batch, channels, samples).
         """
-        codes = encoded.codes.to(device=self._target_device)
+        if hasattr(encoded, "codes"):
+            codes = encoded.codes.to(device=self._target_device)
+        elif isinstance(encoded, torch.Tensor):
+            codes = encoded.to(device=self._target_device)
+        else:
+            raise TypeError(f"Expected EncodedAudio or torch.Tensor, got {type(encoded)}")
+
         if codes.ndim == 2:
             codes = codes.unsqueeze(0)
         elif codes.ndim != 3:
