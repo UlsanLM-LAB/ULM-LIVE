@@ -1,6 +1,7 @@
 """ULM-Live: Neural audio codec foundations and Spoken Language Model runtime for Ulsan dialect."""
 
 from ulm_live.codec import AudioCodec, EncodedAudio, MimiCodec, build_codec
+from ulm_live.talker import TalkerConfig, TalkerOutput, ULMTalker
 from ulm_live.thinker import ULMThinker
 from ulm_live.utils import (
     get_duration,
@@ -19,6 +20,9 @@ __all__ = [
     "MimiCodec",
     "build_codec",
     "ULMThinker",
+    "ULMTalker",
+    "TalkerConfig",
+    "TalkerOutput",
     "load_wav",
     "save_wav",
     "to_mono",
