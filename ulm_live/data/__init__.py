@@ -12,6 +12,7 @@ from ulm_live.data.filters import (
     compute_silence_ratio,
 )
 from ulm_live.data.schema import DatasetItem, DatasetSummary, SpeakerInfo, UtteranceInfo
+from ulm_live.data.segment import AudioSegmenter, match_audio_file, slice_waveform
 
 __all__ = [
     "SpeakerInfo",
@@ -27,4 +28,7 @@ __all__ = [
     "QualityFilter",
     "clean_transcript",
     "compute_silence_ratio",
+    "AudioSegmenter",
+    "slice_waveform",
+    "match_audio_file",
 ]
