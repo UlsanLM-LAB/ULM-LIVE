@@ -43,6 +43,7 @@ include = ["ulm_live*"]
 [tool.pytest.ini_options]
 minversion = "7.0"
 testpaths = ["tests"]
+addopts = "-m 'not integration'"
 markers = [
     "integration: marks tests requiring model downloads or heavy neural network execution (deselect with '-m \"not integration\"')",
 ]
