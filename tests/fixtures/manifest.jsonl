@@ -1,0 +1,2 @@
+{"id": "sample_0", "text": "텍스트 발화 0", "audio_path": "audio/sample_0.wav", "codec_path": "codec/sample_0.pt", "speaker_id": "spk_0", "dialect": "ulsan"}
+{"id": "sample_1", "text": "텍스트 발화 1", "audio_path": "audio/sample_1.wav", "codec_path": "codec/sample_1.pt", "speaker_id": "spk_1", "dialect": "ulsan"}
