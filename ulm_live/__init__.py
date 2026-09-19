@@ -2,12 +2,16 @@
 
 from ulm_live.codec import AudioCodec, EncodedAudio, MimiCodec, build_codec
 from ulm_live.talker import (
+    SpeechGenerationResult,
+    SpeechSynthesizer,
     TalkerCollator,
     TalkerConfig,
     TalkerDataset,
     TalkerGenerationConfig,
     TalkerOutput,
     ULMTalker,
+    load_talker_checkpoint,
+    save_talker_checkpoint,
 )
 from ulm_live.thinker import ULMThinker
 from ulm_live.utils import (
@@ -33,6 +37,10 @@ __all__ = [
     "TalkerOutput",
     "TalkerDataset",
     "TalkerCollator",
+    "SpeechSynthesizer",
+    "SpeechGenerationResult",
+    "save_talker_checkpoint",
+    "load_talker_checkpoint",
     "load_wav",
     "save_wav",
     "to_mono",
