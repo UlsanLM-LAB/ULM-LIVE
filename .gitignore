@@ -52,3 +52,4 @@ semantic_cache/
 codec_cache/
 checkpoints/
 *.tar.gz
+Music/
