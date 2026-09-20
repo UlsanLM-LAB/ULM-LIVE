@@ -31,7 +31,7 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument(
         "--thinker",
         type=str,
-        default="/home/ubuntu/ULM-1.7B/outputs/ulm-1.7b-phase2-merged",
+        default="/home/ubuntu/ULM-1.7B/outputs/ulm-1.7b-phase3-best-merged",
         help="Path to merged Thinker model.",
     )
     parser.add_argument(
