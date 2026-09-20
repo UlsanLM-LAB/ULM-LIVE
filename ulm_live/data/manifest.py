@@ -62,7 +62,7 @@ def compute_dataset_summary(items: list[DatasetItem]) -> DatasetSummary:
 
 def split_dataset(
     items: list[DatasetItem],
-    strategy: str = "speaker",
+    strategy: str = "session",
     train_ratio: float = 0.8,
     val_ratio: float = 0.1,
     test_ratio: float = 0.1,
@@ -72,7 +72,8 @@ def split_dataset(
 
     Args:
         items: List of DatasetItem.
-        strategy: 'speaker' (speaker-disjoint split, default) or 'utterance' (random split).
+        strategy: 'session' keeps source sessions disjoint while retaining known
+            speakers in train. 'speaker' is legacy/zero-shot research only.
         train_ratio: Fraction for training.
         val_ratio: Fraction for validation.
         test_ratio: Fraction for testing.
@@ -123,17 +124,54 @@ def split_dataset(
 
         return train_items, val_items, test_items
 
-    elif strategy == "utterance":
-        shuffled = list(items)
-        rng.shuffle(shuffled)
-        n_total = len(shuffled)
-        n_train = int(round(n_total * train_norm))
-        n_val = int(round(n_total * val_norm))
-
-        train_items = shuffled[:n_train]
-        val_items = shuffled[n_train : n_train + n_val]
-        test_items = shuffled[n_train + n_val :]
-        return train_items, val_items, test_items
+    elif strategy in ("session", "utterance"):
+        # Split leakage groups independently per speaker. A group is a session
+        # or source clip when available, otherwise an utterance identity.
+        groups_by_key: dict[str, list[DatasetItem]] = {}
+        for item in items:
+            if strategy == "session":
+                key = (
+                    item.session_id
+                    or item.source_audio_id
+                    or str(
+                        item.metadata.get("session_id")
+                        or item.metadata.get("source_audio_id")
+                        or item.utterance_id
+                        or item.id
+                    )
+                )
+            else:
+                key = item.utterance_id or item.id
+            groups_by_key.setdefault(key, []).append(item)
+        keys = sorted(groups_by_key)
+        rng.shuffle(keys)
+        train_keys = set()
+        # Reserve at least one entire source group in train for every speaker.
+        for speaker in sorted({x.speaker_id for x in items}):
+            candidates = [
+                key
+                for key in keys
+                if any(x.speaker_id == speaker for x in groups_by_key[key])
+            ]
+            train_keys.add(candidates[0])
+        target_train = max(len(train_keys), round(len(keys) * train_norm))
+        if target_train >= len(keys):
+            train_keys.update(keys)
+        else:
+            for key in keys:
+                if len(train_keys) >= target_train:
+                    break
+                train_keys.add(key)
+        remaining = [key for key in keys if key not in train_keys]
+        target_val = round(len(keys) * val_norm)
+        val_keys = set(remaining[:target_val])
+        splits = [[], [], []]
+        for key in keys:
+            dest = 0 if key in train_keys else (1 if key in val_keys else 2)
+            splits[dest].extend(groups_by_key[key])
+        return tuple(splits)  # type: ignore[return-value]
 
     else:
-        raise ValueError(f"Unknown split strategy: '{strategy}'. Choose 'speaker' or 'utterance'.")
+        raise ValueError(
+            f"Unknown split strategy: '{strategy}'. Choose 'session', 'utterance', or 'speaker'."
+        )

@@ -1,26 +1,49 @@
 talker:
-  # Model architecture dimensions
-  semantic_dim: 2048       # Dimension of ULM-1.7B Thinker hidden states
-  talker_dim: 512          # Internal Talker Transformer hidden dimension
-  num_layers: 6            # Number of causal Transformer layers
-  num_heads: 8             # Number of attention heads
-  dim_feedforward: 2048    # FFN hidden dimension
-  dropout: 0.1             # Dropout probability
-  max_seq_len: 2048        # Maximum sequence length
-
-  # Neural Codec token dimensions (Mimi codec compatibility)
-  num_quantizers: 32       # Number of RVQ codebooks (32 for full Mimi, or 8 for lightweight)
-  codebook_size: 2048      # Mimi codebook vocabulary size per quantizer
-  pad_token_id: 2048       # Pad token ID (codebook_size index reserved for PAD)
-
-  # Conditioning dimensions
-  speaker_embedding_dim: 128
-  dialect_embedding_dim: 64
-  num_speakers: 256
-  num_dialects: 16
-  conditioning_mode: "additive"  # "additive" or "concat"
-
-  # Training defaults
-  learning_rate: 0.0002
-  weight_decay: 0.01
-  freeze_thinker: true
+  model:
+    semantic_dim: 2048
+    talker_dim: 512
+    max_seq_len: 2048
+  temporal:
+    num_layers: 6
+    num_heads: 8
+    dim_feedforward: 2048
+    dropout: 0.1
+  depth:
+    depth_dim: 256
+    depth_layers: 2
+    depth_heads: 8
+    depth_feedforward: 1024
+    depth_dropout: 0.1
+  conditioning:
+    speaker_embedding_dim: 128
+    dialect_embedding_dim: 64
+    num_speakers: 256
+    num_dialects: 16
+    conditioning_mode: additive
+  codec:
+    num_quantizers: 16
+    codebook_size: 2048
+    pad_token_id: 2048
+    bos_token_id: 2049
+    acoustic_delay_frames: 0
+  stop:
+    stop_loss_weight: 1.0
+    stop_threshold: 0.5
+    min_audio_frames: 10
+    max_audio_frames: 750
+  semantic_cache:
+    freeze_thinker: true
+  training:
+    learning_rate: 0.0002
+    weight_decay: 0.01
+    num_workers: 4
+    pin_memory: true
+    persistent_workers: true
+    prefetch_factor: 2
+    warmup_ratio: 0.03
+  validation:
+    max_eval_batches: null
+    best_metric: total_loss
+  generation:
+    # Safety cap; learned stop may finish earlier after min_audio_frames.
+    max_audio_frames: 750

@@ -48,3 +48,7 @@ outputs/
 !samples/*.wav
 .cache/
 huggingface/
+semantic_cache/
+codec_cache/
+checkpoints/
+*.tar.gz

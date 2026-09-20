@@ -70,9 +70,9 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument(
         "--split-strategy",
         type=str,
-        choices=["speaker", "utterance"],
+        choices=["session", "speaker", "utterance"],
         default=None,
-        help="Dataset splitting strategy ('speaker' or 'utterance'). Defaults to config.",
+        help="Derived split strategy ('session' recommended; also 'utterance' or legacy 'speaker').",
     )
     parser.add_argument(
         "--max-samples",
@@ -93,7 +93,10 @@ def main() -> None:
     args = parse_args()
     input_path = Path(args.input)
     if not input_path.is_dir():
-        print(f"Error: Input dataset directory does not exist: {input_path}", file=sys.stderr)
+        print(
+            f"Error: Input dataset directory does not exist: {input_path}",
+            file=sys.stderr,
+        )
         sys.exit(1)
 
     output_path = Path(args.output)
@@ -113,10 +116,14 @@ def main() -> None:
         print("Initializing Neural Audio Codec for token encoding...")
         try:
             codec_instance = build_codec(
-                config_path=args.codec_config if Path(args.codec_config).is_file() else None,
+                config_path=args.codec_config
+                if Path(args.codec_config).is_file()
+                else None,
                 device=args.device or "auto",
             )
-            print(f"Codec initialized: backend={codec_instance.backend_name}, device={codec_instance.device}")
+            print(
+                f"Codec initialized: backend={codec_instance.backend_name}, device={codec_instance.device}"
+            )
         except Exception as err:
             print(f"Error initializing codec backend: {err}", file=sys.stderr)
             sys.exit(1)
@@ -143,7 +150,9 @@ def main() -> None:
     target_region = args.region.strip()
 
     item_idx = 0
-    per_session_max = max(20, args.max_samples // 4) if args.max_samples > 0 else 999999999
+    per_session_max = (
+        max(20, args.max_samples // 4) if args.max_samples > 0 else 999999999
+    )
 
     for jf in json_files:
         try:
@@ -154,7 +163,9 @@ def main() -> None:
 
         matched_audio = match_audio_file(audio_hint, jf, audio_by_stem, audio_by_name)
         if not matched_audio:
-            rejections["audio_file_not_found"] = rejections.get("audio_file_not_found", 0) + len(utterances)
+            rejections["audio_file_not_found"] = rejections.get(
+                "audio_file_not_found", 0
+            ) + len(utterances)
             continue
 
         session_processed_count = 0
@@ -162,8 +173,12 @@ def main() -> None:
         for utt in utterances:
             speaker_info = speakers.get(utt.speaker_id)
             if speaker_info is not None:
-                if not parser.region_classifier.is_target_region(speaker_info, target_region):
-                    rejections["non_target_region"] = rejections.get("non_target_region", 0) + 1
+                if not parser.region_classifier.is_target_region(
+                    speaker_info, target_region
+                ):
+                    rejections["non_target_region"] = (
+                        rejections.get("non_target_region", 0) + 1
+                    )
                     continue
             else:
                 # If speaker info wasn't in file, check if file or utterance mentions target region
@@ -171,7 +186,11 @@ def main() -> None:
 
             # Ensure speaker_id is unique across sessions by prefixing with session ID if it is a local index
             local_spk = utt.speaker_id
-            global_spk = f"{jf.stem}_{local_spk}" if not local_spk.startswith(jf.stem) else local_spk
+            global_spk = (
+                f"{jf.stem}_{local_spk}"
+                if not local_spk.startswith(jf.stem)
+                else local_spk
+            )
             utt.speaker_id = global_spk
 
             item_id = f"{target_region}_{item_idx:06d}"
@@ -205,7 +224,7 @@ def main() -> None:
         sys.exit(0)
 
     # 4. Manifest generation and splits
-    split_strategy = args.split_strategy or split_cfg.get("strategy", "speaker")
+    split_strategy = args.split_strategy or split_cfg.get("strategy", "session")
     train_ratio = float(split_cfg.get("train_ratio", 0.8))
     val_ratio = float(split_cfg.get("val_ratio", 0.1))
     test_ratio = float(split_cfg.get("test_ratio", 0.1))
@@ -237,12 +256,18 @@ def main() -> None:
     print(f"Total speakers:    {summary.num_speakers}")
     print(f"Total audio hours: {summary.total_hours:.3f} h")
     print(f"Mean duration:     {summary.mean_duration:.2f} s")
-    print(f"Split strategy:    {split_strategy} (train={len(train_items)}, val={len(val_items)}, test={len(test_items)})")
+    print(
+        f"Split strategy:    {split_strategy} (train={len(train_items)}, val={len(val_items)}, test={len(test_items)})"
+    )
     print()
 
     print("Speaker breakdown:")
-    for spk, s_stat in sorted(summary.speaker_stats.items(), key=lambda x: x[1]["samples"], reverse=True)[:10]:
-        print(f"  {spk:15s}  {s_stat['samples']:4d} samples  {s_stat['total_hours']:.4f} h")
+    for spk, s_stat in sorted(
+        summary.speaker_stats.items(), key=lambda x: x[1]["samples"], reverse=True
+    )[:10]:
+        print(
+            f"  {spk:15s}  {s_stat['samples']:4d} samples  {s_stat['total_hours']:.4f} h"
+        )
     if len(summary.speaker_stats) > 10:
         print(f"  ... and {len(summary.speaker_stats) - 10} more speakers.")
     print()

@@ -31,7 +31,7 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument(
         "--thinker",
         type=str,
-        default="/home/ubuntu/ULM-1.7B/outputs/ulm-1.7b-phase3-best-merged",
+        default="/home/ubuntu/ULM-1.7B/outputs/ulm-1.7b-phase4-best-merged",
         help="Path to merged Thinker model.",
     )
     parser.add_argument(
@@ -72,7 +72,13 @@ def get_gpu_telemetry() -> dict[str, float]:
             "mem_total_mib": parts[4],
         }
     except Exception:
-        return {"gpu_util": 0.0, "temp": 0.0, "power": 0.0, "mem_used_mib": 0.0, "mem_total_mib": 0.0}
+        return {
+            "gpu_util": 0.0,
+            "temp": 0.0,
+            "power": 0.0,
+            "mem_used_mib": 0.0,
+            "mem_total_mib": 0.0,
+        }
 
 
 def run_candidate(
@@ -85,23 +91,36 @@ def run_candidate(
     thinker: str,
 ) -> dict:
     print(f"\n=======================================================")
-    print(f"Running Benchmark Candidate {candidate_id}: batch_size={batch_size}, grad_accum={grad_accum} (eff_batch={batch_size * grad_accum})")
+    print(
+        f"Running Benchmark Candidate {candidate_id}: batch_size={batch_size}, grad_accum={grad_accum} (eff_batch={batch_size * grad_accum})"
+    )
     print(f"=======================================================")
 
     cmd = [
         sys.executable,
         "scripts/train_talker.py",
-        "--config", "configs/talker.yaml",
-        "--manifest", manifest,
-        "--val-manifest", val_manifest,
-        "--thinker", thinker,
-        "--batch-size", str(batch_size),
-        "--gradient-accumulation-steps", str(grad_accum),
-        "--max-steps", str(steps),
-        "--eval-steps", str(steps),
+        "--config",
+        "configs/talker.yaml",
+        "--manifest",
+        manifest,
+        "--val-manifest",
+        val_manifest,
+        "--thinker",
+        thinker,
+        "--batch-size",
+        str(batch_size),
+        "--gradient-accumulation-steps",
+        str(grad_accum),
+        "--max-steps",
+        str(steps),
+        "--eval-steps",
+        str(steps),
         "--bf16",
         "--strict-codec",
-        "--output-dir", f"outputs/bench_{candidate_id}",
+        "--max-eval-batches",
+        "10",
+        "--output-dir",
+        f"outputs/bench_{candidate_id}",
     ]
 
     telemetry_samples = []
@@ -112,7 +131,9 @@ def run_candidate(
         torch.cuda.empty_cache()
         torch.cuda.reset_peak_memory_stats()
 
-    proc = subprocess.Popen(cmd, stdout=subprocess.PIPE, stderr=subprocess.STDOUT, text=True)
+    proc = subprocess.Popen(
+        cmd, stdout=subprocess.PIPE, stderr=subprocess.STDOUT, text=True
+    )
     oom = False
     output_lines = []
 
@@ -133,7 +154,9 @@ def run_candidate(
             break
 
     if oom or proc.returncode != 0:
-        print(f"Candidate {candidate_id} FAILED (OOM={oom}, returncode={proc.returncode})")
+        print(
+            f"Candidate {candidate_id} FAILED (OOM={oom}, returncode={proc.returncode})"
+        )
         return {
             "candidate": candidate_id,
             "batch_size": batch_size,
@@ -156,6 +179,17 @@ def run_candidate(
     train_loss = None
     val_loss = None
     for line in reversed(output_lines):
+        stripped = line.strip()
+        if stripped.startswith('"last_loss":'):
+            try:
+                train_loss = float(stripped.split(":", 1)[1].rstrip(","))
+            except ValueError:
+                pass
+        if stripped.startswith("{") and '"validation"' in stripped:
+            try:
+                val_loss = float(json.loads(stripped)["validation"]["total_loss"])
+            except (ValueError, KeyError, TypeError, json.JSONDecodeError):
+                pass
         if "Step" in line and "Loss" in line:
             # e.g., Step 20/20 | Train Loss: 3.456 | Val Loss: 3.512
             parts = line.split("|")
@@ -177,11 +211,23 @@ def run_candidate(
     steps_per_sec = round(steps / total_time, 3)
 
     # Compute telemetry aggregates
-    max_mem_mib = max([s["mem_used_mib"] for s in telemetry_samples]) if telemetry_samples else 0.0
-    total_mem_mib = telemetry_samples[0]["mem_total_mib"] if telemetry_samples else 46000.0
-    avg_util = sum([s["gpu_util"] for s in telemetry_samples]) / len(telemetry_samples) if telemetry_samples else 0.0
+    max_mem_mib = (
+        max([s["mem_used_mib"] for s in telemetry_samples])
+        if telemetry_samples
+        else 0.0
+    )
+    total_mem_mib = (
+        telemetry_samples[0]["mem_total_mib"] if telemetry_samples else 46000.0
+    )
+    avg_util = (
+        sum([s["gpu_util"] for s in telemetry_samples]) / len(telemetry_samples)
+        if telemetry_samples
+        else 0.0
+    )
     max_temp = max([s["temp"] for s in telemetry_samples]) if telemetry_samples else 0.0
-    max_power = max([s["power"] for s in telemetry_samples]) if telemetry_samples else 0.0
+    max_power = (
+        max([s["power"] for s in telemetry_samples]) if telemetry_samples else 0.0
+    )
 
     peak_vram_gib = round(max_mem_mib / 1024.0, 2)
     vram_util_pct = round((max_mem_mib / total_mem_mib) * 100.0, 1)
@@ -204,15 +250,17 @@ def run_candidate(
         "val_loss": val_loss,
     }
 
-    print(f"Candidate {candidate_id} Result: {sec_per_step} s/step | Peak VRAM: {peak_vram_gib} GiB ({vram_util_pct}%) | Loss: {train_loss}")
+    print(
+        f"Candidate {candidate_id} Result: {sec_per_step} s/step | Peak VRAM: {peak_vram_gib} GiB ({vram_util_pct}%) | Loss: {train_loss}"
+    )
     return result
 
 
 def main() -> None:
     args = parse_args()
     candidates = [
-        ("A", 4, 4),   # batch=4, accum=4 -> eff=16
-        ("B", 8, 2),   # batch=8, accum=2 -> eff=16
+        ("A", 4, 4),  # batch=4, accum=4 -> eff=16
+        ("B", 8, 2),  # batch=8, accum=2 -> eff=16
         ("C", 16, 1),  # batch=16, accum=1 -> eff=16
     ]
 
@@ -242,17 +290,21 @@ def main() -> None:
     print("\n" + "=" * 60)
     print("### L40S Batch Benchmark Comparison Table")
     print("=" * 60)
-    print("| Candidate | Batch | Grad Accum | Eff Batch | Sec/Step | Steps/Sec | Peak VRAM (GiB) | VRAM % | Avg Util % | Max Temp | Train Loss | Status |")
+    print(
+        "| Candidate | Batch | Grad Accum | Eff Batch | Sec/Step | Steps/Sec | Peak VRAM (GiB) | VRAM % | Avg Util % | Max Temp | Train Loss | Status |"
+    )
     print("|---|---|---|---|---|---|---|---|---|---|---|---|")
     for r in results:
-        vram_str = f"{r['peak_vram_gib']:.2f}" if r['peak_vram_gib'] else "N/A"
-        pct_str = f"{r['vram_util_pct']:.1f}%" if r['vram_util_pct'] else "N/A"
-        sec_str = f"{r['sec_per_step']:.3f}" if r['sec_per_step'] else "N/A"
-        steps_str = f"{r['steps_per_sec']:.3f}" if r['steps_per_sec'] else "N/A"
-        util_str = f"{r['avg_gpu_util_pct']:.1f}%" if r['avg_gpu_util_pct'] else "N/A"
-        temp_str = f"{r['max_gpu_temp_c']:.0f}°C" if r['max_gpu_temp_c'] else "N/A"
-        loss_str = f"{r['train_loss']:.4f}" if r['train_loss'] else "N/A"
-        print(f"| {r['candidate']} | {r['batch_size']} | {r['grad_accum']} | {r['effective_batch']} | {sec_str} | {steps_str} | {vram_str} | {pct_str} | {util_str} | {temp_str} | {loss_str} | {r['status']} |")
+        vram_str = f"{r['peak_vram_gib']:.2f}" if r["peak_vram_gib"] else "N/A"
+        pct_str = f"{r['vram_util_pct']:.1f}%" if r["vram_util_pct"] else "N/A"
+        sec_str = f"{r['sec_per_step']:.3f}" if r["sec_per_step"] else "N/A"
+        steps_str = f"{r['steps_per_sec']:.3f}" if r["steps_per_sec"] else "N/A"
+        util_str = f"{r['avg_gpu_util_pct']:.1f}%" if r["avg_gpu_util_pct"] else "N/A"
+        temp_str = f"{r['max_gpu_temp_c']:.0f}°C" if r["max_gpu_temp_c"] else "N/A"
+        loss_str = f"{r['train_loss']:.4f}" if r["train_loss"] else "N/A"
+        print(
+            f"| {r['candidate']} | {r['batch_size']} | {r['grad_accum']} | {r['effective_batch']} | {sec_str} | {steps_str} | {vram_str} | {pct_str} | {util_str} | {temp_str} | {loss_str} | {r['status']} |"
+        )
 
 
 if __name__ == "__main__":

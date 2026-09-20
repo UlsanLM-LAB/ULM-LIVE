@@ -85,7 +85,8 @@ dataset:
 
   # Split configuration
   split:
-    strategy: "speaker"  # "speaker" (disjoint speakers, prevents leakage) or "utterance"
+    # Known-speaker conditioning: hold out sessions/source clips, not speakers.
+    strategy: "session"
     train_ratio: 0.8
     val_ratio: 0.1
     test_ratio: 0.1

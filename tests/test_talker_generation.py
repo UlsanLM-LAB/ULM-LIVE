@@ -29,7 +29,9 @@ def test_greedy_generation_shape_and_range() -> None:
     spk = torch.tensor([0, 1])
     dia = torch.tensor([0, 0])
 
-    gen_cfg = TalkerGenerationConfig(max_new_tokens=15, do_sample=False)
+    gen_cfg = TalkerGenerationConfig(
+        max_new_tokens=15, do_sample=False, stop_threshold=2.0
+    )
     tokens = talker.generate(sem, spk, dia, generation_config=gen_cfg)
 
     assert tokens.ndim == 3
@@ -45,7 +47,9 @@ def test_deterministic_greedy_output() -> None:
     spk = torch.tensor([0])
     dia = torch.tensor([0])
 
-    gen_cfg = TalkerGenerationConfig(max_new_tokens=10, do_sample=False)
+    gen_cfg = TalkerGenerationConfig(
+        max_new_tokens=10, do_sample=False, stop_threshold=2.0
+    )
     tokens1 = talker.generate(sem, spk, dia, generation_config=gen_cfg)
     tokens2 = talker.generate(sem, spk, dia, generation_config=gen_cfg)
 
@@ -64,6 +68,7 @@ def test_stochastic_sampling() -> None:
         temperature=0.8,
         top_k=50,
         top_p=0.9,
+        stop_threshold=2.0,
     )
     tokens = talker.generate(sem, spk, dia, generation_config=gen_cfg)
     assert tokens.shape == (1, 8, 12)
@@ -77,7 +82,9 @@ def test_max_audio_seconds_conversion() -> None:
     dia = torch.tensor([0])
 
     # 2.0s at 12.5 Hz = 25 frames
-    gen_cfg = TalkerGenerationConfig(max_new_tokens=100, max_audio_seconds=2.0)
+    gen_cfg = TalkerGenerationConfig(
+        max_new_tokens=100, max_audio_seconds=2.0, stop_threshold=2.0
+    )
     tokens = talker.generate(sem, spk, dia, generation_config=gen_cfg, frame_rate=12.5)
     assert tokens.shape[-1] == 25
 
@@ -85,17 +92,33 @@ def test_max_audio_seconds_conversion() -> None:
 def test_speaker_and_dialect_conditioning_in_generation() -> None:
     talker = get_test_talker()
     sem = torch.randn(1, 4, talker.config.semantic_dim)
-    gen_cfg = TalkerGenerationConfig(max_new_tokens=10, do_sample=False)
+    gen_cfg = TalkerGenerationConfig(
+        max_new_tokens=10, do_sample=False, stop_threshold=2.0
+    )
 
     # Different speaker
-    t_spk0 = talker.generate(sem, torch.tensor([0]), torch.tensor([0]), generation_config=gen_cfg)
-    t_spk1 = talker.generate(sem, torch.tensor([1]), torch.tensor([0]), generation_config=gen_cfg)
-    assert not torch.equal(t_spk0, t_spk1)
+    t_spk0 = talker.generate(
+        sem, torch.tensor([0]), torch.tensor([0]), generation_config=gen_cfg
+    )
+    t_spk1 = talker.generate(
+        sem, torch.tensor([1]), torch.tensor([0]), generation_config=gen_cfg
+    )
+    assert not torch.allclose(
+        talker.condition(torch.tensor([0]), torch.tensor([0])),
+        talker.condition(torch.tensor([1]), torch.tensor([0])),
+    )
 
     # Different dialect
-    t_dia0 = talker.generate(sem, torch.tensor([0]), torch.tensor([0]), generation_config=gen_cfg)
-    t_dia1 = talker.generate(sem, torch.tensor([0]), torch.tensor([1]), generation_config=gen_cfg)
-    assert not torch.equal(t_dia0, t_dia1)
+    t_dia0 = talker.generate(
+        sem, torch.tensor([0]), torch.tensor([0]), generation_config=gen_cfg
+    )
+    t_dia1 = talker.generate(
+        sem, torch.tensor([0]), torch.tensor([1]), generation_config=gen_cfg
+    )
+    assert not torch.allclose(
+        talker.condition(torch.tensor([0]), torch.tensor([0])),
+        talker.condition(torch.tensor([0]), torch.tensor([1])),
+    )
 
 
 def test_invalid_conditioning_raises_error() -> None:

@@ -11,15 +11,15 @@
 - [x] 울산 방언 화자 판별 및 필터링 엔진 (`RegionClassifier`, `FieldMatcher`)
 - [x] 오디오 세그멘테이션 및 24kHz 모노 정규화 (`AudioSegmenter`)
 - [x] 품질 게이트 (`QualityFilter`: 지속시간, RMS 침묵 비율, 샘플레이트, 텍스트 정제)
-- [x] Manifest 직렬화 및 Speaker-disjoint split (`manifest.jsonl`, `summary.json`)
+- [x] Canonical manifest + known-speaker session/source-clip-disjoint derived splits
 - [x] 선택적 신경망 코덱 인코딩 (`--encode-codec` -> `.pt`)
 
 ## 3. Phase 3 완료 내역: ULM Thinker Adapter & Talker Prototype & Tensor Flow (Forward → Loss → Backward)
 - [x] ULM Thinker Adapter (`ulm_live/thinker/adapter.py`, `scripts/inspect_thinker.py`)
 - [x] Speaker / Dialect Conditioning (`nn.Embedding` + Additive Linear Projection)
-- [x] Talker Causal Transformer Backbone (`ulm_live/talker/model.py`, ~88.34M params)
-- [x] Codec Token Prediction Head (32개 독립 선형 헤드 per codebook)
-- [x] Training Dataset & Collator (`ulm_live/talker/data.py`, teacher-forcing shift-by-1)
+- [x] Cached Temporal Transformer + RVQ Depth Transformer
+- [x] Conditional depth prediction (`q0 → q1 → ...`) for 8/16/32 codebooks
+- [x] BOS-aligned Dataset/Collator (`[BOS]+codes[:-1] → codes`) and learned stop labels
 - [x] Dry-run forward & backward 파이프라인 검증 (`scripts/test_talker_forward.py`, `scripts/train_talker.py`)
 - [x] Thinker-Talker 아키텍처 문서화 (`docs/architecture.md`)
 
@@ -75,11 +75,12 @@ Generated WAV File (outputs/generated.wav)
   - `tests/test_talker_generation.py`: greedy, sampling, max tokens, output shape, token range, deterministic behavior
   - `tests/test_speech_synthesizer.py`: checkpoint save/load, synthesizer pipeline, WAV finite value / duration validation
 - [x] **Docs & Architecture Record**:
-  - `docs/architecture.md`: 훈련(Training)과 추론(Generation)의 차이, 자기회귀 코덱 생성 원리, 디코더 결합, 미학습/학습 모델 차이, 향후 KV-cache TODO 문서화
+  - `docs/architecture.md`: training/generation, codec decode, untrained quality limits, and implemented KV cache
   - `README.md`: Phase 4 로드맵 갱신 및 `generate_audio.py` 실행 가이드 추가
 
 ## 5. Phase 5 로드맵 (Next Steps)
 - Talker 모델 사전학습 및 사투리 억양 파인튜닝
-- Causal KV-cache를 통한 생성 지연시간 및 연산량 최적화
+- [x] Temporal causal K/V cache and full-recompute equivalence tests
+- [ ] Mimi streaming decoder state integration
 - Mimi streaming decoder 연동 청크 단위 실시간 오디오 송출
 - WebSocket full-duplex 실시간 양방향 음성 대화 서버 구축

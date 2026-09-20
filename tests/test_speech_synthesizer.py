@@ -43,7 +43,9 @@ class MockCodec(AudioCodec):
     def to(self, device: torch.device | str) -> "MockCodec":
         return self
 
-    def encode(self, waveform: torch.Tensor, sample_rate: int, **kwargs: Any) -> EncodedAudio:
+    def encode(
+        self, waveform: torch.Tensor, sample_rate: int, **kwargs: Any
+    ) -> EncodedAudio:
         T = max(1, waveform.shape[-1] // 1920)
         codes = torch.zeros((1, 8, T), dtype=torch.long)
         return EncodedAudio(codes=codes, sample_rate=24000, frame_rate=12.5)
@@ -102,7 +104,7 @@ def test_synthesizer_from_hidden_with_mock_codec(tmp_path: Path) -> None:
     )
 
     sem = torch.randn(1, 4, 128)
-    gen_cfg = TalkerGenerationConfig(max_new_tokens=10)
+    gen_cfg = TalkerGenerationConfig(max_new_tokens=10, stop_threshold=2.0)
     result = synthesizer.synthesize_from_hidden(sem, generation_config=gen_cfg)
 
     assert isinstance(result, SpeechGenerationResult)
@@ -138,7 +140,7 @@ def test_real_speech_synthesizer_with_mimi(tmp_path: Path) -> None:
         talker_dim=128,
         num_layers=2,
         num_heads=4,
-        num_quantizers=codec.num_quantizers, # 32
+        num_quantizers=codec.num_quantizers,  # 32
         codebook_size=2048,
     )
     talker = ULMTalker(cfg)
@@ -151,7 +153,7 @@ def test_real_speech_synthesizer_with_mimi(tmp_path: Path) -> None:
     )
 
     sem = torch.randn(1, 4, 256)
-    gen_cfg = TalkerGenerationConfig(max_new_tokens=13) # ~1.04s
+    gen_cfg = TalkerGenerationConfig(max_new_tokens=13)  # ~1.04s
     result = synthesizer.synthesize_from_hidden(sem, generation_config=gen_cfg)
 
     assert result.sample_rate == 24000

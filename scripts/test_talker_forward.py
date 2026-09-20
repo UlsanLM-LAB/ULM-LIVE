@@ -25,11 +25,16 @@ def parse_args() -> argparse.Namespace:
         help="Path to talker configuration YAML.",
     )
     parser.add_argument(
+        "--allow-synthetic-thinker",
+        action="store_true",
+        help="Explicitly use random semantics for this architecture-only test.",
+    )
+    parser.add_argument(
         "--thinker",
         "-t",
         type=str,
         default=None,
-        help="Path or identifier for ULM Thinker model (optional). If omitted, uses synthetic hidden states.",
+        help="Path or identifier for ULM Thinker model.",
     )
     parser.add_argument(
         "--device",
@@ -81,18 +86,28 @@ def main() -> None:
             tokens = thinker.tokenize(sample_prompts)
             semantic_hidden = thinker.forward_hidden(
                 tokens["input_ids"], attention_mask=tokens.get("attention_mask")
-            ).float()
+            )
         except Exception as err:
-            print(f"Warning: Could not load Thinker '{args.thinker}' ({err}). Using synthetic hidden states.", file=sys.stderr)
-            semantic_hidden = torch.randn(batch_size, 8, config.semantic_dim, device=device)
+            raise RuntimeError(
+                f"Failed to load requested Thinker '{args.thinker}': {err}"
+            ) from err
     else:
-        # Synthetic semantic hidden states
+        if not args.allow_synthetic_thinker:
+            raise ValueError(
+                "Pass --thinker or explicitly opt in with --allow-synthetic-thinker"
+            )
         semantic_hidden = torch.randn(batch_size, 8, config.semantic_dim, device=device)
 
     # 4. Prepare audio codes, targets, and conditioning IDs
-    audio_codes = torch.randint(0, config.codebook_size, (batch_size, K, num_audio_frames), device=device)
-    targets = torch.randint(0, config.codebook_size, (batch_size, K, num_audio_frames), device=device)
-    speaker_ids = torch.tensor([0, 1 % config.num_speakers], dtype=torch.long, device=device)
+    targets = torch.randint(
+        0, config.codebook_size, (batch_size, K, num_audio_frames), device=device
+    )
+    audio_codes = torch.full_like(targets, config.pad_token_id)
+    audio_codes[:, :, 0] = config.bos_token_id
+    audio_codes[:, :, 1:] = targets[:, :, :-1]
+    speaker_ids = torch.tensor(
+        [0, 1 % config.num_speakers], dtype=torch.long, device=device
+    )
     dialect_ids = torch.tensor([0, 0], dtype=torch.long, device=device)
 
     # 5. Forward Pass
@@ -102,6 +117,10 @@ def main() -> None:
         speaker_ids=speaker_ids,
         dialect_ids=dialect_ids,
         targets=targets,
+        stop_targets=torch.cat(
+            (torch.zeros(batch_size, num_audio_frames - 1), torch.ones(batch_size, 1)),
+            dim=1,
+        ).to(device),
     )
 
     # 6. Backward Pass

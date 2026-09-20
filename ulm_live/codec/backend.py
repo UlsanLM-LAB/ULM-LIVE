@@ -21,7 +21,7 @@ def _resolve_device(device: str | torch.device) -> torch.device:
 
 class MimiCodec(AudioCodec):
     """Neural audio codec backed by Kyutai's Mimi model.
-    
+
     Provides 12.5 Hz frame rate representation optimized for Spoken Language Models.
     """
 
@@ -115,7 +115,9 @@ class MimiCodec(AudioCodec):
         elif waveform.ndim == 3:
             wav = waveform
         else:
-            raise ValueError(f"Expected waveform rank 1, 2, or 3, got rank {waveform.ndim}")
+            raise ValueError(
+                f"Expected waveform rank 1, 2, or 3, got rank {waveform.ndim}"
+            )
 
         # Resample to 24kHz if needed
         if sample_rate != self.sample_rate:
@@ -128,6 +130,11 @@ class MimiCodec(AudioCodec):
         wav = wav.to(device=self._target_device, dtype=torch.float32)
 
         nq = num_quantizers if num_quantizers is not None else self.num_quantizers
+        available = int(getattr(self.model.config, "num_quantizers", 32))
+        if nq not in (8, 16, 32):
+            raise ValueError("Mimi num_quantizers must be one of 8, 16, or 32")
+        if nq > available:
+            raise ValueError(f"requested {nq} quantizers but Mimi exposes {available}")
 
         with torch.no_grad():
             encoder_output = self.model.encode(wav, num_quantizers=nq, **kwargs)
@@ -162,7 +169,9 @@ class MimiCodec(AudioCodec):
         elif isinstance(encoded, torch.Tensor):
             codes = encoded.to(device=self._target_device)
         else:
-            raise TypeError(f"Expected EncodedAudio or torch.Tensor, got {type(encoded)}")
+            raise TypeError(
+                f"Expected EncodedAudio or torch.Tensor, got {type(encoded)}"
+            )
 
         if codes.ndim == 2:
             codes = codes.unsqueeze(0)
@@ -170,6 +179,17 @@ class MimiCodec(AudioCodec):
             raise ValueError(
                 f"Expected codes of shape (batch, quantizers, frames) or (quantizers, frames), got {tuple(codes.shape)}"
             )
+
+        # Mimi's vocabulary contains only real codec IDs. Talker PAD/BOS must
+        # be removed by the caller, never interpreted as acoustic tokens.
+        if (
+            codes.numel() == 0
+            or not torch.is_floating_point(codes)
+            and torch.any((codes < 0) | (codes >= 2048))
+        ):
+            raise ValueError("Mimi decode accepts only real codec tokens in [0, 2047]")
+        if torch.is_floating_point(codes):
+            raise TypeError("Mimi codec tokens must be an integer tensor")
 
         with torch.no_grad():
             decoder_output = self.model.decode(codes, **kwargs)
@@ -201,7 +221,9 @@ def build_codec(
     if target_backend == "mimi":
         model_id = kwargs.get("model_id", config.get("model_id", "kyutai/mimi"))
         device = kwargs.get("device", config.get("device", "auto"))
-        num_quantizers = kwargs.get("num_quantizers", config.get("num_quantizers", None))
+        num_quantizers = kwargs.get(
+            "num_quantizers", config.get("num_quantizers", None)
+        )
         load_pretrained = kwargs.get("load_pretrained", True)
         return MimiCodec(
             model_id=model_id,
@@ -210,4 +232,6 @@ def build_codec(
             load_pretrained=load_pretrained,
         )
 
-    raise ValueError(f"Unknown codec backend: '{target_backend}'. Available backends: ['mimi']")
+    raise ValueError(
+        f"Unknown codec backend: '{target_backend}'. Available backends: ['mimi']"
+    )

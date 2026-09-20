@@ -48,7 +48,11 @@ def parse_args() -> argparse.Namespace:
 
 def main() -> None:
     args = parse_args()
-    device = "cuda" if args.device == "auto" and torch.cuda.is_available() else (args.device if args.device != "auto" else "cpu")
+    device = (
+        "cuda"
+        if args.device == "auto" and torch.cuda.is_available()
+        else (args.device if args.device != "auto" else "cpu")
+    )
 
     print("=== Testing Talker Generation & Codec Decode Pipeline ===")
     print(f"Device: {device}")
@@ -79,9 +83,13 @@ def main() -> None:
     B = 1
     S = 8
     synthetic_semantic = torch.randn(B, S, cfg.semantic_dim, device=device)
-    gen_cfg = TalkerGenerationConfig(max_new_tokens=args.max_tokens, do_sample=False)
+    gen_cfg = TalkerGenerationConfig(
+        max_new_tokens=args.max_tokens, do_sample=False, stop_threshold=2.0
+    )
 
-    print(f"Generating {args.max_tokens} codec frames from synthetic semantic states...")
+    print(
+        f"Generating {args.max_tokens} codec frames from synthetic semantic states..."
+    )
     result = synthesizer.synthesize_from_hidden(
         synthetic_semantic,
         speaker_id=0,

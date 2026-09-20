@@ -105,15 +105,18 @@ Forward Hidden Test:
 
 ---
 
-## ULM Talker Prototype
+## ULM Talker (pre-full-training architecture)
 
-Talker는 Thinker의 semantic hidden state를 prefix conditioning으로 입력받고, 화자(`speaker_id`) 및 방언(`dialect`) 임베딩을 결합하여 오디오 코덱 토큰을 자기회귀적으로 예측합니다.
+Talker는 Thinker hidden state를 prefix conditioning으로 받고, cached Temporal Transformer와 RVQ Depth Transformer (`q0 → q1 → …`)로 Mimi 토큰을 예측합니다. BOS/PAD, learned stop, semantic padding mask, 8/16/32 quantizer, acoustic delay 실험을 지원합니다. 아직 본격 Talker 학습 및 음질 검증은 수행되지 않았습니다.
+
+현재 기본 16-quantizer 구성은 40,706,817 parameters입니다 (8q: 32,307,969; 32q: 57,504,513). 16q breakdown은 semantic projection 1,049,088, speaker/dialect 133,120, temporal 19,963,904, depth 1,715,456, codec embeddings 17,318,144, shared codec output 526,336, stop head 513, 기타 256입니다. 이전 32-independent-head prototype은 88,336,896 parameters였으며 해당 체크포인트는 호환되지 않습니다.
 
 ### 1. Dry-Run Forward and Backward Test
 
 ```bash
-# Synthetic semantic states test
-python scripts/test_talker_forward.py
+# Synthetic states are architecture tests only (never production training).
+python scripts/train_talker.py --manifest tests/fixtures/manifest.jsonl \
+  --allow-synthetic-thinker --dry-run
 
 # Integration test with actual ULM Thinker
 python scripts/test_talker_forward.py --thinker Qwen/Qwen3-1.7B
@@ -128,7 +131,7 @@ Speaker ids:           [0, 1]
 Dialect ids:           [0, 0]
 
 Talker:
-Parameters:            88,336,896 (88.34M)
+Parameters:            see the current parameter breakdown below
 Hidden size:           512
 Layers:                6
 Heads:                 8
@@ -148,6 +151,19 @@ python scripts/train_talker.py \
   --thinker Qwen/Qwen3-1.7B \
   --dry-run
 ```
+
+Cache-first training avoids forwarding the frozen 1.7B Thinker every epoch:
+
+```bash
+python scripts/cache_thinker_hidden.py \
+  --manifest data/ulsan/train.jsonl --thinker /path/to/compatible-thinker \
+  --output-dir data/ulsan/semantic_cache --output-manifest data/ulsan/train.cached.jsonl
+
+python scripts/train_talker.py --manifest data/ulsan/train.cached.jsonl \
+  --semantic-cache-thinker /path/to/compatible-thinker --bf16
+```
+
+The default split is session/source-clip disjoint while retaining every validation/test speaker in train, because current conditioning uses learned speaker IDs. Zero-shot voice cloning is not implemented. See [architecture details](docs/architecture.md).
 
 ---
 

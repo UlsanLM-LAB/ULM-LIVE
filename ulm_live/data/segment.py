@@ -1,5 +1,4 @@
 from pathlib import Path
-from typing import Any
 import torch
 
 from ulm_live.codec import AudioCodec
@@ -98,7 +97,9 @@ class AudioSegmenter:
             (DatasetItem, None) on success, or (None, rejection_reason) on failure/skip.
         """
         # 1. Text validation & cleaning
-        text_valid, cleaned_text, text_reason = self.quality_filter.validate_text(utterance.text)
+        text_valid, cleaned_text, text_reason = self.quality_filter.validate_text(
+            utterance.text
+        )
         if not text_valid:
             return None, text_reason
 
@@ -114,15 +115,17 @@ class AudioSegmenter:
             return None, "empty_audio_segment"
 
         # 4. Validate audio segment quality before heavy processing
-        audio_valid, orig_dur, silence_ratio, audio_reason = self.quality_filter.validate_audio(
-            segment, orig_sr
+        audio_valid, orig_dur, silence_ratio, audio_reason = (
+            self.quality_filter.validate_audio(segment, orig_sr)
         )
         if not audio_valid:
             return None, audio_reason
 
         # 5. Convert to mono, resample to target sample rate, peak normalize
         mono_segment = to_mono(segment)
-        resampled_segment = resample_audio(mono_segment, orig_sr, self.target_sample_rate)
+        resampled_segment = resample_audio(
+            mono_segment, orig_sr, self.target_sample_rate
+        )
         normalized_segment = peak_normalize(resampled_segment, target_peak=0.95)
 
         # 6. Save processed WAV
@@ -131,7 +134,12 @@ class AudioSegmenter:
         rel_wav_path = f"audio/{out_wav_filename}"
 
         try:
-            save_wav(out_wav_path, normalized_segment, self.target_sample_rate, encoding="pcm_16")
+            save_wav(
+                out_wav_path,
+                normalized_segment,
+                self.target_sample_rate,
+                encoding="pcm_16",
+            )
         except Exception as err:
             return None, f"save_failed: {err}"
 
@@ -143,7 +151,9 @@ class AudioSegmenter:
             out_codec_filename = f"{item_id}.pt"
             out_codec_path = self.codec_dir / out_codec_filename
             try:
-                encoded = self.codec.encode(normalized_segment, sample_rate=self.target_sample_rate)
+                encoded = self.codec.encode(
+                    normalized_segment, sample_rate=self.target_sample_rate
+                )
                 # Store discrete RVQ tokens tensor: shape (batch, quantizers, frames)
                 torch.save(encoded.codes.detach().cpu(), out_codec_path)
                 rel_codec_path = f"codec/{out_codec_filename}"
@@ -161,6 +171,9 @@ class AudioSegmenter:
             source="aihub",
             standard_text=utterance.standard_text,
             codec_path=rel_codec_path,
+            utterance_id=utterance.utterance_id,
+            session_id=source_audio_path.stem,
+            source_audio_id=source_audio_path.stem,
             metadata={
                 "orig_sample_rate": orig_sr,
                 "orig_duration": round(orig_dur, 3),

@@ -1,4 +1,4 @@
-from dataclasses import asdict, dataclass, field
+from dataclasses import dataclass, field
 from typing import Any
 
 
@@ -49,6 +49,10 @@ class DatasetItem:
     source: str = "aihub"
     standard_text: str | None = None
     codec_path: str | None = None
+    utterance_id: str | None = None
+    session_id: str | None = None
+    source_audio_id: str | None = None
+    semantic_path: str | None = None
     metadata: dict[str, Any] = field(default_factory=dict)
 
     def to_dict(self) -> dict[str, Any]:
@@ -67,6 +71,10 @@ class DatasetItem:
             data["standard_text"] = self.standard_text
         if self.codec_path is not None:
             data["codec_path"] = self.codec_path
+        for name in ("utterance_id", "session_id", "source_audio_id", "semantic_path"):
+            value = getattr(self, name)
+            if value is not None:
+                data[name] = value
         if self.metadata:
             data["metadata"] = self.metadata
         return data

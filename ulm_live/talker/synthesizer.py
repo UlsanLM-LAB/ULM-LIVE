@@ -1,12 +1,12 @@
 from dataclasses import dataclass
 from pathlib import Path
 import time
-from typing import Any
 import torch
 
 from ulm_live.codec import AudioCodec, EncodedAudio
 from ulm_live.talker.generator import TalkerGenerationConfig
 from ulm_live.talker.model import ULMTalker
+from ulm_live.talker.data import remove_acoustic_delay
 from ulm_live.thinker import ULMThinker
 from ulm_live.utils.audio import get_duration, save_wav
 
@@ -73,8 +73,8 @@ class SpeechSynthesizer:
 
         # 1. Talker Generation
         t_talker_0 = time.perf_counter()
-        spk_tensor = torch.tensor([speaker_id % self.talker.config.num_speakers], dtype=torch.long, device=self.device)
-        dia_tensor = torch.tensor([dialect_id % self.talker.config.num_dialects], dtype=torch.long, device=self.device)
+        spk_tensor = torch.tensor([speaker_id], dtype=torch.long, device=self.device)
+        dia_tensor = torch.tensor([dialect_id], dtype=torch.long, device=self.device)
 
         with torch.no_grad():
             codes = self.talker.generate(
@@ -88,8 +88,15 @@ class SpeechSynthesizer:
 
         # 2. Codec Decoding
         t_decode_0 = time.perf_counter()
+        decode_codes = remove_acoustic_delay(
+            codes, self.talker.config.acoustic_delay_frames
+        )
+        if torch.any(
+            (decode_codes < 0) | (decode_codes >= self.talker.config.codebook_size)
+        ):
+            raise ValueError("BOS/PAD cannot be passed to Mimi decode")
         encoded = EncodedAudio(
-            codes=codes,
+            codes=decode_codes,
             sample_rate=self.codec.sample_rate,
             frame_rate=self.codec.frame_rate,
             metadata={"backend": self.codec.backend_name},
@@ -148,7 +155,7 @@ class SpeechSynthesizer:
         with torch.no_grad():
             hidden = self.thinker.forward_hidden(
                 inputs["input_ids"], attention_mask=inputs.get("attention_mask")
-            ).float()
+            )
         t_thinker = time.perf_counter() - t_thinker_0
 
         # 2. Lookup IDs

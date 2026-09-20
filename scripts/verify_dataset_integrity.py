@@ -12,7 +12,7 @@ import soundfile as sf
 
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(
-        description="Verify dataset integrity, codec tokens, audio files, and speaker disjointness."
+        description="Verify files, codec tokens, known-speaker splits, and leakage groups."
     )
     parser.add_argument(
         "--dataset-dir",
@@ -20,6 +20,7 @@ def parse_args() -> argparse.Namespace:
         required=True,
         help="Path to processed dataset directory (e.g., data/ulsan-smoke or data/ulsan).",
     )
+    parser.add_argument("--num-quantizers", type=int, choices=(8, 16, 32), default=32)
     parser.add_argument(
         "--strict",
         action="store_true",
@@ -29,7 +30,9 @@ def parse_args() -> argparse.Namespace:
     return parser.parse_args()
 
 
-def verify_dataset(dataset_dir: Path, strict: bool = True) -> dict:
+def verify_dataset(
+    dataset_dir: Path, strict: bool = True, num_quantizers: int = 32
+) -> dict:
     manifest_path = dataset_dir / "manifest.jsonl"
     train_path = dataset_dir / "train.jsonl"
     val_path = dataset_dir / "val.jsonl"
@@ -77,7 +80,11 @@ def verify_dataset(dataset_dir: Path, strict: bool = True) -> dict:
         if not audio_rel:
             missing_wav += 1
         else:
-            audio_full = dataset_dir / audio_rel if not Path(audio_rel).is_absolute() else Path(audio_rel)
+            audio_full = (
+                dataset_dir / audio_rel
+                if not Path(audio_rel).is_absolute()
+                else Path(audio_rel)
+            )
             if not audio_full.is_file():
                 missing_wav += 1
             else:
@@ -94,12 +101,18 @@ def verify_dataset(dataset_dir: Path, strict: bool = True) -> dict:
         if not codec_rel:
             missing_codec += 1
         else:
-            codec_full = dataset_dir / codec_rel if not Path(codec_rel).is_absolute() else Path(codec_rel)
+            codec_full = (
+                dataset_dir / codec_rel
+                if not Path(codec_rel).is_absolute()
+                else Path(codec_rel)
+            )
             if not codec_full.is_file():
                 missing_codec += 1
             else:
                 try:
-                    tokens = torch.load(codec_full, map_location="cpu", weights_only=True)
+                    tokens = torch.load(
+                        codec_full, map_location="cpu", weights_only=True
+                    )
                     if not isinstance(tokens, torch.Tensor):
                         invalid_codec += 1
                         continue
@@ -114,7 +127,7 @@ def verify_dataset(dataset_dir: Path, strict: bool = True) -> dict:
 
                     k, t = tokens.shape
                     codebook_counts.add(k)
-                    if k != 32 or t <= 0:
+                    if k < num_quantizers or t <= 0:
                         invalid_codec += 1
                         continue
 
@@ -134,17 +147,20 @@ def verify_dataset(dataset_dir: Path, strict: bool = True) -> dict:
                         continue
 
                 except Exception as err:
-                    print(f"Error loading codec token {codec_full}: {err}", file=sys.stderr)
+                    print(
+                        f"Error loading codec token {codec_full}: {err}",
+                        file=sys.stderr,
+                    )
                     invalid_codec += 1
 
         if idx % 500 == 0 or idx == total_samples:
             print(f"  Verified [{idx}/{total_samples}] items...")
 
     # 2. Check splits and speaker disjointness
-    def get_speakers_from_split(path: Path) -> tuple[set[str], int, float]:
+    def get_split(path: Path):
         if not path.is_file():
-            return set(), 0, 0.0
-        spks = set()
+            return set(), set(), set(), 0, 0.0
+        spks, identities, groups = set(), set(), set()
         count = 0
         dur = 0.0
         with open(path, "r", encoding="utf-8") as f:
@@ -152,18 +168,29 @@ def verify_dataset(dataset_dir: Path, strict: bool = True) -> dict:
                 if l.strip():
                     obj = json.loads(l)
                     spks.add(obj.get("speaker_id", ""))
+                    identity = str(obj.get("utterance_id") or obj.get("id") or "")
+                    group = str(
+                        obj.get("session_id") or obj.get("source_audio_id") or identity
+                    )
+                    identities.add(identity)
+                    groups.add(group)
                     count += 1
                     dur += float(obj.get("duration", 0.0))
-        return spks, count, dur
+        return spks, identities, groups, count, dur
 
-    train_spks, train_cnt, train_dur = get_speakers_from_split(train_path)
-    val_spks, val_cnt, val_dur = get_speakers_from_split(val_path)
-    test_spks, test_cnt, test_dur = get_speakers_from_split(test_path)
-
-    leak_train_val = train_spks & val_spks
-    leak_train_test = train_spks & test_spks
-    leak_val_test = val_spks & test_spks
-    total_leakage = len(leak_train_val) + len(leak_train_test) + len(leak_val_test)
+    train_spks, train_ids, train_groups, train_cnt, train_dur = get_split(train_path)
+    val_spks, val_ids, val_groups, val_cnt, val_dur = get_split(val_path)
+    test_spks, test_ids, test_groups, test_cnt, test_dur = get_split(test_path)
+    unknown_eval_speakers = (val_spks | test_spks) - train_spks
+    identity_leakage = (
+        (train_ids & val_ids) | (train_ids & test_ids) | (val_ids & test_ids)
+    )
+    group_leakage = (
+        (train_groups & val_groups)
+        | (train_groups & test_groups)
+        | (val_groups & test_groups)
+    )
+    total_leakage = len(identity_leakage | group_leakage)
 
     results = {
         "dataset_dir": str(dataset_dir),
@@ -178,11 +205,24 @@ def verify_dataset(dataset_dir: Path, strict: bool = True) -> dict:
         "codebook_dimensions": list(codebook_counts),
         "token_min": token_min_val if token_min_val != float("inf") else None,
         "token_max": token_max_val if token_max_val != float("-inf") else None,
-        "speaker_leakage": total_leakage,
+        "split_leakage": total_leakage,
+        "unknown_eval_speakers": sorted(unknown_eval_speakers),
         "splits": {
-            "train": {"samples": train_cnt, "speakers": len(train_spks), "hours": round(train_dur / 3600.0, 3)},
-            "val": {"samples": val_cnt, "speakers": len(val_spks), "hours": round(val_dur / 3600.0, 3)},
-            "test": {"samples": test_cnt, "speakers": len(test_spks), "hours": round(test_dur / 3600.0, 3)},
+            "train": {
+                "samples": train_cnt,
+                "speakers": len(train_spks),
+                "hours": round(train_dur / 3600.0, 3),
+            },
+            "val": {
+                "samples": val_cnt,
+                "speakers": len(val_spks),
+                "hours": round(val_dur / 3600.0, 3),
+            },
+            "test": {
+                "samples": test_cnt,
+                "speakers": len(test_spks),
+                "hours": round(test_dur / 3600.0, 3),
+            },
         },
     }
 
@@ -197,10 +237,13 @@ def verify_dataset(dataset_dir: Path, strict: bool = True) -> dict:
     print(f"Empty Text:        {empty_text}")
     print(f"Codebook Dims:     {results['codebook_dimensions']}")
     print(f"Token Range:       [{results['token_min']}, {results['token_max']}]")
-    print(f"Speaker Leakage:   {total_leakage} (train∩val: {len(leak_train_val)}, train∩test: {len(leak_train_test)}, val∩test: {len(leak_val_test)})")
+    print(f"Utterance/session leakage: {total_leakage}")
+    print(f"Eval speakers absent from train: {len(unknown_eval_speakers)}")
     print(f"Splits:")
     for s_name, s_info in results["splits"].items():
-        print(f"  - {s_name:5s}: {s_info['samples']:5d} samples | {s_info['speakers']:3d} speakers | {s_info['hours']:.3f} h")
+        print(
+            f"  - {s_name:5s}: {s_info['samples']:5d} samples | {s_info['speakers']:3d} speakers | {s_info['hours']:.3f} h"
+        )
 
     if strict:
         errors = []
@@ -215,11 +258,23 @@ def verify_dataset(dataset_dir: Path, strict: bool = True) -> dict:
         if empty_text > 0:
             errors.append(f"Empty text samples: {empty_text}")
         if total_leakage > 0:
-            errors.append(f"Speaker leakage across splits: {total_leakage}")
-        if results["codebook_dimensions"] != [32]:
-            errors.append(f"Expected codebooks [32], got {results['codebook_dimensions']}")
-        if results["token_min"] is None or results["token_min"] < 0 or results["token_max"] >= 2048:
-            errors.append(f"Token values out of [0, 2047] range: [{results['token_min']}, {results['token_max']}]")
+            errors.append(f"Utterance/session leakage across splits: {total_leakage}")
+        if unknown_eval_speakers:
+            errors.append(
+                f"Validation/test speakers absent from train: {sorted(unknown_eval_speakers)}"
+            )
+        if any(k < num_quantizers for k in results["codebook_dimensions"]):
+            errors.append(
+                f"Need at least {num_quantizers} codebooks, got {results['codebook_dimensions']}"
+            )
+        if (
+            results["token_min"] is None
+            or results["token_min"] < 0
+            or results["token_max"] >= 2048
+        ):
+            errors.append(
+                f"Token values out of [0, 2047] range: [{results['token_min']}, {results['token_max']}]"
+            )
 
         if errors:
             print("\n❌ STRICT VERIFICATION FAILED:", file=sys.stderr)
@@ -227,7 +282,9 @@ def verify_dataset(dataset_dir: Path, strict: bool = True) -> dict:
                 print(f"  - {err}", file=sys.stderr)
             sys.exit(1)
         else:
-            print("\n✅ STRICT VERIFICATION PASSED: All integrity checks succeeded with 0 defects.")
+            print(
+                "\n✅ STRICT VERIFICATION PASSED: All integrity checks succeeded with 0 defects."
+            )
 
     return results
 
@@ -238,7 +295,7 @@ def main() -> None:
     if not dataset_path.is_dir():
         print(f"Error: dataset directory not found: {dataset_path}", file=sys.stderr)
         sys.exit(1)
-    verify_dataset(dataset_path, strict=args.strict)
+    verify_dataset(dataset_path, strict=args.strict, num_quantizers=args.num_quantizers)
 
 
 if __name__ == "__main__":

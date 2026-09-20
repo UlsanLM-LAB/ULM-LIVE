@@ -43,8 +43,20 @@ def test_talker_dataset_and_collator(tmp_path: Path) -> None:
     torch.save(torch.randint(0, 2048, (1, 8, 25)), codec_dir / "item2.pt")
 
     manifest = [
-        {"id": "item1", "text": "첫번째 문장", "codec_path": "codec/item1.pt", "speaker_id": "spk_01", "dialect": "ulsan"},
-        {"id": "item2", "text": "두번째 긴 문장입니다", "codec_path": "codec/item2.pt", "speaker_id": "spk_02", "dialect": "ulsan"},
+        {
+            "id": "item1",
+            "text": "첫번째 문장",
+            "codec_path": "codec/item1.pt",
+            "speaker_id": "spk_01",
+            "dialect": "ulsan",
+        },
+        {
+            "id": "item2",
+            "text": "두번째 긴 문장입니다",
+            "codec_path": "codec/item2.pt",
+            "speaker_id": "spk_02",
+            "dialect": "ulsan",
+        },
     ]
     m_path = tmp_path / "manifest.jsonl"
     with open(m_path, "w", encoding="utf-8") as f:
@@ -62,32 +74,48 @@ def test_talker_dataset_and_collator(tmp_path: Path) -> None:
     batch = collator([dataset[0], dataset[1]])
 
     # Verify batch collation
-    # Max T was 25 -> shifted len = 24
-    assert batch["audio_codes"].shape == (2, 8, 24)
-    assert batch["targets"].shape == (2, 8, 24)
+    # BOS alignment preserves all 25 real targets.
+    assert batch["audio_codes"].shape == (2, 8, 25)
+    assert batch["targets"].shape == (2, 8, 25)
     assert batch["speaker_ids"].shape == (2,)
     assert batch["dialect_ids"].shape == (2,)
 
-    # Verify padding occurred on item1 (original len 15 -> shifted 14, remaining 10 are PAD)
-    assert torch.all(batch["audio_codes"][0, :, 14:] == 2048)
-    assert torch.all(batch["targets"][0, :, 14:] == 2048)
+    assert torch.all(batch["audio_codes"][:, :, 0] == 2049)
+    assert torch.equal(batch["targets"][0, :, :15], dataset[0]["audio_codes"])
+    assert torch.all(batch["audio_codes"][0, :, 15:] == 2048)
+    assert torch.all(batch["targets"][0, :, 15:] == 2048)
 
 
 def test_talker_dataset_strict_codec_error(tmp_path: Path) -> None:
     manifest = [
-        {"id": "missing_codec", "text": "테스트", "codec_path": "codec/nonexistent.pt", "speaker_id": "spk_01", "dialect": "ulsan"},
+        {
+            "id": "missing_codec",
+            "text": "테스트",
+            "codec_path": "codec/nonexistent.pt",
+            "speaker_id": "spk_01",
+            "dialect": "ulsan",
+        },
     ]
     m_path = tmp_path / "manifest.jsonl"
     with open(m_path, "w", encoding="utf-8") as f:
         for it in manifest:
             f.write(json.dumps(it) + "\n")
 
-    # Non-strict mode should create dummy zero tensor
-    dataset_lenient = TalkerDataset(m_path, base_dir=tmp_path, num_quantizers=8, strict_codec=False)
-    item = dataset_lenient[0]
+    # Production never fabricates codec tensors, even if the legacy flag is false.
+    dataset_lenient = TalkerDataset(
+        m_path, base_dir=tmp_path, num_quantizers=8, strict_codec=False
+    )
+    with pytest.raises(FileNotFoundError):
+        _ = dataset_lenient[0]
+    dataset_debug = TalkerDataset(
+        m_path, base_dir=tmp_path, num_quantizers=8, allow_test_placeholders=True
+    )
+    item = dataset_debug[0]
     assert item["audio_codes"].shape == (8, 1)
 
     # Strict mode should raise RuntimeError
-    dataset_strict = TalkerDataset(m_path, base_dir=tmp_path, num_quantizers=8, strict_codec=True)
-    with pytest.raises(RuntimeError, match="Missing or invalid codec tokens"):
+    dataset_strict = TalkerDataset(
+        m_path, base_dir=tmp_path, num_quantizers=8, strict_codec=True
+    )
+    with pytest.raises(FileNotFoundError, match="missing codec tensor"):
         _ = dataset_strict[0]
