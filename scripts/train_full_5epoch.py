@@ -378,6 +378,8 @@ def main():
     print(f"Stop Loss Weight:  {args.stop_loss_weight}")
     print(f"Thinker Model:     {args.thinker}")
 
+    from ulm_live.talker.semantic_cache import thinker_fingerprint
+
     # 1. Config & Mappings
     config = TalkerConfig.from_yaml(args.config)
     config.stop_pos_weight = args.stop_pos_weight
@@ -392,11 +394,42 @@ def main():
     config.num_speakers = max(config.num_speakers, len(speaker2id))
     config.num_dialects = max(config.num_dialects, len(dialect2id))
 
-    # 2. Datasets
-    print("\n1. Loading datasets...")
-    train_dataset = TalkerDataset(manifest_p, config=config, speaker2id=speaker2id, dialect2id=dialect2id)
-    val_dataset = TalkerDataset(val_manifest_p, config=config, speaker2id=speaker2id, dialect2id=dialect2id)
-    collator = TalkerCollator(config=config)
+    # 2. Components: Thinker & Codec
+    print("\n1. Loading Thinker & Codec...")
+    thinker = ULMThinker(args.thinker, device=str(device), torch_dtype="bf16", freeze=True)
+    codec = build_codec(backend="mimi", device=str(device))
+
+    expected_cache = {
+        "thinker_id": args.thinker,
+        "thinker_fingerprint": thinker_fingerprint(args.thinker),
+        "hidden_layer": thinker.hidden_layer,
+    }
+
+    # 3. Datasets & Collator
+    print("2. Loading datasets...")
+    train_dataset = TalkerDataset(
+        manifest_p,
+        speaker2id=speaker2id,
+        dialect2id=dialect2id,
+        num_quantizers=config.num_quantizers,
+        cache_only=False,
+        semantic_cache_metadata=expected_cache,
+    )
+    val_dataset = TalkerDataset(
+        val_manifest_p,
+        speaker2id=speaker2id,
+        dialect2id=dialect2id,
+        num_quantizers=config.num_quantizers,
+        cache_only=False,
+        semantic_cache_metadata=expected_cache,
+    )
+    collator = TalkerCollator(
+        thinker.tokenizer,
+        config.pad_token_id,
+        config.bos_token_id,
+        config.max_seq_len,
+        acoustic_delay_frames=config.acoustic_delay_frames,
+    )
 
     micro_batches_per_epoch = math.ceil(len(train_dataset) / args.batch_size)
     steps_per_epoch = math.ceil(micro_batches_per_epoch / args.grad_accum)
@@ -408,17 +441,13 @@ def main():
     print(f"Optimizer steps/ep:{steps_per_epoch}")
     print(f"Total steps (5ep): {total_steps}")
 
-    # 3. Model & Optimizer
-    print("\n2. Initializing fresh ULMTalker & Optimizer...")
+    # 4. Model & Optimizer
+    print("\n3. Initializing fresh ULMTalker & Optimizer...")
     model = ULMTalker(config).to(device)
     optimizer = torch.optim.AdamW(model.parameters(), lr=args.lr, weight_decay=config.weight_decay)
     scheduler = build_scheduler(optimizer, total_steps, warmup_ratio=args.warmup_ratio)
     scaler = torch.amp.GradScaler(device.type, enabled=False)
 
-    # 4. Synthesizer Components (for continuous generation monitoring)
-    print("3. Loading Thinker & Codec for generation regression...")
-    thinker = ULMThinker(args.thinker, device=str(device), torch_dtype="bf16", freeze=True)
-    codec = build_codec(backend="mimi", device=str(device))
     synthesizer = SpeechSynthesizer(thinker=thinker, talker=model, codec=codec, device=str(device))
 
     test_representatives = select_representative_test_samples(test_manifest_p, count=20)
