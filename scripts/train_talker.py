@@ -131,7 +131,19 @@ def parse_args(argv=None):
         help="Compatibility flag; strict codec validation is always enabled",
     )
     p.add_argument("--save-steps", type=int, default=100)
+    p.add_argument(
+        "--save-at-steps",
+        type=str,
+        default=None,
+        help="Comma-separated list of explicit global steps to save checkpoint",
+    )
     p.add_argument("--eval-steps", type=int, default=100)
+    p.add_argument(
+        "--eval-at-steps",
+        type=str,
+        default=None,
+        help="Comma-separated list of explicit global steps to evaluate validation",
+    )
     p.add_argument("--stop-pos-weight", type=float, default=None, help="Positive class weight for stop loss")
     p.add_argument("--resume")
     p.add_argument("--device", default="auto")
@@ -465,6 +477,16 @@ def main(argv=None):
                 raise ValueError(f"resume argument mismatch for {key}")
     outdir = Path(args.output_dir)
     outdir.mkdir(parents=True, exist_ok=True)
+    save_at_steps = (
+        {int(x) for x in args.save_at_steps.split(",") if x.strip()}
+        if args.save_at_steps
+        else set()
+    )
+    eval_at_steps = (
+        {int(x) for x in args.eval_at_steps.split(",") if x.strip()}
+        if args.eval_at_steps
+        else set()
+    )
     optimizer.zero_grad()
     started = time.time()
     last_loss = None
@@ -528,7 +550,11 @@ def main(argv=None):
             if args.dry_run:
                 print(f"dry-run OK: loss={last_loss:.4f}")
                 return
-            if val is not None and global_step % args.eval_steps == 0:
+            should_eval = val is not None and (
+                (args.eval_steps and global_step % args.eval_steps == 0)
+                or global_step in eval_at_steps
+            )
+            if should_eval:
                 metrics = evaluate(
                     model,
                     loader_for(val, collator, args, epoch, False),
@@ -558,7 +584,10 @@ def main(argv=None):
                         training_args=vars(args),
                         best_validation=best,
                     )
-            if global_step % args.save_steps == 0:
+            should_save = (
+                args.save_steps and global_step % args.save_steps == 0
+            ) or global_step in save_at_steps
+            if should_save:
                 save_training_checkpoint(
                     outdir / f"checkpoint-{global_step}.pt",
                     model,
@@ -594,6 +623,22 @@ def main(argv=None):
         training_args=vars(args),
         best_validation=best,
     )
+    if global_step in save_at_steps:
+        save_training_checkpoint(
+            outdir / f"checkpoint-{global_step}.pt",
+            model,
+            optimizer,
+            scheduler,
+            scaler,
+            global_step=global_step,
+            epoch=run_epochs,
+            micro_batch_position=0,
+            accumulation_step=0,
+            speaker2id=speaker2id,
+            dialect2id=dialect2id,
+            training_args=vars(args),
+            best_validation=best,
+        )
     print(
         json.dumps(
             {
