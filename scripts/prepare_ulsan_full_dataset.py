@@ -169,8 +169,12 @@ def main() -> None:
 
         # Load session audio
         try:
-            waveform, orig_sr = torchaudio.load(str(audio_src))
-            # Convert to mono if multi-channel
+            data, orig_sr = sf.read(str(audio_src), dtype="float32")
+            waveform = torch.from_numpy(data)
+            if waveform.ndim == 1:
+                waveform = waveform.unsqueeze(0)
+            elif waveform.ndim == 2:
+                waveform = waveform.T
             if waveform.shape[0] > 1:
                 waveform = torch.mean(waveform, dim=0, keepdim=True)
         except Exception as err:
@@ -244,7 +248,7 @@ def main() -> None:
             out_filepath = audio_out_dir / out_filename
             rel_path = f"audio/{out_filename}"
 
-            torchaudio.save(str(out_filepath), seg_resampled, args.target_sr, encoding="PCM_S", bits_per_sample=16)
+            sf.write(str(out_filepath), seg_resampled.squeeze(0).numpy(), args.target_sr, subtype="PCM_16")
 
             if not out_filepath.is_file():
                 missing_processed_wav += 1

@@ -17,6 +17,7 @@ class TalkerGenerationConfig:
     min_audio_frames: int | None = None
     max_audio_frames: int | None = None
     return_lengths: bool = False
+    return_details: bool = False
 
 
 def top_k_top_p_filtering(
@@ -141,9 +142,12 @@ def generate_codec_tokens(
         produced.extend(initial_audio_codes.unbind(-1))
     finished = torch.zeros(b, dtype=torch.bool, device=current.device)
     lengths = torch.zeros(b, dtype=torch.long, device=current.device)
+    termination_reasons = ["MAX_FRAMES"] * b
+    max_stop_probs = torch.zeros(b, device=current.device)
     with torch.no_grad():
         while len(produced) < limit:
             tokens, stop_prob = model.step(state, current, cfg)
+            max_stop_probs = torch.maximum(max_stop_probs, stop_prob)
             tokens = torch.where(
                 finished[:, None],
                 torch.full_like(tokens, model.config.pad_token_id),
@@ -153,6 +157,8 @@ def generate_codec_tokens(
             current = tokens
             if len(produced) >= minimum:
                 newly_finished = (~finished) & (stop_prob >= threshold)
+                for idx_sample in newly_finished.nonzero().view(-1):
+                    termination_reasons[int(idx_sample.item())] = "STOP_PREDICTED"
                 lengths[newly_finished] = len(produced)
                 finished |= newly_finished
             if finished.all():
@@ -160,4 +166,6 @@ def generate_codec_tokens(
     model.train(was_training)
     lengths[~finished] = len(produced)
     tokens = torch.stack(produced, -1)
+    if cfg.return_details:
+        return tokens, lengths, termination_reasons, max_stop_probs
     return (tokens, lengths) if cfg.return_lengths else tokens

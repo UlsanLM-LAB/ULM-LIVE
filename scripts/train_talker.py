@@ -132,6 +132,7 @@ def parse_args(argv=None):
     )
     p.add_argument("--save-steps", type=int, default=100)
     p.add_argument("--eval-steps", type=int, default=100)
+    p.add_argument("--stop-pos-weight", type=float, default=None, help="Positive class weight for stop loss")
     p.add_argument("--resume")
     p.add_argument("--device", default="auto")
     p.add_argument("--fp16", action="store_true")
@@ -185,6 +186,7 @@ def evaluate(
             "mean_residual_ce",
         )
     }
+    tp_total = fp_total = fn_total = tn_total = 0
     n = 0
     with torch.no_grad():
         for i, batch in enumerate(loader):
@@ -206,13 +208,23 @@ def evaluate(
             }
             out = talker(sem, semantic_attention_mask=sm, **kw)
             valid = kw["stop_targets"] >= 0
-            pred = out.stop_logits >= 0
-            target = kw["stop_targets"].bool()
+            pred = (torch.sigmoid(out.stop_logits) >= talker.config.stop_threshold) & valid
+            target = (kw["stop_targets"] == 1) & valid
+
+            tp = (pred & target).sum().item()
+            fp = (pred & (~target & valid)).sum().item()
+            fn = (~pred & target).sum().item()
+            tn = (~pred & (~target & valid)).sum().item()
+            tp_total += tp
+            fp_total += fp
+            fn_total += fn
+            tn_total += tn
+
             sums["total_loss"] += out.loss.item()
             sums["codec_loss"] += out.codec_loss.item()
             sums["stop_loss"] += out.stop_loss.item()
             sums["stop_accuracy"] += (
-                (pred[valid] == target[valid]).float().mean().item()
+                ((pred == target)[valid]).float().mean().item()
             )
             sums["codebook_0_ce"] += out.codebook_losses[0].item()
             sums["mean_residual_ce"] += (
@@ -247,7 +259,22 @@ def evaluate(
     talker.train(was)
     if not n:
         raise ValueError("validation loader produced no batches")
-    return {k: v / n for k, v in sums.items()} | {"batches": n}
+    
+    precision = tp_total / (tp_total + fp_total) if (tp_total + fp_total) > 0 else 0.0
+    recall = tp_total / (tp_total + fn_total) if (tp_total + fn_total) > 0 else 0.0
+    f1 = 2 * precision * recall / (precision + recall) if (precision + recall) > 0 else 0.0
+    valid_total = tp_total + fp_total + fn_total + tn_total
+    pos_pred_rate = (tp_total + fp_total) / valid_total if valid_total > 0 else 0.0
+
+    metrics = {k: v / n for k, v in sums.items()}
+    metrics.update({
+        "stop_precision": precision,
+        "stop_recall": recall,
+        "stop_f1": f1,
+        "positive_prediction_rate": pos_pred_rate,
+        "batches": n,
+    })
+    return metrics
 
 
 def loader_for(dataset, collator, args, epoch, shuffle):
@@ -310,6 +337,8 @@ def main(argv=None):
     if args.val_manifest:
         validate_train_val_split(manifest, args.val_manifest)
     config = TalkerConfig.from_yaml(args.config)
+    if args.stop_pos_weight is not None:
+        config.stop_pos_weight = args.stop_pos_weight
     args.num_workers = (
         config.num_workers if args.num_workers is None else args.num_workers
     )

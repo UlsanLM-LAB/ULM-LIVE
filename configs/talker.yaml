@@ -28,6 +28,7 @@ talker:
     acoustic_delay_frames: 0
   stop:
     stop_loss_weight: 1.0
+    stop_pos_weight: 5.0
     stop_threshold: 0.5
     min_audio_frames: 10
     max_audio_frames: 750

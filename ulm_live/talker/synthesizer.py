@@ -22,6 +22,8 @@ class SpeechGenerationResult:
     duration: float
     timings: dict[str, float]
     rtf: float
+    termination_reason: str = "MAX_FRAMES"
+    max_stop_prob: float = 0.0
 
     def save(self, path: str | Path) -> None:
         """Save synthesized waveform to WAV file."""
@@ -76,14 +78,24 @@ class SpeechSynthesizer:
         spk_tensor = torch.tensor([speaker_id], dtype=torch.long, device=self.device)
         dia_tensor = torch.tensor([dialect_id], dtype=torch.long, device=self.device)
 
+        term_reason = "MAX_FRAMES"
+        max_sp = 0.0
         with torch.no_grad():
-            codes = self.talker.generate(
+            gen_out = self.talker.generate(
                 semantic_hidden_states=semantic_hidden.to(self.device),
                 speaker_ids=spk_tensor,
                 dialect_ids=dia_tensor,
                 generation_config=gen_cfg,
                 frame_rate=self.codec.frame_rate,
             )
+            if gen_cfg.return_details:
+                codes, lengths, reasons, max_stop_probs = gen_out
+                term_reason = reasons[0]
+                max_sp = float(max_stop_probs[0].item())
+            elif gen_cfg.return_lengths:
+                codes, lengths = gen_out
+            else:
+                codes = gen_out
         t_talker = time.perf_counter() - t_talker_0
 
         # 2. Codec Decoding
@@ -133,7 +145,9 @@ class SpeechSynthesizer:
                 "decode_time": round(t_decode, 4),
                 "total_time": round(total_time, 4),
             },
-            rtf=round(rtf, 3),
+            rtf=round(rtf, 4),
+            termination_reason=term_reason,
+            max_stop_prob=round(max_sp, 4),
         )
 
     def synthesize(

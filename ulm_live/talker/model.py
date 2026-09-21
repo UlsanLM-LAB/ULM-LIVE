@@ -33,6 +33,7 @@ class TalkerConfig:
     num_dialects: int = 16
     conditioning_mode: str = "additive"
     stop_loss_weight: float = 1.0
+    stop_pos_weight: float = 1.0
     stop_threshold: float = 0.5
     min_audio_frames: int = 1
     max_audio_frames: int = 750
@@ -365,8 +366,19 @@ class ULMTalker(nn.Module):
                 or torch.any(stop_targets[valid] > 1)
             ):
                 raise ValueError("invalid stop targets")
+            pos_weight = (
+                torch.tensor(
+                    [self.config.stop_pos_weight],
+                    device=stop_logits.device,
+                    dtype=stop_logits.dtype,
+                )
+                if self.config.stop_pos_weight != 1.0
+                else None
+            )
             stop = F.binary_cross_entropy_with_logits(
-                stop_logits[valid], stop_targets[valid].to(stop_logits.dtype)
+                stop_logits[valid],
+                stop_targets[valid].to(stop_logits.dtype),
+                pos_weight=pos_weight,
             )
         loss = codec + (
             self.config.stop_loss_weight * stop

@@ -35,6 +35,12 @@ def parse_args() -> argparse.Namespace:
         help="Path to merged Thinker model.",
     )
     parser.add_argument(
+        "--semantic-cache-thinker",
+        type=str,
+        default=None,
+        help="Bind semantic cache identity without loading live Thinker into VRAM.",
+    )
+    parser.add_argument(
         "--steps",
         type=int,
         default=20,
@@ -88,7 +94,8 @@ def run_candidate(
     steps: int,
     manifest: str,
     val_manifest: str,
-    thinker: str,
+    thinker: str | None = None,
+    semantic_cache_thinker: str | None = None,
 ) -> dict:
     print(f"\n=======================================================")
     print(
@@ -105,8 +112,6 @@ def run_candidate(
         manifest,
         "--val-manifest",
         val_manifest,
-        "--thinker",
-        thinker,
         "--batch-size",
         str(batch_size),
         "--gradient-accumulation-steps",
@@ -122,6 +127,10 @@ def run_candidate(
         "--output-dir",
         f"outputs/bench_{candidate_id}",
     ]
+    if semantic_cache_thinker:
+        cmd.extend(["--semantic-cache-thinker", semantic_cache_thinker])
+    elif thinker:
+        cmd.extend(["--thinker", thinker])
 
     telemetry_samples = []
     start_time = time.time()
@@ -274,6 +283,7 @@ def main() -> None:
             manifest=args.manifest,
             val_manifest=args.val_manifest,
             thinker=args.thinker,
+            semantic_cache_thinker=args.semantic_cache_thinker,
         )
         results.append(res)
         if res["status"] == "OOM":
