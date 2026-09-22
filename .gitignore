@@ -44,6 +44,7 @@ coverage.xml
 # Outputs & cache
 outputs/
 listening-comparison/
+retrain-diagnostics/
 /data/
 *.wav
 !samples/*.wav
