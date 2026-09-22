@@ -43,6 +43,7 @@ coverage.xml
 
 # Outputs & cache
 outputs/
+listening-comparison/
 /data/
 *.wav
 !samples/*.wav
