@@ -88,7 +88,7 @@ class TalkerOutput:
 class GenerationState:
     layer_kv: list
     key_padding_mask: torch.Tensor
-    next_position: int
+    next_position: torch.Tensor
     condition: torch.Tensor
 
 
@@ -238,25 +238,30 @@ class ULMTalker(nn.Module):
     def temporal(self, sem, audio, s, d, sem_mask=None, audio_mask=None):
         b, _, t = audio.shape
         sl = sem.shape[1]
-        x = torch.cat(
-            (self.project_semantic(sem), self.audio_embed(audio, self.condition(s, d))),
-            1,
-        )
-        if x.shape[1] > self.config.max_seq_len:
-            raise ValueError("sequence exceeds max_seq_len")
-        x = x + self.pos_embedding(torch.arange(x.shape[1], device=x.device))[None]
         sv = (
             sem_mask.bool()
             if sem_mask is not None
-            else torch.ones(b, sl, dtype=torch.bool, device=x.device)
+            else torch.ones(b, sl, dtype=torch.bool, device=sem.device)
         )
         if not sv.any(dim=1).all():
             raise ValueError("each sample needs at least one valid semantic token")
         av = (
             audio_mask.bool()
             if audio_mask is not None
-            else torch.ones(b, t, dtype=torch.bool, device=x.device)
+            else torch.ones(b, t, dtype=torch.bool, device=sem.device)
         )
+        semantic_positions = sv.long().cumsum(1).sub(1).clamp_min(0)
+        audio_positions = sv.long().sum(1, keepdim=True) + torch.arange(t, device=sem.device)
+        if torch.any(sv.sum(1) > self.config.max_seq_len) or torch.any(
+            audio_positions[av] >= self.config.max_seq_len
+        ):
+            raise ValueError("sequence exceeds max_seq_len")
+        x = torch.cat(
+            (self.project_semantic(sem), self.audio_embed(audio, self.condition(s, d))),
+            1,
+        )
+        positions = torch.cat((semantic_positions, audio_positions.masked_fill(~av, 0)), dim=1)
+        x = x + self.pos_embedding(positions)
         padding = ~torch.cat((sv, av), 1)
         mask = torch.zeros(sl + t, sl + t, dtype=torch.bool, device=x.device)
         mask[:sl, :sl] = True
@@ -391,33 +396,33 @@ class ULMTalker(nn.Module):
 
     def init_generation_state(self, sem, s, d, semantic_attention_mask=None):
         b, sl, _ = sem.shape
-        if sl <= 0 or sl >= self.config.max_seq_len:
+        if sl <= 0:
             raise ValueError("invalid semantic prefix")
-        x = (
-            self.project_semantic(sem)
-            + self.pos_embedding(torch.arange(sl, device=sem.device))[None]
-        )
         padding = ~(
             semantic_attention_mask.bool()
             if semantic_attention_mask is not None
-            else torch.ones(b, sl, dtype=torch.bool, device=x.device)
+            else torch.ones(b, sl, dtype=torch.bool, device=sem.device)
         )
         if padding.all(dim=1).any():
             raise ValueError("each sample needs at least one valid semantic token")
+        if torch.any((~padding).sum(1) > self.config.max_seq_len):
+            raise ValueError("invalid semantic prefix")
+        positions = (~padding).long().cumsum(1).sub(1).clamp_min(0)
+        x = self.project_semantic(sem) + self.pos_embedding(positions)
         caches = []
         mask = torch.ones(sl, sl, dtype=torch.bool, device=x.device)
         for block in self.temporal_transformer:
             x, kv = block(x, mask=mask, padding=padding, cache=True)
             caches.append(kv)
-        return GenerationState(caches, padding, sl, self.condition(s, d))
+        return GenerationState(caches, padding, (~padding).long().sum(1), self.condition(s, d))
 
     def step(self, state, input_frame, sampling_config=None):
         self._codes(input_frame[:, :, None], True)
-        if state.next_position >= self.config.max_seq_len:
+        if torch.any(state.next_position >= self.config.max_seq_len):
             raise ValueError("generation exceeds max_seq_len")
         x = (
             self.audio_embed(input_frame[:, :, None], state.condition)
-            + self.pos_embedding.weight[state.next_position][None, None]
+            + self.pos_embedding(state.next_position)[:, None]
         )
         padding = torch.cat(
             (
@@ -432,7 +437,7 @@ class ULMTalker(nn.Module):
             caches.append(kv)
         state.layer_kv = caches
         state.key_padding_mask = padding
-        state.next_position += 1
+        state.next_position = state.next_position + 1
         frame = self.temporal_norm(x[:, 0])
         return self.predict_frame(frame, sampling_config), torch.sigmoid(
             self.stop_head(frame).squeeze(-1)
