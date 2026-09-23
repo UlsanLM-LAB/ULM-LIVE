@@ -1,0 +1,81 @@
+{
+  "full_epoch_1": {
+    "samples": 22150,
+    "shifted_fraction": 0.8671331828442438,
+    "median": 14.0,
+    "q1": 6.0,
+    "q3": 22.0,
+    "max": 77,
+    "bins": {
+      "0": 2943,
+      "1-4": 1742,
+      "5-8": 2232,
+      "9-16": 5698,
+      "17-24": 5085,
+      "25-32": 2768,
+      "33+": 1682
+    }
+  },
+  "tiny": {
+    "32-single-baseline": {
+      "semantic_length_min": 3,
+      "semantic_length_median": 14.0,
+      "semantic_length_max": 29,
+      "samples": 8000,
+      "shifted_fraction": 0.849375,
+      "median": 10.0,
+      "q1": 4.0,
+      "q3": 16.0,
+      "max": 26,
+      "bins": {
+        "0": 1205,
+        "1-4": 945,
+        "5-8": 1391,
+        "9-16": 2731,
+        "17-24": 1601,
+        "25-32": 127,
+        "33+": 0
+      }
+    },
+    "32-multi-baseline": {
+      "semantic_length_min": 4,
+      "semantic_length_median": 14.5,
+      "semantic_length_max": 23,
+      "samples": 12000,
+      "shifted_fraction": 0.8575833333333334,
+      "median": 7.0,
+      "q1": 2.0,
+      "q3": 11.0,
+      "max": 19,
+      "bins": {
+        "0": 1709,
+        "1-4": 2682,
+        "5-8": 3463,
+        "9-16": 3127,
+        "17-24": 1019,
+        "25-32": 0,
+        "33+": 0
+      }
+    },
+    "512-multi-baseline": {
+      "semantic_length_min": 2,
+      "semantic_length_median": 16.0,
+      "semantic_length_max": 49,
+      "samples": 32000,
+      "shifted_fraction": 0.86590625,
+      "median": 12.0,
+      "q1": 5.0,
+      "q3": 19.0,
+      "max": 47,
+      "bins": {
+        "0": 4291,
+        "1-4": 3101,
+        "5-8": 4271,
+        "9-16": 9842,
+        "17-24": 6986,
+        "25-32": 2754,
+        "33+": 755
+      }
+    }
+  }
+}

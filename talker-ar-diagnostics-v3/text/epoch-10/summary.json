@@ -1,0 +1,9 @@
+{
+  "speaker": "DKSR20001168_2",
+  "sample_count": 20,
+  "pairs": 190,
+  "exact_same_pairs": 0,
+  "mean_pairwise_token_agreement": 0.48442886338422175,
+  "mean_pairwise_q0_agreement": 0.5162105291689697,
+  "median_generated_frames": 100.0
+}

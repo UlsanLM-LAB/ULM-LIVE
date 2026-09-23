@@ -1,0 +1,21 @@
+epoch,sample_id,text,target_frames,normal_frames,normal_length_ratio,forced_frames,normal_wav,forced_wav
+10,ulsan_000006,그래 급속도로 빠져나가고 근육도,48,106,2.2083333333333335,48,forced_audio/epoch-10/sample_001/normal_ar.wav,forced_audio/epoch-10/sample_001/forced_gt_length_ar.wav
+10,ulsan_001843,가끔씩 재밌을 때도 있지만,20,250,12.5,20,forced_audio/epoch-10/sample_002/normal_ar.wav,forced_audio/epoch-10/sample_002/forced_gt_length_ar.wav
+10,ulsan_003503,장칼국수라고 이제 칼국순데 국물이 되게 빨갛게 돼서 이제,72,250,3.4722222222222223,72,forced_audio/epoch-10/sample_003/normal_ar.wav,forced_audio/epoch-10/sample_003/forced_gt_length_ar.wav
+10,ulsan_004854,그래서 진작 그 모습을 못 본 게 너무 안타깝더라고요 그래 우리 아빠는,52,250,4.8076923076923075,52,forced_audio/epoch-10/sample_004/normal_ar.wav,forced_audio/epoch-10/sample_004/forced_gt_length_ar.wav
+10,ulsan_006234,계속 생활을 군대처럼 해야 되고 하다 보니까,38,250,6.578947368421052,38,forced_audio/epoch-10/sample_005/normal_ar.wav,forced_audio/epoch-10/sample_005/forced_gt_length_ar.wav
+10,ulsan_007570,기숙사 생활을 하고 있어요 그래서 저도 이제,32,40,1.25,32,forced_audio/epoch-10/sample_006/normal_ar.wav,forced_audio/epoch-10/sample_006/forced_gt_length_ar.wav
+10,ulsan_009117,너도 내가 싫어하는 걸 그만큼 안 해야 되는 거 아니야 약간 이런 게 있어요 만약에,56,250,4.464285714285714,56,forced_audio/epoch-10/sample_007/normal_ar.wav,forced_audio/epoch-10/sample_007/forced_gt_length_ar.wav
+10,ulsan_010526,한 십 프로 정도는 게임에 투자하고 그랬던 것 같습니다 확실히 돈을 쫌 투자하니까,69,250,3.6231884057971016,69,forced_audio/epoch-10/sample_008/normal_ar.wav,forced_audio/epoch-10/sample_008/forced_gt_length_ar.wav
+10,ulsan_011947,그 동물을 정말 싫어하셨거든.,26,250,9.615384615384615,26,forced_audio/epoch-10/sample_009/normal_ar.wav,forced_audio/epoch-10/sample_009/forced_gt_length_ar.wav
+10,ulsan_013408,세 끼 먹는 사람들한테 비하면 이제,35,149,4.257142857142857,35,forced_audio/epoch-10/sample_010/normal_ar.wav,forced_audio/epoch-10/sample_010/forced_gt_length_ar.wav
+10,ulsan_014833,되게 그때는 난처해 보이더라.,32,250,7.8125,32,forced_audio/epoch-10/sample_011/normal_ar.wav,forced_audio/epoch-10/sample_011/forced_gt_length_ar.wav
+10,ulsan_016238,무조건적으로 착해야 돼요 남자는 무조건적으로 착해야 되고,49,250,5.1020408163265305,49,forced_audio/epoch-10/sample_012/normal_ar.wav,forced_audio/epoch-10/sample_012/forced_gt_length_ar.wav
+10,ulsan_017657,이게 자기만의 인생의 낙이니까 그러려니 하고 내 인생의 낙이 사라졌는데 그것도 모르고 그렇게 얘기하는 거 보면,90,250,2.7777777777777777,90,forced_audio/epoch-10/sample_013/normal_ar.wav,forced_audio/epoch-10/sample_013/forced_gt_length_ar.wav
+10,ulsan_019266,하긴 했는데 막,28,23,0.8214285714285714,28,forced_audio/epoch-10/sample_014/normal_ar.wav,forced_audio/epoch-10/sample_014/forced_gt_length_ar.wav
+10,ulsan_020724,그런 근데 또 그게 문제인 게 그런 템들이,52,250,4.8076923076923075,52,forced_audio/epoch-10/sample_015/normal_ar.wav,forced_audio/epoch-10/sample_015/forced_gt_length_ar.wav
+10,ulsan_022134,이제 남자가 노처녀 귀신이어서,32,129,4.03125,32,forced_audio/epoch-10/sample_016/normal_ar.wav,forced_audio/epoch-10/sample_016/forced_gt_length_ar.wav
+10,ulsan_023595,어~ 맞지 원래,16,174,10.875,16,forced_audio/epoch-10/sample_017/normal_ar.wav,forced_audio/epoch-10/sample_017/forced_gt_length_ar.wav
+10,ulsan_024824,헤어질 수도 있지만,28,168,6.0,28,forced_audio/epoch-10/sample_018/normal_ar.wav,forced_audio/epoch-10/sample_018/forced_gt_length_ar.wav
+10,ulsan_026193,어~ 소리도 없이를 스포를 하면 안 되지만,70,250,3.5714285714285716,70,forced_audio/epoch-10/sample_019/normal_ar.wav,forced_audio/epoch-10/sample_019/forced_gt_length_ar.wav
+10,ulsan_027684,쫌 고민을 하고 있 인 있고?,35,250,7.142857142857143,35,forced_audio/epoch-10/sample_020/normal_ar.wav,forced_audio/epoch-10/sample_020/forced_gt_length_ar.wav

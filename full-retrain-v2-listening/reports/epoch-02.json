@@ -1,0 +1,93 @@
+{
+  "epoch": 2,
+  "global_step": 2770,
+  "train": {
+    "total_loss": 6.445379,
+    "codec_loss": 6.438404,
+    "stop_loss": 0.139496,
+    "mean_gradient_norm": 1.442045,
+    "max_gradient_norm": 4.105626,
+    "learning_rate": 0.00019744105246469263,
+    "micro_batches": 2769
+  },
+  "validation": {
+    "batches": 347,
+    "total_loss": 6.304619,
+    "codec_loss": 6.297735,
+    "stop_loss": 0.137678,
+    "q0_ce": 4.75819,
+    "mean_residual_ce": 6.404668,
+    "per_codebook_ce": [
+      4.75819,
+      5.166644,
+      5.742137,
+      6.074242,
+      6.284857,
+      6.370521,
+      6.430469,
+      6.486401,
+      6.556882,
+      6.617681,
+      6.640388,
+      6.684495,
+      6.719445,
+      6.739757,
+      6.75643,
+      6.799675
+    ],
+    "mean_token_accuracy": 0.051788,
+    "q0_accuracy": 0.135657,
+    "mean_residual_accuracy": 0.046197,
+    "per_codebook_accuracy": [
+      0.135657,
+      0.092371,
+      0.078463,
+      0.067981,
+      0.054524,
+      0.050265,
+      0.052087,
+      0.045285,
+      0.037473,
+      0.029208,
+      0.037755,
+      0.031949,
+      0.031744,
+      0.02627,
+      0.031829,
+      0.025747
+    ],
+    "stop_precision": 0.268773,
+    "stop_recall": 0.749729,
+    "stop_f1": 0.395692,
+    "stop_tp": 2076,
+    "stop_fp": 5648,
+    "stop_fn": 693,
+    "stop_tn": 133153
+  },
+  "epoch_runtime_seconds_before_generation": 114.366,
+  "generation": {
+    "sampling": {
+      "count": 20,
+      "unique_outputs": 20,
+      "collapse_warning": true,
+      "stop_predicted": 6,
+      "max_frames": 14
+    },
+    "greedy": {
+      "count": 10,
+      "unique_outputs": 10,
+      "collapse_warning": true,
+      "stop_predicted": 0,
+      "max_frames": 10
+    }
+  },
+  "reconstruction": {
+    "sample_count": 20,
+    "mean_teacher_forced_accuracy": 0.050113,
+    "mean_teacher_forced_q0_accuracy": 0.144951,
+    "mean_autoregressive_token_agreement": 0.022131,
+    "mean_autoregressive_q0_agreement": 0.040469,
+    "mean_length_ratio": 17.95663
+  },
+  "epoch_runtime_seconds": 932.988
+}

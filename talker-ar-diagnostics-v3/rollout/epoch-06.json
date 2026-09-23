@@ -1,0 +1,38 @@
+{
+  "teacher_forced": {
+    "mean_accuracy": 0.06594352144864388,
+    "q0_accuracy": 0.18521353624761105,
+    "residual_accuracy": 0.05799218712871275,
+    "length_ratio": 1.0,
+    "sample_count": 100,
+    "median_first_incorrect_frame": 0.0,
+    "median_first_q0_incorrect_frame": 1.0
+  },
+  "normal_ar": {
+    "mean_accuracy": 0.022718584854737857,
+    "q0_accuracy": 0.04154082122258842,
+    "residual_accuracy": 0.02146376909688115,
+    "length_ratio": 5.158563646001472,
+    "sample_count": 100,
+    "median_first_incorrect_frame": 0.0,
+    "median_first_q0_incorrect_frame": 1.0
+  },
+  "forced_gt_length": {
+    "mean_accuracy": 0.022678418289287947,
+    "q0_accuracy": 0.04140276440419257,
+    "residual_accuracy": 0.021430128548294305,
+    "length_ratio": 1.0,
+    "sample_count": 100,
+    "median_first_incorrect_frame": 0.0,
+    "median_first_q0_incorrect_frame": 1.0
+  },
+  "switch_rollout": {
+    "mean_accuracy": 0.028442506630317835,
+    "q0_accuracy": 0.10587983805823287,
+    "residual_accuracy": 0.023280017868456834,
+    "length_ratio": 1.0,
+    "sample_count": 299,
+    "median_first_incorrect_frame": 0.0,
+    "median_first_q0_incorrect_frame": 1.0
+  }
+}

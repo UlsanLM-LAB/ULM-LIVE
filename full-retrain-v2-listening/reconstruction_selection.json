@@ -1,0 +1,382 @@
+[
+  {
+    "id": "ulsan_000006",
+    "audio_path": "audio/000006_DKSR20000953.1.1.7.wav",
+    "text": "그래 급속도로 빠져나가고 근육도",
+    "speaker_id": "DKSR20000953_1",
+    "dialect": "ulsan",
+    "sample_rate": 24000,
+    "duration": 3.8,
+    "source": "aihub",
+    "standard_text": "그래 급속도로 빠져나가고 근육도",
+    "utterance_id": "DKSR20000953.1.1.7",
+    "metadata": {
+      "session_id": "DKSR20000953",
+      "gender": "unknown",
+      "age": "60대 이상"
+    },
+    "semantic_path": "/home/ubuntu/ULM-LIVE/data/ulsan-full/semantic_cache/test/ulsan_000006.pt",
+    "codec_path": "codec/ulsan_000006.pt"
+  },
+  {
+    "id": "ulsan_001843",
+    "audio_path": "audio/001843_DKSR20001132.1.1.24.wav",
+    "text": "가끔씩 재밌을 때도 있지만",
+    "speaker_id": "DKSR20001132_2",
+    "dialect": "ulsan",
+    "sample_rate": 24000,
+    "duration": 1.6,
+    "source": "aihub",
+    "standard_text": "가끔씩 재밌을 때도 있지만",
+    "utterance_id": "DKSR20001132.1.1.24",
+    "metadata": {
+      "session_id": "DKSR20001132",
+      "gender": "unknown",
+      "age": "20대"
+    },
+    "semantic_path": "/home/ubuntu/ULM-LIVE/data/ulsan-full/semantic_cache/test/ulsan_001843.pt",
+    "codec_path": "codec/ulsan_001843.pt"
+  },
+  {
+    "id": "ulsan_003455",
+    "audio_path": "audio/003455_DKSR20001147.1.1.192.wav",
+    "text": "이제 사진이 진짜 예쁘게 나온다고 하는 데가 있더라",
+    "speaker_id": "DKSR20001147_2",
+    "dialect": "ulsan",
+    "sample_rate": 24000,
+    "duration": 3.85,
+    "source": "aihub",
+    "standard_text": "이제 사진이 진짜 예쁘게 나온다고 하는 데가 있더라",
+    "utterance_id": "DKSR20001147.1.1.192",
+    "metadata": {
+      "session_id": "DKSR20001147",
+      "gender": "unknown",
+      "age": "20대"
+    },
+    "semantic_path": "/home/ubuntu/ULM-LIVE/data/ulsan-full/semantic_cache/test/ulsan_003455.pt",
+    "codec_path": "codec/ulsan_003455.pt"
+  },
+  {
+    "id": "ulsan_004790",
+    "audio_path": "audio/004790_DKSR20001168.1.1.134.wav",
+    "text": "음~ 저도 불만이라던지 그런 건 하나도 없고",
+    "speaker_id": "DKSR20001168_1",
+    "dialect": "ulsan",
+    "sample_rate": 24000,
+    "duration": 3.63,
+    "source": "aihub",
+    "standard_text": "음~ 저도 불만이라던지 그런 건 하나도 없고",
+    "utterance_id": "DKSR20001168.1.1.134",
+    "metadata": {
+      "session_id": "DKSR20001168",
+      "gender": "unknown",
+      "age": "30대"
+    },
+    "semantic_path": "/home/ubuntu/ULM-LIVE/data/ulsan-full/semantic_cache/test/ulsan_004790.pt",
+    "codec_path": "codec/ulsan_004790.pt"
+  },
+  {
+    "id": "ulsan_006163",
+    "audio_path": "audio/006163_DKSR20001284.1.1.206.wav",
+    "text": "그래서 분대장 훈련",
+    "speaker_id": "DKSR20001284_1",
+    "dialect": "ulsan",
+    "sample_rate": 24000,
+    "duration": 1.15,
+    "source": "aihub",
+    "standard_text": "그래서 분대장 훈련",
+    "utterance_id": "DKSR20001284.1.1.206",
+    "metadata": {
+      "session_id": "DKSR20001284",
+      "gender": "unknown",
+      "age": "20대"
+    },
+    "semantic_path": "/home/ubuntu/ULM-LIVE/data/ulsan-full/semantic_cache/test/ulsan_006163.pt",
+    "codec_path": "codec/ulsan_006163.pt"
+  },
+  {
+    "id": "ulsan_007544",
+    "audio_path": "audio/007544_DKSR20001348.1.1.191.wav",
+    "text": "너무 재밌어가지고 알바 가기 전에 일부러 일찍 일어나서",
+    "speaker_id": "DKSR20001348_2",
+    "dialect": "ulsan",
+    "sample_rate": 24000,
+    "duration": 3.91,
+    "source": "aihub",
+    "standard_text": "너무 재밌어가지고 알바 가기 전에 일부러 일찍 일어나서",
+    "utterance_id": "DKSR20001348.1.1.191",
+    "metadata": {
+      "session_id": "DKSR20001348",
+      "gender": "unknown",
+      "age": "20대"
+    },
+    "semantic_path": "/home/ubuntu/ULM-LIVE/data/ulsan-full/semantic_cache/test/ulsan_007544.pt",
+    "codec_path": "codec/ulsan_007544.pt"
+  },
+  {
+    "id": "ulsan_009046",
+    "audio_path": "audio/009046_DKSR20001487.1.1.29.wav",
+    "text": "어~ 저는 느낌을 중요시한다고 말씀드리거든요?",
+    "speaker_id": "DKSR20001487_1",
+    "dialect": "ulsan",
+    "sample_rate": 24000,
+    "duration": 3.85,
+    "source": "aihub",
+    "standard_text": "어~ 저는 느낌을 중요시한다고 말씀드리거든요?",
+    "utterance_id": "DKSR20001487.1.1.29",
+    "metadata": {
+      "session_id": "DKSR20001487",
+      "gender": "unknown",
+      "age": "20대"
+    },
+    "semantic_path": "/home/ubuntu/ULM-LIVE/data/ulsan-full/semantic_cache/test/ulsan_009046.pt",
+    "codec_path": "codec/ulsan_009046.pt"
+  },
+  {
+    "id": "ulsan_010449",
+    "audio_path": "audio/010449_DKSR20001593.1.1.265.wav",
+    "text": "망가지겠구나 그래가 싶어가지구",
+    "speaker_id": "DKSR20001593_1",
+    "dialect": "ulsan",
+    "sample_rate": 24000,
+    "duration": 2.37,
+    "source": "aihub",
+    "standard_text": "망가지겠구나 그래가 싶어가지구",
+    "utterance_id": "DKSR20001593.1.1.265",
+    "metadata": {
+      "session_id": "DKSR20001593",
+      "gender": "unknown",
+      "age": "20대"
+    },
+    "semantic_path": "/home/ubuntu/ULM-LIVE/data/ulsan-full/semantic_cache/test/ulsan_010449.pt",
+    "codec_path": "codec/ulsan_010449.pt"
+  },
+  {
+    "id": "ulsan_011765",
+    "audio_path": "audio/011765_DKSR20001611.1.1.129.wav",
+    "text": "그쪽으로는 쫌 안 사고 싶어서 안 샀는데",
+    "speaker_id": "DKSR20001611_2",
+    "dialect": "ulsan",
+    "sample_rate": 24000,
+    "duration": 2.66,
+    "source": "aihub",
+    "standard_text": "그쪽으로는 조금 안 사고 싶어서 안 샀는데",
+    "utterance_id": "DKSR20001611.1.1.129",
+    "metadata": {
+      "session_id": "DKSR20001611",
+      "gender": "unknown",
+      "age": "20대"
+    },
+    "semantic_path": "/home/ubuntu/ULM-LIVE/data/ulsan-full/semantic_cache/test/ulsan_011765.pt",
+    "codec_path": "codec/ulsan_011765.pt"
+  },
+  {
+    "id": "ulsan_013178",
+    "audio_path": "audio/013178_DKSR20001677.1.1.16.wav",
+    "text": "어~ 언제든지 밥을 먹을 때",
+    "speaker_id": "DKSR20001677_2",
+    "dialect": "ulsan",
+    "sample_rate": 24000,
+    "duration": 2.2,
+    "source": "aihub",
+    "standard_text": "어~ 언제든지 밥을 먹을 때",
+    "utterance_id": "DKSR20001677.1.1.16",
+    "metadata": {
+      "session_id": "DKSR20001677",
+      "gender": "unknown",
+      "age": "20대"
+    },
+    "semantic_path": "/home/ubuntu/ULM-LIVE/data/ulsan-full/semantic_cache/test/ulsan_013178.pt",
+    "codec_path": "codec/ulsan_013178.pt"
+  },
+  {
+    "id": "ulsan_014753",
+    "audio_path": "audio/014753_DKSR20001033.1.1.118.wav",
+    "text": "영양사분이 있잖아.",
+    "speaker_id": "DKSR20001033_2",
+    "dialect": "ulsan",
+    "sample_rate": 24000,
+    "duration": 1.88,
+    "source": "aihub",
+    "standard_text": "영양사분이 있잖아.",
+    "utterance_id": "DKSR20001033.1.1.118",
+    "metadata": {
+      "session_id": "DKSR20001033",
+      "gender": "unknown",
+      "age": "10대"
+    },
+    "semantic_path": "/home/ubuntu/ULM-LIVE/data/ulsan-full/semantic_cache/test/ulsan_014753.pt",
+    "codec_path": "codec/ulsan_014753.pt"
+  },
+  {
+    "id": "ulsan_016238",
+    "audio_path": "audio/016238_DKSR20001207.1.1.12.wav",
+    "text": "무조건적으로 착해야 돼요 남자는 무조건적으로 착해야 되고",
+    "speaker_id": "DKSR20001207_1",
+    "dialect": "ulsan",
+    "sample_rate": 24000,
+    "duration": 3.87,
+    "source": "aihub",
+    "standard_text": "무조건적으로 착해야 돼요 남자는 무조건적으로 착해야 되고",
+    "utterance_id": "DKSR20001207.1.1.12",
+    "metadata": {
+      "session_id": "DKSR20001207",
+      "gender": "unknown",
+      "age": "20대"
+    },
+    "semantic_path": "/home/ubuntu/ULM-LIVE/data/ulsan-full/semantic_cache/test/ulsan_016238.pt",
+    "codec_path": "codec/ulsan_016238.pt"
+  },
+  {
+    "id": "ulsan_017672",
+    "audio_path": "audio/017672_DKSR20001288.1.1.67.wav",
+    "text": "그 약이 나한테는 잘 맞았어 잘 맞아가지고 빠진 거 같긴 한데",
+    "speaker_id": "DKSR20001288_1",
+    "dialect": "ulsan",
+    "sample_rate": 24000,
+    "duration": 3.69,
+    "source": "aihub",
+    "standard_text": "그 약이 나한테는 잘 맞았어 잘 맞아가지고 빠진 거 같긴 한데",
+    "utterance_id": "DKSR20001288.1.1.67",
+    "metadata": {
+      "session_id": "DKSR20001288",
+      "gender": "unknown",
+      "age": "10대"
+    },
+    "semantic_path": "/home/ubuntu/ULM-LIVE/data/ulsan-full/semantic_cache/test/ulsan_017672.pt",
+    "codec_path": "codec/ulsan_017672.pt"
+  },
+  {
+    "id": "ulsan_019332",
+    "audio_path": "audio/019332_DKSR20001507.1.1.207.wav",
+    "text": "함부로 다닐 수가 없으니까 쪼끔 몸이 근질근질하네요.",
+    "speaker_id": "DKSR20001507_1",
+    "dialect": "ulsan",
+    "sample_rate": 24000,
+    "duration": 5.32,
+    "source": "aihub",
+    "standard_text": "함부로 다닐 수가 없으니까 쪼끔 몸이 근질근질하네요.",
+    "utterance_id": "DKSR20001507.1.1.207",
+    "metadata": {
+      "session_id": "DKSR20001507",
+      "gender": "unknown",
+      "age": "30대"
+    },
+    "semantic_path": "/home/ubuntu/ULM-LIVE/data/ulsan-full/semantic_cache/test/ulsan_019332.pt",
+    "codec_path": "codec/ulsan_019332.pt"
+  },
+  {
+    "id": "ulsan_020739",
+    "audio_path": "audio/020739_DKSR20001512.1.1.216.wav",
+    "text": "근데 나 같은 경우에는 한 번도 안 해 보다가 이번에 그~ 시리즈를 본 거거든.",
+    "speaker_id": "DKSR20001512_1",
+    "dialect": "ulsan",
+    "sample_rate": 24000,
+    "duration": 5.81,
+    "source": "aihub",
+    "standard_text": "근데 나 같은 경우에는 한 번도 안 해 보다가 이번에 그~ 시리즈를 본 거거든.",
+    "utterance_id": "DKSR20001512.1.1.216",
+    "metadata": {
+      "session_id": "DKSR20001512",
+      "gender": "unknown",
+      "age": "10대"
+    },
+    "semantic_path": "/home/ubuntu/ULM-LIVE/data/ulsan-full/semantic_cache/test/ulsan_020739.pt",
+    "codec_path": "codec/ulsan_020739.pt"
+  },
+  {
+    "id": "ulsan_022111",
+    "audio_path": "audio/022111_DKSR20001569.1.1.77.wav",
+    "text": "이렇게 보기는 하는데",
+    "speaker_id": "DKSR20001569_2",
+    "dialect": "ulsan",
+    "sample_rate": 24000,
+    "duration": 2.27,
+    "source": "aihub",
+    "standard_text": "이렇게 보기는 하는데",
+    "utterance_id": "DKSR20001569.1.1.77",
+    "metadata": {
+      "session_id": "DKSR20001569",
+      "gender": "unknown",
+      "age": "30대"
+    },
+    "semantic_path": "/home/ubuntu/ULM-LIVE/data/ulsan-full/semantic_cache/test/ulsan_022111.pt",
+    "codec_path": "codec/ulsan_022111.pt"
+  },
+  {
+    "id": "ulsan_023525",
+    "audio_path": "audio/023525_DKSR20000955.1.1.269.wav",
+    "text": "너무 커가지고 밖에서 키웠는데",
+    "speaker_id": "DKSR20000955_2",
+    "dialect": "ulsan",
+    "sample_rate": 24000,
+    "duration": 2.37,
+    "source": "aihub",
+    "standard_text": "너무 커가지고 밖에서 키웠는데",
+    "utterance_id": "DKSR20000955.1.1.269",
+    "metadata": {
+      "session_id": "DKSR20000955",
+      "gender": "unknown",
+      "age": "20대"
+    },
+    "semantic_path": "/home/ubuntu/ULM-LIVE/data/ulsan-full/semantic_cache/test/ulsan_023525.pt",
+    "codec_path": "codec/ulsan_023525.pt"
+  },
+  {
+    "id": "ulsan_024833",
+    "audio_path": "audio/024833_DKSR20000973.1.1.6.wav",
+    "text": "어~ 부산에 가가지고",
+    "speaker_id": "DKSR20000973_2",
+    "dialect": "ulsan",
+    "sample_rate": 24000,
+    "duration": 2.21,
+    "source": "aihub",
+    "standard_text": "어~ 부산에 가가지고",
+    "utterance_id": "DKSR20000973.1.1.6",
+    "metadata": {
+      "session_id": "DKSR20000973",
+      "gender": "unknown",
+      "age": "20대"
+    },
+    "semantic_path": "/home/ubuntu/ULM-LIVE/data/ulsan-full/semantic_cache/test/ulsan_024833.pt",
+    "codec_path": "codec/ulsan_024833.pt"
+  },
+  {
+    "id": "ulsan_026193",
+    "audio_path": "audio/026193_DKSR20000975.1.1.148.wav",
+    "text": "어~ 소리도 없이를 스포를 하면 안 되지만",
+    "speaker_id": "DKSR20000975_2",
+    "dialect": "ulsan",
+    "sample_rate": 24000,
+    "duration": 5.56,
+    "source": "aihub",
+    "standard_text": "어~ 소리도 없이를 스포를 하면 안 되지만",
+    "utterance_id": "DKSR20000975.1.1.148",
+    "metadata": {
+      "session_id": "DKSR20000975",
+      "gender": "unknown",
+      "age": "20대"
+    },
+    "semantic_path": "/home/ubuntu/ULM-LIVE/data/ulsan-full/semantic_cache/test/ulsan_026193.pt",
+    "codec_path": "codec/ulsan_026193.pt"
+  },
+  {
+    "id": "ulsan_027684",
+    "audio_path": "audio/027684_DKSR20001204.1.1.298.wav",
+    "text": "쫌 고민을 하고 있 인 있고?",
+    "speaker_id": "DKSR20001204_1",
+    "dialect": "ulsan",
+    "sample_rate": 24000,
+    "duration": 2.76,
+    "source": "aihub",
+    "standard_text": "조금 고민을 하고 있 인 있고?",
+    "utterance_id": "DKSR20001204.1.1.298",
+    "metadata": {
+      "session_id": "DKSR20001204",
+      "gender": "unknown",
+      "age": "20대"
+    },
+    "semantic_path": "/home/ubuntu/ULM-LIVE/data/ulsan-full/semantic_cache/test/ulsan_027684.pt",
+    "codec_path": "codec/ulsan_027684.pt"
+  }
+]

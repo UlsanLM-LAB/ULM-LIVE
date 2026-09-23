@@ -1,0 +1,38 @@
+[
+  {
+    "case": "alone",
+    "sample_semantic_length": 8,
+    "batch_semantic_width": 8,
+    "sample_audio_valid_frames": 26,
+    "batch_audio_width": 26,
+    "valid_targets_identical": true,
+    "valid_audio_inputs_identical": true,
+    "valid_audio_mask_identical": true,
+    "old_audio_position_start": 8,
+    "new_audio_position_start": 8
+  },
+  {
+    "case": "medium",
+    "sample_semantic_length": 8,
+    "batch_semantic_width": 24,
+    "sample_audio_valid_frames": 26,
+    "batch_audio_width": 42,
+    "valid_targets_identical": true,
+    "valid_audio_inputs_identical": true,
+    "valid_audio_mask_identical": true,
+    "old_audio_position_start": 24,
+    "new_audio_position_start": 8
+  },
+  {
+    "case": "long",
+    "sample_semantic_length": 8,
+    "batch_semantic_width": 49,
+    "sample_audio_valid_frames": 26,
+    "batch_audio_width": 75,
+    "valid_targets_identical": true,
+    "valid_audio_inputs_identical": true,
+    "valid_audio_mask_identical": true,
+    "old_audio_position_start": 49,
+    "new_audio_position_start": 8
+  }
+]

@@ -1,0 +1,25 @@
+{
+  "samples": 27687,
+  "semantic_length_quantiles": [
+    1.0,
+    12.0,
+    18.0,
+    24.0,
+    36.0,
+    48.0,
+    85.0
+  ],
+  "audio_frame_quantiles": [
+    6.0,
+    35.0,
+    49.0,
+    64.0,
+    87.0,
+    114.0,
+    214.0
+  ],
+  "combined_over_2048": 0,
+  "text_semantic_correlation": 0.9612832290963512,
+  "text_audio_correlation": 0.8487298058458606,
+  "semantic_audio_correlation": 0.8306598106554476
+}

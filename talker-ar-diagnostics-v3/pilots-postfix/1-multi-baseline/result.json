@@ -1,0 +1,72 @@
+{
+  "size": 1,
+  "speaker_mode": "multi",
+  "variant": "baseline",
+  "selected_speakers": 1,
+  "seed": 20260923,
+  "initial_checkpoint": null,
+  "steps": 300,
+  "planned_steps": 1000,
+  "learning_rate": 0.0002,
+  "parameter_count": 40706817,
+  "teacher": {
+    "codec_ce": 0.9717364646494389,
+    "mean_accuracy": 0.997093023255814,
+    "q0_accuracy": 1.0,
+    "residual_accuracy": 0.9968992248062015,
+    "per_q_accuracy": [
+      1.0,
+      1.0,
+      0.9534883720930233,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "per_q_ce": [
+      1.5157158374786377,
+      0.839298665523529,
+      0.9435864686965942,
+      0.991369903087616,
+      1.0349291563034058,
+      0.9886445999145508,
+      0.9404069781303406,
+      0.9892805218696594,
+      0.9345930218696594,
+      0.8551508188247681,
+      0.9260537624359131,
+      0.9704306125640869,
+      0.941951334476471,
+      0.8766806125640869,
+      0.9064316749572754,
+      0.8932594656944275
+    ]
+  },
+  "ar_forced": {
+    "mean_accuracy": 0.9127907156944275,
+    "q0_accuracy": 0.930232584476471,
+    "residual_accuracy": 0.9116278886795044,
+    "length_ratio": 1.0,
+    "unique_outputs": 1,
+    "sample_count": 12,
+    "stop_predicted": 0
+  },
+  "ar_normal": {
+    "mean_accuracy": 0.9127907156944275,
+    "q0_accuracy": 0.930232584476471,
+    "residual_accuracy": 0.9116278886795044,
+    "length_ratio": 3.4883720930232562,
+    "unique_outputs": 1,
+    "sample_count": 12,
+    "stop_predicted": 0
+  }
+}

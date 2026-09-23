@@ -1,0 +1,54 @@
+{
+  "first_error_median": 0.0,
+  "first_error_zero_fraction": 0.99,
+  "curve": [
+    {
+      "frames_after_first_error": 0,
+      "samples": 100,
+      "frame_token_accuracy": 0.166875,
+      "teacher_frame_token_accuracy": 0.240625,
+      "q0_correct": 0.9,
+      "teacher_q0_correct": 0.9
+    },
+    {
+      "frames_after_first_error": 1,
+      "samples": 100,
+      "frame_token_accuracy": 0.113125,
+      "teacher_frame_token_accuracy": 0.18875,
+      "q0_correct": 0.35,
+      "teacher_q0_correct": 0.51
+    },
+    {
+      "frames_after_first_error": 2,
+      "samples": 100,
+      "frame_token_accuracy": 0.0775,
+      "teacher_frame_token_accuracy": 0.153125,
+      "q0_correct": 0.18,
+      "teacher_q0_correct": 0.36
+    },
+    {
+      "frames_after_first_error": 4,
+      "samples": 100,
+      "frame_token_accuracy": 0.0275,
+      "teacher_frame_token_accuracy": 0.07125,
+      "q0_correct": 0.06,
+      "teacher_q0_correct": 0.19
+    },
+    {
+      "frames_after_first_error": 8,
+      "samples": 100,
+      "frame_token_accuracy": 0.010625,
+      "teacher_frame_token_accuracy": 0.03875,
+      "q0_correct": 0.0,
+      "teacher_q0_correct": 0.09
+    },
+    {
+      "frames_after_first_error": 16,
+      "samples": 97,
+      "frame_token_accuracy": 0.012242268041237113,
+      "teacher_frame_token_accuracy": 0.04188144329896907,
+      "q0_correct": 0.0,
+      "teacher_q0_correct": 0.1134020618556701
+    }
+  ]
+}

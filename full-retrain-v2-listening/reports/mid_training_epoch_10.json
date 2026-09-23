@@ -1,0 +1,31 @@
+{
+  "epochs": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+  ],
+  "epoch_table": "reports/epoch_table.md",
+  "generation_epochs": [
+    2,
+    4,
+    6,
+    8,
+    10
+  ],
+  "human_questions": {
+    "speech_like_structure": "HUMAN_LISTENING_REQUIRED",
+    "recognizable_korean_syllables": "HUMAN_LISTENING_REQUIRED"
+  },
+  "teacher_forced_accuracy": 0.072333,
+  "old_epoch_5_accuracy": 0.05874,
+  "absolute_accuracy_gain": 0.013593,
+  "continue_to_epoch_20": true,
+  "reason": "No catastrophic failure; human quality is unscored and objective codec learning continues."
+}

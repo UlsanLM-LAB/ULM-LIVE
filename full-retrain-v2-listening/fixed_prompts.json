@@ -1,0 +1,82 @@
+[
+  {
+    "category": "short",
+    "text": "안녕."
+  },
+  {
+    "category": "short",
+    "text": "밥 묵었나?"
+  },
+  {
+    "category": "short",
+    "text": "오늘 날씨 좋네."
+  },
+  {
+    "category": "short",
+    "text": "지금 어디고?"
+  },
+  {
+    "category": "short",
+    "text": "조심해서 가라."
+  },
+  {
+    "category": "normal",
+    "text": "오늘 뭐 하고 있었어?"
+  },
+  {
+    "category": "normal",
+    "text": "나는 오늘 학교 끝나고 친구를 만나러 간다."
+  },
+  {
+    "category": "normal",
+    "text": "주말에 시간 되면 같이 영화 보러 갈래?"
+  },
+  {
+    "category": "normal",
+    "text": "점심은 먹었어? 아직이면 내가 맛있는 곳을 알려줄게."
+  },
+  {
+    "category": "normal",
+    "text": "오늘 기분이 조금 안 좋아서 일찍 쉬려고 해."
+  },
+  {
+    "category": "ulsan_dialect",
+    "text": "니 오늘 와 이리 늦었노?"
+  },
+  {
+    "category": "ulsan_dialect",
+    "text": "그거 내가 아까 말했제."
+  },
+  {
+    "category": "ulsan_dialect",
+    "text": "날씨가 추우이 단디 입고 가라."
+  },
+  {
+    "category": "ulsan_dialect",
+    "text": "마, 그 정도면 진짜 잘했다 아이가."
+  },
+  {
+    "category": "ulsan_dialect",
+    "text": "아무리 바빠도 밥은 챙겨 묵어야 된다."
+  },
+  {
+    "category": "long",
+    "text": "하늘이 파란 이유를 처음 듣는 사람도 이해할 수 있게 간단히 설명해줘."
+  },
+  {
+    "category": "long",
+    "text": "울산의 태화강 국가정원이 시민들에게 어떤 의미가 있는지 차근차근 설명해줘."
+  },
+  {
+    "category": "long",
+    "text": "비가 많이 오는 날에는 길이 미끄러우니 평소보다 천천히 운전하고 안전거리를 충분히 확보해야 한다."
+  },
+  {
+    "category": "long",
+    "text": "친구와 의견이 다를 때는 상대방의 말을 끝까지 듣고 차분하게 내 생각을 이야기하는 것이 좋다."
+  },
+  {
+    "category": "long",
+    "text": "아침에 물을 한 잔 마시고 가볍게 몸을 풀면 하루를 조금 더 편안하게 시작할 수 있다."
+  }
+]

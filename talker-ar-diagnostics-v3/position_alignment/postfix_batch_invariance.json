@@ -1,0 +1,26 @@
+[
+  {
+    "case": "alone",
+    "max_abs_logit_difference": 0.0,
+    "mean_abs_logit_difference": 0.0,
+    "argmax_agreement": 1.0,
+    "q0_agreement": 1.0,
+    "valid_targets_identical": true
+  },
+  {
+    "case": "medium",
+    "max_abs_logit_difference": 0.125,
+    "mean_abs_logit_difference": 0.008821910247206688,
+    "argmax_agreement": 0.9903846383094788,
+    "q0_agreement": 1.0,
+    "valid_targets_identical": true
+  },
+  {
+    "case": "long",
+    "max_abs_logit_difference": 0.125,
+    "mean_abs_logit_difference": 0.008845675736665726,
+    "argmax_agreement": 0.9879807829856873,
+    "q0_agreement": 0.9615384340286255,
+    "valid_targets_identical": true
+  }
+]

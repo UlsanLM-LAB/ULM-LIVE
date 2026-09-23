@@ -1,0 +1,39 @@
+{
+  "status": "HUMAN_UNRATED",
+  "human_listening_required": true,
+  "evaluated_epochs": [
+    2,
+    4,
+    6,
+    8,
+    10,
+    12,
+    14,
+    16,
+    18,
+    20
+  ],
+  "provisional_candidates": [
+    {
+      "epoch": 10,
+      "val_codec_loss": 5.955834,
+      "mean_token_accuracy": 0.072333,
+      "q0_accuracy": 0.183521,
+      "path": "eval/epoch-10"
+    },
+    {
+      "epoch": 12,
+      "val_codec_loss": 5.977547,
+      "mean_token_accuracy": 0.072069,
+      "q0_accuracy": 0.175327,
+      "path": "eval/epoch-12"
+    },
+    {
+      "epoch": 8,
+      "val_codec_loss": 5.952348,
+      "mean_token_accuracy": 0.07184,
+      "q0_accuracy": 0.191298,
+      "path": "eval/epoch-08"
+    }
+  ]
+}

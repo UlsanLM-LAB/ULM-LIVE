@@ -1,0 +1,21 @@
+epoch,index,sample_id,speaker,text,frames,termination,wav_path
+6,1,ulsan_004686,DKSR20001168_2,그~ 쫌 벗어날라 했는데 그것마저 실패해가지고 맨날 이제 가족들하고 개척 같이 살았었는데 부모님하고,100,MAX_FRAMES,text/epoch-06/sample_001.wav
+6,2,ulsan_004701,DKSR20001168_2,그~ 우리 시어머님이 홀 시어머님인데 아버님이 일찍 돌아가셨드라고요 보니까,100,MAX_FRAMES,text/epoch-06/sample_002.wav
+6,3,ulsan_004709,DKSR20001168_2,그~ 남편 처음에 남편 하나만 보고 인제 남편만 좋아서 시집을 갔어요.,100,MAX_FRAMES,text/epoch-06/sample_003.wav
+6,4,ulsan_004732,DKSR20001168_2,또 시댁까지 가서도,100,MAX_FRAMES,text/epoch-06/sample_004.wav
+6,5,ulsan_004734,DKSR20001168_2,시댁 일까지 내가 도와줘야 되는 거예요.,100,MAX_FRAMES,text/epoch-06/sample_005.wav
+6,6,ulsan_004747,DKSR20001168_2,막 승질을 다 부리는 거야 아~ 막 짜증 내고 막 화도 나고 막,100,MAX_FRAMES,text/epoch-06/sample_006.wav
+6,7,ulsan_004749,DKSR20001168_2,막 내 승질 것 다 했어요.,100,MAX_FRAMES,text/epoch-06/sample_007.wav
+6,8,ulsan_004765,DKSR20001168_2,내 가족이 정말 소중하고,100,MAX_FRAMES,text/epoch-06/sample_008.wav
+6,9,ulsan_004778,DKSR20001168_2,가족들하고 이케 부대껴 사는 거는,100,MAX_FRAMES,text/epoch-06/sample_009.wav
+6,10,ulsan_004780,DKSR20001168_2,결혼 전에 가족들하고 살은 그거는 그냥 당연한 거였다면,100,MAX_FRAMES,text/epoch-06/sample_010.wav
+6,11,ulsan_004835,DKSR20001168_2,그래서 그 감정이 아직까지도 이렇게 쫌 약간 이어져 오는 거 같애요 그서,100,MAX_FRAMES,text/epoch-06/sample_011.wav
+6,12,ulsan_004839,DKSR20001168_2,그냥 인제 한편으로 생각하면은 가슴이 쫌 막 (()) 약간 찡한 사람은 우리 아빠예요.,100,MAX_FRAMES,text/epoch-06/sample_012.wav
+6,13,ulsan_004854,DKSR20001168_2,그래서 진작 그 모습을 못 본 게 너무 안타깝더라고요 그래 우리 아빠는,100,MAX_FRAMES,text/epoch-06/sample_013.wav
+6,14,ulsan_004865,DKSR20001168_2,쪼끔 아빠가 많이 보고 싶죠.,100,MAX_FRAMES,text/epoch-06/sample_014.wav
+6,15,ulsan_004946,DKSR20001168_2,어~ 제일,100,MAX_FRAMES,text/epoch-06/sample_015.wav
+6,16,ulsan_004949,DKSR20001168_2,생각 나는 게 있는데,100,MAX_FRAMES,text/epoch-06/sample_016.wav
+6,17,ulsan_004952,DKSR20001168_2,굉장히 이게 자기가 세운 이런 탁 이런 틀에,100,MAX_FRAMES,text/epoch-06/sample_017.wav
+6,18,ulsan_004965,DKSR20001168_2,그때,79,STOP_PREDICTED,text/epoch-06/sample_018.wav
+6,19,ulsan_004996,DKSR20001168_2,모범생이 되는 그런 계기가 됐죠.,100,MAX_FRAMES,text/epoch-06/sample_019.wav
+6,20,ulsan_005002,DKSR20001168_2,그면 그~ &name2& 씨는,100,MAX_FRAMES,text/epoch-06/sample_020.wav

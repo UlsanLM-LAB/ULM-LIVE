@@ -1,0 +1,23 @@
+[
+  {
+    "case": "alone",
+    "max_abs_logit_difference": 0.0,
+    "mean_abs_logit_difference": 0.0,
+    "argmax_agreement": 1.0,
+    "q0_agreement": 1.0
+  },
+  {
+    "case": "medium",
+    "max_abs_logit_difference": 1.049041748046875e-05,
+    "mean_abs_logit_difference": 1.0386783060312155e-06,
+    "argmax_agreement": 1.0,
+    "q0_agreement": 1.0
+  },
+  {
+    "case": "long",
+    "max_abs_logit_difference": 9.5367431640625e-06,
+    "mean_abs_logit_difference": 1.1401215260775643e-06,
+    "argmax_agreement": 1.0,
+    "q0_agreement": 1.0
+  }
+]

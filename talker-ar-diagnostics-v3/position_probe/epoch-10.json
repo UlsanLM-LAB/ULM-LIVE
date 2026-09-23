@@ -1,0 +1,18 @@
+{
+  "unshifted": {
+    "codec_ce": 6.013928573826949,
+    "mean_accuracy": 0.06547353068987528,
+    "q0_accuracy": 0.17505477753778298,
+    "ar_mean_accuracy": 0.024929140094900503,
+    "ar_q0_accuracy": 0.04324023211374879,
+    "ar_sample_count": 20
+  },
+  "shifted": {
+    "codec_ce": 5.974072719613711,
+    "mean_accuracy": 0.06983089387232874,
+    "q0_accuracy": 0.18677621675126346,
+    "ar_mean_accuracy": 0.028481913326223466,
+    "ar_q0_accuracy": 0.045785913277756086,
+    "ar_sample_count": 55
+  }
+}

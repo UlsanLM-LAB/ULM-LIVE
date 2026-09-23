@@ -1,0 +1,201 @@
+epoch,sample_id,index,text,variant,token_accuracy,q0_accuracy,wav_path
+6,ulsan_000006,1,그래 급속도로 빠져나가고 근육도,gt_all,1.0,1.0,hybrid/epoch-06/sample_001/gt_all.wav
+6,ulsan_000006,1,그래 급속도로 빠져나가고 근육도,pred_all,0.0598958320915699,0.1875,hybrid/epoch-06/sample_001/pred_all.wav
+6,ulsan_000006,1,그래 급속도로 빠져나가고 근육도,pred_q0_to_0_gt_rest,0.94921875,0.1875,hybrid/epoch-06/sample_001/pred_q0_to_0_gt_rest.wav
+6,ulsan_000006,1,그래 급속도로 빠져나가고 근육도,gt_q0_to_0_pred_rest,0.1106770858168602,1.0,hybrid/epoch-06/sample_001/gt_q0_to_0_pred_rest.wav
+6,ulsan_000006,1,그래 급속도로 빠져나가고 근육도,pred_q0_to_1_gt_rest,0.89453125,0.1875,hybrid/epoch-06/sample_001/pred_q0_to_1_gt_rest.wav
+6,ulsan_000006,1,그래 급속도로 빠져나가고 근육도,gt_q0_to_1_pred_rest,0.1653645783662796,1.0,hybrid/epoch-06/sample_001/gt_q0_to_1_pred_rest.wav
+6,ulsan_000006,1,그래 급속도로 빠져나가고 근육도,pred_q0_to_3_gt_rest,0.78125,0.1875,hybrid/epoch-06/sample_001/pred_q0_to_3_gt_rest.wav
+6,ulsan_000006,1,그래 급속도로 빠져나가고 근육도,gt_q0_to_3_pred_rest,0.2786458432674408,1.0,hybrid/epoch-06/sample_001/gt_q0_to_3_pred_rest.wav
+6,ulsan_000006,1,그래 급속도로 빠져나가고 근육도,pred_q0_to_7_gt_rest,0.5481770634651184,0.1875,hybrid/epoch-06/sample_001/pred_q0_to_7_gt_rest.wav
+6,ulsan_000006,1,그래 급속도로 빠져나가고 근육도,gt_q0_to_7_pred_rest,0.51171875,1.0,hybrid/epoch-06/sample_001/gt_q0_to_7_pred_rest.wav
+6,ulsan_001843,2,가끔씩 재밌을 때도 있지만,gt_all,1.0,1.0,hybrid/epoch-06/sample_002/gt_all.wav
+6,ulsan_001843,2,가끔씩 재밌을 때도 있지만,pred_all,0.046875,0.10000000149011612,hybrid/epoch-06/sample_002/pred_all.wav
+6,ulsan_001843,2,가끔씩 재밌을 때도 있지만,pred_q0_to_0_gt_rest,0.9437500238418579,0.10000000149011612,hybrid/epoch-06/sample_002/pred_q0_to_0_gt_rest.wav
+6,ulsan_001843,2,가끔씩 재밌을 때도 있지만,gt_q0_to_0_pred_rest,0.10312499850988388,1.0,hybrid/epoch-06/sample_002/gt_q0_to_0_pred_rest.wav
+6,ulsan_001843,2,가끔씩 재밌을 때도 있지만,pred_q0_to_1_gt_rest,0.8843749761581421,0.10000000149011612,hybrid/epoch-06/sample_002/pred_q0_to_1_gt_rest.wav
+6,ulsan_001843,2,가끔씩 재밌을 때도 있지만,gt_q0_to_1_pred_rest,0.16249999403953552,1.0,hybrid/epoch-06/sample_002/gt_q0_to_1_pred_rest.wav
+6,ulsan_001843,2,가끔씩 재밌을 때도 있지만,pred_q0_to_3_gt_rest,0.765625,0.10000000149011612,hybrid/epoch-06/sample_002/pred_q0_to_3_gt_rest.wav
+6,ulsan_001843,2,가끔씩 재밌을 때도 있지만,gt_q0_to_3_pred_rest,0.28125,1.0,hybrid/epoch-06/sample_002/gt_q0_to_3_pred_rest.wav
+6,ulsan_001843,2,가끔씩 재밌을 때도 있지만,pred_q0_to_7_gt_rest,0.5249999761581421,0.10000000149011612,hybrid/epoch-06/sample_002/pred_q0_to_7_gt_rest.wav
+6,ulsan_001843,2,가끔씩 재밌을 때도 있지만,gt_q0_to_7_pred_rest,0.5218750238418579,1.0,hybrid/epoch-06/sample_002/gt_q0_to_7_pred_rest.wav
+6,ulsan_003503,3,장칼국수라고 이제 칼국순데 국물이 되게 빨갛게 돼서 이제,gt_all,1.0,1.0,hybrid/epoch-06/sample_003/gt_all.wav
+6,ulsan_003503,3,장칼국수라고 이제 칼국순데 국물이 되게 빨갛게 돼서 이제,pred_all,0.0833333358168602,0.1944444477558136,hybrid/epoch-06/sample_003/pred_all.wav
+6,ulsan_003503,3,장칼국수라고 이제 칼국순데 국물이 되게 빨갛게 돼서 이제,pred_q0_to_0_gt_rest,0.9496527910232544,0.1944444477558136,hybrid/epoch-06/sample_003/pred_q0_to_0_gt_rest.wav
+6,ulsan_003503,3,장칼국수라고 이제 칼국순데 국물이 되게 빨갛게 돼서 이제,gt_q0_to_0_pred_rest,0.1336805522441864,1.0,hybrid/epoch-06/sample_003/gt_q0_to_0_pred_rest.wav
+6,ulsan_003503,3,장칼국수라고 이제 칼국순데 국물이 되게 빨갛게 돼서 이제,pred_q0_to_1_gt_rest,0.8940972089767456,0.1944444477558136,hybrid/epoch-06/sample_003/pred_q0_to_1_gt_rest.wav
+6,ulsan_003503,3,장칼국수라고 이제 칼국순데 국물이 되게 빨갛게 돼서 이제,gt_q0_to_1_pred_rest,0.1892361044883728,1.0,hybrid/epoch-06/sample_003/gt_q0_to_1_pred_rest.wav
+6,ulsan_003503,3,장칼국수라고 이제 칼국순데 국물이 되게 빨갛게 돼서 이제,pred_q0_to_3_gt_rest,0.7803819179534912,0.1944444477558136,hybrid/epoch-06/sample_003/pred_q0_to_3_gt_rest.wav
+6,ulsan_003503,3,장칼국수라고 이제 칼국순데 국물이 되게 빨갛게 돼서 이제,gt_q0_to_3_pred_rest,0.3029513955116272,1.0,hybrid/epoch-06/sample_003/gt_q0_to_3_pred_rest.wav
+6,ulsan_003503,3,장칼국수라고 이제 칼국순데 국물이 되게 빨갛게 돼서 이제,pred_q0_to_7_gt_rest,0.5503472089767456,0.1944444477558136,hybrid/epoch-06/sample_003/pred_q0_to_7_gt_rest.wav
+6,ulsan_003503,3,장칼국수라고 이제 칼국순데 국물이 되게 빨갛게 돼서 이제,gt_q0_to_7_pred_rest,0.5329861044883728,1.0,hybrid/epoch-06/sample_003/gt_q0_to_7_pred_rest.wav
+6,ulsan_004854,4,그래서 진작 그 모습을 못 본 게 너무 안타깝더라고요 그래 우리 아빠는,gt_all,1.0,1.0,hybrid/epoch-06/sample_004/gt_all.wav
+6,ulsan_004854,4,그래서 진작 그 모습을 못 본 게 너무 안타깝더라고요 그래 우리 아빠는,pred_all,0.015625,0.07692307978868484,hybrid/epoch-06/sample_004/pred_all.wav
+6,ulsan_004854,4,그래서 진작 그 모습을 못 본 게 너무 안타깝더라고요 그래 우리 아빠는,pred_q0_to_0_gt_rest,0.942307710647583,0.07692307978868484,hybrid/epoch-06/sample_004/pred_q0_to_0_gt_rest.wav
+6,ulsan_004854,4,그래서 진작 그 모습을 못 본 게 너무 안타깝더라고요 그래 우리 아빠는,gt_q0_to_0_pred_rest,0.07331730425357819,1.0,hybrid/epoch-06/sample_004/gt_q0_to_0_pred_rest.wav
+6,ulsan_004854,4,그래서 진작 그 모습을 못 본 게 너무 안타깝더라고요 그래 우리 아빠는,pred_q0_to_1_gt_rest,0.8822115659713745,0.07692307978868484,hybrid/epoch-06/sample_004/pred_q0_to_1_gt_rest.wav
+6,ulsan_004854,4,그래서 진작 그 모습을 못 본 게 너무 안타깝더라고요 그래 우리 아빠는,gt_q0_to_1_pred_rest,0.13341346383094788,1.0,hybrid/epoch-06/sample_004/gt_q0_to_1_pred_rest.wav
+6,ulsan_004854,4,그래서 진작 그 모습을 못 본 게 너무 안타깝더라고요 그래 우리 아빠는,pred_q0_to_3_gt_rest,0.7620192170143127,0.07692307978868484,hybrid/epoch-06/sample_004/pred_q0_to_3_gt_rest.wav
+6,ulsan_004854,4,그래서 진작 그 모습을 못 본 게 너무 안타깝더라고요 그래 우리 아빠는,gt_q0_to_3_pred_rest,0.25360578298568726,1.0,hybrid/epoch-06/sample_004/gt_q0_to_3_pred_rest.wav
+6,ulsan_004854,4,그래서 진작 그 모습을 못 본 게 너무 안타깝더라고요 그래 우리 아빠는,pred_q0_to_7_gt_rest,0.515625,0.07692307978868484,hybrid/epoch-06/sample_004/pred_q0_to_7_gt_rest.wav
+6,ulsan_004854,4,그래서 진작 그 모습을 못 본 게 너무 안타깝더라고요 그래 우리 아빠는,gt_q0_to_7_pred_rest,0.5,1.0,hybrid/epoch-06/sample_004/gt_q0_to_7_pred_rest.wav
+6,ulsan_006234,5,계속 생활을 군대처럼 해야 되고 하다 보니까,gt_all,1.0,1.0,hybrid/epoch-06/sample_005/gt_all.wav
+6,ulsan_006234,5,계속 생활을 군대처럼 해야 되고 하다 보니까,pred_all,0.04769736900925636,0.21052631735801697,hybrid/epoch-06/sample_005/pred_all.wav
+6,ulsan_006234,5,계속 생활을 군대처럼 해야 되고 하다 보니까,pred_q0_to_0_gt_rest,0.9506579041481018,0.21052631735801697,hybrid/epoch-06/sample_005/pred_q0_to_0_gt_rest.wav
+6,ulsan_006234,5,계속 생활을 군대처럼 해야 되고 하다 보니까,gt_q0_to_0_pred_rest,0.09703947603702545,1.0,hybrid/epoch-06/sample_005/gt_q0_to_0_pred_rest.wav
+6,ulsan_006234,5,계속 생활을 군대처럼 해야 되고 하다 보니까,pred_q0_to_1_gt_rest,0.8930920958518982,0.21052631735801697,hybrid/epoch-06/sample_005/pred_q0_to_1_gt_rest.wav
+6,ulsan_006234,5,계속 생활을 군대처럼 해야 되고 하다 보니까,gt_q0_to_1_pred_rest,0.15460526943206787,1.0,hybrid/epoch-06/sample_005/gt_q0_to_1_pred_rest.wav
+6,ulsan_006234,5,계속 생활을 군대처럼 해야 되고 하다 보니까,pred_q0_to_3_gt_rest,0.7845394611358643,0.21052631735801697,hybrid/epoch-06/sample_005/pred_q0_to_3_gt_rest.wav
+6,ulsan_006234,5,계속 생활을 군대처럼 해야 되고 하다 보니까,gt_q0_to_3_pred_rest,0.2631579041481018,1.0,hybrid/epoch-06/sample_005/gt_q0_to_3_pred_rest.wav
+6,ulsan_006234,5,계속 생활을 군대처럼 해야 되고 하다 보니까,pred_q0_to_7_gt_rest,0.5444079041481018,0.21052631735801697,hybrid/epoch-06/sample_005/pred_q0_to_7_gt_rest.wav
+6,ulsan_006234,5,계속 생활을 군대처럼 해야 되고 하다 보니까,gt_q0_to_7_pred_rest,0.5032894611358643,1.0,hybrid/epoch-06/sample_005/gt_q0_to_7_pred_rest.wav
+6,ulsan_007570,6,기숙사 생활을 하고 있어요 그래서 저도 이제,gt_all,1.0,1.0,hybrid/epoch-06/sample_006/gt_all.wav
+6,ulsan_007570,6,기숙사 생활을 하고 있어요 그래서 저도 이제,pred_all,0.041015625,0.15625,hybrid/epoch-06/sample_006/pred_all.wav
+6,ulsan_007570,6,기숙사 생활을 하고 있어요 그래서 저도 이제,pred_q0_to_0_gt_rest,0.947265625,0.15625,hybrid/epoch-06/sample_006/pred_q0_to_0_gt_rest.wav
+6,ulsan_007570,6,기숙사 생활을 하고 있어요 그래서 저도 이제,gt_q0_to_0_pred_rest,0.09375,1.0,hybrid/epoch-06/sample_006/gt_q0_to_0_pred_rest.wav
+6,ulsan_007570,6,기숙사 생활을 하고 있어요 그래서 저도 이제,pred_q0_to_1_gt_rest,0.890625,0.15625,hybrid/epoch-06/sample_006/pred_q0_to_1_gt_rest.wav
+6,ulsan_007570,6,기숙사 생활을 하고 있어요 그래서 저도 이제,gt_q0_to_1_pred_rest,0.150390625,1.0,hybrid/epoch-06/sample_006/gt_q0_to_1_pred_rest.wav
+6,ulsan_007570,6,기숙사 생활을 하고 있어요 그래서 저도 이제,pred_q0_to_3_gt_rest,0.779296875,0.15625,hybrid/epoch-06/sample_006/pred_q0_to_3_gt_rest.wav
+6,ulsan_007570,6,기숙사 생활을 하고 있어요 그래서 저도 이제,gt_q0_to_3_pred_rest,0.26171875,1.0,hybrid/epoch-06/sample_006/gt_q0_to_3_pred_rest.wav
+6,ulsan_007570,6,기숙사 생활을 하고 있어요 그래서 저도 이제,pred_q0_to_7_gt_rest,0.53125,0.15625,hybrid/epoch-06/sample_006/pred_q0_to_7_gt_rest.wav
+6,ulsan_007570,6,기숙사 생활을 하고 있어요 그래서 저도 이제,gt_q0_to_7_pred_rest,0.509765625,1.0,hybrid/epoch-06/sample_006/gt_q0_to_7_pred_rest.wav
+6,ulsan_009117,7,너도 내가 싫어하는 걸 그만큼 안 해야 되는 거 아니야 약간 이런 게 있어요 만약에,gt_all,1.0,1.0,hybrid/epoch-06/sample_007/gt_all.wav
+6,ulsan_009117,7,너도 내가 싫어하는 걸 그만큼 안 해야 되는 거 아니야 약간 이런 게 있어요 만약에,pred_all,0.02566964365541935,0.125,hybrid/epoch-06/sample_007/pred_all.wav
+6,ulsan_009117,7,너도 내가 싫어하는 걸 그만큼 안 해야 되는 거 아니야 약간 이런 게 있어요 만약에,pred_q0_to_0_gt_rest,0.9453125,0.125,hybrid/epoch-06/sample_007/pred_q0_to_0_gt_rest.wav
+6,ulsan_009117,7,너도 내가 싫어하는 걸 그만큼 안 해야 되는 거 아니야 약간 이런 게 있어요 만약에,gt_q0_to_0_pred_rest,0.0803571417927742,1.0,hybrid/epoch-06/sample_007/gt_q0_to_0_pred_rest.wav
+6,ulsan_009117,7,너도 내가 싫어하는 걸 그만큼 안 해야 되는 거 아니야 약간 이런 게 있어요 만약에,pred_q0_to_1_gt_rest,0.8883928656578064,0.125,hybrid/epoch-06/sample_007/pred_q0_to_1_gt_rest.wav
+6,ulsan_009117,7,너도 내가 싫어하는 걸 그만큼 안 해야 되는 거 아니야 약간 이런 게 있어요 만약에,gt_q0_to_1_pred_rest,0.1372767835855484,1.0,hybrid/epoch-06/sample_007/gt_q0_to_1_pred_rest.wav
+6,ulsan_009117,7,너도 내가 싫어하는 걸 그만큼 안 해야 되는 거 아니야 약간 이런 게 있어요 만약에,pred_q0_to_3_gt_rest,0.7667410969734192,0.125,hybrid/epoch-06/sample_007/pred_q0_to_3_gt_rest.wav
+6,ulsan_009117,7,너도 내가 싫어하는 걸 그만큼 안 해야 되는 거 아니야 약간 이런 게 있어요 만약에,gt_q0_to_3_pred_rest,0.2589285671710968,1.0,hybrid/epoch-06/sample_007/gt_q0_to_3_pred_rest.wav
+6,ulsan_009117,7,너도 내가 싫어하는 걸 그만큼 안 해야 되는 거 아니야 약간 이런 게 있어요 만약에,pred_q0_to_7_gt_rest,0.5223214030265808,0.125,hybrid/epoch-06/sample_007/pred_q0_to_7_gt_rest.wav
+6,ulsan_009117,7,너도 내가 싫어하는 걸 그만큼 안 해야 되는 거 아니야 약간 이런 게 있어요 만약에,gt_q0_to_7_pred_rest,0.5033482313156128,1.0,hybrid/epoch-06/sample_007/gt_q0_to_7_pred_rest.wav
+6,ulsan_010526,8,한 십 프로 정도는 게임에 투자하고 그랬던 것 같습니다 확실히 돈을 쫌 투자하니까,gt_all,1.0,1.0,hybrid/epoch-06/sample_008/gt_all.wav
+6,ulsan_010526,8,한 십 프로 정도는 게임에 투자하고 그랬던 것 같습니다 확실히 돈을 쫌 투자하니까,pred_all,0.05797101557254791,0.18840579688549042,hybrid/epoch-06/sample_008/pred_all.wav
+6,ulsan_010526,8,한 십 프로 정도는 게임에 투자하고 그랬던 것 같습니다 확실히 돈을 쫌 투자하니까,pred_q0_to_0_gt_rest,0.9492753744125366,0.18840579688549042,hybrid/epoch-06/sample_008/pred_q0_to_0_gt_rest.wav
+6,ulsan_010526,8,한 십 프로 정도는 게임에 투자하고 그랬던 것 같습니다 확실히 돈을 쫌 투자하니까,gt_q0_to_0_pred_rest,0.10869564861059189,1.0,hybrid/epoch-06/sample_008/gt_q0_to_0_pred_rest.wav
+6,ulsan_010526,8,한 십 프로 정도는 게임에 투자하고 그랬던 것 같습니다 확실히 돈을 쫌 투자하니까,pred_q0_to_1_gt_rest,0.8985507488250732,0.18840579688549042,hybrid/epoch-06/sample_008/pred_q0_to_1_gt_rest.wav
+6,ulsan_010526,8,한 십 프로 정도는 게임에 투자하고 그랬던 것 같습니다 확실히 돈을 쫌 투자하니까,gt_q0_to_1_pred_rest,0.15942029654979706,1.0,hybrid/epoch-06/sample_008/gt_q0_to_1_pred_rest.wav
+6,ulsan_010526,8,한 십 프로 정도는 게임에 투자하고 그랬던 것 같습니다 확실히 돈을 쫌 투자하니까,pred_q0_to_3_gt_rest,0.7807971239089966,0.18840579688549042,hybrid/epoch-06/sample_008/pred_q0_to_3_gt_rest.wav
+6,ulsan_010526,8,한 십 프로 정도는 게임에 투자하고 그랬던 것 같습니다 확실히 돈을 쫌 투자하니까,gt_q0_to_3_pred_rest,0.2771739065647125,1.0,hybrid/epoch-06/sample_008/gt_q0_to_3_pred_rest.wav
+6,ulsan_010526,8,한 십 프로 정도는 게임에 투자하고 그랬던 것 같습니다 확실히 돈을 쫌 투자하니까,pred_q0_to_7_gt_rest,0.5443840622901917,0.18840579688549042,hybrid/epoch-06/sample_008/pred_q0_to_7_gt_rest.wav
+6,ulsan_010526,8,한 십 프로 정도는 게임에 투자하고 그랬던 것 같습니다 확실히 돈을 쫌 투자하니까,gt_q0_to_7_pred_rest,0.5135869383811951,1.0,hybrid/epoch-06/sample_008/gt_q0_to_7_pred_rest.wav
+6,ulsan_011947,9,그 동물을 정말 싫어하셨거든.,gt_all,1.0,1.0,hybrid/epoch-06/sample_009/gt_all.wav
+6,ulsan_011947,9,그 동물을 정말 싫어하셨거든.,pred_all,0.028846153989434242,0.07692307978868484,hybrid/epoch-06/sample_009/pred_all.wav
+6,ulsan_011947,9,그 동물을 정말 싫어하셨거든.,pred_q0_to_0_gt_rest,0.942307710647583,0.07692307978868484,hybrid/epoch-06/sample_009/pred_q0_to_0_gt_rest.wav
+6,ulsan_011947,9,그 동물을 정말 싫어하셨거든.,gt_q0_to_0_pred_rest,0.08653846383094788,1.0,hybrid/epoch-06/sample_009/gt_q0_to_0_pred_rest.wav
+6,ulsan_011947,9,그 동물을 정말 싫어하셨거든.,pred_q0_to_1_gt_rest,0.8822115659713745,0.07692307978868484,hybrid/epoch-06/sample_009/pred_q0_to_1_gt_rest.wav
+6,ulsan_011947,9,그 동물을 정말 싫어하셨거든.,gt_q0_to_1_pred_rest,0.14663460850715637,1.0,hybrid/epoch-06/sample_009/gt_q0_to_1_pred_rest.wav
+6,ulsan_011947,9,그 동물을 정말 싫어하셨거든.,pred_q0_to_3_gt_rest,0.7644230723381042,0.07692307978868484,hybrid/epoch-06/sample_009/pred_q0_to_3_gt_rest.wav
+6,ulsan_011947,9,그 동물을 정말 싫어하셨거든.,gt_q0_to_3_pred_rest,0.26442307233810425,1.0,hybrid/epoch-06/sample_009/gt_q0_to_3_pred_rest.wav
+6,ulsan_011947,9,그 동물을 정말 싫어하셨거든.,pred_q0_to_7_gt_rest,0.5240384340286255,0.07692307978868484,hybrid/epoch-06/sample_009/pred_q0_to_7_gt_rest.wav
+6,ulsan_011947,9,그 동물을 정말 싫어하셨거든.,gt_q0_to_7_pred_rest,0.504807710647583,1.0,hybrid/epoch-06/sample_009/gt_q0_to_7_pred_rest.wav
+6,ulsan_013408,10,세 끼 먹는 사람들한테 비하면 이제,gt_all,1.0,1.0,hybrid/epoch-06/sample_010/gt_all.wav
+6,ulsan_013408,10,세 끼 먹는 사람들한테 비하면 이제,pred_all,0.12678571045398712,0.2571428716182709,hybrid/epoch-06/sample_010/pred_all.wav
+6,ulsan_013408,10,세 끼 먹는 사람들한테 비하면 이제,pred_q0_to_0_gt_rest,0.9535714387893677,0.2571428716182709,hybrid/epoch-06/sample_010/pred_q0_to_0_gt_rest.wav
+6,ulsan_013408,10,세 끼 먹는 사람들한테 비하면 이제,gt_q0_to_0_pred_rest,0.17321428656578064,1.0,hybrid/epoch-06/sample_010/gt_q0_to_0_pred_rest.wav
+6,ulsan_013408,10,세 끼 먹는 사람들한테 비하면 이제,pred_q0_to_1_gt_rest,0.9053571224212646,0.2571428716182709,hybrid/epoch-06/sample_010/pred_q0_to_1_gt_rest.wav
+6,ulsan_013408,10,세 끼 먹는 사람들한테 비하면 이제,gt_q0_to_1_pred_rest,0.22142857313156128,1.0,hybrid/epoch-06/sample_010/gt_q0_to_1_pred_rest.wav
+6,ulsan_013408,10,세 끼 먹는 사람들한테 비하면 이제,pred_q0_to_3_gt_rest,0.7982142567634583,0.2571428716182709,hybrid/epoch-06/sample_010/pred_q0_to_3_gt_rest.wav
+6,ulsan_013408,10,세 끼 먹는 사람들한테 비하면 이제,gt_q0_to_3_pred_rest,0.3285714387893677,1.0,hybrid/epoch-06/sample_010/gt_q0_to_3_pred_rest.wav
+6,ulsan_013408,10,세 끼 먹는 사람들한테 비하면 이제,pred_q0_to_7_gt_rest,0.5732142925262451,0.2571428716182709,hybrid/epoch-06/sample_010/pred_q0_to_7_gt_rest.wav
+6,ulsan_013408,10,세 끼 먹는 사람들한테 비하면 이제,gt_q0_to_7_pred_rest,0.5535714030265808,1.0,hybrid/epoch-06/sample_010/gt_q0_to_7_pred_rest.wav
+6,ulsan_014833,11,되게 그때는 난처해 보이더라.,gt_all,1.0,1.0,hybrid/epoch-06/sample_011/gt_all.wav
+6,ulsan_014833,11,되게 그때는 난처해 보이더라.,pred_all,0.03515625,0.125,hybrid/epoch-06/sample_011/pred_all.wav
+6,ulsan_014833,11,되게 그때는 난처해 보이더라.,pred_q0_to_0_gt_rest,0.9453125,0.125,hybrid/epoch-06/sample_011/pred_q0_to_0_gt_rest.wav
+6,ulsan_014833,11,되게 그때는 난처해 보이더라.,gt_q0_to_0_pred_rest,0.08984375,1.0,hybrid/epoch-06/sample_011/gt_q0_to_0_pred_rest.wav
+6,ulsan_014833,11,되게 그때는 난처해 보이더라.,pred_q0_to_1_gt_rest,0.888671875,0.125,hybrid/epoch-06/sample_011/pred_q0_to_1_gt_rest.wav
+6,ulsan_014833,11,되게 그때는 난처해 보이더라.,gt_q0_to_1_pred_rest,0.146484375,1.0,hybrid/epoch-06/sample_011/gt_q0_to_1_pred_rest.wav
+6,ulsan_014833,11,되게 그때는 난처해 보이더라.,pred_q0_to_3_gt_rest,0.771484375,0.125,hybrid/epoch-06/sample_011/pred_q0_to_3_gt_rest.wav
+6,ulsan_014833,11,되게 그때는 난처해 보이더라.,gt_q0_to_3_pred_rest,0.263671875,1.0,hybrid/epoch-06/sample_011/gt_q0_to_3_pred_rest.wav
+6,ulsan_014833,11,되게 그때는 난처해 보이더라.,pred_q0_to_7_gt_rest,0.529296875,0.125,hybrid/epoch-06/sample_011/pred_q0_to_7_gt_rest.wav
+6,ulsan_014833,11,되게 그때는 난처해 보이더라.,gt_q0_to_7_pred_rest,0.505859375,1.0,hybrid/epoch-06/sample_011/gt_q0_to_7_pred_rest.wav
+6,ulsan_016238,12,무조건적으로 착해야 돼요 남자는 무조건적으로 착해야 되고,gt_all,1.0,1.0,hybrid/epoch-06/sample_012/gt_all.wav
+6,ulsan_016238,12,무조건적으로 착해야 돼요 남자는 무조건적으로 착해야 되고,pred_all,0.04336734861135483,0.10204081982374191,hybrid/epoch-06/sample_012/pred_all.wav
+6,ulsan_016238,12,무조건적으로 착해야 돼요 남자는 무조건적으로 착해야 되고,pred_q0_to_0_gt_rest,0.9438775777816772,0.10204081982374191,hybrid/epoch-06/sample_012/pred_q0_to_0_gt_rest.wav
+6,ulsan_016238,12,무조건적으로 착해야 돼요 남자는 무조건적으로 착해야 되고,gt_q0_to_0_pred_rest,0.09948979318141937,1.0,hybrid/epoch-06/sample_012/gt_q0_to_0_pred_rest.wav
+6,ulsan_016238,12,무조건적으로 착해야 돼요 남자는 무조건적으로 착해야 되고,pred_q0_to_1_gt_rest,0.8877550959587097,0.10204081982374191,hybrid/epoch-06/sample_012/pred_q0_to_1_gt_rest.wav
+6,ulsan_016238,12,무조건적으로 착해야 돼요 남자는 무조건적으로 착해야 되고,gt_q0_to_1_pred_rest,0.15561224520206451,1.0,hybrid/epoch-06/sample_012/gt_q0_to_1_pred_rest.wav
+6,ulsan_016238,12,무조건적으로 착해야 돼요 남자는 무조건적으로 착해야 되고,pred_q0_to_3_gt_rest,0.7704081535339355,0.10204081982374191,hybrid/epoch-06/sample_012/pred_q0_to_3_gt_rest.wav
+6,ulsan_016238,12,무조건적으로 착해야 돼요 남자는 무조건적으로 착해야 되고,gt_q0_to_3_pred_rest,0.2729591727256775,1.0,hybrid/epoch-06/sample_012/gt_q0_to_3_pred_rest.wav
+6,ulsan_016238,12,무조건적으로 착해야 돼요 남자는 무조건적으로 착해야 되고,pred_q0_to_7_gt_rest,0.5344387888908386,0.10204081982374191,hybrid/epoch-06/sample_012/pred_q0_to_7_gt_rest.wav
+6,ulsan_016238,12,무조건적으로 착해야 돼요 남자는 무조건적으로 착해야 되고,gt_q0_to_7_pred_rest,0.5089285969734192,1.0,hybrid/epoch-06/sample_012/gt_q0_to_7_pred_rest.wav
+6,ulsan_017657,13,이게 자기만의 인생의 낙이니까 그러려니 하고 내 인생의 낙이 사라졌는데 그것도 모르고 그렇게 얘기하는 거 보면,gt_all,1.0,1.0,hybrid/epoch-06/sample_013/gt_all.wav
+6,ulsan_017657,13,이게 자기만의 인생의 낙이니까 그러려니 하고 내 인생의 낙이 사라졌는데 그것도 모르고 그렇게 얘기하는 거 보면,pred_all,0.02986111119389534,0.21111111342906952,hybrid/epoch-06/sample_013/pred_all.wav
+6,ulsan_017657,13,이게 자기만의 인생의 낙이니까 그러려니 하고 내 인생의 낙이 사라졌는데 그것도 모르고 그렇게 얘기하는 거 보면,pred_q0_to_0_gt_rest,0.9506944417953491,0.21111111342906952,hybrid/epoch-06/sample_013/pred_q0_to_0_gt_rest.wav
+6,ulsan_017657,13,이게 자기만의 인생의 낙이니까 그러려니 하고 내 인생의 낙이 사라졌는데 그것도 모르고 그렇게 얘기하는 거 보면,gt_q0_to_0_pred_rest,0.07916666567325592,1.0,hybrid/epoch-06/sample_013/gt_q0_to_0_pred_rest.wav
+6,ulsan_017657,13,이게 자기만의 인생의 낙이니까 그러려니 하고 내 인생의 낙이 사라졌는데 그것도 모르고 그렇게 얘기하는 거 보면,pred_q0_to_1_gt_rest,0.8930555582046509,0.21111111342906952,hybrid/epoch-06/sample_013/pred_q0_to_1_gt_rest.wav
+6,ulsan_017657,13,이게 자기만의 인생의 낙이니까 그러려니 하고 내 인생의 낙이 사라졌는데 그것도 모르고 그렇게 얘기하는 거 보면,gt_q0_to_1_pred_rest,0.13680554926395416,1.0,hybrid/epoch-06/sample_013/gt_q0_to_1_pred_rest.wav
+6,ulsan_017657,13,이게 자기만의 인생의 낙이니까 그러려니 하고 내 인생의 낙이 사라졌는데 그것도 모르고 그렇게 얘기하는 거 보면,pred_q0_to_3_gt_rest,0.7722222208976746,0.21111111342906952,hybrid/epoch-06/sample_013/pred_q0_to_3_gt_rest.wav
+6,ulsan_017657,13,이게 자기만의 인생의 낙이니까 그러려니 하고 내 인생의 낙이 사라졌는데 그것도 모르고 그렇게 얘기하는 거 보면,gt_q0_to_3_pred_rest,0.2576389014720917,1.0,hybrid/epoch-06/sample_013/gt_q0_to_3_pred_rest.wav
+6,ulsan_017657,13,이게 자기만의 인생의 낙이니까 그러려니 하고 내 인생의 낙이 사라졌는데 그것도 모르고 그렇게 얘기하는 거 보면,pred_q0_to_7_gt_rest,0.5263888835906982,0.21111111342906952,hybrid/epoch-06/sample_013/pred_q0_to_7_gt_rest.wav
+6,ulsan_017657,13,이게 자기만의 인생의 낙이니까 그러려니 하고 내 인생의 낙이 사라졌는데 그것도 모르고 그렇게 얘기하는 거 보면,gt_q0_to_7_pred_rest,0.5034722089767456,1.0,hybrid/epoch-06/sample_013/gt_q0_to_7_pred_rest.wav
+6,ulsan_019266,14,하긴 했는데 막,gt_all,1.0,1.0,hybrid/epoch-06/sample_014/gt_all.wav
+6,ulsan_019266,14,하긴 했는데 막,pred_all,0.0691964253783226,0.1428571492433548,hybrid/epoch-06/sample_014/pred_all.wav
+6,ulsan_019266,14,하긴 했는데 막,pred_q0_to_0_gt_rest,0.9464285969734192,0.1428571492433548,hybrid/epoch-06/sample_014/pred_q0_to_0_gt_rest.wav
+6,ulsan_019266,14,하긴 했는데 막,gt_q0_to_0_pred_rest,0.1227678582072258,1.0,hybrid/epoch-06/sample_014/gt_q0_to_0_pred_rest.wav
+6,ulsan_019266,14,하긴 했는데 막,pred_q0_to_1_gt_rest,0.8995535969734192,0.1428571492433548,hybrid/epoch-06/sample_014/pred_q0_to_1_gt_rest.wav
+6,ulsan_019266,14,하긴 했는데 막,gt_q0_to_1_pred_rest,0.1696428507566452,1.0,hybrid/epoch-06/sample_014/gt_q0_to_1_pred_rest.wav
+6,ulsan_019266,14,하긴 했는데 막,pred_q0_to_3_gt_rest,0.7901785969734192,0.1428571492433548,hybrid/epoch-06/sample_014/pred_q0_to_3_gt_rest.wav
+6,ulsan_019266,14,하긴 했는데 막,gt_q0_to_3_pred_rest,0.2790178656578064,1.0,hybrid/epoch-06/sample_014/gt_q0_to_3_pred_rest.wav
+6,ulsan_019266,14,하긴 했는데 막,pred_q0_to_7_gt_rest,0.5513392686843872,0.1428571492433548,hybrid/epoch-06/sample_014/pred_q0_to_7_gt_rest.wav
+6,ulsan_019266,14,하긴 했는데 막,gt_q0_to_7_pred_rest,0.5178571343421936,1.0,hybrid/epoch-06/sample_014/gt_q0_to_7_pred_rest.wav
+6,ulsan_020724,15,그런 근데 또 그게 문제인 게 그런 템들이,gt_all,1.0,1.0,hybrid/epoch-06/sample_015/gt_all.wav
+6,ulsan_020724,15,그런 근데 또 그게 문제인 게 그런 템들이,pred_all,0.04326923191547394,0.23076923191547394,hybrid/epoch-06/sample_015/pred_all.wav
+6,ulsan_020724,15,그런 근데 또 그게 문제인 게 그런 템들이,pred_q0_to_0_gt_rest,0.9519230723381042,0.23076923191547394,hybrid/epoch-06/sample_015/pred_q0_to_0_gt_rest.wav
+6,ulsan_020724,15,그런 근데 또 그게 문제인 게 그런 템들이,gt_q0_to_0_pred_rest,0.09134615212678909,1.0,hybrid/epoch-06/sample_015/gt_q0_to_0_pred_rest.wav
+6,ulsan_020724,15,그런 근데 또 그게 문제인 게 그런 템들이,pred_q0_to_1_gt_rest,0.8978365659713745,0.23076923191547394,hybrid/epoch-06/sample_015/pred_q0_to_1_gt_rest.wav
+6,ulsan_020724,15,그런 근데 또 그게 문제인 게 그런 템들이,gt_q0_to_1_pred_rest,0.14543269574642181,1.0,hybrid/epoch-06/sample_015/gt_q0_to_1_pred_rest.wav
+6,ulsan_020724,15,그런 근데 또 그게 문제인 게 그런 템들이,pred_q0_to_3_gt_rest,0.7800480723381042,0.23076923191547394,hybrid/epoch-06/sample_015/pred_q0_to_3_gt_rest.wav
+6,ulsan_020724,15,그런 근데 또 그게 문제인 게 그런 템들이,gt_q0_to_3_pred_rest,0.2632211446762085,1.0,hybrid/epoch-06/sample_015/gt_q0_to_3_pred_rest.wav
+6,ulsan_020724,15,그런 근데 또 그게 문제인 게 그런 템들이,pred_q0_to_7_gt_rest,0.5372596383094788,0.23076923191547394,hybrid/epoch-06/sample_015/pred_q0_to_7_gt_rest.wav
+6,ulsan_020724,15,그런 근데 또 그게 문제인 게 그런 템들이,gt_q0_to_7_pred_rest,0.5060096383094788,1.0,hybrid/epoch-06/sample_015/gt_q0_to_7_pred_rest.wav
+6,ulsan_022134,16,이제 남자가 노처녀 귀신이어서,gt_all,1.0,1.0,hybrid/epoch-06/sample_016/gt_all.wav
+6,ulsan_022134,16,이제 남자가 노처녀 귀신이어서,pred_all,0.037109375,0.1875,hybrid/epoch-06/sample_016/pred_all.wav
+6,ulsan_022134,16,이제 남자가 노처녀 귀신이어서,pred_q0_to_0_gt_rest,0.94921875,0.1875,hybrid/epoch-06/sample_016/pred_q0_to_0_gt_rest.wav
+6,ulsan_022134,16,이제 남자가 노처녀 귀신이어서,gt_q0_to_0_pred_rest,0.087890625,1.0,hybrid/epoch-06/sample_016/gt_q0_to_0_pred_rest.wav
+6,ulsan_022134,16,이제 남자가 노처녀 귀신이어서,pred_q0_to_1_gt_rest,0.890625,0.1875,hybrid/epoch-06/sample_016/pred_q0_to_1_gt_rest.wav
+6,ulsan_022134,16,이제 남자가 노처녀 귀신이어서,gt_q0_to_1_pred_rest,0.146484375,1.0,hybrid/epoch-06/sample_016/gt_q0_to_1_pred_rest.wav
+6,ulsan_022134,16,이제 남자가 노처녀 귀신이어서,pred_q0_to_3_gt_rest,0.779296875,0.1875,hybrid/epoch-06/sample_016/pred_q0_to_3_gt_rest.wav
+6,ulsan_022134,16,이제 남자가 노처녀 귀신이어서,gt_q0_to_3_pred_rest,0.2578125,1.0,hybrid/epoch-06/sample_016/gt_q0_to_3_pred_rest.wav
+6,ulsan_022134,16,이제 남자가 노처녀 귀신이어서,pred_q0_to_7_gt_rest,0.53515625,0.1875,hybrid/epoch-06/sample_016/pred_q0_to_7_gt_rest.wav
+6,ulsan_022134,16,이제 남자가 노처녀 귀신이어서,gt_q0_to_7_pred_rest,0.501953125,1.0,hybrid/epoch-06/sample_016/gt_q0_to_7_pred_rest.wav
+6,ulsan_023595,17,어~ 맞지 원래,gt_all,1.0,1.0,hybrid/epoch-06/sample_017/gt_all.wav
+6,ulsan_023595,17,어~ 맞지 원래,pred_all,0.02734375,0.1875,hybrid/epoch-06/sample_017/pred_all.wav
+6,ulsan_023595,17,어~ 맞지 원래,pred_q0_to_0_gt_rest,0.94921875,0.1875,hybrid/epoch-06/sample_017/pred_q0_to_0_gt_rest.wav
+6,ulsan_023595,17,어~ 맞지 원래,gt_q0_to_0_pred_rest,0.078125,1.0,hybrid/epoch-06/sample_017/gt_q0_to_0_pred_rest.wav
+6,ulsan_023595,17,어~ 맞지 원래,pred_q0_to_1_gt_rest,0.890625,0.1875,hybrid/epoch-06/sample_017/pred_q0_to_1_gt_rest.wav
+6,ulsan_023595,17,어~ 맞지 원래,gt_q0_to_1_pred_rest,0.13671875,1.0,hybrid/epoch-06/sample_017/gt_q0_to_1_pred_rest.wav
+6,ulsan_023595,17,어~ 맞지 원래,pred_q0_to_3_gt_rest,0.76953125,0.1875,hybrid/epoch-06/sample_017/pred_q0_to_3_gt_rest.wav
+6,ulsan_023595,17,어~ 맞지 원래,gt_q0_to_3_pred_rest,0.2578125,1.0,hybrid/epoch-06/sample_017/gt_q0_to_3_pred_rest.wav
+6,ulsan_023595,17,어~ 맞지 원래,pred_q0_to_7_gt_rest,0.51953125,0.1875,hybrid/epoch-06/sample_017/pred_q0_to_7_gt_rest.wav
+6,ulsan_023595,17,어~ 맞지 원래,gt_q0_to_7_pred_rest,0.5078125,1.0,hybrid/epoch-06/sample_017/gt_q0_to_7_pred_rest.wav
+6,ulsan_024824,18,헤어질 수도 있지만,gt_all,1.0,1.0,hybrid/epoch-06/sample_018/gt_all.wav
+6,ulsan_024824,18,헤어질 수도 있지만,pred_all,0.0334821417927742,0.2142857164144516,hybrid/epoch-06/sample_018/pred_all.wav
+6,ulsan_024824,18,헤어질 수도 있지만,pred_q0_to_0_gt_rest,0.9508928656578064,0.2142857164144516,hybrid/epoch-06/sample_018/pred_q0_to_0_gt_rest.wav
+6,ulsan_024824,18,헤어질 수도 있지만,gt_q0_to_0_pred_rest,0.0825892835855484,1.0,hybrid/epoch-06/sample_018/gt_q0_to_0_pred_rest.wav
+6,ulsan_024824,18,헤어질 수도 있지만,pred_q0_to_1_gt_rest,0.8883928656578064,0.2142857164144516,hybrid/epoch-06/sample_018/pred_q0_to_1_gt_rest.wav
+6,ulsan_024824,18,헤어질 수도 있지만,gt_q0_to_1_pred_rest,0.1450892835855484,1.0,hybrid/epoch-06/sample_018/gt_q0_to_1_pred_rest.wav
+6,ulsan_024824,18,헤어질 수도 있지만,pred_q0_to_3_gt_rest,0.7700892686843872,0.2142857164144516,hybrid/epoch-06/sample_018/pred_q0_to_3_gt_rest.wav
+6,ulsan_024824,18,헤어질 수도 있지만,gt_q0_to_3_pred_rest,0.2633928656578064,1.0,hybrid/epoch-06/sample_018/gt_q0_to_3_pred_rest.wav
+6,ulsan_024824,18,헤어질 수도 있지만,pred_q0_to_7_gt_rest,0.53125,0.2142857164144516,hybrid/epoch-06/sample_018/pred_q0_to_7_gt_rest.wav
+6,ulsan_024824,18,헤어질 수도 있지만,gt_q0_to_7_pred_rest,0.5022321343421936,1.0,hybrid/epoch-06/sample_018/gt_q0_to_7_pred_rest.wav
+6,ulsan_026193,19,어~ 소리도 없이를 스포를 하면 안 되지만,gt_all,1.0,1.0,hybrid/epoch-06/sample_019/gt_all.wav
+6,ulsan_026193,19,어~ 소리도 없이를 스포를 하면 안 되지만,pred_all,0.20803570747375488,0.37142857909202576,hybrid/epoch-06/sample_019/pred_all.wav
+6,ulsan_026193,19,어~ 소리도 없이를 스포를 하면 안 되지만,pred_q0_to_0_gt_rest,0.9607142806053162,0.37142857909202576,hybrid/epoch-06/sample_019/pred_q0_to_0_gt_rest.wav
+6,ulsan_026193,19,어~ 소리도 없이를 스포를 하면 안 되지만,gt_q0_to_0_pred_rest,0.24732142686843872,1.0,hybrid/epoch-06/sample_019/gt_q0_to_0_pred_rest.wav
+6,ulsan_026193,19,어~ 소리도 없이를 스포를 하면 안 되지만,pred_q0_to_1_gt_rest,0.9160714149475098,0.37142857909202576,hybrid/epoch-06/sample_019/pred_q0_to_1_gt_rest.wav
+6,ulsan_026193,19,어~ 소리도 없이를 스포를 하면 안 되지만,gt_q0_to_1_pred_rest,0.2919642925262451,1.0,hybrid/epoch-06/sample_019/gt_q0_to_1_pred_rest.wav
+6,ulsan_026193,19,어~ 소리도 없이를 스포를 하면 안 되지만,pred_q0_to_3_gt_rest,0.8196428418159485,0.37142857909202576,hybrid/epoch-06/sample_019/pred_q0_to_3_gt_rest.wav
+6,ulsan_026193,19,어~ 소리도 없이를 스포를 하면 안 되지만,gt_q0_to_3_pred_rest,0.3883928656578064,1.0,hybrid/epoch-06/sample_019/gt_q0_to_3_pred_rest.wav
+6,ulsan_026193,19,어~ 소리도 없이를 스포를 하면 안 되지만,pred_q0_to_7_gt_rest,0.6232143044471741,0.37142857909202576,hybrid/epoch-06/sample_019/pred_q0_to_7_gt_rest.wav
+6,ulsan_026193,19,어~ 소리도 없이를 스포를 하면 안 되지만,gt_q0_to_7_pred_rest,0.5848214030265808,1.0,hybrid/epoch-06/sample_019/gt_q0_to_7_pred_rest.wav
+6,ulsan_027684,20,쫌 고민을 하고 있 인 있고?,gt_all,1.0,1.0,hybrid/epoch-06/sample_020/gt_all.wav
+6,ulsan_027684,20,쫌 고민을 하고 있 인 있고?,pred_all,0.05535714328289032,0.17142857611179352,hybrid/epoch-06/sample_020/pred_all.wav
+6,ulsan_027684,20,쫌 고민을 하고 있 인 있고?,pred_q0_to_0_gt_rest,0.9482142925262451,0.17142857611179352,hybrid/epoch-06/sample_020/pred_q0_to_0_gt_rest.wav
+6,ulsan_027684,20,쫌 고민을 하고 있 인 있고?,gt_q0_to_0_pred_rest,0.1071428582072258,1.0,hybrid/epoch-06/sample_020/gt_q0_to_0_pred_rest.wav
+6,ulsan_027684,20,쫌 고민을 하고 있 인 있고?,pred_q0_to_1_gt_rest,0.8964285850524902,0.17142857611179352,hybrid/epoch-06/sample_020/pred_q0_to_1_gt_rest.wav
+6,ulsan_027684,20,쫌 고민을 하고 있 인 있고?,gt_q0_to_1_pred_rest,0.15892857313156128,1.0,hybrid/epoch-06/sample_020/gt_q0_to_1_pred_rest.wav
+6,ulsan_027684,20,쫌 고민을 하고 있 인 있고?,pred_q0_to_3_gt_rest,0.7803571224212646,0.17142857611179352,hybrid/epoch-06/sample_020/pred_q0_to_3_gt_rest.wav
+6,ulsan_027684,20,쫌 고민을 하고 있 인 있고?,gt_q0_to_3_pred_rest,0.2750000059604645,1.0,hybrid/epoch-06/sample_020/gt_q0_to_3_pred_rest.wav
+6,ulsan_027684,20,쫌 고민을 하고 있 인 있고?,pred_q0_to_7_gt_rest,0.5482142567634583,0.17142857611179352,hybrid/epoch-06/sample_020/pred_q0_to_7_gt_rest.wav
+6,ulsan_027684,20,쫌 고민을 하고 있 인 있고?,gt_q0_to_7_pred_rest,0.5071428418159485,1.0,hybrid/epoch-06/sample_020/gt_q0_to_7_pred_rest.wav

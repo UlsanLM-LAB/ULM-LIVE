@@ -1,0 +1,9 @@
+{
+  "id": "ulsan_020005",
+  "mean_accuracy": 0.00390625,
+  "q0_accuracy": 0.03125,
+  "residual_accuracy": 0.0020833334419876337,
+  "length_ratio": 1.453125,
+  "frames": 93,
+  "reason": "STOP_PREDICTED"
+}

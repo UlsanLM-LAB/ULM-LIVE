@@ -1,0 +1,120 @@
+{
+  "batch_invariance": [
+    {
+      "case": "alone",
+      "mate_id": null,
+      "mate_semantic_length": null,
+      "sample_semantic_length": 8,
+      "max_abs_logit_difference": 0.0,
+      "mean_abs_logit_difference": 0.0,
+      "argmax_agreement": 1.0,
+      "q0_agreement": 1.0,
+      "codec_ce": 5.985283821821213,
+      "mean_accuracy": 0.06009615212678909,
+      "q0_accuracy": 0.23076923191547394,
+      "residual_accuracy": 0.04871794953942299,
+      "q0_ce": 3.762416362762451,
+      "residual_ce": 6.133474985758464
+    },
+    {
+      "case": "medium_mate",
+      "mate_id": "ulsan_000819",
+      "mate_semantic_length": 24,
+      "sample_semantic_length": 8,
+      "max_abs_logit_difference": 6.1171875,
+      "mean_abs_logit_difference": 0.0891387090086937,
+      "argmax_agreement": 0.8581730723381042,
+      "q0_agreement": 0.807692289352417,
+      "codec_ce": 5.99676126241684,
+      "mean_accuracy": 0.0625,
+      "q0_accuracy": 0.23076923191547394,
+      "residual_accuracy": 0.05128205195069313,
+      "q0_ce": 3.9978699684143066,
+      "residual_ce": 6.130020682017008
+    },
+    {
+      "case": "long_mate",
+      "mate_id": "ulsan_002080",
+      "mate_semantic_length": 49,
+      "sample_semantic_length": 8,
+      "max_abs_logit_difference": 5.5859375,
+      "mean_abs_logit_difference": 0.08501054346561432,
+      "argmax_agreement": 0.8629807829856873,
+      "q0_agreement": 0.807692289352417,
+      "codec_ce": 5.999851018190384,
+      "mean_accuracy": 0.0625,
+      "q0_accuracy": 0.23076923191547394,
+      "residual_accuracy": 0.05128205195069313,
+      "q0_ce": 3.9770359992980957,
+      "residual_ce": 6.134705352783203
+    }
+  ],
+  "shift_summary": {
+    "0": {
+      "codec_ce": 6.317701190710068,
+      "mean_accuracy": 0.04267352633178234,
+      "q0_accuracy": 0.1601165570318699,
+      "residual_accuracy": 0.03484399011358619,
+      "ar_mean_accuracy": 0.009355332353152335,
+      "ar_q0_accuracy": 0.024853480514138937,
+      "ar_residual_accuracy": 0.008322122332174331,
+      "ar_unique_codes": 88.5,
+      "ar_code_entropy": 3.5418874621391296
+    },
+    "4": {
+      "codec_ce": 6.3215252161026,
+      "mean_accuracy": 0.04372866824269295,
+      "q0_accuracy": 0.14514902420341969,
+      "residual_accuracy": 0.03696731058880687,
+      "ar_mean_accuracy": 0.010157498763874173,
+      "ar_q0_accuracy": 0.030535298865288496,
+      "ar_residual_accuracy": 0.00879897887352854,
+      "ar_unique_codes": 113.5,
+      "ar_code_entropy": 3.670612156391144
+    },
+    "8": {
+      "codec_ce": 6.322195112705231,
+      "mean_accuracy": 0.0409903135150671,
+      "q0_accuracy": 0.14252997562289238,
+      "residual_accuracy": 0.03422100143507123,
+      "ar_mean_accuracy": 0.009457469801418483,
+      "ar_q0_accuracy": 0.024853480514138937,
+      "ar_residual_accuracy": 0.00843106914544478,
+      "ar_unique_codes": 86.5,
+      "ar_code_entropy": 3.539936065673828
+    },
+    "16": {
+      "codec_ce": 6.323493160307407,
+      "mean_accuracy": 0.04336007870733738,
+      "q0_accuracy": 0.15181569196283817,
+      "residual_accuracy": 0.03612970421090722,
+      "ar_mean_accuracy": 0.009682713192887604,
+      "ar_q0_accuracy": 0.024853480514138937,
+      "ar_residual_accuracy": 0.008671328716445714,
+      "ar_unique_codes": 109.25,
+      "ar_code_entropy": 3.6607940793037415
+    },
+    "24": {
+      "codec_ce": 6.323806121945381,
+      "mean_accuracy": 0.04179960768669844,
+      "q0_accuracy": 0.14586330950260162,
+      "residual_accuracy": 0.034862027037888765,
+      "ar_mean_accuracy": 0.008921755361370742,
+      "ar_q0_accuracy": 0.024853480514138937,
+      "ar_residual_accuracy": 0.007859640463721007,
+      "ar_unique_codes": 82.0,
+      "ar_code_entropy": 3.485914170742035
+    },
+    "32": {
+      "codec_ce": 6.323960095643997,
+      "mean_accuracy": 0.04213781142607331,
+      "q0_accuracy": 0.14018149115145206,
+      "residual_accuracy": 0.0356015651486814,
+      "ar_mean_accuracy": 0.009092157939448953,
+      "ar_q0_accuracy": 0.024853480514138937,
+      "ar_residual_accuracy": 0.008041403139941394,
+      "ar_unique_codes": 101.0,
+      "ar_code_entropy": 3.603648602962494
+    }
+  }
+}

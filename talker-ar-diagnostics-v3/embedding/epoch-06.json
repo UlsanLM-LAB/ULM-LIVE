@@ -1,0 +1,101 @@
+{
+  "samples": 20,
+  "per_q": [
+    {
+      "q": 0,
+      "exact_accuracy": 0.18636363911527123,
+      "mean_distance": 8.542186068946664,
+      "random_distance": 14.114415168762207
+    },
+    {
+      "q": 1,
+      "exact_accuracy": 0.12272727506404574,
+      "mean_distance": 1.8951659560203553,
+      "random_distance": 4.299781322479248
+    },
+    {
+      "q": 2,
+      "exact_accuracy": 0.08863636597736993,
+      "mean_distance": 1.1062268975106153,
+      "random_distance": 1.4724929332733154
+    },
+    {
+      "q": 3,
+      "exact_accuracy": 0.07727272854694589,
+      "mean_distance": 0.9008644864640453,
+      "random_distance": 1.108340859413147
+    },
+    {
+      "q": 4,
+      "exact_accuracy": 0.057954546112821186,
+      "mean_distance": 0.7598682501099326,
+      "random_distance": 0.9223368167877197
+    },
+    {
+      "q": 5,
+      "exact_accuracy": 0.055681818653829394,
+      "mean_distance": 0.673861147260124,
+      "random_distance": 0.8032205104827881
+    },
+    {
+      "q": 6,
+      "exact_accuracy": 0.05681818252725696,
+      "mean_distance": 0.6105503291568973,
+      "random_distance": 0.7136799097061157
+    },
+    {
+      "q": 7,
+      "exact_accuracy": 0.05340909162239933,
+      "mean_distance": 0.5471956094557588,
+      "random_distance": 0.6476784348487854
+    },
+    {
+      "q": 8,
+      "exact_accuracy": 0.03295454637316818,
+      "mean_distance": 0.5158047509464351,
+      "random_distance": 0.5922175645828247
+    },
+    {
+      "q": 9,
+      "exact_accuracy": 0.03409090979575095,
+      "mean_distance": 0.4726797164163806,
+      "random_distance": 0.5459945201873779
+    },
+    {
+      "q": 10,
+      "exact_accuracy": 0.04545454634776847,
+      "mean_distance": 0.43468893810429354,
+      "random_distance": 0.5068403482437134
+    },
+    {
+      "q": 11,
+      "exact_accuracy": 0.03863636420150711,
+      "mean_distance": 0.41130772520872677,
+      "random_distance": 0.4751829504966736
+    },
+    {
+      "q": 12,
+      "exact_accuracy": 0.026136364629068834,
+      "mean_distance": 0.38699129098518326,
+      "random_distance": 0.44645044207572937
+    },
+    {
+      "q": 13,
+      "exact_accuracy": 0.025000000721774995,
+      "mean_distance": 0.36795654632151126,
+      "random_distance": 0.4209570288658142
+    },
+    {
+      "q": 14,
+      "exact_accuracy": 0.03863636456345293,
+      "mean_distance": 0.34853590801358225,
+      "random_distance": 0.3982647955417633
+    },
+    {
+      "q": 15,
+      "exact_accuracy": 0.03409090984443372,
+      "mean_distance": 0.32059461122209376,
+      "random_distance": 0.3747651278972626
+    }
+  ]
+}

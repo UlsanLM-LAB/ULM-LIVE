@@ -22,6 +22,7 @@ def test_fixed_prompt_composition() -> None:
     assert categories.count("normal") == 5
     assert categories.count("ulsan_dialect") == 5
     assert categories.count("long") == 5
+    assert train.EVALUATION_MAX_FRAMES == 250
 
 
 def test_token_distribution_exposes_single_token_loop() -> None:
@@ -53,4 +54,3 @@ def test_reconstruction_selection_is_deterministic(tmp_path: Path) -> None:
     second = train.select_test_rows(manifest, 20)
     assert [row["id"] for row in first] == [row["id"] for row in second]
     assert len({row["id"] for row in first}) == 20
-

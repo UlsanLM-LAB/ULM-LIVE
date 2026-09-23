@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+# ruff: noqa: E402
 """Fresh production Talker retraining with token-accuracy and listening controls."""
 
 from __future__ import annotations
@@ -20,7 +21,6 @@ from typing import Any
 
 import numpy as np
 import torch
-import torch.nn.functional as F
 from torch.utils.data import DataLoader
 
 repo_root = Path(__file__).resolve().parent.parent
@@ -44,6 +44,7 @@ from ulm_live.utils.audio import load_wav, save_wav
 
 
 SEED = 20260922
+EVALUATION_MAX_FRAMES = 250  # 20 s at 12.5 Hz; model capacity remains 750 frames.
 OLD_BASELINE = {
     "mean_token_accuracy": 0.05874,
     "q0_accuracy": 0.15932,
@@ -276,7 +277,8 @@ def fixed_prompt_evaluation(
             "sampling",
             FIXED_PROMPTS,
             TalkerGenerationConfig(
-                max_new_tokens=750,
+                max_new_tokens=EVALUATION_MAX_FRAMES,
+                max_audio_frames=EVALUATION_MAX_FRAMES,
                 do_sample=True,
                 temperature=0.8,
                 top_p=0.9,
@@ -288,7 +290,8 @@ def fixed_prompt_evaluation(
             "greedy",
             FIXED_PROMPTS[:10],
             TalkerGenerationConfig(
-                max_new_tokens=750,
+                max_new_tokens=EVALUATION_MAX_FRAMES,
+                max_audio_frames=EVALUATION_MAX_FRAMES,
                 do_sample=False,
                 stop_threshold=0.50,
                 return_details=True,
@@ -431,7 +434,8 @@ def autoregressive_reconstruction(
     device: torch.device,
 ) -> tuple[torch.Tensor, dict[str, Any]]:
     config = TalkerGenerationConfig(
-        max_new_tokens=750,
+        max_new_tokens=EVALUATION_MAX_FRAMES,
+        max_audio_frames=EVALUATION_MAX_FRAMES,
         do_sample=False,
         stop_threshold=0.50,
         return_details=True,
@@ -727,6 +731,8 @@ def main() -> None:
         "stop_loss_weight": args.stop_loss_weight,
         "total_optimizer_steps_planned": total_steps,
         "full_generation_epochs": list(range(2, args.epochs + 1, 2)),
+        "evaluation_max_frames": EVALUATION_MAX_FRAMES,
+        "evaluation_max_seconds": EVALUATION_MAX_FRAMES / 12.5,
     }
     write_json(output_dir / "training_config.json", run_config)
     synthesizer = SpeechSynthesizer(

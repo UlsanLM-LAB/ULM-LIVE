@@ -1,0 +1,10242 @@
+[
+  {
+    "id": "ulsan_019127",
+    "speaker": "DKSR20001507_2",
+    "duration": 3.42
+  },
+  {
+    "id": "ulsan_003264",
+    "speaker": "DKSR20001147_1",
+    "duration": 2.53
+  },
+  {
+    "id": "ulsan_001502",
+    "speaker": "DKSR20001131_2",
+    "duration": 3.93
+  },
+  {
+    "id": "ulsan_001828",
+    "speaker": "DKSR20001132_2",
+    "duration": 1.7
+  },
+  {
+    "id": "ulsan_007354",
+    "speaker": "DKSR20001348_1",
+    "duration": 6.65
+  },
+  {
+    "id": "ulsan_023831",
+    "speaker": "DKSR20000958_2",
+    "duration": 5.31
+  },
+  {
+    "id": "ulsan_026597",
+    "speaker": "DKSR20000979_1",
+    "duration": 6.75
+  },
+  {
+    "id": "ulsan_010456",
+    "speaker": "DKSR20001594_2",
+    "duration": 5.57
+  },
+  {
+    "id": "ulsan_011878",
+    "speaker": "DKSR20001617_1",
+    "duration": 3.44
+  },
+  {
+    "id": "ulsan_011033",
+    "speaker": "DKSR20001609_1",
+    "duration": 3.71
+  },
+  {
+    "id": "ulsan_006873",
+    "speaker": "DKSR20001300_1",
+    "duration": 5.82
+  },
+  {
+    "id": "ulsan_027154",
+    "speaker": "DKSR20000980_1",
+    "duration": 6.15
+  },
+  {
+    "id": "ulsan_005028",
+    "speaker": "DKSR20001169_2",
+    "duration": 4.44
+  },
+  {
+    "id": "ulsan_005964",
+    "speaker": "DKSR20001284_2",
+    "duration": 3.21
+  },
+  {
+    "id": "ulsan_009642",
+    "speaker": "DKSR20001536_2",
+    "duration": 2.51
+  },
+  {
+    "id": "ulsan_003816",
+    "speaker": "DKSR20001165_2",
+    "duration": 4.99
+  },
+  {
+    "id": "ulsan_012661",
+    "speaker": "DKSR20001650_1",
+    "duration": 6.54
+  },
+  {
+    "id": "ulsan_008002",
+    "speaker": "DKSR20001353_1",
+    "duration": 5.52
+  },
+  {
+    "id": "ulsan_001820",
+    "speaker": "DKSR20001132_1",
+    "duration": 5.71
+  },
+  {
+    "id": "ulsan_025422",
+    "speaker": "DKSR20000974_1",
+    "duration": 5.19
+  },
+  {
+    "id": "ulsan_006253",
+    "speaker": "DKSR20001285_1",
+    "duration": 3.34
+  },
+  {
+    "id": "ulsan_005727",
+    "speaker": "DKSR20001280_2",
+    "duration": 3.23
+  },
+  {
+    "id": "ulsan_002154",
+    "speaker": "DKSR20001144_2",
+    "duration": 1.9
+  },
+  {
+    "id": "ulsan_000000",
+    "speaker": "DKSR20000953_1",
+    "duration": 4.87
+  },
+  {
+    "id": "ulsan_022035",
+    "speaker": "DKSR20001569_1",
+    "duration": 5.33
+  },
+  {
+    "id": "ulsan_011897",
+    "speaker": "DKSR20001617_2",
+    "duration": 4.44
+  },
+  {
+    "id": "ulsan_010722",
+    "speaker": "DKSR20001608_1",
+    "duration": 7.87
+  },
+  {
+    "id": "ulsan_007356",
+    "speaker": "DKSR20001348_2",
+    "duration": 5.97
+  },
+  {
+    "id": "ulsan_000409",
+    "speaker": "DKSR20000954_1",
+    "duration": 4.63
+  },
+  {
+    "id": "ulsan_024045",
+    "speaker": "DKSR20000961_1",
+    "duration": 6.17
+  },
+  {
+    "id": "ulsan_026048",
+    "speaker": "DKSR20000975_1",
+    "duration": 4.29
+  },
+  {
+    "id": "ulsan_004658",
+    "speaker": "DKSR20001168_1",
+    "duration": 6.61
+  },
+  {
+    "id": "ulsan_025453",
+    "speaker": "DKSR20000974_2",
+    "duration": 5.49
+  },
+  {
+    "id": "ulsan_012422",
+    "speaker": "DKSR20001649_1",
+    "duration": 3.75
+  },
+  {
+    "id": "ulsan_012425",
+    "speaker": "DKSR20001649_2",
+    "duration": 3.61
+  },
+  {
+    "id": "ulsan_025700",
+    "speaker": "DKSR20001157_1",
+    "duration": 7.25
+  },
+  {
+    "id": "ulsan_002548",
+    "speaker": "DKSR20001145_2",
+    "duration": 3.7
+  },
+  {
+    "id": "ulsan_023829",
+    "speaker": "DKSR20000958_1",
+    "duration": 6.29
+  },
+  {
+    "id": "ulsan_018854",
+    "speaker": "DKSR20001491_2",
+    "duration": 5.89
+  },
+  {
+    "id": "ulsan_027158",
+    "speaker": "DKSR20000980_2",
+    "duration": 5.88
+  },
+  {
+    "id": "ulsan_010185",
+    "speaker": "DKSR20001593_1",
+    "duration": 4.36
+  },
+  {
+    "id": "ulsan_019429",
+    "speaker": "DKSR20001508_2",
+    "duration": 5.69
+  },
+  {
+    "id": "ulsan_009020",
+    "speaker": "DKSR20001487_2",
+    "duration": 6.71
+  },
+  {
+    "id": "ulsan_017304",
+    "speaker": "DKSR20001287_1",
+    "duration": 4.53
+  },
+  {
+    "id": "ulsan_021256",
+    "speaker": "DKSR20001534_2",
+    "duration": 4.82
+  },
+  {
+    "id": "ulsan_018510",
+    "speaker": "DKSR20001386_2",
+    "duration": 7.39
+  },
+  {
+    "id": "ulsan_012890",
+    "speaker": "DKSR20001651_1",
+    "duration": 6.23
+  },
+  {
+    "id": "ulsan_004372",
+    "speaker": "DKSR20001167_1",
+    "duration": 5.06
+  },
+  {
+    "id": "ulsan_002897",
+    "speaker": "DKSR20001146_2",
+    "duration": 2.97
+  },
+  {
+    "id": "ulsan_027392",
+    "speaker": "DKSR20001204_2",
+    "duration": 4.8
+  },
+  {
+    "id": "ulsan_026598",
+    "speaker": "DKSR20000979_2",
+    "duration": 4.24
+  },
+  {
+    "id": "ulsan_024828",
+    "speaker": "DKSR20000973_1",
+    "duration": 6.51
+  },
+  {
+    "id": "ulsan_011639",
+    "speaker": "DKSR20001611_2",
+    "duration": 3.27
+  },
+  {
+    "id": "ulsan_026849",
+    "speaker": "DKSR20001203_1",
+    "duration": 5.56
+  },
+  {
+    "id": "ulsan_018188",
+    "speaker": "DKSR20001380_1",
+    "duration": 5.07
+  },
+  {
+    "id": "ulsan_015941",
+    "speaker": "DKSR20001206_2",
+    "duration": 4.91
+  },
+  {
+    "id": "ulsan_015940",
+    "speaker": "DKSR20001206_1",
+    "duration": 5.99
+  },
+  {
+    "id": "ulsan_019718",
+    "speaker": "DKSR20001509_1",
+    "duration": 4.14
+  },
+  {
+    "id": "ulsan_001208",
+    "speaker": "DKSR20001094_2",
+    "duration": 3.55
+  },
+  {
+    "id": "ulsan_008762",
+    "speaker": "DKSR20001476_2",
+    "duration": 6.25
+  },
+  {
+    "id": "ulsan_021431",
+    "speaker": "DKSR20001537_2",
+    "duration": 3.06
+  },
+  {
+    "id": "ulsan_009322",
+    "speaker": "DKSR20001535_1",
+    "duration": 5.86
+  },
+  {
+    "id": "ulsan_014234",
+    "speaker": "DKSR20001032_2",
+    "duration": 5.44
+  },
+  {
+    "id": "ulsan_007563",
+    "speaker": "DKSR20001351_2",
+    "duration": 5.97
+  },
+  {
+    "id": "ulsan_013560",
+    "speaker": "DKSR20001715_2",
+    "duration": 3.3
+  },
+  {
+    "id": "ulsan_000441",
+    "speaker": "DKSR20000954_2",
+    "duration": 1.19
+  },
+  {
+    "id": "ulsan_006596",
+    "speaker": "DKSR20001286_2",
+    "duration": 4.45
+  },
+  {
+    "id": "ulsan_018200",
+    "speaker": "DKSR20001380_2",
+    "duration": 4.35
+  },
+  {
+    "id": "ulsan_024533",
+    "speaker": "DKSR20000962_1",
+    "duration": 6.83
+  },
+  {
+    "id": "ulsan_022732",
+    "speaker": "DKSR20001571_1",
+    "duration": 6.67
+  },
+  {
+    "id": "ulsan_000778",
+    "speaker": "DKSR20000959_2",
+    "duration": 5.97
+  },
+  {
+    "id": "ulsan_008010",
+    "speaker": "DKSR20001353_2",
+    "duration": 6.68
+  },
+  {
+    "id": "ulsan_021033",
+    "speaker": "DKSR20001533_2",
+    "duration": 3.52
+  },
+  {
+    "id": "ulsan_012214",
+    "speaker": "DKSR20001618_2",
+    "duration": 3.44
+  },
+  {
+    "id": "ulsan_021020",
+    "speaker": "DKSR20001533_1",
+    "duration": 4.74
+  },
+  {
+    "id": "ulsan_027387",
+    "speaker": "DKSR20001204_1",
+    "duration": 4.56
+  },
+  {
+    "id": "ulsan_017607",
+    "speaker": "DKSR20001288_1",
+    "duration": 4.16
+  },
+  {
+    "id": "ulsan_020254",
+    "speaker": "DKSR20001511_2",
+    "duration": 5.98
+  },
+  {
+    "id": "ulsan_020527",
+    "speaker": "DKSR20001512_2",
+    "duration": 3.79
+  },
+  {
+    "id": "ulsan_020525",
+    "speaker": "DKSR20001512_1",
+    "duration": 3.12
+  },
+  {
+    "id": "ulsan_018641",
+    "speaker": "DKSR20001387_1",
+    "duration": 4.6
+  },
+  {
+    "id": "ulsan_021691",
+    "speaker": "DKSR20001568_2",
+    "duration": 6.33
+  },
+  {
+    "id": "ulsan_011370",
+    "speaker": "DKSR20001610_2",
+    "duration": 5.38
+  },
+  {
+    "id": "ulsan_026262",
+    "speaker": "DKSR20001158_1",
+    "duration": 7.65
+  },
+  {
+    "id": "ulsan_024829",
+    "speaker": "DKSR20000973_2",
+    "duration": 4.17
+  },
+  {
+    "id": "ulsan_013854",
+    "speaker": "DKSR20001031_1",
+    "duration": 5.9
+  },
+  {
+    "id": "ulsan_022382",
+    "speaker": "DKSR20001570_2",
+    "duration": 3.02
+  },
+  {
+    "id": "ulsan_003267",
+    "speaker": "DKSR20001147_2",
+    "duration": 3.52
+  },
+  {
+    "id": "ulsan_002526",
+    "speaker": "DKSR20001145_1",
+    "duration": 4.52
+  },
+  {
+    "id": "ulsan_005375",
+    "speaker": "DKSR20001278_1",
+    "duration": 6.18
+  },
+  {
+    "id": "ulsan_026277",
+    "speaker": "DKSR20001158_2",
+    "duration": 3.09
+  },
+  {
+    "id": "ulsan_023257",
+    "speaker": "DKSR20000955_1",
+    "duration": 6.45
+  },
+  {
+    "id": "ulsan_018729",
+    "speaker": "DKSR20001388_2",
+    "duration": 6.83
+  },
+  {
+    "id": "ulsan_014212",
+    "speaker": "DKSR20001032_1",
+    "duration": 2.99
+  },
+  {
+    "id": "ulsan_011038",
+    "speaker": "DKSR20001609_2",
+    "duration": 2.44
+  },
+  {
+    "id": "ulsan_018518",
+    "speaker": "DKSR20001386_1",
+    "duration": 7.73
+  },
+  {
+    "id": "ulsan_004097",
+    "speaker": "DKSR20001166_2",
+    "duration": 4.45
+  },
+  {
+    "id": "ulsan_023611",
+    "speaker": "DKSR20000957_2",
+    "duration": 5.96
+  },
+  {
+    "id": "ulsan_017067",
+    "speaker": "DKSR20001241_2",
+    "duration": 4.6
+  },
+  {
+    "id": "ulsan_005409",
+    "speaker": "DKSR20001278_2",
+    "duration": 1.91
+  },
+  {
+    "id": "ulsan_012662",
+    "speaker": "DKSR20001650_2",
+    "duration": 3.28
+  },
+  {
+    "id": "ulsan_023258",
+    "speaker": "DKSR20000955_2",
+    "duration": 4.61
+  },
+  {
+    "id": "ulsan_017311",
+    "speaker": "DKSR20001287_2",
+    "duration": 3.91
+  },
+  {
+    "id": "ulsan_020814",
+    "speaker": "DKSR20001532_2",
+    "duration": 7.78
+  },
+  {
+    "id": "ulsan_004667",
+    "speaker": "DKSR20001168_2",
+    "duration": 4.03
+  },
+  {
+    "id": "ulsan_000763",
+    "speaker": "DKSR20000959_1",
+    "duration": 4.87
+  },
+  {
+    "id": "ulsan_025133",
+    "speaker": "DKSR20001156_2",
+    "duration": 2.52
+  },
+  {
+    "id": "ulsan_013165",
+    "speaker": "DKSR20001677_2",
+    "duration": 5.01
+  },
+  {
+    "id": "ulsan_025113",
+    "speaker": "DKSR20001156_1",
+    "duration": 6.34
+  },
+  {
+    "id": "ulsan_019138",
+    "speaker": "DKSR20001507_1",
+    "duration": 6.42
+  },
+  {
+    "id": "ulsan_017928",
+    "speaker": "DKSR20001336_2",
+    "duration": 5.81
+  },
+  {
+    "id": "ulsan_013861",
+    "speaker": "DKSR20001031_2",
+    "duration": 5.85
+  },
+  {
+    "id": "ulsan_016768",
+    "speaker": "DKSR20001240_1",
+    "duration": 7.86
+  },
+  {
+    "id": "ulsan_018619",
+    "speaker": "DKSR20001387_2",
+    "duration": 7.54
+  },
+  {
+    "id": "ulsan_008385",
+    "speaker": "DKSR20001475_1",
+    "duration": 5.95
+  },
+  {
+    "id": "ulsan_015056",
+    "speaker": "DKSR20001159_1",
+    "duration": 6.75
+  },
+  {
+    "id": "ulsan_019703",
+    "speaker": "DKSR20001509_2",
+    "duration": 5.98
+  },
+  {
+    "id": "ulsan_008196",
+    "speaker": "DKSR20001413_2",
+    "duration": 4.09
+  },
+  {
+    "id": "ulsan_016229",
+    "speaker": "DKSR20001207_2",
+    "duration": 3.18
+  },
+  {
+    "id": "ulsan_017924",
+    "speaker": "DKSR20001336_1",
+    "duration": 4.72
+  },
+  {
+    "id": "ulsan_011363",
+    "speaker": "DKSR20001610_1",
+    "duration": 6.95
+  },
+  {
+    "id": "ulsan_006279",
+    "speaker": "DKSR20001285_2",
+    "duration": 3.73
+  },
+  {
+    "id": "ulsan_009329",
+    "speaker": "DKSR20001535_2",
+    "duration": 4.04
+  },
+  {
+    "id": "ulsan_005659",
+    "speaker": "DKSR20001280_1",
+    "duration": 5.21
+  },
+  {
+    "id": "ulsan_005026",
+    "speaker": "DKSR20001169_1",
+    "duration": 6.56
+  },
+  {
+    "id": "ulsan_014636",
+    "speaker": "DKSR20001033_1",
+    "duration": 7.56
+  },
+  {
+    "id": "ulsan_009625",
+    "speaker": "DKSR20001536_1",
+    "duration": 2.1
+  },
+  {
+    "id": "ulsan_015660",
+    "speaker": "DKSR20001202_2",
+    "duration": 3.77
+  },
+  {
+    "id": "ulsan_010452",
+    "speaker": "DKSR20001594_1",
+    "duration": 5.26
+  },
+  {
+    "id": "ulsan_016227",
+    "speaker": "DKSR20001207_1",
+    "duration": 6.14
+  },
+  {
+    "id": "ulsan_019419",
+    "speaker": "DKSR20001508_1",
+    "duration": 4.58
+  },
+  {
+    "id": "ulsan_007554",
+    "speaker": "DKSR20001351_1",
+    "duration": 4.79
+  },
+  {
+    "id": "ulsan_024046",
+    "speaker": "DKSR20000961_2",
+    "duration": 2.32
+  },
+  {
+    "id": "ulsan_013557",
+    "speaker": "DKSR20001715_1",
+    "duration": 5.8
+  },
+  {
+    "id": "ulsan_024274",
+    "speaker": "DKSR20000963_1",
+    "duration": 3.42
+  },
+  {
+    "id": "ulsan_001498",
+    "speaker": "DKSR20001131_1",
+    "duration": 6.6
+  },
+  {
+    "id": "ulsan_017614",
+    "speaker": "DKSR20001288_2",
+    "duration": 4.25
+  },
+  {
+    "id": "ulsan_015069",
+    "speaker": "DKSR20001159_2",
+    "duration": 6.27
+  },
+  {
+    "id": "ulsan_003814",
+    "speaker": "DKSR20001165_1",
+    "duration": 5.42
+  },
+  {
+    "id": "ulsan_012893",
+    "speaker": "DKSR20001651_2",
+    "duration": 4.47
+  },
+  {
+    "id": "ulsan_022739",
+    "speaker": "DKSR20001571_2",
+    "duration": 4.16
+  },
+  {
+    "id": "ulsan_006876",
+    "speaker": "DKSR20001300_2",
+    "duration": 4.93
+  },
+  {
+    "id": "ulsan_024540",
+    "speaker": "DKSR20000962_2",
+    "duration": 5.03
+  },
+  {
+    "id": "ulsan_010188",
+    "speaker": "DKSR20001593_2",
+    "duration": 3.32
+  },
+  {
+    "id": "ulsan_007770",
+    "speaker": "DKSR20001352_1",
+    "duration": 6.45
+  },
+  {
+    "id": "ulsan_021424",
+    "speaker": "DKSR20001537_1",
+    "duration": 2.52
+  },
+  {
+    "id": "ulsan_007791",
+    "speaker": "DKSR20001352_2",
+    "duration": 4.05
+  },
+  {
+    "id": "ulsan_002144",
+    "speaker": "DKSR20001144_1",
+    "duration": 3.3
+  },
+  {
+    "id": "ulsan_014644",
+    "speaker": "DKSR20001033_2",
+    "duration": 4.0
+  },
+  {
+    "id": "ulsan_004387",
+    "speaker": "DKSR20001167_2",
+    "duration": 3.92
+  },
+  {
+    "id": "ulsan_011637",
+    "speaker": "DKSR20001611_1",
+    "duration": 7.02
+  },
+  {
+    "id": "ulsan_009931",
+    "speaker": "DKSR20001592_2",
+    "duration": 3.79
+  },
+  {
+    "id": "ulsan_008722",
+    "speaker": "DKSR20001476_1",
+    "duration": 3.86
+  },
+  {
+    "id": "ulsan_008403",
+    "speaker": "DKSR20001475_2",
+    "duration": 3.2
+  },
+  {
+    "id": "ulsan_026852",
+    "speaker": "DKSR20001203_2",
+    "duration": 3.68
+  },
+  {
+    "id": "ulsan_026057",
+    "speaker": "DKSR20000975_2",
+    "duration": 6.01
+  },
+  {
+    "id": "ulsan_004093",
+    "speaker": "DKSR20001166_1",
+    "duration": 6.68
+  },
+  {
+    "id": "ulsan_001225",
+    "speaker": "DKSR20001094_1",
+    "duration": 3.03
+  },
+  {
+    "id": "ulsan_021227",
+    "speaker": "DKSR20001534_1",
+    "duration": 5.21
+  },
+  {
+    "id": "ulsan_007114",
+    "speaker": "DKSR20001301_1",
+    "duration": 7.21
+  },
+  {
+    "id": "ulsan_020250",
+    "speaker": "DKSR20001511_1",
+    "duration": 6.93
+  },
+  {
+    "id": "ulsan_016532",
+    "speaker": "DKSR20001208_2",
+    "duration": 3.71
+  },
+  {
+    "id": "ulsan_018846",
+    "speaker": "DKSR20001491_1",
+    "duration": 5.3
+  },
+  {
+    "id": "ulsan_006565",
+    "speaker": "DKSR20001286_1",
+    "duration": 7.87
+  },
+  {
+    "id": "ulsan_022038",
+    "speaker": "DKSR20001569_2",
+    "duration": 2.75
+  },
+  {
+    "id": "ulsan_021690",
+    "speaker": "DKSR20001568_1",
+    "duration": 6.99
+  },
+  {
+    "id": "ulsan_020001",
+    "speaker": "DKSR20001510_1",
+    "duration": 4.38
+  },
+  {
+    "id": "ulsan_002882",
+    "speaker": "DKSR20001146_1",
+    "duration": 3.86
+  },
+  {
+    "id": "ulsan_000052",
+    "speaker": "DKSR20000953_2",
+    "duration": 2.6
+  },
+  {
+    "id": "ulsan_016769",
+    "speaker": "DKSR20001240_2",
+    "duration": 4.4
+  },
+  {
+    "id": "ulsan_013163",
+    "speaker": "DKSR20001677_1",
+    "duration": 3.65
+  },
+  {
+    "id": "ulsan_019974",
+    "speaker": "DKSR20001510_2",
+    "duration": 4.41
+  },
+  {
+    "id": "ulsan_023015",
+    "speaker": "DKSR20000956_2",
+    "duration": 4.0
+  },
+  {
+    "id": "ulsan_025720",
+    "speaker": "DKSR20001157_2",
+    "duration": 1.72
+  },
+  {
+    "id": "ulsan_016496",
+    "speaker": "DKSR20001208_1",
+    "duration": 2.72
+  },
+  {
+    "id": "ulsan_000991",
+    "speaker": "DKSR20000960_2",
+    "duration": 5.83
+  },
+  {
+    "id": "ulsan_024276",
+    "speaker": "DKSR20000963_2",
+    "duration": 3.86
+  },
+  {
+    "id": "ulsan_010725",
+    "speaker": "DKSR20001608_2",
+    "duration": 4.89
+  },
+  {
+    "id": "ulsan_009929",
+    "speaker": "DKSR20001592_1",
+    "duration": 5.65
+  },
+  {
+    "id": "ulsan_018738",
+    "speaker": "DKSR20001388_1",
+    "duration": 7.25
+  },
+  {
+    "id": "ulsan_000974",
+    "speaker": "DKSR20000960_1",
+    "duration": 5.69
+  },
+  {
+    "id": "ulsan_020806",
+    "speaker": "DKSR20001532_1",
+    "duration": 3.76
+  },
+  {
+    "id": "ulsan_012152",
+    "speaker": "DKSR20001618_1",
+    "duration": 4.59
+  },
+  {
+    "id": "ulsan_003605",
+    "speaker": "DKSR20001149_2",
+    "duration": 5.59
+  },
+  {
+    "id": "ulsan_009018",
+    "speaker": "DKSR20001487_1",
+    "duration": 3.73
+  },
+  {
+    "id": "ulsan_023608",
+    "speaker": "DKSR20000957_1",
+    "duration": 4.96
+  },
+  {
+    "id": "ulsan_022381",
+    "speaker": "DKSR20001570_1",
+    "duration": 4.78
+  },
+  {
+    "id": "ulsan_023009",
+    "speaker": "DKSR20000956_1",
+    "duration": 6.06
+  },
+  {
+    "id": "ulsan_003603",
+    "speaker": "DKSR20001149_1",
+    "duration": 6.05
+  },
+  {
+    "id": "ulsan_008194",
+    "speaker": "DKSR20001413_1",
+    "duration": 7.72
+  },
+  {
+    "id": "ulsan_007123",
+    "speaker": "DKSR20001301_2",
+    "duration": 3.45
+  },
+  {
+    "id": "ulsan_015368",
+    "speaker": "DKSR20001160_1",
+    "duration": 1.65
+  },
+  {
+    "id": "ulsan_005959",
+    "speaker": "DKSR20001284_1",
+    "duration": 2.59
+  },
+  {
+    "id": "ulsan_015657",
+    "speaker": "DKSR20001202_1",
+    "duration": 6.49
+  },
+  {
+    "id": "ulsan_015371",
+    "speaker": "DKSR20001160_2",
+    "duration": 2.28
+  },
+  {
+    "id": "ulsan_017060",
+    "speaker": "DKSR20001241_1",
+    "duration": 5.91
+  },
+  {
+    "id": "ulsan_019128",
+    "speaker": "DKSR20001507_2",
+    "duration": 3.93
+  },
+  {
+    "id": "ulsan_003271",
+    "speaker": "DKSR20001147_1",
+    "duration": 2.03
+  },
+  {
+    "id": "ulsan_001503",
+    "speaker": "DKSR20001131_2",
+    "duration": 4.32
+  },
+  {
+    "id": "ulsan_001830",
+    "speaker": "DKSR20001132_2",
+    "duration": 3.45
+  },
+  {
+    "id": "ulsan_007360",
+    "speaker": "DKSR20001348_1",
+    "duration": 6.61
+  },
+  {
+    "id": "ulsan_023832",
+    "speaker": "DKSR20000958_2",
+    "duration": 5.9
+  },
+  {
+    "id": "ulsan_026617",
+    "speaker": "DKSR20000979_1",
+    "duration": 4.48
+  },
+  {
+    "id": "ulsan_010457",
+    "speaker": "DKSR20001594_2",
+    "duration": 3.1
+  },
+  {
+    "id": "ulsan_011879",
+    "speaker": "DKSR20001617_1",
+    "duration": 5.81
+  },
+  {
+    "id": "ulsan_011034",
+    "speaker": "DKSR20001609_1",
+    "duration": 3.73
+  },
+  {
+    "id": "ulsan_006880",
+    "speaker": "DKSR20001300_1",
+    "duration": 2.82
+  },
+  {
+    "id": "ulsan_027155",
+    "speaker": "DKSR20000980_1",
+    "duration": 3.98
+  },
+  {
+    "id": "ulsan_005030",
+    "speaker": "DKSR20001169_2",
+    "duration": 2.67
+  },
+  {
+    "id": "ulsan_005966",
+    "speaker": "DKSR20001284_2",
+    "duration": 3.18
+  },
+  {
+    "id": "ulsan_009643",
+    "speaker": "DKSR20001536_2",
+    "duration": 5.37
+  },
+  {
+    "id": "ulsan_003817",
+    "speaker": "DKSR20001165_2",
+    "duration": 2.52
+  },
+  {
+    "id": "ulsan_012666",
+    "speaker": "DKSR20001650_1",
+    "duration": 4.53
+  },
+  {
+    "id": "ulsan_008005",
+    "speaker": "DKSR20001353_1",
+    "duration": 6.89
+  },
+  {
+    "id": "ulsan_001821",
+    "speaker": "DKSR20001132_1",
+    "duration": 1.16
+  },
+  {
+    "id": "ulsan_025423",
+    "speaker": "DKSR20000974_1",
+    "duration": 4.33
+  },
+  {
+    "id": "ulsan_006254",
+    "speaker": "DKSR20001285_1",
+    "duration": 5.96
+  },
+  {
+    "id": "ulsan_005728",
+    "speaker": "DKSR20001280_2",
+    "duration": 3.72
+  },
+  {
+    "id": "ulsan_002155",
+    "speaker": "DKSR20001144_2",
+    "duration": 3.81
+  },
+  {
+    "id": "ulsan_000001",
+    "speaker": "DKSR20000953_1",
+    "duration": 5.85
+  },
+  {
+    "id": "ulsan_022036",
+    "speaker": "DKSR20001569_1",
+    "duration": 4.24
+  },
+  {
+    "id": "ulsan_011899",
+    "speaker": "DKSR20001617_2",
+    "duration": 2.12
+  },
+  {
+    "id": "ulsan_010724",
+    "speaker": "DKSR20001608_1",
+    "duration": 5.97
+  },
+  {
+    "id": "ulsan_007357",
+    "speaker": "DKSR20001348_2",
+    "duration": 3.9
+  },
+  {
+    "id": "ulsan_000413",
+    "speaker": "DKSR20000954_1",
+    "duration": 3.61
+  },
+  {
+    "id": "ulsan_024089",
+    "speaker": "DKSR20000961_1",
+    "duration": 3.36
+  },
+  {
+    "id": "ulsan_026049",
+    "speaker": "DKSR20000975_1",
+    "duration": 2.63
+  },
+  {
+    "id": "ulsan_004659",
+    "speaker": "DKSR20001168_1",
+    "duration": 2.53
+  },
+  {
+    "id": "ulsan_025455",
+    "speaker": "DKSR20000974_2",
+    "duration": 1.97
+  },
+  {
+    "id": "ulsan_012423",
+    "speaker": "DKSR20001649_1",
+    "duration": 4.62
+  },
+  {
+    "id": "ulsan_012426",
+    "speaker": "DKSR20001649_2",
+    "duration": 6.42
+  },
+  {
+    "id": "ulsan_025701",
+    "speaker": "DKSR20001157_1",
+    "duration": 3.73
+  },
+  {
+    "id": "ulsan_002549",
+    "speaker": "DKSR20001145_2",
+    "duration": 2.75
+  },
+  {
+    "id": "ulsan_023830",
+    "speaker": "DKSR20000958_1",
+    "duration": 7.28
+  },
+  {
+    "id": "ulsan_018855",
+    "speaker": "DKSR20001491_2",
+    "duration": 3.89
+  },
+  {
+    "id": "ulsan_027159",
+    "speaker": "DKSR20000980_2",
+    "duration": 1.81
+  },
+  {
+    "id": "ulsan_010186",
+    "speaker": "DKSR20001593_1",
+    "duration": 6.79
+  },
+  {
+    "id": "ulsan_019430",
+    "speaker": "DKSR20001508_2",
+    "duration": 1.81
+  },
+  {
+    "id": "ulsan_009022",
+    "speaker": "DKSR20001487_2",
+    "duration": 6.17
+  },
+  {
+    "id": "ulsan_017305",
+    "speaker": "DKSR20001287_1",
+    "duration": 1.41
+  },
+  {
+    "id": "ulsan_021258",
+    "speaker": "DKSR20001534_2",
+    "duration": 7.92
+  },
+  {
+    "id": "ulsan_018513",
+    "speaker": "DKSR20001386_2",
+    "duration": 5.75
+  },
+  {
+    "id": "ulsan_012894",
+    "speaker": "DKSR20001651_1",
+    "duration": 4.01
+  },
+  {
+    "id": "ulsan_004375",
+    "speaker": "DKSR20001167_1",
+    "duration": 2.81
+  },
+  {
+    "id": "ulsan_002898",
+    "speaker": "DKSR20001146_2",
+    "duration": 6.19
+  },
+  {
+    "id": "ulsan_027393",
+    "speaker": "DKSR20001204_2",
+    "duration": 4.32
+  },
+  {
+    "id": "ulsan_026600",
+    "speaker": "DKSR20000979_2",
+    "duration": 6.81
+  },
+  {
+    "id": "ulsan_024854",
+    "speaker": "DKSR20000973_1",
+    "duration": 3.7
+  },
+  {
+    "id": "ulsan_011640",
+    "speaker": "DKSR20001611_2",
+    "duration": 2.66
+  },
+  {
+    "id": "ulsan_026850",
+    "speaker": "DKSR20001203_1",
+    "duration": 1.58
+  },
+  {
+    "id": "ulsan_018189",
+    "speaker": "DKSR20001380_1",
+    "duration": 3.18
+  },
+  {
+    "id": "ulsan_015942",
+    "speaker": "DKSR20001206_2",
+    "duration": 4.02
+  },
+  {
+    "id": "ulsan_015944",
+    "speaker": "DKSR20001206_1",
+    "duration": 2.11
+  },
+  {
+    "id": "ulsan_019719",
+    "speaker": "DKSR20001509_1",
+    "duration": 3.29
+  },
+  {
+    "id": "ulsan_001210",
+    "speaker": "DKSR20001094_2",
+    "duration": 4.75
+  },
+  {
+    "id": "ulsan_008763",
+    "speaker": "DKSR20001476_2",
+    "duration": 3.11
+  },
+  {
+    "id": "ulsan_021432",
+    "speaker": "DKSR20001537_2",
+    "duration": 2.93
+  },
+  {
+    "id": "ulsan_009323",
+    "speaker": "DKSR20001535_1",
+    "duration": 4.77
+  },
+  {
+    "id": "ulsan_014235",
+    "speaker": "DKSR20001032_2",
+    "duration": 2.94
+  },
+  {
+    "id": "ulsan_007564",
+    "speaker": "DKSR20001351_2",
+    "duration": 7.82
+  },
+  {
+    "id": "ulsan_013562",
+    "speaker": "DKSR20001715_2",
+    "duration": 2.18
+  },
+  {
+    "id": "ulsan_000442",
+    "speaker": "DKSR20000954_2",
+    "duration": 4.27
+  },
+  {
+    "id": "ulsan_006597",
+    "speaker": "DKSR20001286_2",
+    "duration": 4.47
+  },
+  {
+    "id": "ulsan_018201",
+    "speaker": "DKSR20001380_2",
+    "duration": 4.31
+  },
+  {
+    "id": "ulsan_024535",
+    "speaker": "DKSR20000962_1",
+    "duration": 3.08
+  },
+  {
+    "id": "ulsan_022733",
+    "speaker": "DKSR20001571_1",
+    "duration": 3.06
+  },
+  {
+    "id": "ulsan_000779",
+    "speaker": "DKSR20000959_2",
+    "duration": 6.02
+  },
+  {
+    "id": "ulsan_008013",
+    "speaker": "DKSR20001353_2",
+    "duration": 4.06
+  },
+  {
+    "id": "ulsan_021035",
+    "speaker": "DKSR20001533_2",
+    "duration": 2.78
+  },
+  {
+    "id": "ulsan_012215",
+    "speaker": "DKSR20001618_2",
+    "duration": 5.41
+  },
+  {
+    "id": "ulsan_021021",
+    "speaker": "DKSR20001533_1",
+    "duration": 5.34
+  },
+  {
+    "id": "ulsan_027388",
+    "speaker": "DKSR20001204_1",
+    "duration": 3.71
+  },
+  {
+    "id": "ulsan_017608",
+    "speaker": "DKSR20001288_1",
+    "duration": 2.47
+  },
+  {
+    "id": "ulsan_020255",
+    "speaker": "DKSR20001511_2",
+    "duration": 5.81
+  },
+  {
+    "id": "ulsan_020528",
+    "speaker": "DKSR20001512_2",
+    "duration": 2.79
+  },
+  {
+    "id": "ulsan_020526",
+    "speaker": "DKSR20001512_1",
+    "duration": 4.07
+  },
+  {
+    "id": "ulsan_018644",
+    "speaker": "DKSR20001387_1",
+    "duration": 7.02
+  },
+  {
+    "id": "ulsan_021694",
+    "speaker": "DKSR20001568_2",
+    "duration": 5.59
+  },
+  {
+    "id": "ulsan_011371",
+    "speaker": "DKSR20001610_2",
+    "duration": 4.06
+  },
+  {
+    "id": "ulsan_026263",
+    "speaker": "DKSR20001158_1",
+    "duration": 4.34
+  },
+  {
+    "id": "ulsan_024830",
+    "speaker": "DKSR20000973_2",
+    "duration": 4.99
+  },
+  {
+    "id": "ulsan_013855",
+    "speaker": "DKSR20001031_1",
+    "duration": 3.46
+  },
+  {
+    "id": "ulsan_022384",
+    "speaker": "DKSR20001570_2",
+    "duration": 4.78
+  },
+  {
+    "id": "ulsan_003268",
+    "speaker": "DKSR20001147_2",
+    "duration": 3.22
+  },
+  {
+    "id": "ulsan_002528",
+    "speaker": "DKSR20001145_1",
+    "duration": 6.64
+  },
+  {
+    "id": "ulsan_005377",
+    "speaker": "DKSR20001278_1",
+    "duration": 3.47
+  },
+  {
+    "id": "ulsan_026278",
+    "speaker": "DKSR20001158_2",
+    "duration": 2.47
+  },
+  {
+    "id": "ulsan_023288",
+    "speaker": "DKSR20000955_1",
+    "duration": 4.76
+  },
+  {
+    "id": "ulsan_018733",
+    "speaker": "DKSR20001388_2",
+    "duration": 5.59
+  },
+  {
+    "id": "ulsan_014214",
+    "speaker": "DKSR20001032_1",
+    "duration": 2.55
+  },
+  {
+    "id": "ulsan_011042",
+    "speaker": "DKSR20001609_2",
+    "duration": 3.57
+  },
+  {
+    "id": "ulsan_018535",
+    "speaker": "DKSR20001386_1",
+    "duration": 6.28
+  },
+  {
+    "id": "ulsan_004098",
+    "speaker": "DKSR20001166_2",
+    "duration": 4.22
+  },
+  {
+    "id": "ulsan_023612",
+    "speaker": "DKSR20000957_2",
+    "duration": 6.67
+  },
+  {
+    "id": "ulsan_017068",
+    "speaker": "DKSR20001241_2",
+    "duration": 4.14
+  },
+  {
+    "id": "ulsan_005412",
+    "speaker": "DKSR20001278_2",
+    "duration": 3.41
+  },
+  {
+    "id": "ulsan_012664",
+    "speaker": "DKSR20001650_2",
+    "duration": 7.46
+  },
+  {
+    "id": "ulsan_023259",
+    "speaker": "DKSR20000955_2",
+    "duration": 2.85
+  },
+  {
+    "id": "ulsan_017313",
+    "speaker": "DKSR20001287_2",
+    "duration": 3.09
+  },
+  {
+    "id": "ulsan_020815",
+    "speaker": "DKSR20001532_2",
+    "duration": 4.04
+  },
+  {
+    "id": "ulsan_004669",
+    "speaker": "DKSR20001168_2",
+    "duration": 3.91
+  },
+  {
+    "id": "ulsan_000764",
+    "speaker": "DKSR20000959_1",
+    "duration": 6.42
+  },
+  {
+    "id": "ulsan_025134",
+    "speaker": "DKSR20001156_2",
+    "duration": 2.95
+  },
+  {
+    "id": "ulsan_013166",
+    "speaker": "DKSR20001677_2",
+    "duration": 4.22
+  },
+  {
+    "id": "ulsan_025116",
+    "speaker": "DKSR20001156_1",
+    "duration": 2.09
+  },
+  {
+    "id": "ulsan_019139",
+    "speaker": "DKSR20001507_1",
+    "duration": 3.05
+  },
+  {
+    "id": "ulsan_017929",
+    "speaker": "DKSR20001336_2",
+    "duration": 4.59
+  },
+  {
+    "id": "ulsan_013862",
+    "speaker": "DKSR20001031_2",
+    "duration": 1.23
+  },
+  {
+    "id": "ulsan_016773",
+    "speaker": "DKSR20001240_1",
+    "duration": 7.18
+  },
+  {
+    "id": "ulsan_018622",
+    "speaker": "DKSR20001387_2",
+    "duration": 7.97
+  },
+  {
+    "id": "ulsan_008387",
+    "speaker": "DKSR20001475_1",
+    "duration": 3.09
+  },
+  {
+    "id": "ulsan_015057",
+    "speaker": "DKSR20001159_1",
+    "duration": 3.93
+  },
+  {
+    "id": "ulsan_019704",
+    "speaker": "DKSR20001509_2",
+    "duration": 2.21
+  },
+  {
+    "id": "ulsan_008197",
+    "speaker": "DKSR20001413_2",
+    "duration": 3.96
+  },
+  {
+    "id": "ulsan_016230",
+    "speaker": "DKSR20001207_2",
+    "duration": 4.97
+  },
+  {
+    "id": "ulsan_017925",
+    "speaker": "DKSR20001336_1",
+    "duration": 2.48
+  },
+  {
+    "id": "ulsan_011364",
+    "speaker": "DKSR20001610_1",
+    "duration": 4.48
+  },
+  {
+    "id": "ulsan_006280",
+    "speaker": "DKSR20001285_2",
+    "duration": 3.24
+  },
+  {
+    "id": "ulsan_009331",
+    "speaker": "DKSR20001535_2",
+    "duration": 4.01
+  },
+  {
+    "id": "ulsan_005660",
+    "speaker": "DKSR20001280_1",
+    "duration": 5.8
+  },
+  {
+    "id": "ulsan_005027",
+    "speaker": "DKSR20001169_1",
+    "duration": 5.81
+  },
+  {
+    "id": "ulsan_014637",
+    "speaker": "DKSR20001033_1",
+    "duration": 2.07
+  },
+  {
+    "id": "ulsan_009627",
+    "speaker": "DKSR20001536_1",
+    "duration": 1.38
+  },
+  {
+    "id": "ulsan_015661",
+    "speaker": "DKSR20001202_2",
+    "duration": 6.91
+  },
+  {
+    "id": "ulsan_010453",
+    "speaker": "DKSR20001594_1",
+    "duration": 5.98
+  },
+  {
+    "id": "ulsan_016228",
+    "speaker": "DKSR20001207_1",
+    "duration": 1.86
+  },
+  {
+    "id": "ulsan_019421",
+    "speaker": "DKSR20001508_1",
+    "duration": 3.55
+  },
+  {
+    "id": "ulsan_007555",
+    "speaker": "DKSR20001351_1",
+    "duration": 7.18
+  },
+  {
+    "id": "ulsan_024047",
+    "speaker": "DKSR20000961_2",
+    "duration": 4.98
+  },
+  {
+    "id": "ulsan_013558",
+    "speaker": "DKSR20001715_1",
+    "duration": 5.53
+  },
+  {
+    "id": "ulsan_024275",
+    "speaker": "DKSR20000963_1",
+    "duration": 7.66
+  },
+  {
+    "id": "ulsan_001500",
+    "speaker": "DKSR20001131_1",
+    "duration": 4.17
+  },
+  {
+    "id": "ulsan_017615",
+    "speaker": "DKSR20001288_2",
+    "duration": 3.1
+  },
+  {
+    "id": "ulsan_015070",
+    "speaker": "DKSR20001159_2",
+    "duration": 3.87
+  },
+  {
+    "id": "ulsan_003815",
+    "speaker": "DKSR20001165_1",
+    "duration": 4.16
+  },
+  {
+    "id": "ulsan_012899",
+    "speaker": "DKSR20001651_2",
+    "duration": 4.35
+  },
+  {
+    "id": "ulsan_022741",
+    "speaker": "DKSR20001571_2",
+    "duration": 3.23
+  },
+  {
+    "id": "ulsan_006887",
+    "speaker": "DKSR20001300_2",
+    "duration": 4.63
+  },
+  {
+    "id": "ulsan_024541",
+    "speaker": "DKSR20000962_2",
+    "duration": 4.59
+  },
+  {
+    "id": "ulsan_010189",
+    "speaker": "DKSR20001593_2",
+    "duration": 5.79
+  },
+  {
+    "id": "ulsan_007771",
+    "speaker": "DKSR20001352_1",
+    "duration": 2.44
+  },
+  {
+    "id": "ulsan_021425",
+    "speaker": "DKSR20001537_1",
+    "duration": 3.16
+  },
+  {
+    "id": "ulsan_007792",
+    "speaker": "DKSR20001352_2",
+    "duration": 4.81
+  },
+  {
+    "id": "ulsan_002145",
+    "speaker": "DKSR20001144_1",
+    "duration": 1.88
+  },
+  {
+    "id": "ulsan_014645",
+    "speaker": "DKSR20001033_2",
+    "duration": 3.07
+  },
+  {
+    "id": "ulsan_004388",
+    "speaker": "DKSR20001167_2",
+    "duration": 5.29
+  },
+  {
+    "id": "ulsan_011638",
+    "speaker": "DKSR20001611_1",
+    "duration": 2.65
+  },
+  {
+    "id": "ulsan_009932",
+    "speaker": "DKSR20001592_2",
+    "duration": 2.55
+  },
+  {
+    "id": "ulsan_008723",
+    "speaker": "DKSR20001476_1",
+    "duration": 6.68
+  },
+  {
+    "id": "ulsan_008404",
+    "speaker": "DKSR20001475_2",
+    "duration": 3.2
+  },
+  {
+    "id": "ulsan_026854",
+    "speaker": "DKSR20001203_2",
+    "duration": 6.77
+  },
+  {
+    "id": "ulsan_026058",
+    "speaker": "DKSR20000975_2",
+    "duration": 5.23
+  },
+  {
+    "id": "ulsan_004094",
+    "speaker": "DKSR20001166_1",
+    "duration": 2.14
+  },
+  {
+    "id": "ulsan_001226",
+    "speaker": "DKSR20001094_1",
+    "duration": 2.55
+  },
+  {
+    "id": "ulsan_021228",
+    "speaker": "DKSR20001534_1",
+    "duration": 4.29
+  },
+  {
+    "id": "ulsan_007115",
+    "speaker": "DKSR20001301_1",
+    "duration": 5.5
+  },
+  {
+    "id": "ulsan_020251",
+    "speaker": "DKSR20001511_1",
+    "duration": 2.66
+  },
+  {
+    "id": "ulsan_016533",
+    "speaker": "DKSR20001208_2",
+    "duration": 4.2
+  },
+  {
+    "id": "ulsan_018847",
+    "speaker": "DKSR20001491_1",
+    "duration": 3.36
+  },
+  {
+    "id": "ulsan_006566",
+    "speaker": "DKSR20001286_1",
+    "duration": 2.18
+  },
+  {
+    "id": "ulsan_022039",
+    "speaker": "DKSR20001569_2",
+    "duration": 6.41
+  },
+  {
+    "id": "ulsan_021701",
+    "speaker": "DKSR20001568_1",
+    "duration": 5.93
+  },
+  {
+    "id": "ulsan_020002",
+    "speaker": "DKSR20001510_1",
+    "duration": 2.12
+  },
+  {
+    "id": "ulsan_002883",
+    "speaker": "DKSR20001146_1",
+    "duration": 3.25
+  },
+  {
+    "id": "ulsan_000053",
+    "speaker": "DKSR20000953_2",
+    "duration": 2.72
+  },
+  {
+    "id": "ulsan_016770",
+    "speaker": "DKSR20001240_2",
+    "duration": 1.85
+  },
+  {
+    "id": "ulsan_013164",
+    "speaker": "DKSR20001677_1",
+    "duration": 3.86
+  },
+  {
+    "id": "ulsan_019975",
+    "speaker": "DKSR20001510_2",
+    "duration": 5.59
+  },
+  {
+    "id": "ulsan_023016",
+    "speaker": "DKSR20000956_2",
+    "duration": 4.81
+  },
+  {
+    "id": "ulsan_025721",
+    "speaker": "DKSR20001157_2",
+    "duration": 3.52
+  },
+  {
+    "id": "ulsan_016497",
+    "speaker": "DKSR20001208_1",
+    "duration": 3.86
+  },
+  {
+    "id": "ulsan_000992",
+    "speaker": "DKSR20000960_2",
+    "duration": 7.06
+  },
+  {
+    "id": "ulsan_024277",
+    "speaker": "DKSR20000963_2",
+    "duration": 4.96
+  },
+  {
+    "id": "ulsan_010726",
+    "speaker": "DKSR20001608_2",
+    "duration": 2.42
+  },
+  {
+    "id": "ulsan_009930",
+    "speaker": "DKSR20001592_1",
+    "duration": 5.5
+  },
+  {
+    "id": "ulsan_018739",
+    "speaker": "DKSR20001388_1",
+    "duration": 6.69
+  },
+  {
+    "id": "ulsan_000975",
+    "speaker": "DKSR20000960_1",
+    "duration": 6.52
+  },
+  {
+    "id": "ulsan_020807",
+    "speaker": "DKSR20001532_1",
+    "duration": 6.82
+  },
+  {
+    "id": "ulsan_012155",
+    "speaker": "DKSR20001618_1",
+    "duration": 1.92
+  },
+  {
+    "id": "ulsan_003613",
+    "speaker": "DKSR20001149_2",
+    "duration": 2.99
+  },
+  {
+    "id": "ulsan_009019",
+    "speaker": "DKSR20001487_1",
+    "duration": 2.93
+  },
+  {
+    "id": "ulsan_023609",
+    "speaker": "DKSR20000957_1",
+    "duration": 4.89
+  },
+  {
+    "id": "ulsan_022411",
+    "speaker": "DKSR20001570_1",
+    "duration": 3.51
+  },
+  {
+    "id": "ulsan_023010",
+    "speaker": "DKSR20000956_1",
+    "duration": 2.68
+  },
+  {
+    "id": "ulsan_003606",
+    "speaker": "DKSR20001149_1",
+    "duration": 7.53
+  },
+  {
+    "id": "ulsan_008195",
+    "speaker": "DKSR20001413_1",
+    "duration": 3.05
+  },
+  {
+    "id": "ulsan_007125",
+    "speaker": "DKSR20001301_2",
+    "duration": 3.11
+  },
+  {
+    "id": "ulsan_015370",
+    "speaker": "DKSR20001160_1",
+    "duration": 1.96
+  },
+  {
+    "id": "ulsan_005960",
+    "speaker": "DKSR20001284_1",
+    "duration": 2.78
+  },
+  {
+    "id": "ulsan_015658",
+    "speaker": "DKSR20001202_1",
+    "duration": 2.5
+  },
+  {
+    "id": "ulsan_015372",
+    "speaker": "DKSR20001160_2",
+    "duration": 4.75
+  },
+  {
+    "id": "ulsan_017063",
+    "speaker": "DKSR20001241_1",
+    "duration": 3.71
+  },
+  {
+    "id": "ulsan_019129",
+    "speaker": "DKSR20001507_2",
+    "duration": 3.31
+  },
+  {
+    "id": "ulsan_003272",
+    "speaker": "DKSR20001147_1",
+    "duration": 3.63
+  },
+  {
+    "id": "ulsan_001504",
+    "speaker": "DKSR20001131_2",
+    "duration": 3.6
+  },
+  {
+    "id": "ulsan_001831",
+    "speaker": "DKSR20001132_2",
+    "duration": 3.15
+  },
+  {
+    "id": "ulsan_007361",
+    "speaker": "DKSR20001348_1",
+    "duration": 4.82
+  },
+  {
+    "id": "ulsan_023833",
+    "speaker": "DKSR20000958_2",
+    "duration": 5.36
+  },
+  {
+    "id": "ulsan_026618",
+    "speaker": "DKSR20000979_1",
+    "duration": 4.41
+  },
+  {
+    "id": "ulsan_010458",
+    "speaker": "DKSR20001594_2",
+    "duration": 2.29
+  },
+  {
+    "id": "ulsan_011880",
+    "speaker": "DKSR20001617_1",
+    "duration": 6.05
+  },
+  {
+    "id": "ulsan_011035",
+    "speaker": "DKSR20001609_1",
+    "duration": 4.63
+  },
+  {
+    "id": "ulsan_006881",
+    "speaker": "DKSR20001300_1",
+    "duration": 3.89
+  },
+  {
+    "id": "ulsan_027156",
+    "speaker": "DKSR20000980_1",
+    "duration": 4.09
+  },
+  {
+    "id": "ulsan_005031",
+    "speaker": "DKSR20001169_2",
+    "duration": 2.19
+  },
+  {
+    "id": "ulsan_005968",
+    "speaker": "DKSR20001284_2",
+    "duration": 3.62
+  },
+  {
+    "id": "ulsan_009644",
+    "speaker": "DKSR20001536_2",
+    "duration": 2.72
+  },
+  {
+    "id": "ulsan_003818",
+    "speaker": "DKSR20001165_2",
+    "duration": 2.34
+  },
+  {
+    "id": "ulsan_012667",
+    "speaker": "DKSR20001650_1",
+    "duration": 4.05
+  },
+  {
+    "id": "ulsan_008006",
+    "speaker": "DKSR20001353_1",
+    "duration": 4.97
+  },
+  {
+    "id": "ulsan_001823",
+    "speaker": "DKSR20001132_1",
+    "duration": 2.23
+  },
+  {
+    "id": "ulsan_025424",
+    "speaker": "DKSR20000974_1",
+    "duration": 2.67
+  },
+  {
+    "id": "ulsan_006255",
+    "speaker": "DKSR20001285_1",
+    "duration": 3.44
+  },
+  {
+    "id": "ulsan_005729",
+    "speaker": "DKSR20001280_2",
+    "duration": 3.2
+  },
+  {
+    "id": "ulsan_002157",
+    "speaker": "DKSR20001144_2",
+    "duration": 4.84
+  },
+  {
+    "id": "ulsan_000002",
+    "speaker": "DKSR20000953_1",
+    "duration": 2.18
+  },
+  {
+    "id": "ulsan_022037",
+    "speaker": "DKSR20001569_1",
+    "duration": 3.5
+  },
+  {
+    "id": "ulsan_011900",
+    "speaker": "DKSR20001617_2",
+    "duration": 4.56
+  },
+  {
+    "id": "ulsan_010729",
+    "speaker": "DKSR20001608_1",
+    "duration": 3.61
+  },
+  {
+    "id": "ulsan_007358",
+    "speaker": "DKSR20001348_2",
+    "duration": 5.23
+  },
+  {
+    "id": "ulsan_000414",
+    "speaker": "DKSR20000954_1",
+    "duration": 2.21
+  },
+  {
+    "id": "ulsan_024090",
+    "speaker": "DKSR20000961_1",
+    "duration": 5.81
+  },
+  {
+    "id": "ulsan_026050",
+    "speaker": "DKSR20000975_1",
+    "duration": 6.19
+  },
+  {
+    "id": "ulsan_004660",
+    "speaker": "DKSR20001168_1",
+    "duration": 5.01
+  },
+  {
+    "id": "ulsan_025456",
+    "speaker": "DKSR20000974_2",
+    "duration": 2.32
+  },
+  {
+    "id": "ulsan_012428",
+    "speaker": "DKSR20001649_1",
+    "duration": 4.09
+  },
+  {
+    "id": "ulsan_012427",
+    "speaker": "DKSR20001649_2",
+    "duration": 2.84
+  },
+  {
+    "id": "ulsan_025703",
+    "speaker": "DKSR20001157_1",
+    "duration": 3.2
+  },
+  {
+    "id": "ulsan_002550",
+    "speaker": "DKSR20001145_2",
+    "duration": 5.0
+  },
+  {
+    "id": "ulsan_023836",
+    "speaker": "DKSR20000958_1",
+    "duration": 5.55
+  },
+  {
+    "id": "ulsan_018859",
+    "speaker": "DKSR20001491_2",
+    "duration": 3.3
+  },
+  {
+    "id": "ulsan_027160",
+    "speaker": "DKSR20000980_2",
+    "duration": 6.93
+  },
+  {
+    "id": "ulsan_010193",
+    "speaker": "DKSR20001593_1",
+    "duration": 3.32
+  },
+  {
+    "id": "ulsan_019431",
+    "speaker": "DKSR20001508_2",
+    "duration": 6.1
+  },
+  {
+    "id": "ulsan_009023",
+    "speaker": "DKSR20001487_2",
+    "duration": 4.93
+  },
+  {
+    "id": "ulsan_017307",
+    "speaker": "DKSR20001287_1",
+    "duration": 1.58
+  },
+  {
+    "id": "ulsan_021261",
+    "speaker": "DKSR20001534_2",
+    "duration": 3.07
+  },
+  {
+    "id": "ulsan_018520",
+    "speaker": "DKSR20001386_2",
+    "duration": 2.24
+  },
+  {
+    "id": "ulsan_012895",
+    "speaker": "DKSR20001651_1",
+    "duration": 5.15
+  },
+  {
+    "id": "ulsan_004376",
+    "speaker": "DKSR20001167_1",
+    "duration": 5.06
+  },
+  {
+    "id": "ulsan_002899",
+    "speaker": "DKSR20001146_2",
+    "duration": 1.91
+  },
+  {
+    "id": "ulsan_027394",
+    "speaker": "DKSR20001204_2",
+    "duration": 6.18
+  },
+  {
+    "id": "ulsan_026602",
+    "speaker": "DKSR20000979_2",
+    "duration": 5.99
+  },
+  {
+    "id": "ulsan_024855",
+    "speaker": "DKSR20000973_1",
+    "duration": 3.67
+  },
+  {
+    "id": "ulsan_011642",
+    "speaker": "DKSR20001611_2",
+    "duration": 3.15
+  },
+  {
+    "id": "ulsan_026855",
+    "speaker": "DKSR20001203_1",
+    "duration": 4.39
+  },
+  {
+    "id": "ulsan_018190",
+    "speaker": "DKSR20001380_1",
+    "duration": 3.73
+  },
+  {
+    "id": "ulsan_015962",
+    "speaker": "DKSR20001206_2",
+    "duration": 6.27
+  },
+  {
+    "id": "ulsan_015945",
+    "speaker": "DKSR20001206_1",
+    "duration": 3.28
+  },
+  {
+    "id": "ulsan_019720",
+    "speaker": "DKSR20001509_1",
+    "duration": 5.88
+  },
+  {
+    "id": "ulsan_001211",
+    "speaker": "DKSR20001094_2",
+    "duration": 4.8
+  },
+  {
+    "id": "ulsan_008764",
+    "speaker": "DKSR20001476_2",
+    "duration": 4.81
+  },
+  {
+    "id": "ulsan_021435",
+    "speaker": "DKSR20001537_2",
+    "duration": 3.05
+  },
+  {
+    "id": "ulsan_009324",
+    "speaker": "DKSR20001535_1",
+    "duration": 3.47
+  },
+  {
+    "id": "ulsan_014236",
+    "speaker": "DKSR20001032_2",
+    "duration": 3.6
+  },
+  {
+    "id": "ulsan_007565",
+    "speaker": "DKSR20001351_2",
+    "duration": 4.55
+  },
+  {
+    "id": "ulsan_013563",
+    "speaker": "DKSR20001715_2",
+    "duration": 1.84
+  },
+  {
+    "id": "ulsan_000443",
+    "speaker": "DKSR20000954_2",
+    "duration": 2.74
+  },
+  {
+    "id": "ulsan_006598",
+    "speaker": "DKSR20001286_2",
+    "duration": 3.89
+  },
+  {
+    "id": "ulsan_018202",
+    "speaker": "DKSR20001380_2",
+    "duration": 4.27
+  },
+  {
+    "id": "ulsan_024536",
+    "speaker": "DKSR20000962_1",
+    "duration": 1.85
+  },
+  {
+    "id": "ulsan_022735",
+    "speaker": "DKSR20001571_1",
+    "duration": 4.76
+  },
+  {
+    "id": "ulsan_000781",
+    "speaker": "DKSR20000959_2",
+    "duration": 3.59
+  },
+  {
+    "id": "ulsan_008015",
+    "speaker": "DKSR20001353_2",
+    "duration": 6.27
+  },
+  {
+    "id": "ulsan_021036",
+    "speaker": "DKSR20001533_2",
+    "duration": 3.1
+  },
+  {
+    "id": "ulsan_012216",
+    "speaker": "DKSR20001618_2",
+    "duration": 3.44
+  },
+  {
+    "id": "ulsan_021022",
+    "speaker": "DKSR20001533_1",
+    "duration": 3.93
+  },
+  {
+    "id": "ulsan_027389",
+    "speaker": "DKSR20001204_1",
+    "duration": 2.1
+  },
+  {
+    "id": "ulsan_017609",
+    "speaker": "DKSR20001288_1",
+    "duration": 4.32
+  },
+  {
+    "id": "ulsan_020263",
+    "speaker": "DKSR20001511_2",
+    "duration": 6.82
+  },
+  {
+    "id": "ulsan_020529",
+    "speaker": "DKSR20001512_2",
+    "duration": 5.23
+  },
+  {
+    "id": "ulsan_020537",
+    "speaker": "DKSR20001512_1",
+    "duration": 4.65
+  },
+  {
+    "id": "ulsan_018645",
+    "speaker": "DKSR20001387_1",
+    "duration": 4.8
+  },
+  {
+    "id": "ulsan_021695",
+    "speaker": "DKSR20001568_2",
+    "duration": 1.74
+  },
+  {
+    "id": "ulsan_011373",
+    "speaker": "DKSR20001610_2",
+    "duration": 5.17
+  },
+  {
+    "id": "ulsan_026266",
+    "speaker": "DKSR20001158_1",
+    "duration": 2.12
+  },
+  {
+    "id": "ulsan_024831",
+    "speaker": "DKSR20000973_2",
+    "duration": 2.71
+  },
+  {
+    "id": "ulsan_013856",
+    "speaker": "DKSR20001031_1",
+    "duration": 2.86
+  },
+  {
+    "id": "ulsan_022385",
+    "speaker": "DKSR20001570_2",
+    "duration": 2.68
+  },
+  {
+    "id": "ulsan_003270",
+    "speaker": "DKSR20001147_2",
+    "duration": 4.78
+  },
+  {
+    "id": "ulsan_002529",
+    "speaker": "DKSR20001145_1",
+    "duration": 2.94
+  },
+  {
+    "id": "ulsan_005378",
+    "speaker": "DKSR20001278_1",
+    "duration": 5.26
+  },
+  {
+    "id": "ulsan_026279",
+    "speaker": "DKSR20001158_2",
+    "duration": 3.03
+  },
+  {
+    "id": "ulsan_023289",
+    "speaker": "DKSR20000955_1",
+    "duration": 3.01
+  },
+  {
+    "id": "ulsan_018735",
+    "speaker": "DKSR20001388_2",
+    "duration": 4.58
+  },
+  {
+    "id": "ulsan_014215",
+    "speaker": "DKSR20001032_1",
+    "duration": 4.18
+  },
+  {
+    "id": "ulsan_011043",
+    "speaker": "DKSR20001609_2",
+    "duration": 2.27
+  },
+  {
+    "id": "ulsan_018542",
+    "speaker": "DKSR20001386_1",
+    "duration": 3.21
+  },
+  {
+    "id": "ulsan_004099",
+    "speaker": "DKSR20001166_2",
+    "duration": 4.74
+  },
+  {
+    "id": "ulsan_023614",
+    "speaker": "DKSR20000957_2",
+    "duration": 5.02
+  },
+  {
+    "id": "ulsan_017069",
+    "speaker": "DKSR20001241_2",
+    "duration": 3.85
+  },
+  {
+    "id": "ulsan_005413",
+    "speaker": "DKSR20001278_2",
+    "duration": 4.63
+  },
+  {
+    "id": "ulsan_012665",
+    "speaker": "DKSR20001650_2",
+    "duration": 3.2
+  },
+  {
+    "id": "ulsan_023260",
+    "speaker": "DKSR20000955_2",
+    "duration": 1.93
+  },
+  {
+    "id": "ulsan_017314",
+    "speaker": "DKSR20001287_2",
+    "duration": 3.61
+  },
+  {
+    "id": "ulsan_020816",
+    "speaker": "DKSR20001532_2",
+    "duration": 3.44
+  },
+  {
+    "id": "ulsan_004670",
+    "speaker": "DKSR20001168_2",
+    "duration": 4.48
+  },
+  {
+    "id": "ulsan_000765",
+    "speaker": "DKSR20000959_1",
+    "duration": 1.65
+  },
+  {
+    "id": "ulsan_025135",
+    "speaker": "DKSR20001156_2",
+    "duration": 3.67
+  },
+  {
+    "id": "ulsan_013168",
+    "speaker": "DKSR20001677_2",
+    "duration": 2.45
+  },
+  {
+    "id": "ulsan_025117",
+    "speaker": "DKSR20001156_1",
+    "duration": 6.39
+  },
+  {
+    "id": "ulsan_019140",
+    "speaker": "DKSR20001507_1",
+    "duration": 5.39
+  },
+  {
+    "id": "ulsan_017931",
+    "speaker": "DKSR20001336_2",
+    "duration": 3.6
+  },
+  {
+    "id": "ulsan_013863",
+    "speaker": "DKSR20001031_2",
+    "duration": 5.28
+  },
+  {
+    "id": "ulsan_016774",
+    "speaker": "DKSR20001240_1",
+    "duration": 2.54
+  },
+  {
+    "id": "ulsan_018629",
+    "speaker": "DKSR20001387_2",
+    "duration": 7.81
+  },
+  {
+    "id": "ulsan_008388",
+    "speaker": "DKSR20001475_1",
+    "duration": 1.15
+  },
+  {
+    "id": "ulsan_015058",
+    "speaker": "DKSR20001159_1",
+    "duration": 2.45
+  },
+  {
+    "id": "ulsan_019705",
+    "speaker": "DKSR20001509_2",
+    "duration": 6.19
+  },
+  {
+    "id": "ulsan_008198",
+    "speaker": "DKSR20001413_2",
+    "duration": 4.24
+  },
+  {
+    "id": "ulsan_016232",
+    "speaker": "DKSR20001207_2",
+    "duration": 3.99
+  },
+  {
+    "id": "ulsan_017926",
+    "speaker": "DKSR20001336_1",
+    "duration": 2.83
+  },
+  {
+    "id": "ulsan_011365",
+    "speaker": "DKSR20001610_1",
+    "duration": 2.09
+  },
+  {
+    "id": "ulsan_006281",
+    "speaker": "DKSR20001285_2",
+    "duration": 2.57
+  },
+  {
+    "id": "ulsan_009332",
+    "speaker": "DKSR20001535_2",
+    "duration": 3.7
+  },
+  {
+    "id": "ulsan_005661",
+    "speaker": "DKSR20001280_1",
+    "duration": 2.06
+  },
+  {
+    "id": "ulsan_005051",
+    "speaker": "DKSR20001169_1",
+    "duration": 5.0
+  },
+  {
+    "id": "ulsan_014638",
+    "speaker": "DKSR20001033_1",
+    "duration": 2.77
+  },
+  {
+    "id": "ulsan_009628",
+    "speaker": "DKSR20001536_1",
+    "duration": 2.92
+  },
+  {
+    "id": "ulsan_015662",
+    "speaker": "DKSR20001202_2",
+    "duration": 3.65
+  },
+  {
+    "id": "ulsan_010455",
+    "speaker": "DKSR20001594_1",
+    "duration": 3.76
+  },
+  {
+    "id": "ulsan_016237",
+    "speaker": "DKSR20001207_1",
+    "duration": 4.58
+  },
+  {
+    "id": "ulsan_019422",
+    "speaker": "DKSR20001508_1",
+    "duration": 2.79
+  },
+  {
+    "id": "ulsan_007556",
+    "speaker": "DKSR20001351_1",
+    "duration": 6.06
+  },
+  {
+    "id": "ulsan_024048",
+    "speaker": "DKSR20000961_2",
+    "duration": 5.75
+  },
+  {
+    "id": "ulsan_013573",
+    "speaker": "DKSR20001715_1",
+    "duration": 4.86
+  },
+  {
+    "id": "ulsan_024291",
+    "speaker": "DKSR20000963_1",
+    "duration": 5.76
+  },
+  {
+    "id": "ulsan_001501",
+    "speaker": "DKSR20001131_1",
+    "duration": 4.36
+  },
+  {
+    "id": "ulsan_017617",
+    "speaker": "DKSR20001288_2",
+    "duration": 2.32
+  },
+  {
+    "id": "ulsan_015071",
+    "speaker": "DKSR20001159_2",
+    "duration": 4.57
+  },
+  {
+    "id": "ulsan_003827",
+    "speaker": "DKSR20001165_1",
+    "duration": 4.42
+  },
+  {
+    "id": "ulsan_012901",
+    "speaker": "DKSR20001651_2",
+    "duration": 4.74
+  },
+  {
+    "id": "ulsan_022742",
+    "speaker": "DKSR20001571_2",
+    "duration": 2.41
+  },
+  {
+    "id": "ulsan_006888",
+    "speaker": "DKSR20001300_2",
+    "duration": 6.76
+  },
+  {
+    "id": "ulsan_024542",
+    "speaker": "DKSR20000962_2",
+    "duration": 4.65
+  },
+  {
+    "id": "ulsan_010191",
+    "speaker": "DKSR20001593_2",
+    "duration": 4.41
+  },
+  {
+    "id": "ulsan_007772",
+    "speaker": "DKSR20001352_1",
+    "duration": 2.56
+  },
+  {
+    "id": "ulsan_021426",
+    "speaker": "DKSR20001537_1",
+    "duration": 4.07
+  },
+  {
+    "id": "ulsan_007793",
+    "speaker": "DKSR20001352_2",
+    "duration": 7.17
+  },
+  {
+    "id": "ulsan_002146",
+    "speaker": "DKSR20001144_1",
+    "duration": 5.15
+  },
+  {
+    "id": "ulsan_014646",
+    "speaker": "DKSR20001033_2",
+    "duration": 2.39
+  },
+  {
+    "id": "ulsan_004389",
+    "speaker": "DKSR20001167_2",
+    "duration": 5.85
+  },
+  {
+    "id": "ulsan_011644",
+    "speaker": "DKSR20001611_1",
+    "duration": 3.62
+  },
+  {
+    "id": "ulsan_009933",
+    "speaker": "DKSR20001592_2",
+    "duration": 2.64
+  },
+  {
+    "id": "ulsan_008724",
+    "speaker": "DKSR20001476_1",
+    "duration": 5.56
+  },
+  {
+    "id": "ulsan_008405",
+    "speaker": "DKSR20001475_2",
+    "duration": 3.26
+  },
+  {
+    "id": "ulsan_026857",
+    "speaker": "DKSR20001203_2",
+    "duration": 5.71
+  },
+  {
+    "id": "ulsan_026061",
+    "speaker": "DKSR20000975_2",
+    "duration": 3.2
+  },
+  {
+    "id": "ulsan_004143",
+    "speaker": "DKSR20001166_1",
+    "duration": 6.41
+  },
+  {
+    "id": "ulsan_001227",
+    "speaker": "DKSR20001094_1",
+    "duration": 5.47
+  },
+  {
+    "id": "ulsan_021230",
+    "speaker": "DKSR20001534_1",
+    "duration": 3.54
+  },
+  {
+    "id": "ulsan_007116",
+    "speaker": "DKSR20001301_1",
+    "duration": 4.27
+  },
+  {
+    "id": "ulsan_020252",
+    "speaker": "DKSR20001511_1",
+    "duration": 3.3
+  },
+  {
+    "id": "ulsan_016534",
+    "speaker": "DKSR20001208_2",
+    "duration": 5.89
+  },
+  {
+    "id": "ulsan_018848",
+    "speaker": "DKSR20001491_1",
+    "duration": 5.15
+  },
+  {
+    "id": "ulsan_006568",
+    "speaker": "DKSR20001286_1",
+    "duration": 2.54
+  },
+  {
+    "id": "ulsan_022040",
+    "speaker": "DKSR20001569_2",
+    "duration": 2.4
+  },
+  {
+    "id": "ulsan_021702",
+    "speaker": "DKSR20001568_1",
+    "duration": 3.74
+  },
+  {
+    "id": "ulsan_020003",
+    "speaker": "DKSR20001510_1",
+    "duration": 4.6
+  },
+  {
+    "id": "ulsan_002886",
+    "speaker": "DKSR20001146_1",
+    "duration": 5.51
+  },
+  {
+    "id": "ulsan_000054",
+    "speaker": "DKSR20000953_2",
+    "duration": 1.39
+  },
+  {
+    "id": "ulsan_016775",
+    "speaker": "DKSR20001240_2",
+    "duration": 7.08
+  },
+  {
+    "id": "ulsan_013185",
+    "speaker": "DKSR20001677_1",
+    "duration": 5.96
+  },
+  {
+    "id": "ulsan_019976",
+    "speaker": "DKSR20001510_2",
+    "duration": 4.77
+  },
+  {
+    "id": "ulsan_023017",
+    "speaker": "DKSR20000956_2",
+    "duration": 5.47
+  },
+  {
+    "id": "ulsan_025723",
+    "speaker": "DKSR20001157_2",
+    "duration": 2.97
+  },
+  {
+    "id": "ulsan_016498",
+    "speaker": "DKSR20001208_1",
+    "duration": 4.45
+  },
+  {
+    "id": "ulsan_000993",
+    "speaker": "DKSR20000960_2",
+    "duration": 5.84
+  },
+  {
+    "id": "ulsan_024278",
+    "speaker": "DKSR20000963_2",
+    "duration": 4.28
+  },
+  {
+    "id": "ulsan_010728",
+    "speaker": "DKSR20001608_2",
+    "duration": 4.99
+  },
+  {
+    "id": "ulsan_009936",
+    "speaker": "DKSR20001592_1",
+    "duration": 4.0
+  },
+  {
+    "id": "ulsan_018740",
+    "speaker": "DKSR20001388_1",
+    "duration": 7.11
+  },
+  {
+    "id": "ulsan_000977",
+    "speaker": "DKSR20000960_1",
+    "duration": 6.1
+  },
+  {
+    "id": "ulsan_020808",
+    "speaker": "DKSR20001532_1",
+    "duration": 6.7
+  },
+  {
+    "id": "ulsan_012156",
+    "speaker": "DKSR20001618_1",
+    "duration": 4.84
+  },
+  {
+    "id": "ulsan_003614",
+    "speaker": "DKSR20001149_2",
+    "duration": 6.35
+  },
+  {
+    "id": "ulsan_009045",
+    "speaker": "DKSR20001487_1",
+    "duration": 4.23
+  },
+  {
+    "id": "ulsan_023629",
+    "speaker": "DKSR20000957_1",
+    "duration": 4.66
+  },
+  {
+    "id": "ulsan_022412",
+    "speaker": "DKSR20001570_1",
+    "duration": 4.3
+  },
+  {
+    "id": "ulsan_023011",
+    "speaker": "DKSR20000956_1",
+    "duration": 5.49
+  },
+  {
+    "id": "ulsan_003607",
+    "speaker": "DKSR20001149_1",
+    "duration": 6.55
+  },
+  {
+    "id": "ulsan_008204",
+    "speaker": "DKSR20001413_1",
+    "duration": 7.76
+  },
+  {
+    "id": "ulsan_007126",
+    "speaker": "DKSR20001301_2",
+    "duration": 7.83
+  },
+  {
+    "id": "ulsan_015380",
+    "speaker": "DKSR20001160_1",
+    "duration": 5.63
+  },
+  {
+    "id": "ulsan_005961",
+    "speaker": "DKSR20001284_1",
+    "duration": 3.31
+  },
+  {
+    "id": "ulsan_015670",
+    "speaker": "DKSR20001202_1",
+    "duration": 3.34
+  },
+  {
+    "id": "ulsan_015373",
+    "speaker": "DKSR20001160_2",
+    "duration": 3.93
+  },
+  {
+    "id": "ulsan_017064",
+    "speaker": "DKSR20001241_1",
+    "duration": 4.73
+  },
+  {
+    "id": "ulsan_019130",
+    "speaker": "DKSR20001507_2",
+    "duration": 4.08
+  },
+  {
+    "id": "ulsan_003273",
+    "speaker": "DKSR20001147_1",
+    "duration": 1.85
+  },
+  {
+    "id": "ulsan_001505",
+    "speaker": "DKSR20001131_2",
+    "duration": 3.4
+  },
+  {
+    "id": "ulsan_001833",
+    "speaker": "DKSR20001132_2",
+    "duration": 2.14
+  },
+  {
+    "id": "ulsan_007362",
+    "speaker": "DKSR20001348_1",
+    "duration": 3.53
+  },
+  {
+    "id": "ulsan_023834",
+    "speaker": "DKSR20000958_2",
+    "duration": 5.55
+  },
+  {
+    "id": "ulsan_026619",
+    "speaker": "DKSR20000979_1",
+    "duration": 6.66
+  },
+  {
+    "id": "ulsan_010459",
+    "speaker": "DKSR20001594_2",
+    "duration": 3.59
+  },
+  {
+    "id": "ulsan_011881",
+    "speaker": "DKSR20001617_1",
+    "duration": 4.94
+  },
+  {
+    "id": "ulsan_011056",
+    "speaker": "DKSR20001609_1",
+    "duration": 2.15
+  },
+  {
+    "id": "ulsan_006882",
+    "speaker": "DKSR20001300_1",
+    "duration": 1.77
+  },
+  {
+    "id": "ulsan_027166",
+    "speaker": "DKSR20000980_1",
+    "duration": 6.25
+  },
+  {
+    "id": "ulsan_005032",
+    "speaker": "DKSR20001169_2",
+    "duration": 4.12
+  },
+  {
+    "id": "ulsan_005992",
+    "speaker": "DKSR20001284_2",
+    "duration": 2.6
+  },
+  {
+    "id": "ulsan_009645",
+    "speaker": "DKSR20001536_2",
+    "duration": 3.05
+  },
+  {
+    "id": "ulsan_003819",
+    "speaker": "DKSR20001165_2",
+    "duration": 3.12
+  },
+  {
+    "id": "ulsan_012674",
+    "speaker": "DKSR20001650_1",
+    "duration": 2.02
+  },
+  {
+    "id": "ulsan_008007",
+    "speaker": "DKSR20001353_1",
+    "duration": 5.2
+  },
+  {
+    "id": "ulsan_001824",
+    "speaker": "DKSR20001132_1",
+    "duration": 2.39
+  },
+  {
+    "id": "ulsan_025425",
+    "speaker": "DKSR20000974_1",
+    "duration": 2.27
+  },
+  {
+    "id": "ulsan_006258",
+    "speaker": "DKSR20001285_1",
+    "duration": 2.58
+  },
+  {
+    "id": "ulsan_005730",
+    "speaker": "DKSR20001280_2",
+    "duration": 4.31
+  },
+  {
+    "id": "ulsan_002158",
+    "speaker": "DKSR20001144_2",
+    "duration": 4.48
+  },
+  {
+    "id": "ulsan_000003",
+    "speaker": "DKSR20000953_1",
+    "duration": 2.18
+  },
+  {
+    "id": "ulsan_022046",
+    "speaker": "DKSR20001569_1",
+    "duration": 6.3
+  },
+  {
+    "id": "ulsan_011901",
+    "speaker": "DKSR20001617_2",
+    "duration": 2.5
+  },
+  {
+    "id": "ulsan_010730",
+    "speaker": "DKSR20001608_1",
+    "duration": 3.78
+  },
+  {
+    "id": "ulsan_007367",
+    "speaker": "DKSR20001348_2",
+    "duration": 6.43
+  },
+  {
+    "id": "ulsan_000415",
+    "speaker": "DKSR20000954_1",
+    "duration": 1.74
+  },
+  {
+    "id": "ulsan_024091",
+    "speaker": "DKSR20000961_1",
+    "duration": 6.06
+  },
+  {
+    "id": "ulsan_026051",
+    "speaker": "DKSR20000975_1",
+    "duration": 4.44
+  },
+  {
+    "id": "ulsan_004661",
+    "speaker": "DKSR20001168_1",
+    "duration": 2.39
+  },
+  {
+    "id": "ulsan_025457",
+    "speaker": "DKSR20000974_2",
+    "duration": 6.73
+  },
+  {
+    "id": "ulsan_012431",
+    "speaker": "DKSR20001649_1",
+    "duration": 4.97
+  },
+  {
+    "id": "ulsan_012435",
+    "speaker": "DKSR20001649_2",
+    "duration": 5.72
+  },
+  {
+    "id": "ulsan_025705",
+    "speaker": "DKSR20001157_1",
+    "duration": 3.65
+  },
+  {
+    "id": "ulsan_002551",
+    "speaker": "DKSR20001145_2",
+    "duration": 2.48
+  },
+  {
+    "id": "ulsan_023838",
+    "speaker": "DKSR20000958_1",
+    "duration": 4.21
+  },
+  {
+    "id": "ulsan_018860",
+    "speaker": "DKSR20001491_2",
+    "duration": 2.29
+  },
+  {
+    "id": "ulsan_027161",
+    "speaker": "DKSR20000980_2",
+    "duration": 4.54
+  },
+  {
+    "id": "ulsan_010194",
+    "speaker": "DKSR20001593_1",
+    "duration": 3.45
+  },
+  {
+    "id": "ulsan_019432",
+    "speaker": "DKSR20001508_2",
+    "duration": 3.34
+  },
+  {
+    "id": "ulsan_009024",
+    "speaker": "DKSR20001487_2",
+    "duration": 5.65
+  },
+  {
+    "id": "ulsan_017308",
+    "speaker": "DKSR20001287_1",
+    "duration": 3.52
+  },
+  {
+    "id": "ulsan_021263",
+    "speaker": "DKSR20001534_2",
+    "duration": 6.03
+  },
+  {
+    "id": "ulsan_018521",
+    "speaker": "DKSR20001386_2",
+    "duration": 6.63
+  },
+  {
+    "id": "ulsan_012896",
+    "speaker": "DKSR20001651_1",
+    "duration": 4.75
+  },
+  {
+    "id": "ulsan_004377",
+    "speaker": "DKSR20001167_1",
+    "duration": 3.56
+  },
+  {
+    "id": "ulsan_002900",
+    "speaker": "DKSR20001146_2",
+    "duration": 3.15
+  },
+  {
+    "id": "ulsan_027395",
+    "speaker": "DKSR20001204_2",
+    "duration": 3.5
+  },
+  {
+    "id": "ulsan_026603",
+    "speaker": "DKSR20000979_2",
+    "duration": 3.86
+  },
+  {
+    "id": "ulsan_024856",
+    "speaker": "DKSR20000973_1",
+    "duration": 3.19
+  },
+  {
+    "id": "ulsan_011643",
+    "speaker": "DKSR20001611_2",
+    "duration": 1.66
+  },
+  {
+    "id": "ulsan_026856",
+    "speaker": "DKSR20001203_1",
+    "duration": 5.86
+  },
+  {
+    "id": "ulsan_018192",
+    "speaker": "DKSR20001380_1",
+    "duration": 4.18
+  },
+  {
+    "id": "ulsan_015963",
+    "speaker": "DKSR20001206_2",
+    "duration": 2.69
+  },
+  {
+    "id": "ulsan_015946",
+    "speaker": "DKSR20001206_1",
+    "duration": 3.46
+  },
+  {
+    "id": "ulsan_019724",
+    "speaker": "DKSR20001509_1",
+    "duration": 4.6
+  },
+  {
+    "id": "ulsan_001213",
+    "speaker": "DKSR20001094_2",
+    "duration": 1.3
+  },
+  {
+    "id": "ulsan_008765",
+    "speaker": "DKSR20001476_2",
+    "duration": 4.81
+  },
+  {
+    "id": "ulsan_021436",
+    "speaker": "DKSR20001537_2",
+    "duration": 4.4
+  },
+  {
+    "id": "ulsan_009325",
+    "speaker": "DKSR20001535_1",
+    "duration": 4.82
+  },
+  {
+    "id": "ulsan_014237",
+    "speaker": "DKSR20001032_2",
+    "duration": 2.45
+  },
+  {
+    "id": "ulsan_007567",
+    "speaker": "DKSR20001351_2",
+    "duration": 3.79
+  },
+  {
+    "id": "ulsan_013564",
+    "speaker": "DKSR20001715_2",
+    "duration": 5.95
+  },
+  {
+    "id": "ulsan_000444",
+    "speaker": "DKSR20000954_2",
+    "duration": 2.53
+  },
+  {
+    "id": "ulsan_006599",
+    "speaker": "DKSR20001286_2",
+    "duration": 5.3
+  },
+  {
+    "id": "ulsan_018203",
+    "speaker": "DKSR20001380_2",
+    "duration": 2.31
+  },
+  {
+    "id": "ulsan_024537",
+    "speaker": "DKSR20000962_1",
+    "duration": 4.21
+  },
+  {
+    "id": "ulsan_022736",
+    "speaker": "DKSR20001571_1",
+    "duration": 4.57
+  },
+  {
+    "id": "ulsan_000782",
+    "speaker": "DKSR20000959_2",
+    "duration": 6.22
+  },
+  {
+    "id": "ulsan_008016",
+    "speaker": "DKSR20001353_2",
+    "duration": 3.77
+  },
+  {
+    "id": "ulsan_021038",
+    "speaker": "DKSR20001533_2",
+    "duration": 2.83
+  },
+  {
+    "id": "ulsan_012217",
+    "speaker": "DKSR20001618_2",
+    "duration": 3.02
+  },
+  {
+    "id": "ulsan_021023",
+    "speaker": "DKSR20001533_1",
+    "duration": 6.11
+  },
+  {
+    "id": "ulsan_027390",
+    "speaker": "DKSR20001204_1",
+    "duration": 2.59
+  },
+  {
+    "id": "ulsan_017610",
+    "speaker": "DKSR20001288_1",
+    "duration": 2.22
+  },
+  {
+    "id": "ulsan_020265",
+    "speaker": "DKSR20001511_2",
+    "duration": 3.19
+  },
+  {
+    "id": "ulsan_020530",
+    "speaker": "DKSR20001512_2",
+    "duration": 4.09
+  },
+  {
+    "id": "ulsan_020538",
+    "speaker": "DKSR20001512_1",
+    "duration": 3.64
+  },
+  {
+    "id": "ulsan_018648",
+    "speaker": "DKSR20001387_1",
+    "duration": 7.5
+  },
+  {
+    "id": "ulsan_021696",
+    "speaker": "DKSR20001568_2",
+    "duration": 1.71
+  },
+  {
+    "id": "ulsan_011374",
+    "speaker": "DKSR20001610_2",
+    "duration": 1.89
+  },
+  {
+    "id": "ulsan_026267",
+    "speaker": "DKSR20001158_1",
+    "duration": 4.94
+  },
+  {
+    "id": "ulsan_024832",
+    "speaker": "DKSR20000973_2",
+    "duration": 5.36
+  },
+  {
+    "id": "ulsan_013857",
+    "speaker": "DKSR20001031_1",
+    "duration": 5.85
+  },
+  {
+    "id": "ulsan_022386",
+    "speaker": "DKSR20001570_2",
+    "duration": 2.96
+  },
+  {
+    "id": "ulsan_003277",
+    "speaker": "DKSR20001147_2",
+    "duration": 6.96
+  },
+  {
+    "id": "ulsan_002531",
+    "speaker": "DKSR20001145_1",
+    "duration": 3.34
+  },
+  {
+    "id": "ulsan_005379",
+    "speaker": "DKSR20001278_1",
+    "duration": 3.88
+  },
+  {
+    "id": "ulsan_026280",
+    "speaker": "DKSR20001158_2",
+    "duration": 7.23
+  },
+  {
+    "id": "ulsan_023292",
+    "speaker": "DKSR20000955_1",
+    "duration": 3.05
+  },
+  {
+    "id": "ulsan_018737",
+    "speaker": "DKSR20001388_2",
+    "duration": 6.99
+  },
+  {
+    "id": "ulsan_014216",
+    "speaker": "DKSR20001032_1",
+    "duration": 2.27
+  },
+  {
+    "id": "ulsan_011044",
+    "speaker": "DKSR20001609_2",
+    "duration": 4.59
+  },
+  {
+    "id": "ulsan_018560",
+    "speaker": "DKSR20001386_1",
+    "duration": 3.15
+  },
+  {
+    "id": "ulsan_004101",
+    "speaker": "DKSR20001166_2",
+    "duration": 6.53
+  },
+  {
+    "id": "ulsan_023615",
+    "speaker": "DKSR20000957_2",
+    "duration": 5.59
+  },
+  {
+    "id": "ulsan_017070",
+    "speaker": "DKSR20001241_2",
+    "duration": 2.94
+  },
+  {
+    "id": "ulsan_005415",
+    "speaker": "DKSR20001278_2",
+    "duration": 3.52
+  },
+  {
+    "id": "ulsan_012668",
+    "speaker": "DKSR20001650_2",
+    "duration": 1.72
+  },
+  {
+    "id": "ulsan_023261",
+    "speaker": "DKSR20000955_2",
+    "duration": 2.25
+  },
+  {
+    "id": "ulsan_017315",
+    "speaker": "DKSR20001287_2",
+    "duration": 2.73
+  },
+  {
+    "id": "ulsan_020817",
+    "speaker": "DKSR20001532_2",
+    "duration": 5.44
+  },
+  {
+    "id": "ulsan_004672",
+    "speaker": "DKSR20001168_2",
+    "duration": 5.83
+  },
+  {
+    "id": "ulsan_000766",
+    "speaker": "DKSR20000959_1",
+    "duration": 6.05
+  },
+  {
+    "id": "ulsan_025136",
+    "speaker": "DKSR20001156_2",
+    "duration": 4.61
+  },
+  {
+    "id": "ulsan_013169",
+    "speaker": "DKSR20001677_2",
+    "duration": 1.36
+  },
+  {
+    "id": "ulsan_025118",
+    "speaker": "DKSR20001156_1",
+    "duration": 2.31
+  },
+  {
+    "id": "ulsan_019142",
+    "speaker": "DKSR20001507_1",
+    "duration": 6.17
+  },
+  {
+    "id": "ulsan_017932",
+    "speaker": "DKSR20001336_2",
+    "duration": 5.34
+  },
+  {
+    "id": "ulsan_013864",
+    "speaker": "DKSR20001031_2",
+    "duration": 1.95
+  },
+  {
+    "id": "ulsan_016778",
+    "speaker": "DKSR20001240_1",
+    "duration": 3.95
+  },
+  {
+    "id": "ulsan_018631",
+    "speaker": "DKSR20001387_2",
+    "duration": 7.66
+  },
+  {
+    "id": "ulsan_008389",
+    "speaker": "DKSR20001475_1",
+    "duration": 3.76
+  },
+  {
+    "id": "ulsan_015059",
+    "speaker": "DKSR20001159_1",
+    "duration": 6.16
+  },
+  {
+    "id": "ulsan_019706",
+    "speaker": "DKSR20001509_2",
+    "duration": 3.39
+  },
+  {
+    "id": "ulsan_008203",
+    "speaker": "DKSR20001413_2",
+    "duration": 5.14
+  },
+  {
+    "id": "ulsan_016233",
+    "speaker": "DKSR20001207_2",
+    "duration": 2.45
+  },
+  {
+    "id": "ulsan_017927",
+    "speaker": "DKSR20001336_1",
+    "duration": 4.24
+  },
+  {
+    "id": "ulsan_011366",
+    "speaker": "DKSR20001610_1",
+    "duration": 4.2
+  },
+  {
+    "id": "ulsan_006283",
+    "speaker": "DKSR20001285_2",
+    "duration": 5.18
+  },
+  {
+    "id": "ulsan_009333",
+    "speaker": "DKSR20001535_2",
+    "duration": 5.67
+  },
+  {
+    "id": "ulsan_005662",
+    "speaker": "DKSR20001280_1",
+    "duration": 5.91
+  },
+  {
+    "id": "ulsan_005052",
+    "speaker": "DKSR20001169_1",
+    "duration": 3.79
+  },
+  {
+    "id": "ulsan_014675",
+    "speaker": "DKSR20001033_1",
+    "duration": 4.18
+  },
+  {
+    "id": "ulsan_009629",
+    "speaker": "DKSR20001536_1",
+    "duration": 6.28
+  },
+  {
+    "id": "ulsan_015663",
+    "speaker": "DKSR20001202_2",
+    "duration": 6.84
+  },
+  {
+    "id": "ulsan_010469",
+    "speaker": "DKSR20001594_1",
+    "duration": 5.51
+  },
+  {
+    "id": "ulsan_016240",
+    "speaker": "DKSR20001207_1",
+    "duration": 3.14
+  },
+  {
+    "id": "ulsan_019423",
+    "speaker": "DKSR20001508_1",
+    "duration": 5.28
+  },
+  {
+    "id": "ulsan_007559",
+    "speaker": "DKSR20001351_1",
+    "duration": 3.5
+  },
+  {
+    "id": "ulsan_024049",
+    "speaker": "DKSR20000961_2",
+    "duration": 2.32
+  },
+  {
+    "id": "ulsan_013574",
+    "speaker": "DKSR20001715_1",
+    "duration": 6.46
+  },
+  {
+    "id": "ulsan_024292",
+    "speaker": "DKSR20000963_1",
+    "duration": 4.48
+  },
+  {
+    "id": "ulsan_001520",
+    "speaker": "DKSR20001131_1",
+    "duration": 4.37
+  },
+  {
+    "id": "ulsan_017619",
+    "speaker": "DKSR20001288_2",
+    "duration": 3.01
+  },
+  {
+    "id": "ulsan_015073",
+    "speaker": "DKSR20001159_2",
+    "duration": 2.85
+  },
+  {
+    "id": "ulsan_003829",
+    "speaker": "DKSR20001165_1",
+    "duration": 6.59
+  },
+  {
+    "id": "ulsan_012913",
+    "speaker": "DKSR20001651_2",
+    "duration": 2.21
+  },
+  {
+    "id": "ulsan_022743",
+    "speaker": "DKSR20001571_2",
+    "duration": 5.74
+  },
+  {
+    "id": "ulsan_006889",
+    "speaker": "DKSR20001300_2",
+    "duration": 2.52
+  },
+  {
+    "id": "ulsan_024543",
+    "speaker": "DKSR20000962_2",
+    "duration": 4.69
+  },
+  {
+    "id": "ulsan_010192",
+    "speaker": "DKSR20001593_2",
+    "duration": 4.55
+  },
+  {
+    "id": "ulsan_007775",
+    "speaker": "DKSR20001352_1",
+    "duration": 2.48
+  },
+  {
+    "id": "ulsan_021427",
+    "speaker": "DKSR20001537_1",
+    "duration": 5.2
+  },
+  {
+    "id": "ulsan_007796",
+    "speaker": "DKSR20001352_2",
+    "duration": 2.91
+  },
+  {
+    "id": "ulsan_002147",
+    "speaker": "DKSR20001144_1",
+    "duration": 1.35
+  },
+  {
+    "id": "ulsan_014647",
+    "speaker": "DKSR20001033_2",
+    "duration": 2.98
+  },
+  {
+    "id": "ulsan_004390",
+    "speaker": "DKSR20001167_2",
+    "duration": 4.24
+  },
+  {
+    "id": "ulsan_011645",
+    "speaker": "DKSR20001611_1",
+    "duration": 4.07
+  },
+  {
+    "id": "ulsan_009935",
+    "speaker": "DKSR20001592_2",
+    "duration": 3.7
+  },
+  {
+    "id": "ulsan_008725",
+    "speaker": "DKSR20001476_1",
+    "duration": 2.08
+  },
+  {
+    "id": "ulsan_008406",
+    "speaker": "DKSR20001475_2",
+    "duration": 1.33
+  },
+  {
+    "id": "ulsan_026858",
+    "speaker": "DKSR20001203_2",
+    "duration": 4.16
+  },
+  {
+    "id": "ulsan_026062",
+    "speaker": "DKSR20000975_2",
+    "duration": 6.66
+  },
+  {
+    "id": "ulsan_004144",
+    "speaker": "DKSR20001166_1",
+    "duration": 2.36
+  },
+  {
+    "id": "ulsan_001228",
+    "speaker": "DKSR20001094_1",
+    "duration": 3.31
+  },
+  {
+    "id": "ulsan_021234",
+    "speaker": "DKSR20001534_1",
+    "duration": 2.54
+  },
+  {
+    "id": "ulsan_007117",
+    "speaker": "DKSR20001301_1",
+    "duration": 5.75
+  },
+  {
+    "id": "ulsan_020253",
+    "speaker": "DKSR20001511_1",
+    "duration": 5.23
+  },
+  {
+    "id": "ulsan_016535",
+    "speaker": "DKSR20001208_2",
+    "duration": 5.31
+  },
+  {
+    "id": "ulsan_018849",
+    "speaker": "DKSR20001491_1",
+    "duration": 2.53
+  },
+  {
+    "id": "ulsan_006569",
+    "speaker": "DKSR20001286_1",
+    "duration": 4.39
+  },
+  {
+    "id": "ulsan_022041",
+    "speaker": "DKSR20001569_2",
+    "duration": 2.92
+  },
+  {
+    "id": "ulsan_021704",
+    "speaker": "DKSR20001568_1",
+    "duration": 2.4
+  },
+  {
+    "id": "ulsan_020005",
+    "speaker": "DKSR20001510_1",
+    "duration": 5.12
+  },
+  {
+    "id": "ulsan_002887",
+    "speaker": "DKSR20001146_1",
+    "duration": 3.08
+  },
+  {
+    "id": "ulsan_000055",
+    "speaker": "DKSR20000953_2",
+    "duration": 2.06
+  },
+  {
+    "id": "ulsan_016788",
+    "speaker": "DKSR20001240_2",
+    "duration": 3.79
+  },
+  {
+    "id": "ulsan_013186",
+    "speaker": "DKSR20001677_1",
+    "duration": 1.54
+  },
+  {
+    "id": "ulsan_019977",
+    "speaker": "DKSR20001510_2",
+    "duration": 4.44
+  },
+  {
+    "id": "ulsan_023018",
+    "speaker": "DKSR20000956_2",
+    "duration": 4.7
+  },
+  {
+    "id": "ulsan_025724",
+    "speaker": "DKSR20001157_2",
+    "duration": 1.16
+  },
+  {
+    "id": "ulsan_016499",
+    "speaker": "DKSR20001208_1",
+    "duration": 2.02
+  },
+  {
+    "id": "ulsan_000994",
+    "speaker": "DKSR20000960_2",
+    "duration": 5.03
+  },
+  {
+    "id": "ulsan_024279",
+    "speaker": "DKSR20000963_2",
+    "duration": 5.01
+  },
+  {
+    "id": "ulsan_010742",
+    "speaker": "DKSR20001608_2",
+    "duration": 1.69
+  },
+  {
+    "id": "ulsan_009937",
+    "speaker": "DKSR20001592_1",
+    "duration": 1.59
+  },
+  {
+    "id": "ulsan_018745",
+    "speaker": "DKSR20001388_1",
+    "duration": 5.39
+  },
+  {
+    "id": "ulsan_000978",
+    "speaker": "DKSR20000960_1",
+    "duration": 6.45
+  },
+  {
+    "id": "ulsan_020811",
+    "speaker": "DKSR20001532_1",
+    "duration": 3.97
+  },
+  {
+    "id": "ulsan_012158",
+    "speaker": "DKSR20001618_1",
+    "duration": 3.95
+  },
+  {
+    "id": "ulsan_003615",
+    "speaker": "DKSR20001149_2",
+    "duration": 4.16
+  },
+  {
+    "id": "ulsan_009047",
+    "speaker": "DKSR20001487_1",
+    "duration": 1.0
+  },
+  {
+    "id": "ulsan_023630",
+    "speaker": "DKSR20000957_1",
+    "duration": 5.1
+  },
+  {
+    "id": "ulsan_022414",
+    "speaker": "DKSR20001570_1",
+    "duration": 2.46
+  },
+  {
+    "id": "ulsan_023012",
+    "speaker": "DKSR20000956_1",
+    "duration": 4.28
+  },
+  {
+    "id": "ulsan_003609",
+    "speaker": "DKSR20001149_1",
+    "duration": 7.11
+  },
+  {
+    "id": "ulsan_008205",
+    "speaker": "DKSR20001413_1",
+    "duration": 6.01
+  },
+  {
+    "id": "ulsan_007127",
+    "speaker": "DKSR20001301_2",
+    "duration": 2.19
+  },
+  {
+    "id": "ulsan_015381",
+    "speaker": "DKSR20001160_1",
+    "duration": 1.97
+  },
+  {
+    "id": "ulsan_005962",
+    "speaker": "DKSR20001284_1",
+    "duration": 5.9
+  },
+  {
+    "id": "ulsan_015671",
+    "speaker": "DKSR20001202_1",
+    "duration": 1.71
+  },
+  {
+    "id": "ulsan_015374",
+    "speaker": "DKSR20001160_2",
+    "duration": 2.56
+  },
+  {
+    "id": "ulsan_017065",
+    "speaker": "DKSR20001241_1",
+    "duration": 3.81
+  },
+  {
+    "id": "ulsan_019131",
+    "speaker": "DKSR20001507_2",
+    "duration": 3.07
+  },
+  {
+    "id": "ulsan_003274",
+    "speaker": "DKSR20001147_1",
+    "duration": 1.26
+  },
+  {
+    "id": "ulsan_001506",
+    "speaker": "DKSR20001131_2",
+    "duration": 2.46
+  },
+  {
+    "id": "ulsan_001834",
+    "speaker": "DKSR20001132_2",
+    "duration": 6.21
+  },
+  {
+    "id": "ulsan_007363",
+    "speaker": "DKSR20001348_1",
+    "duration": 4.81
+  },
+  {
+    "id": "ulsan_023835",
+    "speaker": "DKSR20000958_2",
+    "duration": 5.09
+  },
+  {
+    "id": "ulsan_026620",
+    "speaker": "DKSR20000979_1",
+    "duration": 2.72
+  },
+  {
+    "id": "ulsan_010461",
+    "speaker": "DKSR20001594_2",
+    "duration": 3.11
+  },
+  {
+    "id": "ulsan_011882",
+    "speaker": "DKSR20001617_1",
+    "duration": 2.17
+  },
+  {
+    "id": "ulsan_011057",
+    "speaker": "DKSR20001609_1",
+    "duration": 5.34
+  },
+  {
+    "id": "ulsan_006883",
+    "speaker": "DKSR20001300_1",
+    "duration": 6.06
+  },
+  {
+    "id": "ulsan_027167",
+    "speaker": "DKSR20000980_1",
+    "duration": 3.13
+  },
+  {
+    "id": "ulsan_005033",
+    "speaker": "DKSR20001169_2",
+    "duration": 2.63
+  },
+  {
+    "id": "ulsan_005994",
+    "speaker": "DKSR20001284_2",
+    "duration": 6.9
+  },
+  {
+    "id": "ulsan_009646",
+    "speaker": "DKSR20001536_2",
+    "duration": 3.37
+  },
+  {
+    "id": "ulsan_003820",
+    "speaker": "DKSR20001165_2",
+    "duration": 2.9
+  },
+  {
+    "id": "ulsan_012675",
+    "speaker": "DKSR20001650_1",
+    "duration": 5.37
+  },
+  {
+    "id": "ulsan_008008",
+    "speaker": "DKSR20001353_1",
+    "duration": 5.11
+  },
+  {
+    "id": "ulsan_001825",
+    "speaker": "DKSR20001132_1",
+    "duration": 3.19
+  },
+  {
+    "id": "ulsan_025426",
+    "speaker": "DKSR20000974_1",
+    "duration": 5.36
+  },
+  {
+    "id": "ulsan_006259",
+    "speaker": "DKSR20001285_1",
+    "duration": 5.43
+  },
+  {
+    "id": "ulsan_005731",
+    "speaker": "DKSR20001280_2",
+    "duration": 5.84
+  },
+  {
+    "id": "ulsan_002160",
+    "speaker": "DKSR20001144_2",
+    "duration": 3.78
+  },
+  {
+    "id": "ulsan_000004",
+    "speaker": "DKSR20000953_1",
+    "duration": 3.32
+  },
+  {
+    "id": "ulsan_022065",
+    "speaker": "DKSR20001569_1",
+    "duration": 4.56
+  },
+  {
+    "id": "ulsan_011903",
+    "speaker": "DKSR20001617_2",
+    "duration": 5.33
+  },
+  {
+    "id": "ulsan_010731",
+    "speaker": "DKSR20001608_1",
+    "duration": 2.5
+  },
+  {
+    "id": "ulsan_007368",
+    "speaker": "DKSR20001348_2",
+    "duration": 3.44
+  },
+  {
+    "id": "ulsan_000416",
+    "speaker": "DKSR20000954_1",
+    "duration": 2.89
+  },
+  {
+    "id": "ulsan_024094",
+    "speaker": "DKSR20000961_1",
+    "duration": 6.64
+  },
+  {
+    "id": "ulsan_026052",
+    "speaker": "DKSR20000975_1",
+    "duration": 5.24
+  },
+  {
+    "id": "ulsan_004662",
+    "speaker": "DKSR20001168_1",
+    "duration": 5.65
+  },
+  {
+    "id": "ulsan_025458",
+    "speaker": "DKSR20000974_2",
+    "duration": 4.74
+  },
+  {
+    "id": "ulsan_012432",
+    "speaker": "DKSR20001649_1",
+    "duration": 6.39
+  },
+  {
+    "id": "ulsan_012436",
+    "speaker": "DKSR20001649_2",
+    "duration": 3.2
+  },
+  {
+    "id": "ulsan_025706",
+    "speaker": "DKSR20001157_1",
+    "duration": 6.43
+  },
+  {
+    "id": "ulsan_002552",
+    "speaker": "DKSR20001145_2",
+    "duration": 2.47
+  },
+  {
+    "id": "ulsan_023840",
+    "speaker": "DKSR20000958_1",
+    "duration": 4.33
+  },
+  {
+    "id": "ulsan_018861",
+    "speaker": "DKSR20001491_2",
+    "duration": 1.41
+  },
+  {
+    "id": "ulsan_027162",
+    "speaker": "DKSR20000980_2",
+    "duration": 3.69
+  },
+  {
+    "id": "ulsan_010195",
+    "speaker": "DKSR20001593_1",
+    "duration": 5.21
+  },
+  {
+    "id": "ulsan_019433",
+    "speaker": "DKSR20001508_2",
+    "duration": 3.0
+  },
+  {
+    "id": "ulsan_009025",
+    "speaker": "DKSR20001487_2",
+    "duration": 6.21
+  },
+  {
+    "id": "ulsan_017309",
+    "speaker": "DKSR20001287_1",
+    "duration": 5.46
+  },
+  {
+    "id": "ulsan_021264",
+    "speaker": "DKSR20001534_2",
+    "duration": 6.71
+  },
+  {
+    "id": "ulsan_018523",
+    "speaker": "DKSR20001386_2",
+    "duration": 6.67
+  },
+  {
+    "id": "ulsan_012903",
+    "speaker": "DKSR20001651_1",
+    "duration": 6.55
+  },
+  {
+    "id": "ulsan_004378",
+    "speaker": "DKSR20001167_1",
+    "duration": 2.1
+  },
+  {
+    "id": "ulsan_002901",
+    "speaker": "DKSR20001146_2",
+    "duration": 1.79
+  },
+  {
+    "id": "ulsan_027396",
+    "speaker": "DKSR20001204_2",
+    "duration": 3.45
+  },
+  {
+    "id": "ulsan_026604",
+    "speaker": "DKSR20000979_2",
+    "duration": 3.95
+  },
+  {
+    "id": "ulsan_024857",
+    "speaker": "DKSR20000973_1",
+    "duration": 3.73
+  },
+  {
+    "id": "ulsan_011648",
+    "speaker": "DKSR20001611_2",
+    "duration": 4.15
+  },
+  {
+    "id": "ulsan_026863",
+    "speaker": "DKSR20001203_1",
+    "duration": 3.96
+  },
+  {
+    "id": "ulsan_018193",
+    "speaker": "DKSR20001380_1",
+    "duration": 4.86
+  },
+  {
+    "id": "ulsan_015964",
+    "speaker": "DKSR20001206_2",
+    "duration": 4.98
+  },
+  {
+    "id": "ulsan_015947",
+    "speaker": "DKSR20001206_1",
+    "duration": 3.01
+  },
+  {
+    "id": "ulsan_019725",
+    "speaker": "DKSR20001509_1",
+    "duration": 5.05
+  },
+  {
+    "id": "ulsan_001214",
+    "speaker": "DKSR20001094_2",
+    "duration": 3.49
+  },
+  {
+    "id": "ulsan_008766",
+    "speaker": "DKSR20001476_2",
+    "duration": 4.59
+  },
+  {
+    "id": "ulsan_021438",
+    "speaker": "DKSR20001537_2",
+    "duration": 3.64
+  },
+  {
+    "id": "ulsan_009326",
+    "speaker": "DKSR20001535_1",
+    "duration": 4.14
+  },
+  {
+    "id": "ulsan_014238",
+    "speaker": "DKSR20001032_2",
+    "duration": 3.16
+  },
+  {
+    "id": "ulsan_007568",
+    "speaker": "DKSR20001351_2",
+    "duration": 2.6
+  },
+  {
+    "id": "ulsan_013565",
+    "speaker": "DKSR20001715_2",
+    "duration": 2.66
+  },
+  {
+    "id": "ulsan_000446",
+    "speaker": "DKSR20000954_2",
+    "duration": 3.51
+  },
+  {
+    "id": "ulsan_006600",
+    "speaker": "DKSR20001286_2",
+    "duration": 3.26
+  },
+  {
+    "id": "ulsan_018204",
+    "speaker": "DKSR20001380_2",
+    "duration": 2.28
+  },
+  {
+    "id": "ulsan_024538",
+    "speaker": "DKSR20000962_1",
+    "duration": 3.22
+  },
+  {
+    "id": "ulsan_022737",
+    "speaker": "DKSR20001571_1",
+    "duration": 3.23
+  },
+  {
+    "id": "ulsan_000783",
+    "speaker": "DKSR20000959_2",
+    "duration": 4.72
+  },
+  {
+    "id": "ulsan_008018",
+    "speaker": "DKSR20001353_2",
+    "duration": 7.63
+  },
+  {
+    "id": "ulsan_021039",
+    "speaker": "DKSR20001533_2",
+    "duration": 7.54
+  },
+  {
+    "id": "ulsan_012218",
+    "speaker": "DKSR20001618_2",
+    "duration": 4.29
+  },
+  {
+    "id": "ulsan_021024",
+    "speaker": "DKSR20001533_1",
+    "duration": 6.59
+  },
+  {
+    "id": "ulsan_027391",
+    "speaker": "DKSR20001204_1",
+    "duration": 3.02
+  },
+  {
+    "id": "ulsan_017611",
+    "speaker": "DKSR20001288_1",
+    "duration": 2.3
+  },
+  {
+    "id": "ulsan_020266",
+    "speaker": "DKSR20001511_2",
+    "duration": 1.57
+  },
+  {
+    "id": "ulsan_020531",
+    "speaker": "DKSR20001512_2",
+    "duration": 2.87
+  },
+  {
+    "id": "ulsan_020539",
+    "speaker": "DKSR20001512_1",
+    "duration": 4.49
+  },
+  {
+    "id": "ulsan_018651",
+    "speaker": "DKSR20001387_1",
+    "duration": 4.76
+  },
+  {
+    "id": "ulsan_021697",
+    "speaker": "DKSR20001568_2",
+    "duration": 2.9
+  },
+  {
+    "id": "ulsan_011375",
+    "speaker": "DKSR20001610_2",
+    "duration": 3.22
+  },
+  {
+    "id": "ulsan_026268",
+    "speaker": "DKSR20001158_1",
+    "duration": 2.67
+  },
+  {
+    "id": "ulsan_024834",
+    "speaker": "DKSR20000973_2",
+    "duration": 4.54
+  },
+  {
+    "id": "ulsan_013859",
+    "speaker": "DKSR20001031_1",
+    "duration": 4.6
+  },
+  {
+    "id": "ulsan_022389",
+    "speaker": "DKSR20001570_2",
+    "duration": 1.97
+  },
+  {
+    "id": "ulsan_003279",
+    "speaker": "DKSR20001147_2",
+    "duration": 3.5
+  },
+  {
+    "id": "ulsan_002532",
+    "speaker": "DKSR20001145_1",
+    "duration": 1.83
+  },
+  {
+    "id": "ulsan_005380",
+    "speaker": "DKSR20001278_1",
+    "duration": 3.24
+  },
+  {
+    "id": "ulsan_026281",
+    "speaker": "DKSR20001158_2",
+    "duration": 2.37
+  },
+  {
+    "id": "ulsan_023293",
+    "speaker": "DKSR20000955_1",
+    "duration": 6.23
+  },
+  {
+    "id": "ulsan_018757",
+    "speaker": "DKSR20001388_2",
+    "duration": 5.54
+  },
+  {
+    "id": "ulsan_014217",
+    "speaker": "DKSR20001032_1",
+    "duration": 1.81
+  },
+  {
+    "id": "ulsan_011046",
+    "speaker": "DKSR20001609_2",
+    "duration": 6.61
+  },
+  {
+    "id": "ulsan_018562",
+    "speaker": "DKSR20001386_1",
+    "duration": 6.98
+  },
+  {
+    "id": "ulsan_004102",
+    "speaker": "DKSR20001166_2",
+    "duration": 1.72
+  },
+  {
+    "id": "ulsan_023616",
+    "speaker": "DKSR20000957_2",
+    "duration": 5.82
+  },
+  {
+    "id": "ulsan_017071",
+    "speaker": "DKSR20001241_2",
+    "duration": 3.42
+  },
+  {
+    "id": "ulsan_005417",
+    "speaker": "DKSR20001278_2",
+    "duration": 5.26
+  },
+  {
+    "id": "ulsan_012669",
+    "speaker": "DKSR20001650_2",
+    "duration": 4.35
+  },
+  {
+    "id": "ulsan_023262",
+    "speaker": "DKSR20000955_2",
+    "duration": 1.64
+  },
+  {
+    "id": "ulsan_017324",
+    "speaker": "DKSR20001287_2",
+    "duration": 3.97
+  },
+  {
+    "id": "ulsan_020818",
+    "speaker": "DKSR20001532_2",
+    "duration": 4.29
+  },
+  {
+    "id": "ulsan_004673",
+    "speaker": "DKSR20001168_2",
+    "duration": 1.54
+  },
+  {
+    "id": "ulsan_000767",
+    "speaker": "DKSR20000959_1",
+    "duration": 4.48
+  },
+  {
+    "id": "ulsan_025137",
+    "speaker": "DKSR20001156_2",
+    "duration": 4.66
+  },
+  {
+    "id": "ulsan_013170",
+    "speaker": "DKSR20001677_2",
+    "duration": 2.98
+  },
+  {
+    "id": "ulsan_025119",
+    "speaker": "DKSR20001156_1",
+    "duration": 3.29
+  },
+  {
+    "id": "ulsan_019143",
+    "speaker": "DKSR20001507_1",
+    "duration": 3.69
+  },
+  {
+    "id": "ulsan_017949",
+    "speaker": "DKSR20001336_2",
+    "duration": 5.67
+  },
+  {
+    "id": "ulsan_013865",
+    "speaker": "DKSR20001031_2",
+    "duration": 5.17
+  },
+  {
+    "id": "ulsan_016779",
+    "speaker": "DKSR20001240_1",
+    "duration": 2.0
+  },
+  {
+    "id": "ulsan_018657",
+    "speaker": "DKSR20001387_2",
+    "duration": 6.35
+  },
+  {
+    "id": "ulsan_008391",
+    "speaker": "DKSR20001475_1",
+    "duration": 3.97
+  },
+  {
+    "id": "ulsan_015060",
+    "speaker": "DKSR20001159_1",
+    "duration": 4.07
+  },
+  {
+    "id": "ulsan_019708",
+    "speaker": "DKSR20001509_2",
+    "duration": 5.01
+  },
+  {
+    "id": "ulsan_008209",
+    "speaker": "DKSR20001413_2",
+    "duration": 4.21
+  },
+  {
+    "id": "ulsan_016234",
+    "speaker": "DKSR20001207_2",
+    "duration": 4.34
+  },
+  {
+    "id": "ulsan_017933",
+    "speaker": "DKSR20001336_1",
+    "duration": 5.88
+  },
+  {
+    "id": "ulsan_011367",
+    "speaker": "DKSR20001610_1",
+    "duration": 7.28
+  },
+  {
+    "id": "ulsan_006284",
+    "speaker": "DKSR20001285_2",
+    "duration": 4.01
+  },
+  {
+    "id": "ulsan_009335",
+    "speaker": "DKSR20001535_2",
+    "duration": 3.13
+  },
+  {
+    "id": "ulsan_005663",
+    "speaker": "DKSR20001280_1",
+    "duration": 3.82
+  },
+  {
+    "id": "ulsan_005053",
+    "speaker": "DKSR20001169_1",
+    "duration": 3.8
+  },
+  {
+    "id": "ulsan_014676",
+    "speaker": "DKSR20001033_1",
+    "duration": 1.13
+  },
+  {
+    "id": "ulsan_009630",
+    "speaker": "DKSR20001536_1",
+    "duration": 3.74
+  },
+  {
+    "id": "ulsan_015664",
+    "speaker": "DKSR20001202_2",
+    "duration": 5.3
+  },
+  {
+    "id": "ulsan_010470",
+    "speaker": "DKSR20001594_1",
+    "duration": 3.49
+  },
+  {
+    "id": "ulsan_016241",
+    "speaker": "DKSR20001207_1",
+    "duration": 4.08
+  },
+  {
+    "id": "ulsan_019424",
+    "speaker": "DKSR20001508_1",
+    "duration": 4.31
+  },
+  {
+    "id": "ulsan_007560",
+    "speaker": "DKSR20001351_1",
+    "duration": 2.78
+  },
+  {
+    "id": "ulsan_024050",
+    "speaker": "DKSR20000961_2",
+    "duration": 5.84
+  },
+  {
+    "id": "ulsan_013575",
+    "speaker": "DKSR20001715_1",
+    "duration": 5.61
+  },
+  {
+    "id": "ulsan_024293",
+    "speaker": "DKSR20000963_1",
+    "duration": 5.72
+  },
+  {
+    "id": "ulsan_001521",
+    "speaker": "DKSR20001131_1",
+    "duration": 3.5
+  },
+  {
+    "id": "ulsan_017621",
+    "speaker": "DKSR20001288_2",
+    "duration": 2.39
+  },
+  {
+    "id": "ulsan_015074",
+    "speaker": "DKSR20001159_2",
+    "duration": 2.23
+  },
+  {
+    "id": "ulsan_003830",
+    "speaker": "DKSR20001165_1",
+    "duration": 3.08
+  },
+  {
+    "id": "ulsan_012914",
+    "speaker": "DKSR20001651_2",
+    "duration": 4.13
+  },
+  {
+    "id": "ulsan_022744",
+    "speaker": "DKSR20001571_2",
+    "duration": 4.33
+  },
+  {
+    "id": "ulsan_006890",
+    "speaker": "DKSR20001300_2",
+    "duration": 3.72
+  },
+  {
+    "id": "ulsan_024544",
+    "speaker": "DKSR20000962_2",
+    "duration": 4.28
+  },
+  {
+    "id": "ulsan_010204",
+    "speaker": "DKSR20001593_2",
+    "duration": 3.98
+  },
+  {
+    "id": "ulsan_007776",
+    "speaker": "DKSR20001352_1",
+    "duration": 4.52
+  },
+  {
+    "id": "ulsan_021428",
+    "speaker": "DKSR20001537_1",
+    "duration": 5.84
+  },
+  {
+    "id": "ulsan_007799",
+    "speaker": "DKSR20001352_2",
+    "duration": 2.15
+  },
+  {
+    "id": "ulsan_002148",
+    "speaker": "DKSR20001144_1",
+    "duration": 3.76
+  },
+  {
+    "id": "ulsan_014648",
+    "speaker": "DKSR20001033_2",
+    "duration": 2.36
+  },
+  {
+    "id": "ulsan_004392",
+    "speaker": "DKSR20001167_2",
+    "duration": 6.28
+  },
+  {
+    "id": "ulsan_011646",
+    "speaker": "DKSR20001611_1",
+    "duration": 4.68
+  },
+  {
+    "id": "ulsan_009940",
+    "speaker": "DKSR20001592_2",
+    "duration": 5.79
+  },
+  {
+    "id": "ulsan_008726",
+    "speaker": "DKSR20001476_1",
+    "duration": 2.59
+  },
+  {
+    "id": "ulsan_008407",
+    "speaker": "DKSR20001475_2",
+    "duration": 5.13
+  },
+  {
+    "id": "ulsan_026859",
+    "speaker": "DKSR20001203_2",
+    "duration": 3.75
+  },
+  {
+    "id": "ulsan_026063",
+    "speaker": "DKSR20000975_2",
+    "duration": 4.17
+  },
+  {
+    "id": "ulsan_004145",
+    "speaker": "DKSR20001166_1",
+    "duration": 3.52
+  },
+  {
+    "id": "ulsan_001229",
+    "speaker": "DKSR20001094_1",
+    "duration": 2.24
+  },
+  {
+    "id": "ulsan_021235",
+    "speaker": "DKSR20001534_1",
+    "duration": 6.11
+  },
+  {
+    "id": "ulsan_007118",
+    "speaker": "DKSR20001301_1",
+    "duration": 5.11
+  },
+  {
+    "id": "ulsan_020256",
+    "speaker": "DKSR20001511_1",
+    "duration": 3.09
+  },
+  {
+    "id": "ulsan_016536",
+    "speaker": "DKSR20001208_2",
+    "duration": 3.5
+  },
+  {
+    "id": "ulsan_018851",
+    "speaker": "DKSR20001491_1",
+    "duration": 3.92
+  },
+  {
+    "id": "ulsan_006572",
+    "speaker": "DKSR20001286_1",
+    "duration": 4.78
+  },
+  {
+    "id": "ulsan_022042",
+    "speaker": "DKSR20001569_2",
+    "duration": 1.41
+  },
+  {
+    "id": "ulsan_021705",
+    "speaker": "DKSR20001568_1",
+    "duration": 3.86
+  },
+  {
+    "id": "ulsan_020006",
+    "speaker": "DKSR20001510_1",
+    "duration": 5.1
+  },
+  {
+    "id": "ulsan_002888",
+    "speaker": "DKSR20001146_1",
+    "duration": 5.52
+  },
+  {
+    "id": "ulsan_000057",
+    "speaker": "DKSR20000953_2",
+    "duration": 5.58
+  },
+  {
+    "id": "ulsan_016789",
+    "speaker": "DKSR20001240_2",
+    "duration": 1.43
+  },
+  {
+    "id": "ulsan_013187",
+    "speaker": "DKSR20001677_1",
+    "duration": 5.24
+  },
+  {
+    "id": "ulsan_019978",
+    "speaker": "DKSR20001510_2",
+    "duration": 5.47
+  },
+  {
+    "id": "ulsan_023019",
+    "speaker": "DKSR20000956_2",
+    "duration": 5.26
+  },
+  {
+    "id": "ulsan_025725",
+    "speaker": "DKSR20001157_2",
+    "duration": 3.58
+  },
+  {
+    "id": "ulsan_016500",
+    "speaker": "DKSR20001208_1",
+    "duration": 5.59
+  },
+  {
+    "id": "ulsan_000995",
+    "speaker": "DKSR20000960_2",
+    "duration": 6.49
+  },
+  {
+    "id": "ulsan_024280",
+    "speaker": "DKSR20000963_2",
+    "duration": 4.8
+  },
+  {
+    "id": "ulsan_010744",
+    "speaker": "DKSR20001608_2",
+    "duration": 6.92
+  },
+  {
+    "id": "ulsan_009938",
+    "speaker": "DKSR20001592_1",
+    "duration": 5.39
+  },
+  {
+    "id": "ulsan_018750",
+    "speaker": "DKSR20001388_1",
+    "duration": 4.24
+  },
+  {
+    "id": "ulsan_000980",
+    "speaker": "DKSR20000960_1",
+    "duration": 5.29
+  },
+  {
+    "id": "ulsan_020812",
+    "speaker": "DKSR20001532_1",
+    "duration": 4.12
+  },
+  {
+    "id": "ulsan_012159",
+    "speaker": "DKSR20001618_1",
+    "duration": 3.68
+  },
+  {
+    "id": "ulsan_003617",
+    "speaker": "DKSR20001149_2",
+    "duration": 4.27
+  },
+  {
+    "id": "ulsan_009049",
+    "speaker": "DKSR20001487_1",
+    "duration": 5.63
+  },
+  {
+    "id": "ulsan_023633",
+    "speaker": "DKSR20000957_1",
+    "duration": 5.87
+  },
+  {
+    "id": "ulsan_022415",
+    "speaker": "DKSR20001570_1",
+    "duration": 3.7
+  },
+  {
+    "id": "ulsan_023021",
+    "speaker": "DKSR20000956_1",
+    "duration": 6.22
+  },
+  {
+    "id": "ulsan_003610",
+    "speaker": "DKSR20001149_1",
+    "duration": 3.38
+  },
+  {
+    "id": "ulsan_008206",
+    "speaker": "DKSR20001413_1",
+    "duration": 6.37
+  },
+  {
+    "id": "ulsan_007128",
+    "speaker": "DKSR20001301_2",
+    "duration": 1.98
+  },
+  {
+    "id": "ulsan_015382",
+    "speaker": "DKSR20001160_1",
+    "duration": 1.32
+  },
+  {
+    "id": "ulsan_005963",
+    "speaker": "DKSR20001284_1",
+    "duration": 3.38
+  },
+  {
+    "id": "ulsan_015672",
+    "speaker": "DKSR20001202_1",
+    "duration": 2.99
+  },
+  {
+    "id": "ulsan_015375",
+    "speaker": "DKSR20001160_2",
+    "duration": 4.97
+  },
+  {
+    "id": "ulsan_017088",
+    "speaker": "DKSR20001241_1",
+    "duration": 5.05
+  },
+  {
+    "id": "ulsan_019132",
+    "speaker": "DKSR20001507_2",
+    "duration": 4.39
+  },
+  {
+    "id": "ulsan_003275",
+    "speaker": "DKSR20001147_1",
+    "duration": 3.78
+  },
+  {
+    "id": "ulsan_001507",
+    "speaker": "DKSR20001131_2",
+    "duration": 2.39
+  },
+  {
+    "id": "ulsan_001835",
+    "speaker": "DKSR20001132_2",
+    "duration": 3.92
+  },
+  {
+    "id": "ulsan_007365",
+    "speaker": "DKSR20001348_1",
+    "duration": 2.43
+  },
+  {
+    "id": "ulsan_023843",
+    "speaker": "DKSR20000958_2",
+    "duration": 5.99
+  },
+  {
+    "id": "ulsan_026621",
+    "speaker": "DKSR20000979_1",
+    "duration": 4.64
+  },
+  {
+    "id": "ulsan_010462",
+    "speaker": "DKSR20001594_2",
+    "duration": 2.69
+  },
+  {
+    "id": "ulsan_011883",
+    "speaker": "DKSR20001617_1",
+    "duration": 3.57
+  },
+  {
+    "id": "ulsan_011058",
+    "speaker": "DKSR20001609_1",
+    "duration": 3.93
+  },
+  {
+    "id": "ulsan_006884",
+    "speaker": "DKSR20001300_1",
+    "duration": 4.93
+  },
+  {
+    "id": "ulsan_027168",
+    "speaker": "DKSR20000980_1",
+    "duration": 4.96
+  },
+  {
+    "id": "ulsan_005034",
+    "speaker": "DKSR20001169_2",
+    "duration": 5.93
+  },
+  {
+    "id": "ulsan_005995",
+    "speaker": "DKSR20001284_2",
+    "duration": 4.14
+  },
+  {
+    "id": "ulsan_009647",
+    "speaker": "DKSR20001536_2",
+    "duration": 4.38
+  },
+  {
+    "id": "ulsan_003821",
+    "speaker": "DKSR20001165_2",
+    "duration": 5.33
+  },
+  {
+    "id": "ulsan_012676",
+    "speaker": "DKSR20001650_1",
+    "duration": 6.23
+  },
+  {
+    "id": "ulsan_008009",
+    "speaker": "DKSR20001353_1",
+    "duration": 7.1
+  },
+  {
+    "id": "ulsan_001826",
+    "speaker": "DKSR20001132_1",
+    "duration": 4.65
+  },
+  {
+    "id": "ulsan_025427",
+    "speaker": "DKSR20000974_1",
+    "duration": 5.02
+  },
+  {
+    "id": "ulsan_006260",
+    "speaker": "DKSR20001285_1",
+    "duration": 1.76
+  },
+  {
+    "id": "ulsan_005733",
+    "speaker": "DKSR20001280_2",
+    "duration": 4.62
+  },
+  {
+    "id": "ulsan_002161",
+    "speaker": "DKSR20001144_2",
+    "duration": 4.04
+  },
+  {
+    "id": "ulsan_000005",
+    "speaker": "DKSR20000953_1",
+    "duration": 4.7
+  },
+  {
+    "id": "ulsan_022066",
+    "speaker": "DKSR20001569_1",
+    "duration": 3.97
+  },
+  {
+    "id": "ulsan_011908",
+    "speaker": "DKSR20001617_2",
+    "duration": 4.58
+  },
+  {
+    "id": "ulsan_010732",
+    "speaker": "DKSR20001608_1",
+    "duration": 5.46
+  },
+  {
+    "id": "ulsan_007369",
+    "speaker": "DKSR20001348_2",
+    "duration": 5.52
+  },
+  {
+    "id": "ulsan_000417",
+    "speaker": "DKSR20000954_1",
+    "duration": 4.33
+  },
+  {
+    "id": "ulsan_024095",
+    "speaker": "DKSR20000961_1",
+    "duration": 3.92
+  },
+  {
+    "id": "ulsan_026053",
+    "speaker": "DKSR20000975_1",
+    "duration": 6.08
+  },
+  {
+    "id": "ulsan_004663",
+    "speaker": "DKSR20001168_1",
+    "duration": 2.55
+  },
+  {
+    "id": "ulsan_025459",
+    "speaker": "DKSR20000974_2",
+    "duration": 3.02
+  },
+  {
+    "id": "ulsan_012439",
+    "speaker": "DKSR20001649_1",
+    "duration": 5.0
+  },
+  {
+    "id": "ulsan_012437",
+    "speaker": "DKSR20001649_2",
+    "duration": 5.73
+  },
+  {
+    "id": "ulsan_025708",
+    "speaker": "DKSR20001157_1",
+    "duration": 1.19
+  },
+  {
+    "id": "ulsan_002553",
+    "speaker": "DKSR20001145_2",
+    "duration": 4.51
+  },
+  {
+    "id": "ulsan_023841",
+    "speaker": "DKSR20000958_1",
+    "duration": 2.98
+  },
+  {
+    "id": "ulsan_018862",
+    "speaker": "DKSR20001491_2",
+    "duration": 4.8
+  },
+  {
+    "id": "ulsan_027164",
+    "speaker": "DKSR20000980_2",
+    "duration": 2.38
+  },
+  {
+    "id": "ulsan_010196",
+    "speaker": "DKSR20001593_1",
+    "duration": 4.84
+  },
+  {
+    "id": "ulsan_019434",
+    "speaker": "DKSR20001508_2",
+    "duration": 4.46
+  },
+  {
+    "id": "ulsan_009026",
+    "speaker": "DKSR20001487_2",
+    "duration": 3.2
+  },
+  {
+    "id": "ulsan_017317",
+    "speaker": "DKSR20001287_1",
+    "duration": 5.1
+  },
+  {
+    "id": "ulsan_021265",
+    "speaker": "DKSR20001534_2",
+    "duration": 5.42
+  },
+  {
+    "id": "ulsan_018526",
+    "speaker": "DKSR20001386_2",
+    "duration": 5.78
+  },
+  {
+    "id": "ulsan_012904",
+    "speaker": "DKSR20001651_1",
+    "duration": 4.59
+  },
+  {
+    "id": "ulsan_004379",
+    "speaker": "DKSR20001167_1",
+    "duration": 2.27
+  },
+  {
+    "id": "ulsan_002902",
+    "speaker": "DKSR20001146_2",
+    "duration": 3.55
+  },
+  {
+    "id": "ulsan_027397",
+    "speaker": "DKSR20001204_2",
+    "duration": 2.35
+  },
+  {
+    "id": "ulsan_026605",
+    "speaker": "DKSR20000979_2",
+    "duration": 3.88
+  },
+  {
+    "id": "ulsan_024858",
+    "speaker": "DKSR20000973_1",
+    "duration": 2.65
+  },
+  {
+    "id": "ulsan_011649",
+    "speaker": "DKSR20001611_2",
+    "duration": 4.35
+  },
+  {
+    "id": "ulsan_026865",
+    "speaker": "DKSR20001203_1",
+    "duration": 4.74
+  },
+  {
+    "id": "ulsan_018194",
+    "speaker": "DKSR20001380_1",
+    "duration": 2.38
+  },
+  {
+    "id": "ulsan_015965",
+    "speaker": "DKSR20001206_2",
+    "duration": 2.93
+  },
+  {
+    "id": "ulsan_015948",
+    "speaker": "DKSR20001206_1",
+    "duration": 3.45
+  },
+  {
+    "id": "ulsan_019726",
+    "speaker": "DKSR20001509_1",
+    "duration": 6.46
+  },
+  {
+    "id": "ulsan_001215",
+    "speaker": "DKSR20001094_2",
+    "duration": 4.4
+  },
+  {
+    "id": "ulsan_008767",
+    "speaker": "DKSR20001476_2",
+    "duration": 2.08
+  },
+  {
+    "id": "ulsan_021440",
+    "speaker": "DKSR20001537_2",
+    "duration": 3.38
+  },
+  {
+    "id": "ulsan_009327",
+    "speaker": "DKSR20001535_1",
+    "duration": 4.29
+  },
+  {
+    "id": "ulsan_014239",
+    "speaker": "DKSR20001032_2",
+    "duration": 1.79
+  },
+  {
+    "id": "ulsan_007575",
+    "speaker": "DKSR20001351_2",
+    "duration": 2.85
+  },
+  {
+    "id": "ulsan_013566",
+    "speaker": "DKSR20001715_2",
+    "duration": 2.34
+  },
+  {
+    "id": "ulsan_000447",
+    "speaker": "DKSR20000954_2",
+    "duration": 1.84
+  },
+  {
+    "id": "ulsan_006601",
+    "speaker": "DKSR20001286_2",
+    "duration": 3.37
+  },
+  {
+    "id": "ulsan_018205",
+    "speaker": "DKSR20001380_2",
+    "duration": 2.68
+  },
+  {
+    "id": "ulsan_024539",
+    "speaker": "DKSR20000962_1",
+    "duration": 6.02
+  },
+  {
+    "id": "ulsan_022754",
+    "speaker": "DKSR20001571_1",
+    "duration": 4.24
+  },
+  {
+    "id": "ulsan_000784",
+    "speaker": "DKSR20000959_2",
+    "duration": 6.19
+  },
+  {
+    "id": "ulsan_008019",
+    "speaker": "DKSR20001353_2",
+    "duration": 3.3
+  },
+  {
+    "id": "ulsan_021041",
+    "speaker": "DKSR20001533_2",
+    "duration": 2.28
+  },
+  {
+    "id": "ulsan_012220",
+    "speaker": "DKSR20001618_2",
+    "duration": 5.09
+  },
+  {
+    "id": "ulsan_021026",
+    "speaker": "DKSR20001533_1",
+    "duration": 2.3
+  },
+  {
+    "id": "ulsan_027422",
+    "speaker": "DKSR20001204_1",
+    "duration": 2.78
+  },
+  {
+    "id": "ulsan_017613",
+    "speaker": "DKSR20001288_1",
+    "duration": 2.65
+  },
+  {
+    "id": "ulsan_020267",
+    "speaker": "DKSR20001511_2",
+    "duration": 3.32
+  },
+  {
+    "id": "ulsan_020532",
+    "speaker": "DKSR20001512_2",
+    "duration": 3.52
+  },
+  {
+    "id": "ulsan_020540",
+    "speaker": "DKSR20001512_1",
+    "duration": 3.02
+  },
+  {
+    "id": "ulsan_018671",
+    "speaker": "DKSR20001387_1",
+    "duration": 6.27
+  },
+  {
+    "id": "ulsan_021698",
+    "speaker": "DKSR20001568_2",
+    "duration": 5.06
+  },
+  {
+    "id": "ulsan_011376",
+    "speaker": "DKSR20001610_2",
+    "duration": 3.94
+  },
+  {
+    "id": "ulsan_026269",
+    "speaker": "DKSR20001158_1",
+    "duration": 4.2
+  },
+  {
+    "id": "ulsan_024835",
+    "speaker": "DKSR20000973_2",
+    "duration": 4.7
+  },
+  {
+    "id": "ulsan_013860",
+    "speaker": "DKSR20001031_1",
+    "duration": 5.57
+  },
+  {
+    "id": "ulsan_022390",
+    "speaker": "DKSR20001570_2",
+    "duration": 4.1
+  },
+  {
+    "id": "ulsan_003281",
+    "speaker": "DKSR20001147_2",
+    "duration": 2.13
+  },
+  {
+    "id": "ulsan_002533",
+    "speaker": "DKSR20001145_1",
+    "duration": 1.76
+  },
+  {
+    "id": "ulsan_005381",
+    "speaker": "DKSR20001278_1",
+    "duration": 4.35
+  },
+  {
+    "id": "ulsan_026282",
+    "speaker": "DKSR20001158_2",
+    "duration": 3.61
+  },
+  {
+    "id": "ulsan_023294",
+    "speaker": "DKSR20000955_1",
+    "duration": 3.25
+  },
+  {
+    "id": "ulsan_018759",
+    "speaker": "DKSR20001388_2",
+    "duration": 5.58
+  },
+  {
+    "id": "ulsan_014218",
+    "speaker": "DKSR20001032_1",
+    "duration": 3.75
+  },
+  {
+    "id": "ulsan_011048",
+    "speaker": "DKSR20001609_2",
+    "duration": 2.34
+  },
+  {
+    "id": "ulsan_018586",
+    "speaker": "DKSR20001386_1",
+    "duration": 4.65
+  },
+  {
+    "id": "ulsan_004104",
+    "speaker": "DKSR20001166_2",
+    "duration": 2.76
+  },
+  {
+    "id": "ulsan_023618",
+    "speaker": "DKSR20000957_2",
+    "duration": 4.06
+  },
+  {
+    "id": "ulsan_017072",
+    "speaker": "DKSR20001241_2",
+    "duration": 4.71
+  },
+  {
+    "id": "ulsan_005418",
+    "speaker": "DKSR20001278_2",
+    "duration": 3.93
+  },
+  {
+    "id": "ulsan_012672",
+    "speaker": "DKSR20001650_2",
+    "duration": 4.05
+  },
+  {
+    "id": "ulsan_023264",
+    "speaker": "DKSR20000955_2",
+    "duration": 2.13
+  },
+  {
+    "id": "ulsan_017325",
+    "speaker": "DKSR20001287_2",
+    "duration": 4.84
+  },
+  {
+    "id": "ulsan_020820",
+    "speaker": "DKSR20001532_2",
+    "duration": 3.42
+  },
+  {
+    "id": "ulsan_004674",
+    "speaker": "DKSR20001168_2",
+    "duration": 5.52
+  },
+  {
+    "id": "ulsan_000768",
+    "speaker": "DKSR20000959_1",
+    "duration": 4.48
+  },
+  {
+    "id": "ulsan_025138",
+    "speaker": "DKSR20001156_2",
+    "duration": 1.61
+  },
+  {
+    "id": "ulsan_013171",
+    "speaker": "DKSR20001677_2",
+    "duration": 2.51
+  },
+  {
+    "id": "ulsan_025121",
+    "speaker": "DKSR20001156_1",
+    "duration": 2.31
+  },
+  {
+    "id": "ulsan_019144",
+    "speaker": "DKSR20001507_1",
+    "duration": 3.06
+  },
+  {
+    "id": "ulsan_017950",
+    "speaker": "DKSR20001336_2",
+    "duration": 4.28
+  },
+  {
+    "id": "ulsan_013866",
+    "speaker": "DKSR20001031_2",
+    "duration": 6.12
+  },
+  {
+    "id": "ulsan_016780",
+    "speaker": "DKSR20001240_1",
+    "duration": 3.61
+  },
+  {
+    "id": "ulsan_018658",
+    "speaker": "DKSR20001387_2",
+    "duration": 4.92
+  },
+  {
+    "id": "ulsan_008392",
+    "speaker": "DKSR20001475_1",
+    "duration": 2.03
+  },
+  {
+    "id": "ulsan_015061",
+    "speaker": "DKSR20001159_1",
+    "duration": 3.99
+  },
+  {
+    "id": "ulsan_019709",
+    "speaker": "DKSR20001509_2",
+    "duration": 3.02
+  },
+  {
+    "id": "ulsan_008210",
+    "speaker": "DKSR20001413_2",
+    "duration": 2.84
+  },
+  {
+    "id": "ulsan_016235",
+    "speaker": "DKSR20001207_2",
+    "duration": 3.39
+  },
+  {
+    "id": "ulsan_017934",
+    "speaker": "DKSR20001336_1",
+    "duration": 5.01
+  },
+  {
+    "id": "ulsan_011368",
+    "speaker": "DKSR20001610_1",
+    "duration": 2.08
+  },
+  {
+    "id": "ulsan_006285",
+    "speaker": "DKSR20001285_2",
+    "duration": 4.13
+  },
+  {
+    "id": "ulsan_009336",
+    "speaker": "DKSR20001535_2",
+    "duration": 2.8
+  },
+  {
+    "id": "ulsan_005664",
+    "speaker": "DKSR20001280_1",
+    "duration": 5.33
+  },
+  {
+    "id": "ulsan_005054",
+    "speaker": "DKSR20001169_1",
+    "duration": 3.25
+  },
+  {
+    "id": "ulsan_014677",
+    "speaker": "DKSR20001033_1",
+    "duration": 4.64
+  },
+  {
+    "id": "ulsan_009631",
+    "speaker": "DKSR20001536_1",
+    "duration": 4.23
+  },
+  {
+    "id": "ulsan_015666",
+    "speaker": "DKSR20001202_2",
+    "duration": 1.69
+  },
+  {
+    "id": "ulsan_010471",
+    "speaker": "DKSR20001594_1",
+    "duration": 1.89
+  },
+  {
+    "id": "ulsan_016242",
+    "speaker": "DKSR20001207_1",
+    "duration": 5.24
+  },
+  {
+    "id": "ulsan_019425",
+    "speaker": "DKSR20001508_1",
+    "duration": 1.58
+  },
+  {
+    "id": "ulsan_007561",
+    "speaker": "DKSR20001351_1",
+    "duration": 3.89
+  },
+  {
+    "id": "ulsan_024051",
+    "speaker": "DKSR20000961_2",
+    "duration": 6.66
+  },
+  {
+    "id": "ulsan_013576",
+    "speaker": "DKSR20001715_1",
+    "duration": 4.16
+  },
+  {
+    "id": "ulsan_024294",
+    "speaker": "DKSR20000963_1",
+    "duration": 4.63
+  },
+  {
+    "id": "ulsan_001522",
+    "speaker": "DKSR20001131_1",
+    "duration": 2.12
+  },
+  {
+    "id": "ulsan_017622",
+    "speaker": "DKSR20001288_2",
+    "duration": 2.94
+  },
+  {
+    "id": "ulsan_015101",
+    "speaker": "DKSR20001159_2",
+    "duration": 3.9
+  },
+  {
+    "id": "ulsan_003834",
+    "speaker": "DKSR20001165_1",
+    "duration": 5.82
+  },
+  {
+    "id": "ulsan_012915",
+    "speaker": "DKSR20001651_2",
+    "duration": 6.33
+  },
+  {
+    "id": "ulsan_022745",
+    "speaker": "DKSR20001571_2",
+    "duration": 6.57
+  },
+  {
+    "id": "ulsan_006891",
+    "speaker": "DKSR20001300_2",
+    "duration": 3.31
+  },
+  {
+    "id": "ulsan_024545",
+    "speaker": "DKSR20000962_2",
+    "duration": 3.76
+  },
+  {
+    "id": "ulsan_010205",
+    "speaker": "DKSR20001593_2",
+    "duration": 4.05
+  },
+  {
+    "id": "ulsan_007777",
+    "speaker": "DKSR20001352_1",
+    "duration": 2.04
+  },
+  {
+    "id": "ulsan_021429",
+    "speaker": "DKSR20001537_1",
+    "duration": 4.13
+  },
+  {
+    "id": "ulsan_007800",
+    "speaker": "DKSR20001352_2",
+    "duration": 4.47
+  },
+  {
+    "id": "ulsan_002149",
+    "speaker": "DKSR20001144_1",
+    "duration": 4.54
+  },
+  {
+    "id": "ulsan_014649",
+    "speaker": "DKSR20001033_2",
+    "duration": 1.45
+  },
+  {
+    "id": "ulsan_004393",
+    "speaker": "DKSR20001167_2",
+    "duration": 5.22
+  },
+  {
+    "id": "ulsan_011656",
+    "speaker": "DKSR20001611_1",
+    "duration": 7.24
+  },
+  {
+    "id": "ulsan_009941",
+    "speaker": "DKSR20001592_2",
+    "duration": 5.17
+  },
+  {
+    "id": "ulsan_008727",
+    "speaker": "DKSR20001476_1",
+    "duration": 3.86
+  },
+  {
+    "id": "ulsan_008409",
+    "speaker": "DKSR20001475_2",
+    "duration": 5.55
+  },
+  {
+    "id": "ulsan_026860",
+    "speaker": "DKSR20001203_2",
+    "duration": 4.05
+  },
+  {
+    "id": "ulsan_026064",
+    "speaker": "DKSR20000975_2",
+    "duration": 6.51
+  },
+  {
+    "id": "ulsan_004146",
+    "speaker": "DKSR20001166_1",
+    "duration": 3.89
+  },
+  {
+    "id": "ulsan_001230",
+    "speaker": "DKSR20001094_1",
+    "duration": 3.84
+  },
+  {
+    "id": "ulsan_021237",
+    "speaker": "DKSR20001534_1",
+    "duration": 1.42
+  },
+  {
+    "id": "ulsan_007119",
+    "speaker": "DKSR20001301_1",
+    "duration": 3.03
+  },
+  {
+    "id": "ulsan_020257",
+    "speaker": "DKSR20001511_1",
+    "duration": 4.71
+  },
+  {
+    "id": "ulsan_016537",
+    "speaker": "DKSR20001208_2",
+    "duration": 5.88
+  },
+  {
+    "id": "ulsan_018852",
+    "speaker": "DKSR20001491_1",
+    "duration": 4.83
+  },
+  {
+    "id": "ulsan_006573",
+    "speaker": "DKSR20001286_1",
+    "duration": 3.61
+  },
+  {
+    "id": "ulsan_022043",
+    "speaker": "DKSR20001569_2",
+    "duration": 2.67
+  },
+  {
+    "id": "ulsan_021706",
+    "speaker": "DKSR20001568_1",
+    "duration": 1.49
+  },
+  {
+    "id": "ulsan_020008",
+    "speaker": "DKSR20001510_1",
+    "duration": 5.6
+  },
+  {
+    "id": "ulsan_002890",
+    "speaker": "DKSR20001146_1",
+    "duration": 3.61
+  },
+  {
+    "id": "ulsan_000058",
+    "speaker": "DKSR20000953_2",
+    "duration": 3.43
+  },
+  {
+    "id": "ulsan_016790",
+    "speaker": "DKSR20001240_2",
+    "duration": 5.57
+  },
+  {
+    "id": "ulsan_013188",
+    "speaker": "DKSR20001677_1",
+    "duration": 1.6
+  },
+  {
+    "id": "ulsan_019979",
+    "speaker": "DKSR20001510_2",
+    "duration": 2.37
+  },
+  {
+    "id": "ulsan_023038",
+    "speaker": "DKSR20000956_2",
+    "duration": 5.48
+  },
+  {
+    "id": "ulsan_025726",
+    "speaker": "DKSR20001157_2",
+    "duration": 3.82
+  },
+  {
+    "id": "ulsan_016501",
+    "speaker": "DKSR20001208_1",
+    "duration": 4.67
+  },
+  {
+    "id": "ulsan_000996",
+    "speaker": "DKSR20000960_2",
+    "duration": 5.55
+  },
+  {
+    "id": "ulsan_024281",
+    "speaker": "DKSR20000963_2",
+    "duration": 6.55
+  },
+  {
+    "id": "ulsan_010746",
+    "speaker": "DKSR20001608_2",
+    "duration": 4.59
+  },
+  {
+    "id": "ulsan_009939",
+    "speaker": "DKSR20001592_1",
+    "duration": 4.6
+  },
+  {
+    "id": "ulsan_018752",
+    "speaker": "DKSR20001388_1",
+    "duration": 2.64
+  },
+  {
+    "id": "ulsan_000982",
+    "speaker": "DKSR20000960_1",
+    "duration": 6.01
+  },
+  {
+    "id": "ulsan_020813",
+    "speaker": "DKSR20001532_1",
+    "duration": 5.31
+  },
+  {
+    "id": "ulsan_012160",
+    "speaker": "DKSR20001618_1",
+    "duration": 6.23
+  },
+  {
+    "id": "ulsan_003618",
+    "speaker": "DKSR20001149_2",
+    "duration": 2.15
+  },
+  {
+    "id": "ulsan_009050",
+    "speaker": "DKSR20001487_1",
+    "duration": 5.4
+  },
+  {
+    "id": "ulsan_023638",
+    "speaker": "DKSR20000957_1",
+    "duration": 2.54
+  },
+  {
+    "id": "ulsan_022416",
+    "speaker": "DKSR20001570_1",
+    "duration": 2.98
+  },
+  {
+    "id": "ulsan_023022",
+    "speaker": "DKSR20000956_1",
+    "duration": 5.79
+  },
+  {
+    "id": "ulsan_003611",
+    "speaker": "DKSR20001149_1",
+    "duration": 7.2
+  },
+  {
+    "id": "ulsan_008208",
+    "speaker": "DKSR20001413_1",
+    "duration": 2.58
+  },
+  {
+    "id": "ulsan_007129",
+    "speaker": "DKSR20001301_2",
+    "duration": 6.42
+  },
+  {
+    "id": "ulsan_015383",
+    "speaker": "DKSR20001160_1",
+    "duration": 4.02
+  },
+  {
+    "id": "ulsan_005971",
+    "speaker": "DKSR20001284_1",
+    "duration": 4.99
+  },
+  {
+    "id": "ulsan_015674",
+    "speaker": "DKSR20001202_1",
+    "duration": 4.12
+  },
+  {
+    "id": "ulsan_015376",
+    "speaker": "DKSR20001160_2",
+    "duration": 4.35
+  },
+  {
+    "id": "ulsan_017089",
+    "speaker": "DKSR20001241_1",
+    "duration": 4.47
+  },
+  {
+    "id": "ulsan_019134",
+    "speaker": "DKSR20001507_2",
+    "duration": 4.27
+  },
+  {
+    "id": "ulsan_003287",
+    "speaker": "DKSR20001147_1",
+    "duration": 5.53
+  },
+  {
+    "id": "ulsan_001508",
+    "speaker": "DKSR20001131_2",
+    "duration": 4.83
+  },
+  {
+    "id": "ulsan_001836",
+    "speaker": "DKSR20001132_2",
+    "duration": 2.21
+  },
+  {
+    "id": "ulsan_007366",
+    "speaker": "DKSR20001348_1",
+    "duration": 6.16
+  },
+  {
+    "id": "ulsan_023844",
+    "speaker": "DKSR20000958_2",
+    "duration": 6.99
+  },
+  {
+    "id": "ulsan_026624",
+    "speaker": "DKSR20000979_1",
+    "duration": 6.07
+  },
+  {
+    "id": "ulsan_010463",
+    "speaker": "DKSR20001594_2",
+    "duration": 2.9
+  },
+  {
+    "id": "ulsan_011886",
+    "speaker": "DKSR20001617_1",
+    "duration": 5.0
+  },
+  {
+    "id": "ulsan_011059",
+    "speaker": "DKSR20001609_1",
+    "duration": 5.06
+  },
+  {
+    "id": "ulsan_006886",
+    "speaker": "DKSR20001300_1",
+    "duration": 2.49
+  },
+  {
+    "id": "ulsan_027169",
+    "speaker": "DKSR20000980_1",
+    "duration": 7.38
+  },
+  {
+    "id": "ulsan_005036",
+    "speaker": "DKSR20001169_2",
+    "duration": 4.2
+  },
+  {
+    "id": "ulsan_005996",
+    "speaker": "DKSR20001284_2",
+    "duration": 4.14
+  },
+  {
+    "id": "ulsan_009648",
+    "speaker": "DKSR20001536_2",
+    "duration": 3.74
+  },
+  {
+    "id": "ulsan_003823",
+    "speaker": "DKSR20001165_2",
+    "duration": 3.54
+  },
+  {
+    "id": "ulsan_012677",
+    "speaker": "DKSR20001650_1",
+    "duration": 6.03
+  },
+  {
+    "id": "ulsan_008032",
+    "speaker": "DKSR20001353_1",
+    "duration": 3.34
+  },
+  {
+    "id": "ulsan_001827",
+    "speaker": "DKSR20001132_1",
+    "duration": 3.22
+  },
+  {
+    "id": "ulsan_025428",
+    "speaker": "DKSR20000974_1",
+    "duration": 2.33
+  },
+  {
+    "id": "ulsan_006261",
+    "speaker": "DKSR20001285_1",
+    "duration": 7.45
+  },
+  {
+    "id": "ulsan_005734",
+    "speaker": "DKSR20001280_2",
+    "duration": 2.51
+  },
+  {
+    "id": "ulsan_002162",
+    "speaker": "DKSR20001144_2",
+    "duration": 3.53
+  },
+  {
+    "id": "ulsan_000007",
+    "speaker": "DKSR20000953_1",
+    "duration": 4.83
+  },
+  {
+    "id": "ulsan_022067",
+    "speaker": "DKSR20001569_1",
+    "duration": 4.42
+  },
+  {
+    "id": "ulsan_011909",
+    "speaker": "DKSR20001617_2",
+    "duration": 2.81
+  },
+  {
+    "id": "ulsan_010734",
+    "speaker": "DKSR20001608_1",
+    "duration": 5.46
+  },
+  {
+    "id": "ulsan_007370",
+    "speaker": "DKSR20001348_2",
+    "duration": 4.08
+  },
+  {
+    "id": "ulsan_000418",
+    "speaker": "DKSR20000954_1",
+    "duration": 1.13
+  },
+  {
+    "id": "ulsan_024097",
+    "speaker": "DKSR20000961_1",
+    "duration": 1.78
+  },
+  {
+    "id": "ulsan_026055",
+    "speaker": "DKSR20000975_1",
+    "duration": 5.45
+  },
+  {
+    "id": "ulsan_004664",
+    "speaker": "DKSR20001168_1",
+    "duration": 3.36
+  },
+  {
+    "id": "ulsan_025461",
+    "speaker": "DKSR20000974_2",
+    "duration": 4.73
+  },
+  {
+    "id": "ulsan_012440",
+    "speaker": "DKSR20001649_1",
+    "duration": 3.29
+  },
+  {
+    "id": "ulsan_012438",
+    "speaker": "DKSR20001649_2",
+    "duration": 2.11
+  },
+  {
+    "id": "ulsan_025710",
+    "speaker": "DKSR20001157_1",
+    "duration": 1.34
+  },
+  {
+    "id": "ulsan_002554",
+    "speaker": "DKSR20001145_2",
+    "duration": 6.07
+  },
+  {
+    "id": "ulsan_023842",
+    "speaker": "DKSR20000958_1",
+    "duration": 4.47
+  },
+  {
+    "id": "ulsan_018864",
+    "speaker": "DKSR20001491_2",
+    "duration": 3.04
+  },
+  {
+    "id": "ulsan_027165",
+    "speaker": "DKSR20000980_2",
+    "duration": 4.14
+  },
+  {
+    "id": "ulsan_010197",
+    "speaker": "DKSR20001593_1",
+    "duration": 2.66
+  },
+  {
+    "id": "ulsan_019435",
+    "speaker": "DKSR20001508_2",
+    "duration": 2.93
+  },
+  {
+    "id": "ulsan_009027",
+    "speaker": "DKSR20001487_2",
+    "duration": 6.3
+  },
+  {
+    "id": "ulsan_017318",
+    "speaker": "DKSR20001287_1",
+    "duration": 3.44
+  },
+  {
+    "id": "ulsan_021266",
+    "speaker": "DKSR20001534_2",
+    "duration": 6.27
+  },
+  {
+    "id": "ulsan_018528",
+    "speaker": "DKSR20001386_2",
+    "duration": 6.04
+  },
+  {
+    "id": "ulsan_012905",
+    "speaker": "DKSR20001651_1",
+    "duration": 5.44
+  },
+  {
+    "id": "ulsan_004380",
+    "speaker": "DKSR20001167_1",
+    "duration": 4.35
+  },
+  {
+    "id": "ulsan_002903",
+    "speaker": "DKSR20001146_2",
+    "duration": 5.47
+  },
+  {
+    "id": "ulsan_027398",
+    "speaker": "DKSR20001204_2",
+    "duration": 5.36
+  },
+  {
+    "id": "ulsan_026606",
+    "speaker": "DKSR20000979_2",
+    "duration": 6.01
+  },
+  {
+    "id": "ulsan_024859",
+    "speaker": "DKSR20000973_1",
+    "duration": 2.6
+  },
+  {
+    "id": "ulsan_011650",
+    "speaker": "DKSR20001611_2",
+    "duration": 1.61
+  },
+  {
+    "id": "ulsan_026866",
+    "speaker": "DKSR20001203_1",
+    "duration": 5.02
+  },
+  {
+    "id": "ulsan_018195",
+    "speaker": "DKSR20001380_1",
+    "duration": 2.34
+  },
+  {
+    "id": "ulsan_015966",
+    "speaker": "DKSR20001206_2",
+    "duration": 4.35
+  },
+  {
+    "id": "ulsan_015949",
+    "speaker": "DKSR20001206_1",
+    "duration": 4.01
+  },
+  {
+    "id": "ulsan_019727",
+    "speaker": "DKSR20001509_1",
+    "duration": 5.78
+  },
+  {
+    "id": "ulsan_001216",
+    "speaker": "DKSR20001094_2",
+    "duration": 2.49
+  },
+  {
+    "id": "ulsan_008771",
+    "speaker": "DKSR20001476_2",
+    "duration": 4.47
+  },
+  {
+    "id": "ulsan_021441",
+    "speaker": "DKSR20001537_2",
+    "duration": 5.7
+  },
+  {
+    "id": "ulsan_009328",
+    "speaker": "DKSR20001535_1",
+    "duration": 6.39
+  },
+  {
+    "id": "ulsan_014242",
+    "speaker": "DKSR20001032_2",
+    "duration": 1.16
+  },
+  {
+    "id": "ulsan_007576",
+    "speaker": "DKSR20001351_2",
+    "duration": 5.58
+  },
+  {
+    "id": "ulsan_013567",
+    "speaker": "DKSR20001715_2",
+    "duration": 5.49
+  },
+  {
+    "id": "ulsan_000449",
+    "speaker": "DKSR20000954_2",
+    "duration": 1.53
+  },
+  {
+    "id": "ulsan_006602",
+    "speaker": "DKSR20001286_2",
+    "duration": 4.03
+  },
+  {
+    "id": "ulsan_018218",
+    "speaker": "DKSR20001380_2",
+    "duration": 2.81
+  },
+  {
+    "id": "ulsan_024560",
+    "speaker": "DKSR20000962_1",
+    "duration": 5.31
+  },
+  {
+    "id": "ulsan_022755",
+    "speaker": "DKSR20001571_1",
+    "duration": 3.81
+  },
+  {
+    "id": "ulsan_000785",
+    "speaker": "DKSR20000959_2",
+    "duration": 5.24
+  },
+  {
+    "id": "ulsan_008020",
+    "speaker": "DKSR20001353_2",
+    "duration": 2.42
+  },
+  {
+    "id": "ulsan_021042",
+    "speaker": "DKSR20001533_2",
+    "duration": 3.71
+  },
+  {
+    "id": "ulsan_012222",
+    "speaker": "DKSR20001618_2",
+    "duration": 4.69
+  },
+  {
+    "id": "ulsan_021028",
+    "speaker": "DKSR20001533_1",
+    "duration": 3.52
+  },
+  {
+    "id": "ulsan_027424",
+    "speaker": "DKSR20001204_1",
+    "duration": 5.7
+  },
+  {
+    "id": "ulsan_017623",
+    "speaker": "DKSR20001288_1",
+    "duration": 4.62
+  },
+  {
+    "id": "ulsan_020280",
+    "speaker": "DKSR20001511_2",
+    "duration": 5.46
+  },
+  {
+    "id": "ulsan_020533",
+    "speaker": "DKSR20001512_2",
+    "duration": 2.64
+  },
+  {
+    "id": "ulsan_020541",
+    "speaker": "DKSR20001512_1",
+    "duration": 4.51
+  },
+  {
+    "id": "ulsan_018676",
+    "speaker": "DKSR20001387_1",
+    "duration": 5.9
+  },
+  {
+    "id": "ulsan_021699",
+    "speaker": "DKSR20001568_2",
+    "duration": 4.09
+  },
+  {
+    "id": "ulsan_011377",
+    "speaker": "DKSR20001610_2",
+    "duration": 4.75
+  },
+  {
+    "id": "ulsan_026270",
+    "speaker": "DKSR20001158_1",
+    "duration": 4.11
+  },
+  {
+    "id": "ulsan_024836",
+    "speaker": "DKSR20000973_2",
+    "duration": 5.69
+  },
+  {
+    "id": "ulsan_013871",
+    "speaker": "DKSR20001031_1",
+    "duration": 3.37
+  },
+  {
+    "id": "ulsan_022391",
+    "speaker": "DKSR20001570_2",
+    "duration": 3.49
+  },
+  {
+    "id": "ulsan_003282",
+    "speaker": "DKSR20001147_2",
+    "duration": 2.58
+  },
+  {
+    "id": "ulsan_002534",
+    "speaker": "DKSR20001145_1",
+    "duration": 1.95
+  },
+  {
+    "id": "ulsan_005382",
+    "speaker": "DKSR20001278_1",
+    "duration": 2.62
+  },
+  {
+    "id": "ulsan_026283",
+    "speaker": "DKSR20001158_2",
+    "duration": 1.56
+  },
+  {
+    "id": "ulsan_023296",
+    "speaker": "DKSR20000955_1",
+    "duration": 2.96
+  },
+  {
+    "id": "ulsan_018761",
+    "speaker": "DKSR20001388_2",
+    "duration": 4.89
+  },
+  {
+    "id": "ulsan_014219",
+    "speaker": "DKSR20001032_1",
+    "duration": 3.72
+  },
+  {
+    "id": "ulsan_011049",
+    "speaker": "DKSR20001609_2",
+    "duration": 7.22
+  },
+  {
+    "id": "ulsan_018589",
+    "speaker": "DKSR20001386_1",
+    "duration": 5.17
+  },
+  {
+    "id": "ulsan_004105",
+    "speaker": "DKSR20001166_2",
+    "duration": 3.42
+  },
+  {
+    "id": "ulsan_023619",
+    "speaker": "DKSR20000957_2",
+    "duration": 6.65
+  },
+  {
+    "id": "ulsan_017074",
+    "speaker": "DKSR20001241_2",
+    "duration": 4.66
+  },
+  {
+    "id": "ulsan_005419",
+    "speaker": "DKSR20001278_2",
+    "duration": 6.64
+  },
+  {
+    "id": "ulsan_012673",
+    "speaker": "DKSR20001650_2",
+    "duration": 5.81
+  },
+  {
+    "id": "ulsan_023265",
+    "speaker": "DKSR20000955_2",
+    "duration": 3.42
+  },
+  {
+    "id": "ulsan_017326",
+    "speaker": "DKSR20001287_2",
+    "duration": 3.7
+  },
+  {
+    "id": "ulsan_020822",
+    "speaker": "DKSR20001532_2",
+    "duration": 5.23
+  },
+  {
+    "id": "ulsan_004675",
+    "speaker": "DKSR20001168_2",
+    "duration": 4.41
+  },
+  {
+    "id": "ulsan_000769",
+    "speaker": "DKSR20000959_1",
+    "duration": 4.34
+  },
+  {
+    "id": "ulsan_025139",
+    "speaker": "DKSR20001156_2",
+    "duration": 4.83
+  },
+  {
+    "id": "ulsan_013172",
+    "speaker": "DKSR20001677_2",
+    "duration": 1.25
+  },
+  {
+    "id": "ulsan_025123",
+    "speaker": "DKSR20001156_1",
+    "duration": 5.0
+  },
+  {
+    "id": "ulsan_019148",
+    "speaker": "DKSR20001507_1",
+    "duration": 3.96
+  },
+  {
+    "id": "ulsan_017951",
+    "speaker": "DKSR20001336_2",
+    "duration": 3.18
+  },
+  {
+    "id": "ulsan_013867",
+    "speaker": "DKSR20001031_2",
+    "duration": 2.44
+  },
+  {
+    "id": "ulsan_016781",
+    "speaker": "DKSR20001240_1",
+    "duration": 4.81
+  },
+  {
+    "id": "ulsan_018659",
+    "speaker": "DKSR20001387_2",
+    "duration": 6.24
+  },
+  {
+    "id": "ulsan_008394",
+    "speaker": "DKSR20001475_1",
+    "duration": 2.16
+  },
+  {
+    "id": "ulsan_015062",
+    "speaker": "DKSR20001159_1",
+    "duration": 4.6
+  },
+  {
+    "id": "ulsan_019710",
+    "speaker": "DKSR20001509_2",
+    "duration": 2.99
+  },
+  {
+    "id": "ulsan_008211",
+    "speaker": "DKSR20001413_2",
+    "duration": 5.58
+  },
+  {
+    "id": "ulsan_016253",
+    "speaker": "DKSR20001207_2",
+    "duration": 4.76
+  },
+  {
+    "id": "ulsan_017935",
+    "speaker": "DKSR20001336_1",
+    "duration": 2.23
+  },
+  {
+    "id": "ulsan_011369",
+    "speaker": "DKSR20001610_1",
+    "duration": 3.53
+  },
+  {
+    "id": "ulsan_006286",
+    "speaker": "DKSR20001285_2",
+    "duration": 3.17
+  },
+  {
+    "id": "ulsan_009337",
+    "speaker": "DKSR20001535_2",
+    "duration": 5.83
+  },
+  {
+    "id": "ulsan_005665",
+    "speaker": "DKSR20001280_1",
+    "duration": 5.18
+  },
+  {
+    "id": "ulsan_005056",
+    "speaker": "DKSR20001169_1",
+    "duration": 3.06
+  },
+  {
+    "id": "ulsan_014678",
+    "speaker": "DKSR20001033_1",
+    "duration": 3.1
+  },
+  {
+    "id": "ulsan_009632",
+    "speaker": "DKSR20001536_1",
+    "duration": 2.65
+  },
+  {
+    "id": "ulsan_015668",
+    "speaker": "DKSR20001202_2",
+    "duration": 2.31
+  },
+  {
+    "id": "ulsan_010472",
+    "speaker": "DKSR20001594_1",
+    "duration": 4.0
+  },
+  {
+    "id": "ulsan_016244",
+    "speaker": "DKSR20001207_1",
+    "duration": 4.1
+  },
+  {
+    "id": "ulsan_019426",
+    "speaker": "DKSR20001508_1",
+    "duration": 4.86
+  },
+  {
+    "id": "ulsan_007569",
+    "speaker": "DKSR20001351_1",
+    "duration": 7.98
+  },
+  {
+    "id": "ulsan_024052",
+    "speaker": "DKSR20000961_2",
+    "duration": 4.04
+  },
+  {
+    "id": "ulsan_013578",
+    "speaker": "DKSR20001715_1",
+    "duration": 5.14
+  },
+  {
+    "id": "ulsan_024295",
+    "speaker": "DKSR20000963_1",
+    "duration": 5.35
+  },
+  {
+    "id": "ulsan_001524",
+    "speaker": "DKSR20001131_1",
+    "duration": 3.19
+  },
+  {
+    "id": "ulsan_017635",
+    "speaker": "DKSR20001288_2",
+    "duration": 3.49
+  },
+  {
+    "id": "ulsan_015104",
+    "speaker": "DKSR20001159_2",
+    "duration": 4.26
+  },
+  {
+    "id": "ulsan_003835",
+    "speaker": "DKSR20001165_1",
+    "duration": 3.61
+  },
+  {
+    "id": "ulsan_012916",
+    "speaker": "DKSR20001651_2",
+    "duration": 4.64
+  },
+  {
+    "id": "ulsan_022746",
+    "speaker": "DKSR20001571_2",
+    "duration": 2.6
+  },
+  {
+    "id": "ulsan_006893",
+    "speaker": "DKSR20001300_2",
+    "duration": 1.93
+  },
+  {
+    "id": "ulsan_024546",
+    "speaker": "DKSR20000962_2",
+    "duration": 4.2
+  },
+  {
+    "id": "ulsan_010206",
+    "speaker": "DKSR20001593_2",
+    "duration": 3.83
+  },
+  {
+    "id": "ulsan_007779",
+    "speaker": "DKSR20001352_1",
+    "duration": 4.81
+  },
+  {
+    "id": "ulsan_021460",
+    "speaker": "DKSR20001537_1",
+    "duration": 4.15
+  },
+  {
+    "id": "ulsan_007801",
+    "speaker": "DKSR20001352_2",
+    "duration": 1.6
+  },
+  {
+    "id": "ulsan_002150",
+    "speaker": "DKSR20001144_1",
+    "duration": 2.79
+  },
+  {
+    "id": "ulsan_014651",
+    "speaker": "DKSR20001033_2",
+    "duration": 2.16
+  },
+  {
+    "id": "ulsan_004394",
+    "speaker": "DKSR20001167_2",
+    "duration": 5.4
+  },
+  {
+    "id": "ulsan_011658",
+    "speaker": "DKSR20001611_1",
+    "duration": 4.1
+  },
+  {
+    "id": "ulsan_009942",
+    "speaker": "DKSR20001592_2",
+    "duration": 3.03
+  },
+  {
+    "id": "ulsan_008728",
+    "speaker": "DKSR20001476_1",
+    "duration": 4.09
+  },
+  {
+    "id": "ulsan_008410",
+    "speaker": "DKSR20001475_2",
+    "duration": 3.22
+  },
+  {
+    "id": "ulsan_026861",
+    "speaker": "DKSR20001203_2",
+    "duration": 4.5
+  },
+  {
+    "id": "ulsan_026065",
+    "speaker": "DKSR20000975_2",
+    "duration": 5.13
+  },
+  {
+    "id": "ulsan_004147",
+    "speaker": "DKSR20001166_1",
+    "duration": 6.74
+  },
+  {
+    "id": "ulsan_001231",
+    "speaker": "DKSR20001094_1",
+    "duration": 4.54
+  },
+  {
+    "id": "ulsan_021238",
+    "speaker": "DKSR20001534_1",
+    "duration": 2.95
+  },
+  {
+    "id": "ulsan_007120",
+    "speaker": "DKSR20001301_1",
+    "duration": 2.9
+  },
+  {
+    "id": "ulsan_020258",
+    "speaker": "DKSR20001511_1",
+    "duration": 2.79
+  },
+  {
+    "id": "ulsan_016538",
+    "speaker": "DKSR20001208_2",
+    "duration": 5.77
+  },
+  {
+    "id": "ulsan_018853",
+    "speaker": "DKSR20001491_1",
+    "duration": 4.17
+  },
+  {
+    "id": "ulsan_006574",
+    "speaker": "DKSR20001286_1",
+    "duration": 4.72
+  },
+  {
+    "id": "ulsan_022044",
+    "speaker": "DKSR20001569_2",
+    "duration": 4.5
+  },
+  {
+    "id": "ulsan_021708",
+    "speaker": "DKSR20001568_1",
+    "duration": 2.46
+  },
+  {
+    "id": "ulsan_020009",
+    "speaker": "DKSR20001510_1",
+    "duration": 4.88
+  },
+  {
+    "id": "ulsan_002894",
+    "speaker": "DKSR20001146_1",
+    "duration": 6.41
+  },
+  {
+    "id": "ulsan_000059",
+    "speaker": "DKSR20000953_2",
+    "duration": 5.59
+  },
+  {
+    "id": "ulsan_016791",
+    "speaker": "DKSR20001240_2",
+    "duration": 2.92
+  },
+  {
+    "id": "ulsan_013189",
+    "speaker": "DKSR20001677_1",
+    "duration": 3.29
+  },
+  {
+    "id": "ulsan_019980",
+    "speaker": "DKSR20001510_2",
+    "duration": 4.64
+  },
+  {
+    "id": "ulsan_023039",
+    "speaker": "DKSR20000956_2",
+    "duration": 3.79
+  },
+  {
+    "id": "ulsan_025728",
+    "speaker": "DKSR20001157_2",
+    "duration": 2.62
+  },
+  {
+    "id": "ulsan_016502",
+    "speaker": "DKSR20001208_1",
+    "duration": 2.42
+  },
+  {
+    "id": "ulsan_000997",
+    "speaker": "DKSR20000960_2",
+    "duration": 3.22
+  },
+  {
+    "id": "ulsan_024282",
+    "speaker": "DKSR20000963_2",
+    "duration": 4.29
+  },
+  {
+    "id": "ulsan_010747",
+    "speaker": "DKSR20001608_2",
+    "duration": 4.77
+  },
+  {
+    "id": "ulsan_009948",
+    "speaker": "DKSR20001592_1",
+    "duration": 1.67
+  },
+  {
+    "id": "ulsan_018753",
+    "speaker": "DKSR20001388_1",
+    "duration": 2.68
+  },
+  {
+    "id": "ulsan_000983",
+    "speaker": "DKSR20000960_1",
+    "duration": 3.99
+  },
+  {
+    "id": "ulsan_020834",
+    "speaker": "DKSR20001532_1",
+    "duration": 3.4
+  },
+  {
+    "id": "ulsan_012161",
+    "speaker": "DKSR20001618_1",
+    "duration": 6.02
+  },
+  {
+    "id": "ulsan_003619",
+    "speaker": "DKSR20001149_2",
+    "duration": 6.38
+  },
+  {
+    "id": "ulsan_009053",
+    "speaker": "DKSR20001487_1",
+    "duration": 5.01
+  },
+  {
+    "id": "ulsan_023639",
+    "speaker": "DKSR20000957_1",
+    "duration": 6.89
+  },
+  {
+    "id": "ulsan_022417",
+    "speaker": "DKSR20001570_1",
+    "duration": 3.26
+  },
+  {
+    "id": "ulsan_023023",
+    "speaker": "DKSR20000956_1",
+    "duration": 3.9
+  },
+  {
+    "id": "ulsan_003612",
+    "speaker": "DKSR20001149_1",
+    "duration": 4.58
+  },
+  {
+    "id": "ulsan_008216",
+    "speaker": "DKSR20001413_1",
+    "duration": 5.56
+  },
+  {
+    "id": "ulsan_007130",
+    "speaker": "DKSR20001301_2",
+    "duration": 4.13
+  },
+  {
+    "id": "ulsan_015384",
+    "speaker": "DKSR20001160_1",
+    "duration": 5.85
+  },
+  {
+    "id": "ulsan_005972",
+    "speaker": "DKSR20001284_1",
+    "duration": 2.12
+  },
+  {
+    "id": "ulsan_015676",
+    "speaker": "DKSR20001202_1",
+    "duration": 2.65
+  },
+  {
+    "id": "ulsan_015377",
+    "speaker": "DKSR20001160_2",
+    "duration": 2.2
+  },
+  {
+    "id": "ulsan_017090",
+    "speaker": "DKSR20001241_1",
+    "duration": 4.08
+  },
+  {
+    "id": "ulsan_019135",
+    "speaker": "DKSR20001507_2",
+    "duration": 2.95
+  },
+  {
+    "id": "ulsan_003289",
+    "speaker": "DKSR20001147_1",
+    "duration": 2.7
+  },
+  {
+    "id": "ulsan_001509",
+    "speaker": "DKSR20001131_2",
+    "duration": 4.22
+  },
+  {
+    "id": "ulsan_001837",
+    "speaker": "DKSR20001132_2",
+    "duration": 3.51
+  },
+  {
+    "id": "ulsan_007371",
+    "speaker": "DKSR20001348_1",
+    "duration": 5.21
+  },
+  {
+    "id": "ulsan_023845",
+    "speaker": "DKSR20000958_2",
+    "duration": 5.73
+  },
+  {
+    "id": "ulsan_026625",
+    "speaker": "DKSR20000979_1",
+    "duration": 5.74
+  },
+  {
+    "id": "ulsan_010464",
+    "speaker": "DKSR20001594_2",
+    "duration": 2.46
+  },
+  {
+    "id": "ulsan_011887",
+    "speaker": "DKSR20001617_1",
+    "duration": 2.47
+  },
+  {
+    "id": "ulsan_011061",
+    "speaker": "DKSR20001609_1",
+    "duration": 3.42
+  },
+  {
+    "id": "ulsan_006934",
+    "speaker": "DKSR20001300_1",
+    "duration": 4.57
+  },
+  {
+    "id": "ulsan_027172",
+    "speaker": "DKSR20000980_1",
+    "duration": 3.07
+  },
+  {
+    "id": "ulsan_005037",
+    "speaker": "DKSR20001169_2",
+    "duration": 2.2
+  },
+  {
+    "id": "ulsan_005998",
+    "speaker": "DKSR20001284_2",
+    "duration": 2.32
+  },
+  {
+    "id": "ulsan_009649",
+    "speaker": "DKSR20001536_2",
+    "duration": 5.11
+  },
+  {
+    "id": "ulsan_003824",
+    "speaker": "DKSR20001165_2",
+    "duration": 3.57
+  },
+  {
+    "id": "ulsan_012685",
+    "speaker": "DKSR20001650_1",
+    "duration": 4.61
+  },
+  {
+    "id": "ulsan_008033",
+    "speaker": "DKSR20001353_1",
+    "duration": 7.7
+  },
+  {
+    "id": "ulsan_001851",
+    "speaker": "DKSR20001132_1",
+    "duration": 4.27
+  },
+  {
+    "id": "ulsan_025429",
+    "speaker": "DKSR20000974_1",
+    "duration": 1.86
+  },
+  {
+    "id": "ulsan_006262",
+    "speaker": "DKSR20001285_1",
+    "duration": 1.1
+  },
+  {
+    "id": "ulsan_005736",
+    "speaker": "DKSR20001280_2",
+    "duration": 3.61
+  },
+  {
+    "id": "ulsan_002163",
+    "speaker": "DKSR20001144_2",
+    "duration": 5.1
+  },
+  {
+    "id": "ulsan_000008",
+    "speaker": "DKSR20000953_1",
+    "duration": 2.31
+  },
+  {
+    "id": "ulsan_022068",
+    "speaker": "DKSR20001569_1",
+    "duration": 5.48
+  },
+  {
+    "id": "ulsan_011910",
+    "speaker": "DKSR20001617_2",
+    "duration": 4.65
+  },
+  {
+    "id": "ulsan_010735",
+    "speaker": "DKSR20001608_1",
+    "duration": 5.27
+  },
+  {
+    "id": "ulsan_007379",
+    "speaker": "DKSR20001348_2",
+    "duration": 5.1
+  },
+  {
+    "id": "ulsan_000419",
+    "speaker": "DKSR20000954_1",
+    "duration": 1.2
+  },
+  {
+    "id": "ulsan_024098",
+    "speaker": "DKSR20000961_1",
+    "duration": 5.05
+  },
+  {
+    "id": "ulsan_026083",
+    "speaker": "DKSR20000975_1",
+    "duration": 7.26
+  },
+  {
+    "id": "ulsan_004665",
+    "speaker": "DKSR20001168_1",
+    "duration": 4.39
+  },
+  {
+    "id": "ulsan_025462",
+    "speaker": "DKSR20000974_2",
+    "duration": 2.01
+  },
+  {
+    "id": "ulsan_012441",
+    "speaker": "DKSR20001649_1",
+    "duration": 6.08
+  },
+  {
+    "id": "ulsan_012448",
+    "speaker": "DKSR20001649_2",
+    "duration": 3.61
+  },
+  {
+    "id": "ulsan_025712",
+    "speaker": "DKSR20001157_1",
+    "duration": 3.65
+  },
+  {
+    "id": "ulsan_002556",
+    "speaker": "DKSR20001145_2",
+    "duration": 6.56
+  },
+  {
+    "id": "ulsan_023848",
+    "speaker": "DKSR20000958_1",
+    "duration": 5.46
+  },
+  {
+    "id": "ulsan_018880",
+    "speaker": "DKSR20001491_2",
+    "duration": 5.47
+  },
+  {
+    "id": "ulsan_027180",
+    "speaker": "DKSR20000980_2",
+    "duration": 4.35
+  },
+  {
+    "id": "ulsan_010198",
+    "speaker": "DKSR20001593_1",
+    "duration": 2.96
+  },
+  {
+    "id": "ulsan_019436",
+    "speaker": "DKSR20001508_2",
+    "duration": 4.8
+  },
+  {
+    "id": "ulsan_009028",
+    "speaker": "DKSR20001487_2",
+    "duration": 4.9
+  },
+  {
+    "id": "ulsan_017319",
+    "speaker": "DKSR20001287_1",
+    "duration": 2.19
+  },
+  {
+    "id": "ulsan_021267",
+    "speaker": "DKSR20001534_2",
+    "duration": 5.33
+  },
+  {
+    "id": "ulsan_018530",
+    "speaker": "DKSR20001386_2",
+    "duration": 7.43
+  },
+  {
+    "id": "ulsan_012906",
+    "speaker": "DKSR20001651_1",
+    "duration": 4.54
+  },
+  {
+    "id": "ulsan_004381",
+    "speaker": "DKSR20001167_1",
+    "duration": 3.02
+  },
+  {
+    "id": "ulsan_002905",
+    "speaker": "DKSR20001146_2",
+    "duration": 3.04
+  },
+  {
+    "id": "ulsan_027401",
+    "speaker": "DKSR20001204_2",
+    "duration": 4.07
+  },
+  {
+    "id": "ulsan_026607",
+    "speaker": "DKSR20000979_2",
+    "duration": 4.69
+  },
+  {
+    "id": "ulsan_024860",
+    "speaker": "DKSR20000973_1",
+    "duration": 2.04
+  },
+  {
+    "id": "ulsan_011651",
+    "speaker": "DKSR20001611_2",
+    "duration": 3.76
+  },
+  {
+    "id": "ulsan_026867",
+    "speaker": "DKSR20001203_1",
+    "duration": 4.72
+  },
+  {
+    "id": "ulsan_018196",
+    "speaker": "DKSR20001380_1",
+    "duration": 3.16
+  },
+  {
+    "id": "ulsan_015967",
+    "speaker": "DKSR20001206_2",
+    "duration": 3.12
+  },
+  {
+    "id": "ulsan_015950",
+    "speaker": "DKSR20001206_1",
+    "duration": 2.78
+  },
+  {
+    "id": "ulsan_019748",
+    "speaker": "DKSR20001509_1",
+    "duration": 3.53
+  },
+  {
+    "id": "ulsan_001217",
+    "speaker": "DKSR20001094_2",
+    "duration": 1.71
+  },
+  {
+    "id": "ulsan_008772",
+    "speaker": "DKSR20001476_2",
+    "duration": 5.73
+  },
+  {
+    "id": "ulsan_021442",
+    "speaker": "DKSR20001537_2",
+    "duration": 5.56
+  },
+  {
+    "id": "ulsan_009371",
+    "speaker": "DKSR20001535_1",
+    "duration": 4.52
+  },
+  {
+    "id": "ulsan_014243",
+    "speaker": "DKSR20001032_2",
+    "duration": 1.98
+  },
+  {
+    "id": "ulsan_007577",
+    "speaker": "DKSR20001351_2",
+    "duration": 4.18
+  },
+  {
+    "id": "ulsan_013568",
+    "speaker": "DKSR20001715_2",
+    "duration": 3.44
+  },
+  {
+    "id": "ulsan_000450",
+    "speaker": "DKSR20000954_2",
+    "duration": 2.08
+  },
+  {
+    "id": "ulsan_006603",
+    "speaker": "DKSR20001286_2",
+    "duration": 2.28
+  },
+  {
+    "id": "ulsan_018219",
+    "speaker": "DKSR20001380_2",
+    "duration": 4.79
+  },
+  {
+    "id": "ulsan_024562",
+    "speaker": "DKSR20000962_1",
+    "duration": 5.14
+  },
+  {
+    "id": "ulsan_022756",
+    "speaker": "DKSR20001571_1",
+    "duration": 2.74
+  },
+  {
+    "id": "ulsan_000786",
+    "speaker": "DKSR20000959_2",
+    "duration": 6.81
+  },
+  {
+    "id": "ulsan_008021",
+    "speaker": "DKSR20001353_2",
+    "duration": 5.13
+  },
+  {
+    "id": "ulsan_021043",
+    "speaker": "DKSR20001533_2",
+    "duration": 4.71
+  },
+  {
+    "id": "ulsan_012223",
+    "speaker": "DKSR20001618_2",
+    "duration": 2.14
+  },
+  {
+    "id": "ulsan_021030",
+    "speaker": "DKSR20001533_1",
+    "duration": 6.15
+  },
+  {
+    "id": "ulsan_027425",
+    "speaker": "DKSR20001204_1",
+    "duration": 6.9
+  },
+  {
+    "id": "ulsan_017624",
+    "speaker": "DKSR20001288_1",
+    "duration": 5.14
+  },
+  {
+    "id": "ulsan_020281",
+    "speaker": "DKSR20001511_2",
+    "duration": 1.73
+  },
+  {
+    "id": "ulsan_020534",
+    "speaker": "DKSR20001512_2",
+    "duration": 5.09
+  },
+  {
+    "id": "ulsan_020542",
+    "speaker": "DKSR20001512_1",
+    "duration": 6.51
+  },
+  {
+    "id": "ulsan_018679",
+    "speaker": "DKSR20001387_1",
+    "duration": 7.63
+  },
+  {
+    "id": "ulsan_021700",
+    "speaker": "DKSR20001568_2",
+    "duration": 3.99
+  },
+  {
+    "id": "ulsan_011379",
+    "speaker": "DKSR20001610_2",
+    "duration": 5.11
+  },
+  {
+    "id": "ulsan_026271",
+    "speaker": "DKSR20001158_1",
+    "duration": 1.43
+  },
+  {
+    "id": "ulsan_024837",
+    "speaker": "DKSR20000973_2",
+    "duration": 2.05
+  },
+  {
+    "id": "ulsan_013872",
+    "speaker": "DKSR20001031_1",
+    "duration": 3.47
+  },
+  {
+    "id": "ulsan_022393",
+    "speaker": "DKSR20001570_2",
+    "duration": 2.4
+  },
+  {
+    "id": "ulsan_003283",
+    "speaker": "DKSR20001147_2",
+    "duration": 2.09
+  },
+  {
+    "id": "ulsan_002535",
+    "speaker": "DKSR20001145_1",
+    "duration": 1.39
+  },
+  {
+    "id": "ulsan_005383",
+    "speaker": "DKSR20001278_1",
+    "duration": 5.81
+  },
+  {
+    "id": "ulsan_026286",
+    "speaker": "DKSR20001158_2",
+    "duration": 3.26
+  },
+  {
+    "id": "ulsan_023297",
+    "speaker": "DKSR20000955_1",
+    "duration": 2.48
+  },
+  {
+    "id": "ulsan_018809",
+    "speaker": "DKSR20001388_2",
+    "duration": 5.13
+  },
+  {
+    "id": "ulsan_014220",
+    "speaker": "DKSR20001032_1",
+    "duration": 1.95
+  },
+  {
+    "id": "ulsan_011050",
+    "speaker": "DKSR20001609_2",
+    "duration": 3.6
+  },
+  {
+    "id": "ulsan_018591",
+    "speaker": "DKSR20001386_1",
+    "duration": 7.9
+  },
+  {
+    "id": "ulsan_004106",
+    "speaker": "DKSR20001166_2",
+    "duration": 1.34
+  },
+  {
+    "id": "ulsan_023620",
+    "speaker": "DKSR20000957_2",
+    "duration": 4.42
+  },
+  {
+    "id": "ulsan_017075",
+    "speaker": "DKSR20001241_2",
+    "duration": 4.49
+  },
+  {
+    "id": "ulsan_005420",
+    "speaker": "DKSR20001278_2",
+    "duration": 3.92
+  },
+  {
+    "id": "ulsan_012679",
+    "speaker": "DKSR20001650_2",
+    "duration": 6.01
+  },
+  {
+    "id": "ulsan_023266",
+    "speaker": "DKSR20000955_2",
+    "duration": 1.64
+  },
+  {
+    "id": "ulsan_017327",
+    "speaker": "DKSR20001287_2",
+    "duration": 3.45
+  },
+  {
+    "id": "ulsan_020824",
+    "speaker": "DKSR20001532_2",
+    "duration": 4.96
+  },
+  {
+    "id": "ulsan_004676",
+    "speaker": "DKSR20001168_2",
+    "duration": 2.96
+  },
+  {
+    "id": "ulsan_000770",
+    "speaker": "DKSR20000959_1",
+    "duration": 5.28
+  },
+  {
+    "id": "ulsan_025142",
+    "speaker": "DKSR20001156_2",
+    "duration": 2.58
+  },
+  {
+    "id": "ulsan_013174",
+    "speaker": "DKSR20001677_2",
+    "duration": 3.82
+  },
+  {
+    "id": "ulsan_025127",
+    "speaker": "DKSR20001156_1",
+    "duration": 3.0
+  },
+  {
+    "id": "ulsan_019149",
+    "speaker": "DKSR20001507_1",
+    "duration": 4.45
+  },
+  {
+    "id": "ulsan_017952",
+    "speaker": "DKSR20001336_2",
+    "duration": 3.95
+  },
+  {
+    "id": "ulsan_013869",
+    "speaker": "DKSR20001031_2",
+    "duration": 2.31
+  },
+  {
+    "id": "ulsan_016782",
+    "speaker": "DKSR20001240_1",
+    "duration": 3.3
+  },
+  {
+    "id": "ulsan_018661",
+    "speaker": "DKSR20001387_2",
+    "duration": 3.45
+  },
+  {
+    "id": "ulsan_008395",
+    "speaker": "DKSR20001475_1",
+    "duration": 5.35
+  },
+  {
+    "id": "ulsan_015063",
+    "speaker": "DKSR20001159_1",
+    "duration": 5.29
+  },
+  {
+    "id": "ulsan_019711",
+    "speaker": "DKSR20001509_2",
+    "duration": 2.96
+  },
+  {
+    "id": "ulsan_008212",
+    "speaker": "DKSR20001413_2",
+    "duration": 2.61
+  },
+  {
+    "id": "ulsan_016254",
+    "speaker": "DKSR20001207_2",
+    "duration": 4.97
+  },
+  {
+    "id": "ulsan_017936",
+    "speaker": "DKSR20001336_1",
+    "duration": 2.85
+  },
+  {
+    "id": "ulsan_011380",
+    "speaker": "DKSR20001610_1",
+    "duration": 4.17
+  },
+  {
+    "id": "ulsan_006288",
+    "speaker": "DKSR20001285_2",
+    "duration": 4.86
+  },
+  {
+    "id": "ulsan_009338",
+    "speaker": "DKSR20001535_2",
+    "duration": 2.86
+  },
+  {
+    "id": "ulsan_005666",
+    "speaker": "DKSR20001280_1",
+    "duration": 1.59
+  },
+  {
+    "id": "ulsan_005058",
+    "speaker": "DKSR20001169_1",
+    "duration": 2.75
+  },
+  {
+    "id": "ulsan_014679",
+    "speaker": "DKSR20001033_1",
+    "duration": 2.23
+  },
+  {
+    "id": "ulsan_009633",
+    "speaker": "DKSR20001536_1",
+    "duration": 5.3
+  },
+  {
+    "id": "ulsan_015679",
+    "speaker": "DKSR20001202_2",
+    "duration": 5.22
+  },
+  {
+    "id": "ulsan_010473",
+    "speaker": "DKSR20001594_1",
+    "duration": 3.1
+  },
+  {
+    "id": "ulsan_016245",
+    "speaker": "DKSR20001207_1",
+    "duration": 5.62
+  },
+  {
+    "id": "ulsan_019428",
+    "speaker": "DKSR20001508_1",
+    "duration": 4.05
+  },
+  {
+    "id": "ulsan_007571",
+    "speaker": "DKSR20001351_1",
+    "duration": 5.56
+  },
+  {
+    "id": "ulsan_024053",
+    "speaker": "DKSR20000961_2",
+    "duration": 3.83
+  },
+  {
+    "id": "ulsan_013580",
+    "speaker": "DKSR20001715_1",
+    "duration": 2.29
+  },
+  {
+    "id": "ulsan_024296",
+    "speaker": "DKSR20000963_1",
+    "duration": 3.9
+  },
+  {
+    "id": "ulsan_001525",
+    "speaker": "DKSR20001131_1",
+    "duration": 2.94
+  },
+  {
+    "id": "ulsan_017636",
+    "speaker": "DKSR20001288_2",
+    "duration": 4.11
+  },
+  {
+    "id": "ulsan_015105",
+    "speaker": "DKSR20001159_2",
+    "duration": 4.31
+  },
+  {
+    "id": "ulsan_003836",
+    "speaker": "DKSR20001165_1",
+    "duration": 6.04
+  },
+  {
+    "id": "ulsan_012917",
+    "speaker": "DKSR20001651_2",
+    "duration": 4.51
+  },
+  {
+    "id": "ulsan_022747",
+    "speaker": "DKSR20001571_2",
+    "duration": 2.49
+  },
+  {
+    "id": "ulsan_006894",
+    "speaker": "DKSR20001300_2",
+    "duration": 4.07
+  },
+  {
+    "id": "ulsan_024548",
+    "speaker": "DKSR20000962_2",
+    "duration": 3.38
+  },
+  {
+    "id": "ulsan_010207",
+    "speaker": "DKSR20001593_2",
+    "duration": 5.09
+  },
+  {
+    "id": "ulsan_007780",
+    "speaker": "DKSR20001352_1",
+    "duration": 2.64
+  },
+  {
+    "id": "ulsan_021461",
+    "speaker": "DKSR20001537_1",
+    "duration": 5.27
+  },
+  {
+    "id": "ulsan_007802",
+    "speaker": "DKSR20001352_2",
+    "duration": 4.89
+  },
+  {
+    "id": "ulsan_002151",
+    "speaker": "DKSR20001144_1",
+    "duration": 3.38
+  },
+  {
+    "id": "ulsan_014652",
+    "speaker": "DKSR20001033_2",
+    "duration": 3.54
+  },
+  {
+    "id": "ulsan_004395",
+    "speaker": "DKSR20001167_2",
+    "duration": 5.37
+  },
+  {
+    "id": "ulsan_011659",
+    "speaker": "DKSR20001611_1",
+    "duration": 4.6
+  },
+  {
+    "id": "ulsan_009943",
+    "speaker": "DKSR20001592_2",
+    "duration": 5.34
+  },
+  {
+    "id": "ulsan_008731",
+    "speaker": "DKSR20001476_1",
+    "duration": 3.23
+  },
+  {
+    "id": "ulsan_008411",
+    "speaker": "DKSR20001475_2",
+    "duration": 2.93
+  },
+  {
+    "id": "ulsan_026862",
+    "speaker": "DKSR20001203_2",
+    "duration": 4.49
+  },
+  {
+    "id": "ulsan_026066",
+    "speaker": "DKSR20000975_2",
+    "duration": 4.34
+  },
+  {
+    "id": "ulsan_004148",
+    "speaker": "DKSR20001166_1",
+    "duration": 1.73
+  },
+  {
+    "id": "ulsan_001232",
+    "speaker": "DKSR20001094_1",
+    "duration": 6.43
+  },
+  {
+    "id": "ulsan_021239",
+    "speaker": "DKSR20001534_1",
+    "duration": 5.34
+  },
+  {
+    "id": "ulsan_007121",
+    "speaker": "DKSR20001301_1",
+    "duration": 3.94
+  },
+  {
+    "id": "ulsan_020259",
+    "speaker": "DKSR20001511_1",
+    "duration": 6.22
+  },
+  {
+    "id": "ulsan_016540",
+    "speaker": "DKSR20001208_2",
+    "duration": 3.75
+  },
+  {
+    "id": "ulsan_018869",
+    "speaker": "DKSR20001491_1",
+    "duration": 3.8
+  },
+  {
+    "id": "ulsan_006575",
+    "speaker": "DKSR20001286_1",
+    "duration": 2.85
+  },
+  {
+    "id": "ulsan_022045",
+    "speaker": "DKSR20001569_2",
+    "duration": 6.97
+  },
+  {
+    "id": "ulsan_021709",
+    "speaker": "DKSR20001568_1",
+    "duration": 4.22
+  },
+  {
+    "id": "ulsan_020010",
+    "speaker": "DKSR20001510_1",
+    "duration": 6.45
+  },
+  {
+    "id": "ulsan_002895",
+    "speaker": "DKSR20001146_1",
+    "duration": 4.26
+  },
+  {
+    "id": "ulsan_000060",
+    "speaker": "DKSR20000953_2",
+    "duration": 1.91
+  },
+  {
+    "id": "ulsan_016801",
+    "speaker": "DKSR20001240_2",
+    "duration": 4.92
+  },
+  {
+    "id": "ulsan_013190",
+    "speaker": "DKSR20001677_1",
+    "duration": 1.56
+  },
+  {
+    "id": "ulsan_019981",
+    "speaker": "DKSR20001510_2",
+    "duration": 3.88
+  },
+  {
+    "id": "ulsan_023040",
+    "speaker": "DKSR20000956_2",
+    "duration": 3.68
+  },
+  {
+    "id": "ulsan_025729",
+    "speaker": "DKSR20001157_2",
+    "duration": 4.95
+  },
+  {
+    "id": "ulsan_016503",
+    "speaker": "DKSR20001208_1",
+    "duration": 5.13
+  },
+  {
+    "id": "ulsan_000998",
+    "speaker": "DKSR20000960_2",
+    "duration": 4.26
+  },
+  {
+    "id": "ulsan_024283",
+    "speaker": "DKSR20000963_2",
+    "duration": 4.89
+  },
+  {
+    "id": "ulsan_010760",
+    "speaker": "DKSR20001608_2",
+    "duration": 2.36
+  },
+  {
+    "id": "ulsan_009949",
+    "speaker": "DKSR20001592_1",
+    "duration": 3.88
+  },
+  {
+    "id": "ulsan_018775",
+    "speaker": "DKSR20001388_1",
+    "duration": 6.99
+  },
+  {
+    "id": "ulsan_000984",
+    "speaker": "DKSR20000960_1",
+    "duration": 5.97
+  },
+  {
+    "id": "ulsan_020835",
+    "speaker": "DKSR20001532_1",
+    "duration": 1.84
+  },
+  {
+    "id": "ulsan_012162",
+    "speaker": "DKSR20001618_1",
+    "duration": 3.03
+  },
+  {
+    "id": "ulsan_003626",
+    "speaker": "DKSR20001149_2",
+    "duration": 5.16
+  },
+  {
+    "id": "ulsan_009054",
+    "speaker": "DKSR20001487_1",
+    "duration": 4.3
+  },
+  {
+    "id": "ulsan_023640",
+    "speaker": "DKSR20000957_1",
+    "duration": 6.9
+  },
+  {
+    "id": "ulsan_022418",
+    "speaker": "DKSR20001570_1",
+    "duration": 3.07
+  },
+  {
+    "id": "ulsan_023024",
+    "speaker": "DKSR20000956_1",
+    "duration": 5.38
+  },
+  {
+    "id": "ulsan_003620",
+    "speaker": "DKSR20001149_1",
+    "duration": 4.75
+  },
+  {
+    "id": "ulsan_008217",
+    "speaker": "DKSR20001413_1",
+    "duration": 4.21
+  },
+  {
+    "id": "ulsan_007131",
+    "speaker": "DKSR20001301_2",
+    "duration": 3.71
+  },
+  {
+    "id": "ulsan_015398",
+    "speaker": "DKSR20001160_1",
+    "duration": 3.31
+  },
+  {
+    "id": "ulsan_005973",
+    "speaker": "DKSR20001284_1",
+    "duration": 3.73
+  },
+  {
+    "id": "ulsan_015677",
+    "speaker": "DKSR20001202_1",
+    "duration": 2.21
+  },
+  {
+    "id": "ulsan_015378",
+    "speaker": "DKSR20001160_2",
+    "duration": 4.22
+  },
+  {
+    "id": "ulsan_017091",
+    "speaker": "DKSR20001241_1",
+    "duration": 6.06
+  },
+  {
+    "id": "ulsan_019159",
+    "speaker": "DKSR20001507_2",
+    "duration": 2.58
+  },
+  {
+    "id": "ulsan_003290",
+    "speaker": "DKSR20001147_1",
+    "duration": 3.23
+  },
+  {
+    "id": "ulsan_001510",
+    "speaker": "DKSR20001131_2",
+    "duration": 3.17
+  },
+  {
+    "id": "ulsan_001838",
+    "speaker": "DKSR20001132_2",
+    "duration": 2.01
+  },
+  {
+    "id": "ulsan_007373",
+    "speaker": "DKSR20001348_1",
+    "duration": 3.4
+  },
+  {
+    "id": "ulsan_023846",
+    "speaker": "DKSR20000958_2",
+    "duration": 4.3
+  },
+  {
+    "id": "ulsan_026626",
+    "speaker": "DKSR20000979_1",
+    "duration": 2.65
+  },
+  {
+    "id": "ulsan_010465",
+    "speaker": "DKSR20001594_2",
+    "duration": 4.79
+  },
+  {
+    "id": "ulsan_011888",
+    "speaker": "DKSR20001617_1",
+    "duration": 2.58
+  },
+  {
+    "id": "ulsan_011062",
+    "speaker": "DKSR20001609_1",
+    "duration": 2.13
+  },
+  {
+    "id": "ulsan_006935",
+    "speaker": "DKSR20001300_1",
+    "duration": 2.27
+  },
+  {
+    "id": "ulsan_027174",
+    "speaker": "DKSR20000980_1",
+    "duration": 4.09
+  },
+  {
+    "id": "ulsan_005038",
+    "speaker": "DKSR20001169_2",
+    "duration": 5.44
+  },
+  {
+    "id": "ulsan_005999",
+    "speaker": "DKSR20001284_2",
+    "duration": 1.06
+  },
+  {
+    "id": "ulsan_009650",
+    "speaker": "DKSR20001536_2",
+    "duration": 1.11
+  },
+  {
+    "id": "ulsan_003826",
+    "speaker": "DKSR20001165_2",
+    "duration": 5.72
+  },
+  {
+    "id": "ulsan_012687",
+    "speaker": "DKSR20001650_1",
+    "duration": 2.82
+  },
+  {
+    "id": "ulsan_008034",
+    "speaker": "DKSR20001353_1",
+    "duration": 5.1
+  },
+  {
+    "id": "ulsan_001852",
+    "speaker": "DKSR20001132_1",
+    "duration": 3.76
+  },
+  {
+    "id": "ulsan_025430",
+    "speaker": "DKSR20000974_1",
+    "duration": 2.76
+  },
+  {
+    "id": "ulsan_006263",
+    "speaker": "DKSR20001285_1",
+    "duration": 5.83
+  },
+  {
+    "id": "ulsan_005737",
+    "speaker": "DKSR20001280_2",
+    "duration": 2.11
+  },
+  {
+    "id": "ulsan_002164",
+    "speaker": "DKSR20001144_2",
+    "duration": 3.97
+  },
+  {
+    "id": "ulsan_000009",
+    "speaker": "DKSR20000953_1",
+    "duration": 2.93
+  },
+  {
+    "id": "ulsan_022069",
+    "speaker": "DKSR20001569_1",
+    "duration": 2.55
+  },
+  {
+    "id": "ulsan_011911",
+    "speaker": "DKSR20001617_2",
+    "duration": 3.53
+  },
+  {
+    "id": "ulsan_010736",
+    "speaker": "DKSR20001608_1",
+    "duration": 2.15
+  },
+  {
+    "id": "ulsan_007380",
+    "speaker": "DKSR20001348_2",
+    "duration": 3.54
+  },
+  {
+    "id": "ulsan_000420",
+    "speaker": "DKSR20000954_1",
+    "duration": 1.44
+  },
+  {
+    "id": "ulsan_024100",
+    "speaker": "DKSR20000961_1",
+    "duration": 4.74
+  },
+  {
+    "id": "ulsan_026085",
+    "speaker": "DKSR20000975_1",
+    "duration": 4.6
+  },
+  {
+    "id": "ulsan_004666",
+    "speaker": "DKSR20001168_1",
+    "duration": 3.92
+  },
+  {
+    "id": "ulsan_025463",
+    "speaker": "DKSR20000974_2",
+    "duration": 1.97
+  },
+  {
+    "id": "ulsan_012442",
+    "speaker": "DKSR20001649_1",
+    "duration": 6.01
+  },
+  {
+    "id": "ulsan_012450",
+    "speaker": "DKSR20001649_2",
+    "duration": 4.8
+  },
+  {
+    "id": "ulsan_025713",
+    "speaker": "DKSR20001157_1",
+    "duration": 2.08
+  },
+  {
+    "id": "ulsan_002558",
+    "speaker": "DKSR20001145_2",
+    "duration": 3.28
+  },
+  {
+    "id": "ulsan_023850",
+    "speaker": "DKSR20000958_1",
+    "duration": 4.86
+  },
+  {
+    "id": "ulsan_018882",
+    "speaker": "DKSR20001491_2",
+    "duration": 2.0
+  },
+  {
+    "id": "ulsan_027181",
+    "speaker": "DKSR20000980_2",
+    "duration": 3.33
+  },
+  {
+    "id": "ulsan_010199",
+    "speaker": "DKSR20001593_1",
+    "duration": 3.7
+  },
+  {
+    "id": "ulsan_019437",
+    "speaker": "DKSR20001508_2",
+    "duration": 6.7
+  },
+  {
+    "id": "ulsan_009030",
+    "speaker": "DKSR20001487_2",
+    "duration": 7.68
+  },
+  {
+    "id": "ulsan_017320",
+    "speaker": "DKSR20001287_1",
+    "duration": 2.62
+  },
+  {
+    "id": "ulsan_021269",
+    "speaker": "DKSR20001534_2",
+    "duration": 1.93
+  },
+  {
+    "id": "ulsan_018551",
+    "speaker": "DKSR20001386_2",
+    "duration": 7.44
+  },
+  {
+    "id": "ulsan_012907",
+    "speaker": "DKSR20001651_1",
+    "duration": 5.05
+  },
+  {
+    "id": "ulsan_004382",
+    "speaker": "DKSR20001167_1",
+    "duration": 5.31
+  },
+  {
+    "id": "ulsan_002906",
+    "speaker": "DKSR20001146_2",
+    "duration": 2.28
+  },
+  {
+    "id": "ulsan_027403",
+    "speaker": "DKSR20001204_2",
+    "duration": 3.78
+  },
+  {
+    "id": "ulsan_026608",
+    "speaker": "DKSR20000979_2",
+    "duration": 4.91
+  },
+  {
+    "id": "ulsan_024861",
+    "speaker": "DKSR20000973_1",
+    "duration": 3.63
+  },
+  {
+    "id": "ulsan_011652",
+    "speaker": "DKSR20001611_2",
+    "duration": 2.75
+  },
+  {
+    "id": "ulsan_026868",
+    "speaker": "DKSR20001203_1",
+    "duration": 5.13
+  },
+  {
+    "id": "ulsan_018197",
+    "speaker": "DKSR20001380_1",
+    "duration": 2.5
+  },
+  {
+    "id": "ulsan_015968",
+    "speaker": "DKSR20001206_2",
+    "duration": 4.92
+  },
+  {
+    "id": "ulsan_015951",
+    "speaker": "DKSR20001206_1",
+    "duration": 3.55
+  },
+  {
+    "id": "ulsan_019749",
+    "speaker": "DKSR20001509_1",
+    "duration": 4.3
+  },
+  {
+    "id": "ulsan_001218",
+    "speaker": "DKSR20001094_2",
+    "duration": 2.46
+  },
+  {
+    "id": "ulsan_008773",
+    "speaker": "DKSR20001476_2",
+    "duration": 5.32
+  },
+  {
+    "id": "ulsan_021443",
+    "speaker": "DKSR20001537_2",
+    "duration": 4.02
+  },
+  {
+    "id": "ulsan_009372",
+    "speaker": "DKSR20001535_1",
+    "duration": 2.89
+  },
+  {
+    "id": "ulsan_014244",
+    "speaker": "DKSR20001032_2",
+    "duration": 2.9
+  },
+  {
+    "id": "ulsan_007578",
+    "speaker": "DKSR20001351_2",
+    "duration": 4.04
+  },
+  {
+    "id": "ulsan_013569",
+    "speaker": "DKSR20001715_2",
+    "duration": 3.78
+  },
+  {
+    "id": "ulsan_000452",
+    "speaker": "DKSR20000954_2",
+    "duration": 1.9
+  },
+  {
+    "id": "ulsan_006604",
+    "speaker": "DKSR20001286_2",
+    "duration": 1.99
+  },
+  {
+    "id": "ulsan_018220",
+    "speaker": "DKSR20001380_2",
+    "duration": 5.52
+  },
+  {
+    "id": "ulsan_024563",
+    "speaker": "DKSR20000962_1",
+    "duration": 2.84
+  },
+  {
+    "id": "ulsan_022757",
+    "speaker": "DKSR20001571_1",
+    "duration": 5.14
+  },
+  {
+    "id": "ulsan_000787",
+    "speaker": "DKSR20000959_2",
+    "duration": 2.57
+  },
+  {
+    "id": "ulsan_008022",
+    "speaker": "DKSR20001353_2",
+    "duration": 6.87
+  },
+  {
+    "id": "ulsan_021044",
+    "speaker": "DKSR20001533_2",
+    "duration": 5.85
+  },
+  {
+    "id": "ulsan_012224",
+    "speaker": "DKSR20001618_2",
+    "duration": 3.08
+  },
+  {
+    "id": "ulsan_021031",
+    "speaker": "DKSR20001533_1",
+    "duration": 6.45
+  },
+  {
+    "id": "ulsan_027426",
+    "speaker": "DKSR20001204_1",
+    "duration": 2.59
+  },
+  {
+    "id": "ulsan_017625",
+    "speaker": "DKSR20001288_1",
+    "duration": 2.47
+  },
+  {
+    "id": "ulsan_020283",
+    "speaker": "DKSR20001511_2",
+    "duration": 3.51
+  },
+  {
+    "id": "ulsan_020535",
+    "speaker": "DKSR20001512_2",
+    "duration": 2.38
+  },
+  {
+    "id": "ulsan_020544",
+    "speaker": "DKSR20001512_1",
+    "duration": 5.74
+  },
+  {
+    "id": "ulsan_018681",
+    "speaker": "DKSR20001387_1",
+    "duration": 6.98
+  },
+  {
+    "id": "ulsan_021730",
+    "speaker": "DKSR20001568_2",
+    "duration": 5.34
+  },
+  {
+    "id": "ulsan_011405",
+    "speaker": "DKSR20001610_2",
+    "duration": 5.67
+  },
+  {
+    "id": "ulsan_026272",
+    "speaker": "DKSR20001158_1",
+    "duration": 5.49
+  },
+  {
+    "id": "ulsan_024838",
+    "speaker": "DKSR20000973_2",
+    "duration": 5.29
+  },
+  {
+    "id": "ulsan_013874",
+    "speaker": "DKSR20001031_1",
+    "duration": 3.66
+  },
+  {
+    "id": "ulsan_022394",
+    "speaker": "DKSR20001570_2",
+    "duration": 2.71
+  },
+  {
+    "id": "ulsan_003286",
+    "speaker": "DKSR20001147_2",
+    "duration": 2.63
+  },
+  {
+    "id": "ulsan_002537",
+    "speaker": "DKSR20001145_1",
+    "duration": 6.35
+  },
+  {
+    "id": "ulsan_005384",
+    "speaker": "DKSR20001278_1",
+    "duration": 3.98
+  },
+  {
+    "id": "ulsan_026287",
+    "speaker": "DKSR20001158_2",
+    "duration": 3.24
+  },
+  {
+    "id": "ulsan_023299",
+    "speaker": "DKSR20000955_1",
+    "duration": 3.67
+  },
+  {
+    "id": "ulsan_018813",
+    "speaker": "DKSR20001388_2",
+    "duration": 6.69
+  },
+  {
+    "id": "ulsan_014222",
+    "speaker": "DKSR20001032_1",
+    "duration": 4.56
+  },
+  {
+    "id": "ulsan_011051",
+    "speaker": "DKSR20001609_2",
+    "duration": 2.99
+  },
+  {
+    "id": "ulsan_018592",
+    "speaker": "DKSR20001386_1",
+    "duration": 7.62
+  },
+  {
+    "id": "ulsan_004107",
+    "speaker": "DKSR20001166_2",
+    "duration": 4.62
+  },
+  {
+    "id": "ulsan_023621",
+    "speaker": "DKSR20000957_2",
+    "duration": 6.8
+  },
+  {
+    "id": "ulsan_017076",
+    "speaker": "DKSR20001241_2",
+    "duration": 4.34
+  },
+  {
+    "id": "ulsan_005421",
+    "speaker": "DKSR20001278_2",
+    "duration": 2.54
+  },
+  {
+    "id": "ulsan_012680",
+    "speaker": "DKSR20001650_2",
+    "duration": 3.83
+  },
+  {
+    "id": "ulsan_023268",
+    "speaker": "DKSR20000955_2",
+    "duration": 5.62
+  },
+  {
+    "id": "ulsan_017328",
+    "speaker": "DKSR20001287_2",
+    "duration": 6.48
+  },
+  {
+    "id": "ulsan_020825",
+    "speaker": "DKSR20001532_2",
+    "duration": 3.39
+  },
+  {
+    "id": "ulsan_004677",
+    "speaker": "DKSR20001168_2",
+    "duration": 1.91
+  },
+  {
+    "id": "ulsan_000771",
+    "speaker": "DKSR20000959_1",
+    "duration": 5.42
+  },
+  {
+    "id": "ulsan_025143",
+    "speaker": "DKSR20001156_2",
+    "duration": 5.56
+  },
+  {
+    "id": "ulsan_013175",
+    "speaker": "DKSR20001677_2",
+    "duration": 3.97
+  },
+  {
+    "id": "ulsan_025128",
+    "speaker": "DKSR20001156_1",
+    "duration": 2.98
+  },
+  {
+    "id": "ulsan_019150",
+    "speaker": "DKSR20001507_1",
+    "duration": 5.54
+  },
+  {
+    "id": "ulsan_017953",
+    "speaker": "DKSR20001336_2",
+    "duration": 2.61
+  },
+  {
+    "id": "ulsan_013887",
+    "speaker": "DKSR20001031_2",
+    "duration": 4.63
+  },
+  {
+    "id": "ulsan_016783",
+    "speaker": "DKSR20001240_1",
+    "duration": 3.82
+  },
+  {
+    "id": "ulsan_018668",
+    "speaker": "DKSR20001387_2",
+    "duration": 7.22
+  },
+  {
+    "id": "ulsan_008396",
+    "speaker": "DKSR20001475_1",
+    "duration": 4.06
+  },
+  {
+    "id": "ulsan_015065",
+    "speaker": "DKSR20001159_1",
+    "duration": 1.96
+  },
+  {
+    "id": "ulsan_019712",
+    "speaker": "DKSR20001509_2",
+    "duration": 4.42
+  },
+  {
+    "id": "ulsan_008214",
+    "speaker": "DKSR20001413_2",
+    "duration": 5.51
+  },
+  {
+    "id": "ulsan_016255",
+    "speaker": "DKSR20001207_2",
+    "duration": 4.13
+  },
+  {
+    "id": "ulsan_017937",
+    "speaker": "DKSR20001336_1",
+    "duration": 3.34
+  },
+  {
+    "id": "ulsan_011382",
+    "speaker": "DKSR20001610_1",
+    "duration": 3.01
+  },
+  {
+    "id": "ulsan_006289",
+    "speaker": "DKSR20001285_2",
+    "duration": 5.85
+  },
+  {
+    "id": "ulsan_009339",
+    "speaker": "DKSR20001535_2",
+    "duration": 4.71
+  },
+  {
+    "id": "ulsan_005668",
+    "speaker": "DKSR20001280_1",
+    "duration": 3.45
+  },
+  {
+    "id": "ulsan_005060",
+    "speaker": "DKSR20001169_1",
+    "duration": 2.57
+  },
+  {
+    "id": "ulsan_014680",
+    "speaker": "DKSR20001033_1",
+    "duration": 1.85
+  },
+  {
+    "id": "ulsan_009635",
+    "speaker": "DKSR20001536_1",
+    "duration": 2.07
+  },
+  {
+    "id": "ulsan_015680",
+    "speaker": "DKSR20001202_2",
+    "duration": 3.15
+  },
+  {
+    "id": "ulsan_010474",
+    "speaker": "DKSR20001594_1",
+    "duration": 3.67
+  },
+  {
+    "id": "ulsan_016246",
+    "speaker": "DKSR20001207_1",
+    "duration": 2.98
+  },
+  {
+    "id": "ulsan_019441",
+    "speaker": "DKSR20001508_1",
+    "duration": 3.09
+  },
+  {
+    "id": "ulsan_007572",
+    "speaker": "DKSR20001351_1",
+    "duration": 6.92
+  },
+  {
+    "id": "ulsan_024054",
+    "speaker": "DKSR20000961_2",
+    "duration": 5.16
+  },
+  {
+    "id": "ulsan_013581",
+    "speaker": "DKSR20001715_1",
+    "duration": 2.54
+  },
+  {
+    "id": "ulsan_024297",
+    "speaker": "DKSR20000963_1",
+    "duration": 3.62
+  },
+  {
+    "id": "ulsan_001526",
+    "speaker": "DKSR20001131_1",
+    "duration": 3.57
+  },
+  {
+    "id": "ulsan_017637",
+    "speaker": "DKSR20001288_2",
+    "duration": 2.99
+  },
+  {
+    "id": "ulsan_015106",
+    "speaker": "DKSR20001159_2",
+    "duration": 3.98
+  },
+  {
+    "id": "ulsan_003838",
+    "speaker": "DKSR20001165_1",
+    "duration": 3.1
+  },
+  {
+    "id": "ulsan_012918",
+    "speaker": "DKSR20001651_2",
+    "duration": 1.84
+  },
+  {
+    "id": "ulsan_022750",
+    "speaker": "DKSR20001571_2",
+    "duration": 2.46
+  },
+  {
+    "id": "ulsan_006895",
+    "speaker": "DKSR20001300_2",
+    "duration": 4.27
+  },
+  {
+    "id": "ulsan_024549",
+    "speaker": "DKSR20000962_2",
+    "duration": 4.28
+  },
+  {
+    "id": "ulsan_010208",
+    "speaker": "DKSR20001593_2",
+    "duration": 3.81
+  },
+  {
+    "id": "ulsan_007781",
+    "speaker": "DKSR20001352_1",
+    "duration": 4.05
+  },
+  {
+    "id": "ulsan_021463",
+    "speaker": "DKSR20001537_1",
+    "duration": 3.39
+  },
+  {
+    "id": "ulsan_007803",
+    "speaker": "DKSR20001352_2",
+    "duration": 7.45
+  },
+  {
+    "id": "ulsan_002152",
+    "speaker": "DKSR20001144_1",
+    "duration": 6.88
+  },
+  {
+    "id": "ulsan_014653",
+    "speaker": "DKSR20001033_2",
+    "duration": 3.37
+  },
+  {
+    "id": "ulsan_004396",
+    "speaker": "DKSR20001167_2",
+    "duration": 5.46
+  },
+  {
+    "id": "ulsan_011664",
+    "speaker": "DKSR20001611_1",
+    "duration": 3.74
+  },
+  {
+    "id": "ulsan_009945",
+    "speaker": "DKSR20001592_2",
+    "duration": 1.69
+  },
+  {
+    "id": "ulsan_008733",
+    "speaker": "DKSR20001476_1",
+    "duration": 2.07
+  },
+  {
+    "id": "ulsan_008412",
+    "speaker": "DKSR20001475_2",
+    "duration": 1.72
+  },
+  {
+    "id": "ulsan_026864",
+    "speaker": "DKSR20001203_2",
+    "duration": 5.16
+  },
+  {
+    "id": "ulsan_026067",
+    "speaker": "DKSR20000975_2",
+    "duration": 4.67
+  },
+  {
+    "id": "ulsan_004149",
+    "speaker": "DKSR20001166_1",
+    "duration": 6.15
+  },
+  {
+    "id": "ulsan_001249",
+    "speaker": "DKSR20001094_1",
+    "duration": 5.08
+  },
+  {
+    "id": "ulsan_021242",
+    "speaker": "DKSR20001534_1",
+    "duration": 3.77
+  },
+  {
+    "id": "ulsan_007122",
+    "speaker": "DKSR20001301_1",
+    "duration": 4.18
+  },
+  {
+    "id": "ulsan_020262",
+    "speaker": "DKSR20001511_1",
+    "duration": 5.08
+  },
+  {
+    "id": "ulsan_016541",
+    "speaker": "DKSR20001208_2",
+    "duration": 2.89
+  },
+  {
+    "id": "ulsan_018871",
+    "speaker": "DKSR20001491_1",
+    "duration": 5.37
+  },
+  {
+    "id": "ulsan_006576",
+    "speaker": "DKSR20001286_1",
+    "duration": 2.28
+  },
+  {
+    "id": "ulsan_022048",
+    "speaker": "DKSR20001569_2",
+    "duration": 3.76
+  },
+  {
+    "id": "ulsan_021711",
+    "speaker": "DKSR20001568_1",
+    "duration": 5.53
+  },
+  {
+    "id": "ulsan_020011",
+    "speaker": "DKSR20001510_1",
+    "duration": 3.28
+  },
+  {
+    "id": "ulsan_002970",
+    "speaker": "DKSR20001146_1",
+    "duration": 5.62
+  },
+  {
+    "id": "ulsan_000061",
+    "speaker": "DKSR20000953_2",
+    "duration": 4.06
+  },
+  {
+    "id": "ulsan_016802",
+    "speaker": "DKSR20001240_2",
+    "duration": 3.15
+  },
+  {
+    "id": "ulsan_013191",
+    "speaker": "DKSR20001677_1",
+    "duration": 2.23
+  },
+  {
+    "id": "ulsan_019982",
+    "speaker": "DKSR20001510_2",
+    "duration": 3.25
+  },
+  {
+    "id": "ulsan_023041",
+    "speaker": "DKSR20000956_2",
+    "duration": 3.92
+  },
+  {
+    "id": "ulsan_025730",
+    "speaker": "DKSR20001157_2",
+    "duration": 1.19
+  },
+  {
+    "id": "ulsan_016504",
+    "speaker": "DKSR20001208_1",
+    "duration": 5.76
+  },
+  {
+    "id": "ulsan_000999",
+    "speaker": "DKSR20000960_2",
+    "duration": 2.95
+  },
+  {
+    "id": "ulsan_024284",
+    "speaker": "DKSR20000963_2",
+    "duration": 4.9
+  },
+  {
+    "id": "ulsan_010761",
+    "speaker": "DKSR20001608_2",
+    "duration": 5.17
+  },
+  {
+    "id": "ulsan_009950",
+    "speaker": "DKSR20001592_1",
+    "duration": 2.81
+  },
+  {
+    "id": "ulsan_018779",
+    "speaker": "DKSR20001388_1",
+    "duration": 7.51
+  },
+  {
+    "id": "ulsan_000985",
+    "speaker": "DKSR20000960_1",
+    "duration": 6.72
+  },
+  {
+    "id": "ulsan_020836",
+    "speaker": "DKSR20001532_1",
+    "duration": 4.56
+  },
+  {
+    "id": "ulsan_012163",
+    "speaker": "DKSR20001618_1",
+    "duration": 4.97
+  },
+  {
+    "id": "ulsan_003628",
+    "speaker": "DKSR20001149_2",
+    "duration": 2.86
+  },
+  {
+    "id": "ulsan_009055",
+    "speaker": "DKSR20001487_1",
+    "duration": 6.44
+  },
+  {
+    "id": "ulsan_023641",
+    "speaker": "DKSR20000957_1",
+    "duration": 4.58
+  },
+  {
+    "id": "ulsan_022419",
+    "speaker": "DKSR20001570_1",
+    "duration": 1.86
+  },
+  {
+    "id": "ulsan_023025",
+    "speaker": "DKSR20000956_1",
+    "duration": 5.38
+  },
+  {
+    "id": "ulsan_003621",
+    "speaker": "DKSR20001149_1",
+    "duration": 4.58
+  },
+  {
+    "id": "ulsan_008218",
+    "speaker": "DKSR20001413_1",
+    "duration": 4.38
+  },
+  {
+    "id": "ulsan_007132",
+    "speaker": "DKSR20001301_2",
+    "duration": 6.73
+  },
+  {
+    "id": "ulsan_015400",
+    "speaker": "DKSR20001160_1",
+    "duration": 4.15
+  },
+  {
+    "id": "ulsan_005974",
+    "speaker": "DKSR20001284_1",
+    "duration": 3.41
+  },
+  {
+    "id": "ulsan_015678",
+    "speaker": "DKSR20001202_1",
+    "duration": 4.25
+  },
+  {
+    "id": "ulsan_015379",
+    "speaker": "DKSR20001160_2",
+    "duration": 2.04
+  },
+  {
+    "id": "ulsan_017092",
+    "speaker": "DKSR20001241_1",
+    "duration": 5.6
+  },
+  {
+    "id": "ulsan_019160",
+    "speaker": "DKSR20001507_2",
+    "duration": 2.06
+  },
+  {
+    "id": "ulsan_003291",
+    "speaker": "DKSR20001147_1",
+    "duration": 3.85
+  },
+  {
+    "id": "ulsan_001511",
+    "speaker": "DKSR20001131_2",
+    "duration": 4.0
+  },
+  {
+    "id": "ulsan_001839",
+    "speaker": "DKSR20001132_2",
+    "duration": 2.52
+  },
+  {
+    "id": "ulsan_007375",
+    "speaker": "DKSR20001348_1",
+    "duration": 5.72
+  },
+  {
+    "id": "ulsan_023854",
+    "speaker": "DKSR20000958_2",
+    "duration": 7.05
+  },
+  {
+    "id": "ulsan_026627",
+    "speaker": "DKSR20000979_1",
+    "duration": 4.03
+  },
+  {
+    "id": "ulsan_010466",
+    "speaker": "DKSR20001594_2",
+    "duration": 2.03
+  },
+  {
+    "id": "ulsan_011889",
+    "speaker": "DKSR20001617_1",
+    "duration": 2.77
+  },
+  {
+    "id": "ulsan_011063",
+    "speaker": "DKSR20001609_1",
+    "duration": 1.79
+  },
+  {
+    "id": "ulsan_006936",
+    "speaker": "DKSR20001300_1",
+    "duration": 2.51
+  },
+  {
+    "id": "ulsan_027176",
+    "speaker": "DKSR20000980_1",
+    "duration": 4.49
+  },
+  {
+    "id": "ulsan_005039",
+    "speaker": "DKSR20001169_2",
+    "duration": 1.5
+  },
+  {
+    "id": "ulsan_006001",
+    "speaker": "DKSR20001284_2",
+    "duration": 4.2
+  },
+  {
+    "id": "ulsan_009651",
+    "speaker": "DKSR20001536_2",
+    "duration": 4.0
+  },
+  {
+    "id": "ulsan_003843",
+    "speaker": "DKSR20001165_2",
+    "duration": 4.59
+  },
+  {
+    "id": "ulsan_012688",
+    "speaker": "DKSR20001650_1",
+    "duration": 5.69
+  },
+  {
+    "id": "ulsan_008035",
+    "speaker": "DKSR20001353_1",
+    "duration": 7.77
+  },
+  {
+    "id": "ulsan_001853",
+    "speaker": "DKSR20001132_1",
+    "duration": 3.31
+  },
+  {
+    "id": "ulsan_025431",
+    "speaker": "DKSR20000974_1",
+    "duration": 5.83
+  },
+  {
+    "id": "ulsan_006264",
+    "speaker": "DKSR20001285_1",
+    "duration": 1.62
+  },
+  {
+    "id": "ulsan_005740",
+    "speaker": "DKSR20001280_2",
+    "duration": 3.29
+  },
+  {
+    "id": "ulsan_002165",
+    "speaker": "DKSR20001144_2",
+    "duration": 2.3
+  },
+  {
+    "id": "ulsan_000010",
+    "speaker": "DKSR20000953_1",
+    "duration": 2.05
+  },
+  {
+    "id": "ulsan_022070",
+    "speaker": "DKSR20001569_1",
+    "duration": 2.62
+  },
+  {
+    "id": "ulsan_011912",
+    "speaker": "DKSR20001617_2",
+    "duration": 3.44
+  },
+  {
+    "id": "ulsan_010737",
+    "speaker": "DKSR20001608_1",
+    "duration": 4.5
+  },
+  {
+    "id": "ulsan_007381",
+    "speaker": "DKSR20001348_2",
+    "duration": 6.04
+  },
+  {
+    "id": "ulsan_000421",
+    "speaker": "DKSR20000954_1",
+    "duration": 5.09
+  },
+  {
+    "id": "ulsan_024101",
+    "speaker": "DKSR20000961_1",
+    "duration": 6.49
+  },
+  {
+    "id": "ulsan_026086",
+    "speaker": "DKSR20000975_1",
+    "duration": 4.3
+  },
+  {
+    "id": "ulsan_004791",
+    "speaker": "DKSR20001168_1",
+    "duration": 6.43
+  },
+  {
+    "id": "ulsan_025464",
+    "speaker": "DKSR20000974_2",
+    "duration": 2.83
+  },
+  {
+    "id": "ulsan_012443",
+    "speaker": "DKSR20001649_1",
+    "duration": 5.99
+  },
+  {
+    "id": "ulsan_012451",
+    "speaker": "DKSR20001649_2",
+    "duration": 5.62
+  },
+  {
+    "id": "ulsan_025715",
+    "speaker": "DKSR20001157_1",
+    "duration": 5.5
+  },
+  {
+    "id": "ulsan_002559",
+    "speaker": "DKSR20001145_2",
+    "duration": 3.36
+  },
+  {
+    "id": "ulsan_023852",
+    "speaker": "DKSR20000958_1",
+    "duration": 3.0
+  },
+  {
+    "id": "ulsan_018883",
+    "speaker": "DKSR20001491_2",
+    "duration": 1.96
+  },
+  {
+    "id": "ulsan_027182",
+    "speaker": "DKSR20000980_2",
+    "duration": 4.71
+  },
+  {
+    "id": "ulsan_010200",
+    "speaker": "DKSR20001593_1",
+    "duration": 2.02
+  },
+  {
+    "id": "ulsan_019438",
+    "speaker": "DKSR20001508_2",
+    "duration": 4.91
+  },
+  {
+    "id": "ulsan_009031",
+    "speaker": "DKSR20001487_2",
+    "duration": 3.89
+  },
+  {
+    "id": "ulsan_017321",
+    "speaker": "DKSR20001287_1",
+    "duration": 3.37
+  },
+  {
+    "id": "ulsan_021270",
+    "speaker": "DKSR20001534_2",
+    "duration": 4.54
+  },
+  {
+    "id": "ulsan_018558",
+    "speaker": "DKSR20001386_2",
+    "duration": 1.72
+  },
+  {
+    "id": "ulsan_012908",
+    "speaker": "DKSR20001651_1",
+    "duration": 4.93
+  },
+  {
+    "id": "ulsan_004383",
+    "speaker": "DKSR20001167_1",
+    "duration": 3.9
+  },
+  {
+    "id": "ulsan_002907",
+    "speaker": "DKSR20001146_2",
+    "duration": 3.24
+  },
+  {
+    "id": "ulsan_027404",
+    "speaker": "DKSR20001204_2",
+    "duration": 7.69
+  },
+  {
+    "id": "ulsan_026609",
+    "speaker": "DKSR20000979_2",
+    "duration": 6.78
+  },
+  {
+    "id": "ulsan_024862",
+    "speaker": "DKSR20000973_1",
+    "duration": 3.24
+  },
+  {
+    "id": "ulsan_011653",
+    "speaker": "DKSR20001611_2",
+    "duration": 3.85
+  },
+  {
+    "id": "ulsan_026869",
+    "speaker": "DKSR20001203_1",
+    "duration": 2.82
+  },
+  {
+    "id": "ulsan_018207",
+    "speaker": "DKSR20001380_1",
+    "duration": 6.46
+  },
+  {
+    "id": "ulsan_015969",
+    "speaker": "DKSR20001206_2",
+    "duration": 4.58
+  },
+  {
+    "id": "ulsan_015952",
+    "speaker": "DKSR20001206_1",
+    "duration": 3.32
+  },
+  {
+    "id": "ulsan_019751",
+    "speaker": "DKSR20001509_1",
+    "duration": 3.96
+  },
+  {
+    "id": "ulsan_001219",
+    "speaker": "DKSR20001094_2",
+    "duration": 3.85
+  },
+  {
+    "id": "ulsan_008774",
+    "speaker": "DKSR20001476_2",
+    "duration": 5.92
+  },
+  {
+    "id": "ulsan_021446",
+    "speaker": "DKSR20001537_2",
+    "duration": 4.74
+  },
+  {
+    "id": "ulsan_009373",
+    "speaker": "DKSR20001535_1",
+    "duration": 3.18
+  },
+  {
+    "id": "ulsan_014245",
+    "speaker": "DKSR20001032_2",
+    "duration": 1.07
+  },
+  {
+    "id": "ulsan_007580",
+    "speaker": "DKSR20001351_2",
+    "duration": 6.61
+  },
+  {
+    "id": "ulsan_013570",
+    "speaker": "DKSR20001715_2",
+    "duration": 4.23
+  },
+  {
+    "id": "ulsan_000453",
+    "speaker": "DKSR20000954_2",
+    "duration": 2.38
+  },
+  {
+    "id": "ulsan_006605",
+    "speaker": "DKSR20001286_2",
+    "duration": 3.9
+  },
+  {
+    "id": "ulsan_018227",
+    "speaker": "DKSR20001380_2",
+    "duration": 3.39
+  },
+  {
+    "id": "ulsan_024564",
+    "speaker": "DKSR20000962_1",
+    "duration": 5.6
+  },
+  {
+    "id": "ulsan_022758",
+    "speaker": "DKSR20001571_1",
+    "duration": 3.68
+  },
+  {
+    "id": "ulsan_000789",
+    "speaker": "DKSR20000959_2",
+    "duration": 5.7
+  },
+  {
+    "id": "ulsan_008023",
+    "speaker": "DKSR20001353_2",
+    "duration": 7.89
+  },
+  {
+    "id": "ulsan_021045",
+    "speaker": "DKSR20001533_2",
+    "duration": 5.83
+  },
+  {
+    "id": "ulsan_012225",
+    "speaker": "DKSR20001618_2",
+    "duration": 4.92
+  },
+  {
+    "id": "ulsan_021052",
+    "speaker": "DKSR20001533_1",
+    "duration": 1.91
+  },
+  {
+    "id": "ulsan_027427",
+    "speaker": "DKSR20001204_1",
+    "duration": 2.36
+  },
+  {
+    "id": "ulsan_017626",
+    "speaker": "DKSR20001288_1",
+    "duration": 3.76
+  },
+  {
+    "id": "ulsan_020294",
+    "speaker": "DKSR20001511_2",
+    "duration": 6.82
+  },
+  {
+    "id": "ulsan_020536",
+    "speaker": "DKSR20001512_2",
+    "duration": 6.88
+  },
+  {
+    "id": "ulsan_020545",
+    "speaker": "DKSR20001512_1",
+    "duration": 4.63
+  },
+  {
+    "id": "ulsan_018684",
+    "speaker": "DKSR20001387_1",
+    "duration": 6.03
+  },
+  {
+    "id": "ulsan_021731",
+    "speaker": "DKSR20001568_2",
+    "duration": 6.75
+  },
+  {
+    "id": "ulsan_011406",
+    "speaker": "DKSR20001610_2",
+    "duration": 2.81
+  },
+  {
+    "id": "ulsan_026274",
+    "speaker": "DKSR20001158_1",
+    "duration": 6.4
+  },
+  {
+    "id": "ulsan_024841",
+    "speaker": "DKSR20000973_2",
+    "duration": 5.29
+  },
+  {
+    "id": "ulsan_013875",
+    "speaker": "DKSR20001031_1",
+    "duration": 5.07
+  },
+  {
+    "id": "ulsan_022397",
+    "speaker": "DKSR20001570_2",
+    "duration": 2.95
+  },
+  {
+    "id": "ulsan_003296",
+    "speaker": "DKSR20001147_2",
+    "duration": 2.47
+  },
+  {
+    "id": "ulsan_002538",
+    "speaker": "DKSR20001145_1",
+    "duration": 4.32
+  },
+  {
+    "id": "ulsan_005385",
+    "speaker": "DKSR20001278_1",
+    "duration": 3.03
+  },
+  {
+    "id": "ulsan_026288",
+    "speaker": "DKSR20001158_2",
+    "duration": 3.1
+  },
+  {
+    "id": "ulsan_023300",
+    "speaker": "DKSR20000955_1",
+    "duration": 4.53
+  },
+  {
+    "id": "ulsan_018822",
+    "speaker": "DKSR20001388_2",
+    "duration": 6.59
+  },
+  {
+    "id": "ulsan_014223",
+    "speaker": "DKSR20001032_1",
+    "duration": 2.54
+  },
+  {
+    "id": "ulsan_011052",
+    "speaker": "DKSR20001609_2",
+    "duration": 3.0
+  },
+  {
+    "id": "ulsan_018608",
+    "speaker": "DKSR20001386_1",
+    "duration": 7.16
+  },
+  {
+    "id": "ulsan_004108",
+    "speaker": "DKSR20001166_2",
+    "duration": 6.42
+  },
+  {
+    "id": "ulsan_023622",
+    "speaker": "DKSR20000957_2",
+    "duration": 7.22
+  },
+  {
+    "id": "ulsan_017077",
+    "speaker": "DKSR20001241_2",
+    "duration": 3.99
+  },
+  {
+    "id": "ulsan_005423",
+    "speaker": "DKSR20001278_2",
+    "duration": 4.93
+  },
+  {
+    "id": "ulsan_012681",
+    "speaker": "DKSR20001650_2",
+    "duration": 6.81
+  },
+  {
+    "id": "ulsan_023269",
+    "speaker": "DKSR20000955_2",
+    "duration": 1.13
+  },
+  {
+    "id": "ulsan_017329",
+    "speaker": "DKSR20001287_2",
+    "duration": 5.28
+  },
+  {
+    "id": "ulsan_020827",
+    "speaker": "DKSR20001532_2",
+    "duration": 2.17
+  },
+  {
+    "id": "ulsan_004678",
+    "speaker": "DKSR20001168_2",
+    "duration": 2.92
+  },
+  {
+    "id": "ulsan_000772",
+    "speaker": "DKSR20000959_1",
+    "duration": 5.94
+  },
+  {
+    "id": "ulsan_025176",
+    "speaker": "DKSR20001156_2",
+    "duration": 6.32
+  },
+  {
+    "id": "ulsan_013176",
+    "speaker": "DKSR20001677_2",
+    "duration": 2.75
+  },
+  {
+    "id": "ulsan_025129",
+    "speaker": "DKSR20001156_1",
+    "duration": 4.16
+  },
+  {
+    "id": "ulsan_019151",
+    "speaker": "DKSR20001507_1",
+    "duration": 2.5
+  },
+  {
+    "id": "ulsan_017954",
+    "speaker": "DKSR20001336_2",
+    "duration": 5.01
+  },
+  {
+    "id": "ulsan_013888",
+    "speaker": "DKSR20001031_2",
+    "duration": 3.1
+  },
+  {
+    "id": "ulsan_016784",
+    "speaker": "DKSR20001240_1",
+    "duration": 6.03
+  },
+  {
+    "id": "ulsan_018669",
+    "speaker": "DKSR20001387_2",
+    "duration": 6.4
+  },
+  {
+    "id": "ulsan_008398",
+    "speaker": "DKSR20001475_1",
+    "duration": 2.58
+  },
+  {
+    "id": "ulsan_015066",
+    "speaker": "DKSR20001159_1",
+    "duration": 4.65
+  },
+  {
+    "id": "ulsan_019713",
+    "speaker": "DKSR20001509_2",
+    "duration": 5.1
+  },
+  {
+    "id": "ulsan_008215",
+    "speaker": "DKSR20001413_2",
+    "duration": 6.54
+  },
+  {
+    "id": "ulsan_016256",
+    "speaker": "DKSR20001207_2",
+    "duration": 3.38
+  },
+  {
+    "id": "ulsan_017939",
+    "speaker": "DKSR20001336_1",
+    "duration": 4.34
+  },
+  {
+    "id": "ulsan_011384",
+    "speaker": "DKSR20001610_1",
+    "duration": 5.13
+  },
+  {
+    "id": "ulsan_006290",
+    "speaker": "DKSR20001285_2",
+    "duration": 3.91
+  },
+  {
+    "id": "ulsan_009340",
+    "speaker": "DKSR20001535_2",
+    "duration": 3.71
+  },
+  {
+    "id": "ulsan_005669",
+    "speaker": "DKSR20001280_1",
+    "duration": 6.94
+  },
+  {
+    "id": "ulsan_005062",
+    "speaker": "DKSR20001169_1",
+    "duration": 1.95
+  },
+  {
+    "id": "ulsan_014681",
+    "speaker": "DKSR20001033_1",
+    "duration": 2.46
+  },
+  {
+    "id": "ulsan_009636",
+    "speaker": "DKSR20001536_1",
+    "duration": 1.64
+  },
+  {
+    "id": "ulsan_015681",
+    "speaker": "DKSR20001202_2",
+    "duration": 2.84
+  },
+  {
+    "id": "ulsan_010488",
+    "speaker": "DKSR20001594_1",
+    "duration": 4.45
+  },
+  {
+    "id": "ulsan_016249",
+    "speaker": "DKSR20001207_1",
+    "duration": 2.56
+  },
+  {
+    "id": "ulsan_019443",
+    "speaker": "DKSR20001508_1",
+    "duration": 4.17
+  },
+  {
+    "id": "ulsan_007573",
+    "speaker": "DKSR20001351_1",
+    "duration": 2.81
+  },
+  {
+    "id": "ulsan_024055",
+    "speaker": "DKSR20000961_2",
+    "duration": 5.52
+  },
+  {
+    "id": "ulsan_013582",
+    "speaker": "DKSR20001715_1",
+    "duration": 2.79
+  },
+  {
+    "id": "ulsan_024298",
+    "speaker": "DKSR20000963_1",
+    "duration": 3.56
+  },
+  {
+    "id": "ulsan_001527",
+    "speaker": "DKSR20001131_1",
+    "duration": 3.33
+  },
+  {
+    "id": "ulsan_017638",
+    "speaker": "DKSR20001288_2",
+    "duration": 2.14
+  },
+  {
+    "id": "ulsan_015107",
+    "speaker": "DKSR20001159_2",
+    "duration": 3.63
+  },
+  {
+    "id": "ulsan_003840",
+    "speaker": "DKSR20001165_1",
+    "duration": 2.65
+  },
+  {
+    "id": "ulsan_012923",
+    "speaker": "DKSR20001651_2",
+    "duration": 1.04
+  },
+  {
+    "id": "ulsan_022751",
+    "speaker": "DKSR20001571_2",
+    "duration": 3.97
+  },
+  {
+    "id": "ulsan_006896",
+    "speaker": "DKSR20001300_2",
+    "duration": 4.8
+  },
+  {
+    "id": "ulsan_024550",
+    "speaker": "DKSR20000962_2",
+    "duration": 3.06
+  },
+  {
+    "id": "ulsan_010209",
+    "speaker": "DKSR20001593_2",
+    "duration": 5.53
+  },
+  {
+    "id": "ulsan_007782",
+    "speaker": "DKSR20001352_1",
+    "duration": 2.24
+  },
+  {
+    "id": "ulsan_021464",
+    "speaker": "DKSR20001537_1",
+    "duration": 6.97
+  },
+  {
+    "id": "ulsan_007804",
+    "speaker": "DKSR20001352_2",
+    "duration": 6.83
+  },
+  {
+    "id": "ulsan_002166",
+    "speaker": "DKSR20001144_1",
+    "duration": 4.86
+  },
+  {
+    "id": "ulsan_014654",
+    "speaker": "DKSR20001033_2",
+    "duration": 2.66
+  },
+  {
+    "id": "ulsan_004400",
+    "speaker": "DKSR20001167_2",
+    "duration": 2.62
+  },
+  {
+    "id": "ulsan_011665",
+    "speaker": "DKSR20001611_1",
+    "duration": 5.93
+  },
+  {
+    "id": "ulsan_009966",
+    "speaker": "DKSR20001592_2",
+    "duration": 5.7
+  },
+  {
+    "id": "ulsan_008734",
+    "speaker": "DKSR20001476_1",
+    "duration": 2.17
+  },
+  {
+    "id": "ulsan_008413",
+    "speaker": "DKSR20001475_2",
+    "duration": 2.62
+  },
+  {
+    "id": "ulsan_026880",
+    "speaker": "DKSR20001203_2",
+    "duration": 4.18
+  },
+  {
+    "id": "ulsan_026068",
+    "speaker": "DKSR20000975_2",
+    "duration": 5.45
+  },
+  {
+    "id": "ulsan_004150",
+    "speaker": "DKSR20001166_1",
+    "duration": 5.62
+  },
+  {
+    "id": "ulsan_001250",
+    "speaker": "DKSR20001094_1",
+    "duration": 3.1
+  },
+  {
+    "id": "ulsan_021243",
+    "speaker": "DKSR20001534_1",
+    "duration": 4.85
+  },
+  {
+    "id": "ulsan_007147",
+    "speaker": "DKSR20001301_1",
+    "duration": 4.79
+  },
+  {
+    "id": "ulsan_020269",
+    "speaker": "DKSR20001511_1",
+    "duration": 4.17
+  },
+  {
+    "id": "ulsan_016542",
+    "speaker": "DKSR20001208_2",
+    "duration": 3.62
+  },
+  {
+    "id": "ulsan_018873",
+    "speaker": "DKSR20001491_1",
+    "duration": 2.63
+  },
+  {
+    "id": "ulsan_006577",
+    "speaker": "DKSR20001286_1",
+    "duration": 5.71
+  },
+  {
+    "id": "ulsan_022049",
+    "speaker": "DKSR20001569_2",
+    "duration": 4.88
+  },
+  {
+    "id": "ulsan_021712",
+    "speaker": "DKSR20001568_1",
+    "duration": 1.42
+  },
+  {
+    "id": "ulsan_020012",
+    "speaker": "DKSR20001510_1",
+    "duration": 6.97
+  },
+  {
+    "id": "ulsan_002972",
+    "speaker": "DKSR20001146_1",
+    "duration": 6.6
+  },
+  {
+    "id": "ulsan_000062",
+    "speaker": "DKSR20000953_2",
+    "duration": 5.39
+  },
+  {
+    "id": "ulsan_016804",
+    "speaker": "DKSR20001240_2",
+    "duration": 4.14
+  },
+  {
+    "id": "ulsan_013192",
+    "speaker": "DKSR20001677_1",
+    "duration": 1.22
+  },
+  {
+    "id": "ulsan_019983",
+    "speaker": "DKSR20001510_2",
+    "duration": 4.24
+  },
+  {
+    "id": "ulsan_023042",
+    "speaker": "DKSR20000956_2",
+    "duration": 6.99
+  },
+  {
+    "id": "ulsan_025733",
+    "speaker": "DKSR20001157_2",
+    "duration": 2.02
+  },
+  {
+    "id": "ulsan_016505",
+    "speaker": "DKSR20001208_1",
+    "duration": 4.88
+  },
+  {
+    "id": "ulsan_001001",
+    "speaker": "DKSR20000960_2",
+    "duration": 3.35
+  },
+  {
+    "id": "ulsan_024285",
+    "speaker": "DKSR20000963_2",
+    "duration": 5.11
+  },
+  {
+    "id": "ulsan_010762",
+    "speaker": "DKSR20001608_2",
+    "duration": 4.4
+  },
+  {
+    "id": "ulsan_009953",
+    "speaker": "DKSR20001592_1",
+    "duration": 2.37
+  },
+  {
+    "id": "ulsan_018789",
+    "speaker": "DKSR20001388_1",
+    "duration": 4.41
+  },
+  {
+    "id": "ulsan_000986",
+    "speaker": "DKSR20000960_1",
+    "duration": 5.91
+  },
+  {
+    "id": "ulsan_020837",
+    "speaker": "DKSR20001532_1",
+    "duration": 5.29
+  },
+  {
+    "id": "ulsan_012164",
+    "speaker": "DKSR20001618_1",
+    "duration": 4.99
+  },
+  {
+    "id": "ulsan_003630",
+    "speaker": "DKSR20001149_2",
+    "duration": 2.03
+  },
+  {
+    "id": "ulsan_009056",
+    "speaker": "DKSR20001487_1",
+    "duration": 1.18
+  },
+  {
+    "id": "ulsan_023642",
+    "speaker": "DKSR20000957_1",
+    "duration": 6.35
+  },
+  {
+    "id": "ulsan_022420",
+    "speaker": "DKSR20001570_1",
+    "duration": 5.43
+  },
+  {
+    "id": "ulsan_023026",
+    "speaker": "DKSR20000956_1",
+    "duration": 7.36
+  },
+  {
+    "id": "ulsan_003623",
+    "speaker": "DKSR20001149_1",
+    "duration": 6.11
+  },
+  {
+    "id": "ulsan_008219",
+    "speaker": "DKSR20001413_1",
+    "duration": 3.54
+  },
+  {
+    "id": "ulsan_007133",
+    "speaker": "DKSR20001301_2",
+    "duration": 4.23
+  },
+  {
+    "id": "ulsan_015401",
+    "speaker": "DKSR20001160_1",
+    "duration": 5.35
+  },
+  {
+    "id": "ulsan_005975",
+    "speaker": "DKSR20001284_1",
+    "duration": 3.64
+  },
+  {
+    "id": "ulsan_015689",
+    "speaker": "DKSR20001202_1",
+    "duration": 3.69
+  },
+  {
+    "id": "ulsan_015386",
+    "speaker": "DKSR20001160_2",
+    "duration": 1.96
+  },
+  {
+    "id": "ulsan_017093",
+    "speaker": "DKSR20001241_1",
+    "duration": 5.09
+  },
+  {
+    "id": "ulsan_019161",
+    "speaker": "DKSR20001507_2",
+    "duration": 2.21
+  },
+  {
+    "id": "ulsan_003293",
+    "speaker": "DKSR20001147_1",
+    "duration": 3.25
+  },
+  {
+    "id": "ulsan_001512",
+    "speaker": "DKSR20001131_2",
+    "duration": 2.42
+  },
+  {
+    "id": "ulsan_001840",
+    "speaker": "DKSR20001132_2",
+    "duration": 3.0
+  },
+  {
+    "id": "ulsan_007376",
+    "speaker": "DKSR20001348_1",
+    "duration": 1.89
+  },
+  {
+    "id": "ulsan_023855",
+    "speaker": "DKSR20000958_2",
+    "duration": 3.68
+  },
+  {
+    "id": "ulsan_026628",
+    "speaker": "DKSR20000979_1",
+    "duration": 4.65
+  },
+  {
+    "id": "ulsan_010468",
+    "speaker": "DKSR20001594_2",
+    "duration": 5.47
+  },
+  {
+    "id": "ulsan_011890",
+    "speaker": "DKSR20001617_1",
+    "duration": 5.93
+  },
+  {
+    "id": "ulsan_011064",
+    "speaker": "DKSR20001609_1",
+    "duration": 2.87
+  },
+  {
+    "id": "ulsan_006940",
+    "speaker": "DKSR20001300_1",
+    "duration": 2.2
+  },
+  {
+    "id": "ulsan_027177",
+    "speaker": "DKSR20000980_1",
+    "duration": 4.68
+  },
+  {
+    "id": "ulsan_005040",
+    "speaker": "DKSR20001169_2",
+    "duration": 2.88
+  },
+  {
+    "id": "ulsan_006002",
+    "speaker": "DKSR20001284_2",
+    "duration": 3.02
+  },
+  {
+    "id": "ulsan_009652",
+    "speaker": "DKSR20001536_2",
+    "duration": 3.92
+  },
+  {
+    "id": "ulsan_003845",
+    "speaker": "DKSR20001165_2",
+    "duration": 6.17
+  },
+  {
+    "id": "ulsan_012689",
+    "speaker": "DKSR20001650_1",
+    "duration": 4.97
+  },
+  {
+    "id": "ulsan_008036",
+    "speaker": "DKSR20001353_1",
+    "duration": 6.05
+  },
+  {
+    "id": "ulsan_001855",
+    "speaker": "DKSR20001132_1",
+    "duration": 2.68
+  },
+  {
+    "id": "ulsan_025434",
+    "speaker": "DKSR20000974_1",
+    "duration": 4.84
+  },
+  {
+    "id": "ulsan_006266",
+    "speaker": "DKSR20001285_1",
+    "duration": 1.26
+  },
+  {
+    "id": "ulsan_005742",
+    "speaker": "DKSR20001280_2",
+    "duration": 3.35
+  },
+  {
+    "id": "ulsan_002215",
+    "speaker": "DKSR20001144_2",
+    "duration": 3.28
+  },
+  {
+    "id": "ulsan_000011",
+    "speaker": "DKSR20000953_1",
+    "duration": 3.28
+  },
+  {
+    "id": "ulsan_022071",
+    "speaker": "DKSR20001569_1",
+    "duration": 4.43
+  },
+  {
+    "id": "ulsan_011913",
+    "speaker": "DKSR20001617_2",
+    "duration": 4.48
+  },
+  {
+    "id": "ulsan_010738",
+    "speaker": "DKSR20001608_1",
+    "duration": 2.36
+  },
+  {
+    "id": "ulsan_007382",
+    "speaker": "DKSR20001348_2",
+    "duration": 4.79
+  },
+  {
+    "id": "ulsan_000422",
+    "speaker": "DKSR20000954_1",
+    "duration": 1.35
+  },
+  {
+    "id": "ulsan_024104",
+    "speaker": "DKSR20000961_1",
+    "duration": 4.05
+  },
+  {
+    "id": "ulsan_026089",
+    "speaker": "DKSR20000975_1",
+    "duration": 3.81
+  },
+  {
+    "id": "ulsan_004792",
+    "speaker": "DKSR20001168_1",
+    "duration": 1.5
+  },
+  {
+    "id": "ulsan_025465",
+    "speaker": "DKSR20000974_2",
+    "duration": 2.9
+  },
+  {
+    "id": "ulsan_012444",
+    "speaker": "DKSR20001649_1",
+    "duration": 5.61
+  },
+  {
+    "id": "ulsan_012452",
+    "speaker": "DKSR20001649_2",
+    "duration": 4.16
+  },
+  {
+    "id": "ulsan_025716",
+    "speaker": "DKSR20001157_1",
+    "duration": 2.87
+  },
+  {
+    "id": "ulsan_002561",
+    "speaker": "DKSR20001145_2",
+    "duration": 5.02
+  },
+  {
+    "id": "ulsan_023859",
+    "speaker": "DKSR20000958_1",
+    "duration": 1.1
+  },
+  {
+    "id": "ulsan_018885",
+    "speaker": "DKSR20001491_2",
+    "duration": 6.2
+  },
+  {
+    "id": "ulsan_027183",
+    "speaker": "DKSR20000980_2",
+    "duration": 3.4
+  },
+  {
+    "id": "ulsan_010202",
+    "speaker": "DKSR20001593_1",
+    "duration": 3.26
+  },
+  {
+    "id": "ulsan_019439",
+    "speaker": "DKSR20001508_2",
+    "duration": 5.37
+  },
+  {
+    "id": "ulsan_009033",
+    "speaker": "DKSR20001487_2",
+    "duration": 3.0
+  },
+  {
+    "id": "ulsan_017322",
+    "speaker": "DKSR20001287_1",
+    "duration": 6.49
+  },
+  {
+    "id": "ulsan_021271",
+    "speaker": "DKSR20001534_2",
+    "duration": 4.38
+  },
+  {
+    "id": "ulsan_018570",
+    "speaker": "DKSR20001386_2",
+    "duration": 6.46
+  },
+  {
+    "id": "ulsan_012909",
+    "speaker": "DKSR20001651_1",
+    "duration": 4.54
+  },
+  {
+    "id": "ulsan_004384",
+    "speaker": "DKSR20001167_1",
+    "duration": 5.05
+  },
+  {
+    "id": "ulsan_002910",
+    "speaker": "DKSR20001146_2",
+    "duration": 2.17
+  },
+  {
+    "id": "ulsan_027405",
+    "speaker": "DKSR20001204_2",
+    "duration": 2.18
+  },
+  {
+    "id": "ulsan_026610",
+    "speaker": "DKSR20000979_2",
+    "duration": 4.43
+  },
+  {
+    "id": "ulsan_024863",
+    "speaker": "DKSR20000973_1",
+    "duration": 1.95
+  },
+  {
+    "id": "ulsan_011654",
+    "speaker": "DKSR20001611_2",
+    "duration": 2.59
+  },
+  {
+    "id": "ulsan_026870",
+    "speaker": "DKSR20001203_1",
+    "duration": 4.69
+  },
+  {
+    "id": "ulsan_018209",
+    "speaker": "DKSR20001380_1",
+    "duration": 6.61
+  },
+  {
+    "id": "ulsan_015970",
+    "speaker": "DKSR20001206_2",
+    "duration": 4.28
+  },
+  {
+    "id": "ulsan_015954",
+    "speaker": "DKSR20001206_1",
+    "duration": 3.13
+  },
+  {
+    "id": "ulsan_019752",
+    "speaker": "DKSR20001509_1",
+    "duration": 4.24
+  },
+  {
+    "id": "ulsan_001220",
+    "speaker": "DKSR20001094_2",
+    "duration": 3.08
+  },
+  {
+    "id": "ulsan_008775",
+    "speaker": "DKSR20001476_2",
+    "duration": 1.7
+  },
+  {
+    "id": "ulsan_021447",
+    "speaker": "DKSR20001537_2",
+    "duration": 6.12
+  },
+  {
+    "id": "ulsan_009374",
+    "speaker": "DKSR20001535_1",
+    "duration": 2.04
+  },
+  {
+    "id": "ulsan_014246",
+    "speaker": "DKSR20001032_2",
+    "duration": 2.2
+  },
+  {
+    "id": "ulsan_007581",
+    "speaker": "DKSR20001351_2",
+    "duration": 2.6
+  },
+  {
+    "id": "ulsan_013571",
+    "speaker": "DKSR20001715_2",
+    "duration": 3.78
+  },
+  {
+    "id": "ulsan_000454",
+    "speaker": "DKSR20000954_2",
+    "duration": 2.01
+  },
+  {
+    "id": "ulsan_006606",
+    "speaker": "DKSR20001286_2",
+    "duration": 3.2
+  },
+  {
+    "id": "ulsan_018228",
+    "speaker": "DKSR20001380_2",
+    "duration": 2.45
+  },
+  {
+    "id": "ulsan_024565",
+    "speaker": "DKSR20000962_1",
+    "duration": 3.58
+  },
+  {
+    "id": "ulsan_022759",
+    "speaker": "DKSR20001571_1",
+    "duration": 2.86
+  },
+  {
+    "id": "ulsan_000790",
+    "speaker": "DKSR20000959_2",
+    "duration": 2.73
+  },
+  {
+    "id": "ulsan_008024",
+    "speaker": "DKSR20001353_2",
+    "duration": 3.59
+  },
+  {
+    "id": "ulsan_021047",
+    "speaker": "DKSR20001533_2",
+    "duration": 1.95
+  },
+  {
+    "id": "ulsan_012226",
+    "speaker": "DKSR20001618_2",
+    "duration": 3.27
+  },
+  {
+    "id": "ulsan_021053",
+    "speaker": "DKSR20001533_1",
+    "duration": 5.47
+  },
+  {
+    "id": "ulsan_027428",
+    "speaker": "DKSR20001204_1",
+    "duration": 6.25
+  },
+  {
+    "id": "ulsan_017627",
+    "speaker": "DKSR20001288_1",
+    "duration": 4.04
+  },
+  {
+    "id": "ulsan_020303",
+    "speaker": "DKSR20001511_2",
+    "duration": 5.08
+  },
+  {
+    "id": "ulsan_020549",
+    "speaker": "DKSR20001512_2",
+    "duration": 4.33
+  },
+  {
+    "id": "ulsan_020546",
+    "speaker": "DKSR20001512_1",
+    "duration": 2.37
+  },
+  {
+    "id": "ulsan_018685",
+    "speaker": "DKSR20001387_1",
+    "duration": 5.7
+  },
+  {
+    "id": "ulsan_021733",
+    "speaker": "DKSR20001568_2",
+    "duration": 3.81
+  },
+  {
+    "id": "ulsan_011407",
+    "speaker": "DKSR20001610_2",
+    "duration": 3.62
+  },
+  {
+    "id": "ulsan_026303",
+    "speaker": "DKSR20001158_1",
+    "duration": 3.26
+  },
+  {
+    "id": "ulsan_024842",
+    "speaker": "DKSR20000973_2",
+    "duration": 3.65
+  },
+  {
+    "id": "ulsan_013876",
+    "speaker": "DKSR20001031_1",
+    "duration": 4.93
+  },
+  {
+    "id": "ulsan_022398",
+    "speaker": "DKSR20001570_2",
+    "duration": 3.91
+  },
+  {
+    "id": "ulsan_003299",
+    "speaker": "DKSR20001147_2",
+    "duration": 2.16
+  }
+]

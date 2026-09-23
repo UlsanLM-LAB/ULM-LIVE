@@ -55,3 +55,11 @@ codec_cache/
 checkpoints/
 *.tar.gz
 Music/
+
+# Local listening and diagnostic artifacts
+/full-retrain-v2-listening/*.log
+/full-retrain-v2-listening/**/sample_*/metadata.json
+/full-retrain-v2-listening/**/sample_*/text.txt
+/talker-ar-diagnostics-v3/*.log
+/talker-ar-diagnostics-v3/**/sample_*/text.txt
+/talker-ar-diagnostics-v3/**/*.pt
