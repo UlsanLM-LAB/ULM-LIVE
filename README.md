@@ -6,18 +6,18 @@ ULM-1.7B text responses with Korean speech from Qwen3-TTS. The earlier Mimi Talk
 
 The current speech path is `prompt → ULM-1.7B response text → Qwen3-TTS Sohee → 24 kHz WAV`. See [TTS pivot research](docs/research/ULM_LIVE_TTS_PIVOT.md) and [migration results](reports/ULM_LIVE_V2_TTS_MIGRATION.md).
 
-On the EC2 host, install the optional `tts` dependencies into a separate Python 3.12 environment. Keep model weights in its persistent Hugging Face cache. Start one worker, bound to loopback unless a trusted reverse proxy is configured:
+On the EC2 host, run the ULM-1.7B Phase4 inference server on `127.0.0.1:8000` first. It owns the text checkpoint, tokenizer, prompt, and generation settings. Install the optional `tts` dependencies into a separate Python 3.12 environment. Keep model weights in its persistent Hugging Face cache. Start one TTS worker on `127.0.0.1:8001`:
 
 ```bash
 uv venv --python 3.12 .venv-tts
 uv pip install --python .venv-tts/bin/python '.[tts]'
 export LD_LIBRARY_PATH="$PWD/.venv-tts/lib/python3.12/site-packages/nvidia/cudnn/lib:${LD_LIBRARY_PATH:-}"
-.venv-tts/bin/uvicorn ulm_live.tts_service:app --host 127.0.0.1 --port 8000 --workers 1
+.venv-tts/bin/uvicorn ulm_live.tts_service:app --host 127.0.0.1 --port 8001 --workers 1
 ```
 
 The library path keeps the TTS environment's cuDNN ahead of the DLAMI host CUDA libraries on the tested EC2 image.
 
-`POST /v1/audio/speech` accepts `{"input":"안녕하세요"}` and returns `audio/wav`. `POST /v1/chat/speech` accepts `{"prompt":"울산을 소개해 줘"}` and returns a WAV of the ULM answer. Its `X-ULM-Text` header contains the UTF-8 answer encoded as hex. `GET /health` reports readiness after both models load. GPU calls are serialized in one process.
+`POST /v1/audio/speech` accepts `{"input":"안녕하세요"}` and returns `audio/wav`. `POST /v1/chat/speech` accepts `{"prompt":"울산을 소개해 줘"}` and returns a WAV of the ULM answer. Its `X-ULM-Text` header contains the UTF-8 answer encoded as hex. `GET /health` reports TTS readiness and the real text backend's loaded model path. The default text endpoint is `http://127.0.0.1:8000/v1/chat/completions`; set `ULM_BACKEND_URL` to override it. GPU calls are serialized in each process.
 
 All synthesis and evaluation WAVs stay on EC2. Run `scripts/eval_tts_v2.py --stage zero-shot` or `--stage e2e` with `--output-dir` under `outputs/` there.
 

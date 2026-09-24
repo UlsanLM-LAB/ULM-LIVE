@@ -38,6 +38,7 @@ tts = [
     "fastapi",
     "uvicorn",
     "soundfile",
+    "httpx",
 ]
 dev = [
     "pytest>=7.0.0",

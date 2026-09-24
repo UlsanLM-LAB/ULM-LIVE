@@ -6,19 +6,20 @@ import asyncio
 import io
 import os
 from contextlib import asynccontextmanager
+from urllib.parse import urljoin
 
+import httpx
 import numpy as np
 import soundfile as sf
-import torch
 from fastapi import FastAPI, HTTPException
 from fastapi.responses import Response
 from pydantic import BaseModel, Field
+import torch
 from qwen_tts import Qwen3TTSModel
-from transformers import AutoModelForCausalLM, AutoTokenizer
 
 
 TTS_MODEL = "Qwen/Qwen3-TTS-12Hz-1.7B-CustomVoice"
-ULM_MODEL = "/home/ubuntu/ULM-1.7B/outputs/ulm-1.7b-phase4-best-merged"
+ULM_BACKEND_URL = "http://127.0.0.1:8000/v1/chat/completions"
 
 
 class SpeechRequest(BaseModel):
@@ -31,37 +32,45 @@ class ChatRequest(BaseModel):
 
 class Runtime:
     def __init__(self) -> None:
-        model_path = os.environ.get("ULM_TEXT_MODEL", ULM_MODEL)
-        # ULM's Transformers 5 checkpoint stores extra_special_tokens as a list;
-        # Qwen TTS currently pins Transformers 4, whose loader expects a mapping.
-        self.tokenizer = AutoTokenizer.from_pretrained(model_path, extra_special_tokens={})
-        self.text_model = AutoModelForCausalLM.from_pretrained(
-            model_path, torch_dtype=torch.bfloat16, device_map="cuda:0"
-        ).eval()
+        self.text_backend_url = os.environ.get("ULM_BACKEND_URL", ULM_BACKEND_URL)
         self.tts = Qwen3TTSModel.from_pretrained(
             os.environ.get("ULM_TTS_MODEL", TTS_MODEL),
             device_map="cuda:0",
             dtype=torch.bfloat16,
             attn_implementation="sdpa",
         )
+        self.http = httpx.Client(timeout=120)
 
-    @torch.inference_mode()
     def chat(self, prompt: str) -> str:
-        messages = [
-            {"role": "system", "content": "울산 지역어 대화 assistant로서 의미와 사실성을 우선한다. 의미를 보존하고 약한 울산 지역색만 사용한다."},
-            {"role": "user", "content": prompt},
-        ]
-        tokens = self.tokenizer.apply_chat_template(
-            messages, tokenize=True, add_generation_prompt=True,
-            enable_thinking=False, return_tensors="pt",
-        ).to(self.text_model.device)
-        output = self.text_model.generate(
-            tokens, attention_mask=torch.ones_like(tokens),
-            max_new_tokens=64, do_sample=True,
-            temperature=0.7, top_p=0.9, top_k=20,
-            pad_token_id=self.tokenizer.eos_token_id,
+        response = self.http.post(
+            self.text_backend_url,
+            json={"messages": [{"role": "user", "content": prompt}], "stream": False},
         )
-        return self.tokenizer.decode(output[0, tokens.shape[-1]:], skip_special_tokens=True).strip()
+        response.raise_for_status()
+        data = response.json()
+        if not isinstance(data, dict) or not isinstance(data.get("choices"), list) or not data["choices"]:
+            raise ValueError("ULM response has no choices")
+        choice = data["choices"][0]
+        if not isinstance(choice, dict) or choice.get("finish_reason") != "stop":
+            raise ValueError("ULM response ended without EOS")
+        message = choice.get("message")
+        content = message.get("content") if isinstance(message, dict) else None
+        if not isinstance(content, str):
+            raise ValueError("ULM response has no text content")
+        return content.strip()
+
+    def text_health(self) -> dict:
+        response = self.http.get(urljoin(self.text_backend_url, "/health"))
+        response.raise_for_status()
+        status = response.json()
+        if (not isinstance(status, dict) or status.get("model_loaded") is not True
+                or not isinstance(status.get("model"), str)
+                or not isinstance(status.get("model_path"), str)):
+            raise ValueError("ULM text backend is not ready")
+        return status
+
+    def close(self) -> None:
+        self.http.close()
 
     @torch.inference_mode()
     def speech(self, text: str) -> bytes:
@@ -79,7 +88,10 @@ class Runtime:
 async def lifespan(app: FastAPI):
     app.state.runtime = await asyncio.to_thread(Runtime)
     app.state.gpu_lock = asyncio.Lock()
-    yield
+    try:
+        yield
+    finally:
+        app.state.runtime.close()
 
 
 app = FastAPI(title="ULM Live v2", lifespan=lifespan)
@@ -87,7 +99,14 @@ app = FastAPI(title="ULM Live v2", lifespan=lifespan)
 
 @app.get("/health")
 async def health() -> dict[str, str]:
-    return {"status": "ready", "text_model": "ULM-1.7B", "tts_model": TTS_MODEL}
+    try:
+        backend = await asyncio.to_thread(app.state.runtime.text_health)
+    except (httpx.HTTPError, ValueError) as exc:
+        raise HTTPException(status_code=503, detail="ULM text backend unavailable") from exc
+    return {
+        "status": "ready", "text_model": backend["model"],
+        "text_model_path": backend["model_path"], "tts_model": TTS_MODEL,
+    }
 
 
 @app.post("/v1/audio/speech")
@@ -100,7 +119,10 @@ async def speech(request: SpeechRequest) -> Response:
 @app.post("/v1/chat/speech")
 async def chat_speech(request: ChatRequest) -> Response:
     async with app.state.gpu_lock:
-        answer = await asyncio.to_thread(app.state.runtime.chat, request.prompt)
+        try:
+            answer = await asyncio.to_thread(app.state.runtime.chat, request.prompt)
+        except (httpx.HTTPError, ValueError, KeyError, IndexError) as exc:
+            raise HTTPException(status_code=502, detail="ULM text backend failed") from exc
         if not answer:
             raise HTTPException(status_code=502, detail="Text model returned an empty response")
         wav = await asyncio.to_thread(app.state.runtime.speech, answer)

@@ -26,4 +26,8 @@ Local repository tests: 85 passed, 1 skipped (TTS dependencies absent locally), 
 
 The real single-worker API also passed a loopback smoke test: `/health` returned ready; `/v1/audio/speech` returned HTTP 200 and a 3.60 s, 24 kHz WAV; `/v1/chat/speech` returned HTTP 200 and a 9.60 s, 24 kHz WAV with decodable ULM text in `X-ULM-Text`. The API test WAVs remain under `outputs/ulm-live-v2` on EC2. The smoke server was shut down cleanly after verification.
 
+## Phase4 inference follow-up (2026-09-24)
+
+The original v2 smoke test above used an in-process text model under Transformers 4.57. The text portion of `/v1/chat/speech` now calls the ULM-1.7B Phase4 inference server, which owns the tokenizer, chat template, system instruction, and generation settings. The TTS model and synthesis method did not change. A real text-only client call from `.venv-tts` confirmed the loaded Phase4 merged path and received two answers; the TTS endpoint was not rerun for this follow-up. The separate [Phase4 inference audit](https://github.com/UlsanLM-LAB/ULM-1.7B/blob/main/reports/PHASE4_INFERENCE_AUDIT.md) found serious factual and conversational errors in that checkpoint, so v2 answer quality remains unfit for production.
+
 Ruff passed on the new and archived v4 source and tests. Repository-wide Ruff still reports 85 pre-existing findings in older files, outside this migration. Compileall passed on source, scripts, and tests.
