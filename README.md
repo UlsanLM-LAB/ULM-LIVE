@@ -1,6 +1,27 @@
 # ULM-Live
 
-Real-time Spoken Language Model runtime and neural audio codec foundations for Ulsan dialect speech generation.
+ULM-1.7B text responses with Korean speech from Qwen3-TTS. The earlier Mimi Talker experiments remain in the repository as frozen research.
+
+## ULM Live v2
+
+The current speech path is `prompt → ULM-1.7B response text → Qwen3-TTS Sohee → 24 kHz WAV`. See [TTS pivot research](docs/research/ULM_LIVE_TTS_PIVOT.md) and [migration results](reports/ULM_LIVE_V2_TTS_MIGRATION.md).
+
+On the EC2 host, install the optional `tts` dependencies into a separate Python 3.12 environment. Keep model weights in its persistent Hugging Face cache. Start one worker, bound to loopback unless a trusted reverse proxy is configured:
+
+```bash
+uv venv --python 3.12 .venv-tts
+uv pip install --python .venv-tts/bin/python '.[tts]'
+export LD_LIBRARY_PATH="$PWD/.venv-tts/lib/python3.12/site-packages/nvidia/cudnn/lib:${LD_LIBRARY_PATH:-}"
+.venv-tts/bin/uvicorn ulm_live.tts_service:app --host 127.0.0.1 --port 8000 --workers 1
+```
+
+The library path keeps the TTS environment's cuDNN ahead of the DLAMI host CUDA libraries on the tested EC2 image.
+
+`POST /v1/audio/speech` accepts `{"input":"안녕하세요"}` and returns `audio/wav`. `POST /v1/chat/speech` accepts `{"prompt":"울산을 소개해 줘"}` and returns a WAV of the ULM answer. Its `X-ULM-Text` header contains the UTF-8 answer encoded as hex. `GET /health` reports readiness after both models load. GPU calls are serialized in one process.
+
+All synthesis and evaluation WAVs stay on EC2. Run `scripts/eval_tts_v2.py --stage zero-shot` or `--stage e2e` with `--output-dir` under `outputs/` there.
+
+## Frozen Mimi Talker research
 
 ## Architecture Vision
 

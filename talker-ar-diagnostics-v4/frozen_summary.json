@@ -1,0 +1,29 @@
+{
+  "status": "frozen_partial",
+  "frozen_at_utc": "2026-09-24T08:39:25.824668+00:00",
+  "branch": "rollout",
+  "last_evaluated_total_step": 11000,
+  "last_evaluated_continuation_step": 3000,
+  "evaluations": [
+    {
+      "step": 9000,
+      "val_tf_accuracy": 0.043532770605759684,
+      "forced_ar_accuracy": 0.0288338256184943,
+      "effective_feedback_ratio": 0.13003526173748622
+    },
+    {
+      "step": 10000,
+      "val_tf_accuracy": 0.04370655412115194,
+      "forced_ar_accuracy": 0.028451758209848778,
+      "effective_feedback_ratio": 0.2499599329788009
+    },
+    {
+      "step": 11000,
+      "val_tf_accuracy": 0.04396722939424032,
+      "forced_ar_accuracy": 0.02371359905228019,
+      "effective_feedback_ratio": 0.2799745891424566
+    }
+  ],
+  "resume_checkpoint": "2048-cont-rollout/latest.pt",
+  "reason": "ULM Live v2 TTS pivot; rollout stopped by request"
+}
