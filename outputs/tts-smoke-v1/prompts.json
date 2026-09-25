@@ -1,0 +1,62 @@
+[
+  {
+    "id": "01",
+    "category": "everyday",
+    "text": "오늘 학교 끝나고 뭐 할 거야?"
+  },
+  {
+    "id": "02",
+    "category": "everyday",
+    "text": "밥은 먹었나?"
+  },
+  {
+    "id": "03",
+    "category": "everyday",
+    "text": "어디 가노?"
+  },
+  {
+    "id": "04",
+    "category": "everyday",
+    "text": "빨리 와라, 늦겠다."
+  },
+  {
+    "id": "05",
+    "category": "dialect",
+    "text": "단디 해라."
+  },
+  {
+    "id": "06",
+    "category": "dialect",
+    "text": "퍼뜩 온나."
+  },
+  {
+    "id": "07",
+    "category": "dialect",
+    "text": "맞나?"
+  },
+  {
+    "id": "08",
+    "category": "dialect",
+    "text": "와 이라노?"
+  },
+  {
+    "id": "09",
+    "category": "standard",
+    "text": "오늘 날씨가 정말 좋다."
+  },
+  {
+    "id": "10",
+    "category": "standard",
+    "text": "지금 뭐 하고 있어?"
+  },
+  {
+    "id": "11",
+    "category": "standard",
+    "text": "조심해서 들어가."
+  },
+  {
+    "id": "12",
+    "category": "standard",
+    "text": "저녁 먹고 같이 산책하자."
+  }
+]

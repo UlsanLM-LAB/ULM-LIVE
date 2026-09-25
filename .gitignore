@@ -42,7 +42,9 @@ coverage.xml
 *.swo
 
 # Outputs & cache
-outputs/
+outputs/*
+!outputs/**/
+!outputs/**/*.json
 listening-comparison/
 retrain-diagnostics/
 /data/
@@ -53,6 +55,11 @@ huggingface/
 semantic_cache/
 codec_cache/
 checkpoints/
+*.pt
+*.pth
+*.bin
+*.safetensors
+*.ckpt
 *.tar.gz
 Music/
 
@@ -63,3 +70,4 @@ Music/
 /talker-ar-diagnostics-v3/*.log
 /talker-ar-diagnostics-v3/**/sample_*/text.txt
 /talker-ar-diagnostics-v3/**/*.pt
+reports/*.log

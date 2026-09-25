@@ -1,0 +1,18 @@
+{
+  "model_name": "Qwen/Qwen3-TTS-12Hz-1.7B-CustomVoice",
+  "speaker": "Sohee",
+  "language": "Korean",
+  "trainable_parameters": 106963456,
+  "total_parameters": 1916676352,
+  "trainable_ratio": 0.0558,
+  "adapted_modules": [
+    "model.layers.26",
+    "model.layers.27",
+    "codec_head"
+  ],
+  "max_steps": 350,
+  "effective_batch_size": 4,
+  "learning_rate": 3e-05,
+  "weight_decay": 0.01,
+  "seed": 42
+}

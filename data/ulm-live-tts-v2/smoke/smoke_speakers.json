@@ -1,0 +1,252 @@
+[
+  {
+    "speaker_id": "DKSR20001715_2",
+    "session_id": "DKSR20001715",
+    "gender": "남성",
+    "age": "10대",
+    "tier": "Tier1_PureUlsan",
+    "utterances": 77,
+    "duration_seconds": 299.31,
+    "duration_minutes": 4.99
+  },
+  {
+    "speaker_id": "DKSR20001351_1",
+    "session_id": "DKSR20001351",
+    "gender": "남성",
+    "age": "20대",
+    "tier": "Tier1_PureUlsan",
+    "utterances": 66,
+    "duration_seconds": 299.54,
+    "duration_minutes": 4.99
+  },
+  {
+    "speaker_id": "DKSR20001353_1",
+    "session_id": "DKSR20001353",
+    "gender": "남성",
+    "age": "20대",
+    "tier": "Tier1_PureUlsan",
+    "utterances": 56,
+    "duration_seconds": 299.08,
+    "duration_minutes": 4.98
+  },
+  {
+    "speaker_id": "DKSR20001301_1",
+    "session_id": "DKSR20001301",
+    "gender": "남성",
+    "age": "20대",
+    "tier": "Tier1_PureUlsan",
+    "utterances": 69,
+    "duration_seconds": 299.81,
+    "duration_minutes": 5.0
+  },
+  {
+    "speaker_id": "DKSR20001288_2",
+    "session_id": "DKSR20001288",
+    "gender": "여성",
+    "age": "10대",
+    "tier": "Tier1_PureUlsan",
+    "utterances": 81,
+    "duration_seconds": 299.66,
+    "duration_minutes": 4.99
+  },
+  {
+    "speaker_id": "DKSR20001388_2",
+    "session_id": "DKSR20001388",
+    "gender": "여성",
+    "age": "10대",
+    "tier": "Tier1_PureUlsan",
+    "utterances": 14,
+    "duration_seconds": 83.87,
+    "duration_minutes": 1.4
+  },
+  {
+    "speaker_id": "DKSR20001386_2",
+    "session_id": "DKSR20001386",
+    "gender": "여성",
+    "age": "10대",
+    "tier": "Tier1_PureUlsan",
+    "utterances": 18,
+    "duration_seconds": 102.82,
+    "duration_minutes": 1.71
+  },
+  {
+    "speaker_id": "DKSR20001336_2",
+    "session_id": "DKSR20001336",
+    "gender": "여성",
+    "age": "10대",
+    "tier": "Tier1_PureUlsan",
+    "utterances": 71,
+    "duration_seconds": 299.51,
+    "duration_minutes": 4.99
+  },
+  {
+    "speaker_id": "DKSR20000956_2",
+    "session_id": "DKSR20000956",
+    "gender": "여성",
+    "age": "20대",
+    "tier": "Tier1_PureUlsan",
+    "utterances": 63,
+    "duration_seconds": 299.94,
+    "duration_minutes": 5.0
+  },
+  {
+    "speaker_id": "DKSR20001157_1",
+    "session_id": "DKSR20001157",
+    "gender": "여성",
+    "age": "20대",
+    "tier": "Tier1_PureUlsan",
+    "utterances": 89,
+    "duration_seconds": 299.61,
+    "duration_minutes": 4.99
+  },
+  {
+    "speaker_id": "DKSR20001206_1",
+    "session_id": "DKSR20001206",
+    "gender": "여성",
+    "age": "20대",
+    "tier": "Tier1_PureUlsan",
+    "utterances": 78,
+    "duration_seconds": 298.83,
+    "duration_minutes": 4.98
+  },
+  {
+    "speaker_id": "DKSR20000975_1",
+    "session_id": "DKSR20000975",
+    "gender": "여성",
+    "age": "20대",
+    "tier": "Tier1_PureUlsan",
+    "utterances": 58,
+    "duration_seconds": 299.2,
+    "duration_minutes": 4.99
+  },
+  {
+    "speaker_id": "DKSR20000954_1",
+    "session_id": "DKSR20000954",
+    "gender": "여성",
+    "age": "30대",
+    "tier": "Tier1_PureUlsan",
+    "utterances": 93,
+    "duration_seconds": 299.92,
+    "duration_minutes": 5.0
+  },
+  {
+    "speaker_id": "DKSR20001507_1",
+    "session_id": "DKSR20001507",
+    "gender": "여성",
+    "age": "30대",
+    "tier": "Tier1_PureUlsan",
+    "utterances": 76,
+    "duration_seconds": 298.24,
+    "duration_minutes": 4.97
+  },
+  {
+    "speaker_id": "DKSR20001353_2",
+    "session_id": "DKSR20001353",
+    "gender": "여성",
+    "age": "30대",
+    "tier": "Tier1_PureUlsan",
+    "utterances": 56,
+    "duration_seconds": 299.37,
+    "duration_minutes": 4.99
+  },
+  {
+    "speaker_id": "DKSR20000956_1",
+    "session_id": "DKSR20000956",
+    "gender": "여성",
+    "age": "30대",
+    "tier": "Tier1_PureUlsan",
+    "utterances": 62,
+    "duration_seconds": 299.97,
+    "duration_minutes": 5.0
+  },
+  {
+    "speaker_id": "DKSR20001476_1",
+    "session_id": "DKSR20001476",
+    "gender": "여성",
+    "age": "40대",
+    "tier": "Tier1_PureUlsan",
+    "utterances": 87,
+    "duration_seconds": 299.95,
+    "duration_minutes": 5.0
+  },
+  {
+    "speaker_id": "DKSR20001475_1",
+    "session_id": "DKSR20001475",
+    "gender": "여성",
+    "age": "40대",
+    "tier": "Tier1_PureUlsan",
+    "utterances": 94,
+    "duration_seconds": 299.78,
+    "duration_minutes": 5.0
+  },
+  {
+    "speaker_id": "DKSR20001617_1",
+    "session_id": "DKSR20001617",
+    "gender": "여성",
+    "age": "40대",
+    "tier": "Tier1_PureUlsan",
+    "utterances": 67,
+    "duration_seconds": 299.74,
+    "duration_minutes": 5.0
+  },
+  {
+    "speaker_id": "DKSR20000960_2",
+    "session_id": "DKSR20000960",
+    "gender": "여성",
+    "age": "50대",
+    "tier": "Tier1_PureUlsan",
+    "utterances": 62,
+    "duration_seconds": 298.92,
+    "duration_minutes": 4.98
+  },
+  {
+    "speaker_id": "DKSR20001144_2",
+    "session_id": "DKSR20001144",
+    "gender": "여성",
+    "age": "50대",
+    "tier": "Tier1_PureUlsan",
+    "utterances": 95,
+    "duration_seconds": 299.7,
+    "duration_minutes": 5.0
+  },
+  {
+    "speaker_id": "DKSR20001165_1",
+    "session_id": "DKSR20001165",
+    "gender": "여성",
+    "age": "50대",
+    "tier": "Tier1_PureUlsan",
+    "utterances": 69,
+    "duration_seconds": 298.93,
+    "duration_minutes": 4.98
+  },
+  {
+    "speaker_id": "DKSR20000953_1",
+    "session_id": "DKSR20000953",
+    "gender": "여성",
+    "age": "60대 이상",
+    "tier": "Tier1_PureUlsan",
+    "utterances": 90,
+    "duration_seconds": 299.26,
+    "duration_minutes": 4.99
+  },
+  {
+    "speaker_id": "DKSR20000954_2",
+    "session_id": "DKSR20000954",
+    "gender": "여성",
+    "age": "60대 이상",
+    "tier": "Tier1_PureUlsan",
+    "utterances": 105,
+    "duration_seconds": 299.17,
+    "duration_minutes": 4.99
+  },
+  {
+    "speaker_id": "DKSR20000953_2",
+    "session_id": "DKSR20000953",
+    "gender": "여성",
+    "age": "60대 이상",
+    "tier": "Tier1_PureUlsan",
+    "utterances": 84,
+    "duration_seconds": 299.76,
+    "duration_minutes": 5.0
+  }
+]
