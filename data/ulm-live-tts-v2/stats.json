@@ -1,0 +1,107 @@
+{
+  "dataset_name": "ULM-LIVE-TTS-V2",
+  "target_model": "Qwen3-TTS-12Hz-1.7B-CustomVoice",
+  "sample_rate": 24000,
+  "audio_channels": 1,
+  "format": "Signed 16-bit PCM WAV (24 kHz)",
+  "summary": {
+    "total_speakers": 196,
+    "ulsan_speakers": 136,
+    "gyeongsang_speakers": 60,
+    "total_audio_duration_seconds": 101456.07,
+    "total_audio_duration_hours": 28.18,
+    "ulsan_audio_duration_seconds": 72675.08,
+    "ulsan_audio_duration_hours": 20.19,
+    "usable_utterance_count": 25220,
+    "ulsan_utterance_count": 17892,
+    "dropped_utterance_count": 2467,
+    "drop_breakdown": {
+      "text_inaudible_marker": 588,
+      "text_too_short_korean": 73,
+      "text_nonverbal_tag": 287,
+      "text_masked_entity": 1291,
+      "duration_too_short": 159,
+      "duration_too_long": 69
+    },
+    "duration": {
+      "min": 1.0,
+      "max": 12.0,
+      "mean": 4.023,
+      "median": 3.85,
+      "p25": 2.77,
+      "p75": 5.08
+    },
+    "is_sufficient_for_training": "YES",
+    "sufficiency_rationale": "With 28.18 hours of verified natural conversational speech, 136 native Ulsan dialect speakers (20.19 hours Tier 1), and clean speaker/session-disjoint splits, this dataset significantly exceeds the 5-15 hours typically required for neural voice adaptation in Qwen3-TTS."
+  },
+  "splits": {
+    "train": {
+      "sessions": 82,
+      "speakers": 164,
+      "ulsan_speakers": 114,
+      "utterances": 20943,
+      "duration_seconds": 85298.33,
+      "duration_hours": 23.69
+    },
+    "validation": {
+      "sessions": 8,
+      "speakers": 16,
+      "ulsan_speakers": 11,
+      "utterances": 2167,
+      "duration_seconds": 8069.88,
+      "duration_hours": 2.24
+    },
+    "test": {
+      "sessions": 8,
+      "speakers": 16,
+      "ulsan_speakers": 11,
+      "utterances": 2110,
+      "duration_seconds": 8087.86,
+      "duration_hours": 2.25
+    }
+  },
+  "demographics": {
+    "gender": {
+      "utterances": {
+        "여성": 19491,
+        "남성": 5729
+      },
+      "hours": {
+        "여성": 21.74,
+        "남성": 6.44
+      }
+    },
+    "age": {
+      "utterances": {
+        "60대 이상": 593,
+        "30대": 5081,
+        "50대": 2122,
+        "20대": 9786,
+        "10대": 7034,
+        "40대": 604
+      },
+      "hours": {
+        "60대 이상": 0.55,
+        "30대": 5.7,
+        "50대": 2.16,
+        "20대": 11.27,
+        "10대": 7.85,
+        "40대": 0.64
+      }
+    },
+    "tier": {
+      "utterances": {
+        "Tier1_PureUlsan": 17643,
+        "Tier3_OtherGyeongsang": 3871,
+        "Tier2_RaisedOrLivingUlsan": 3457,
+        "Tier1_BornUlsan": 249
+      },
+      "hours": {
+        "Tier1_PureUlsan": 19.93,
+        "Tier3_OtherGyeongsang": 4.27,
+        "Tier2_RaisedOrLivingUlsan": 3.73,
+        "Tier1_BornUlsan": 0.26
+      }
+    }
+  }
+}
