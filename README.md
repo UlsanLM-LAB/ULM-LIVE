@@ -68,6 +68,8 @@ export ULM_ASR_MODEL=openai/whisper-small
 ./scripts/start_live.sh
 ```
 
+마이크 UI는 브라우저 보안 정책상 HTTPS 또는 localhost에서 사용하는 것을 권장합니다.
+
 ## API
 
 ### STT
