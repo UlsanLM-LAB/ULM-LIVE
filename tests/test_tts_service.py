@@ -1,4 +1,5 @@
 import io
+import json
 import wave
 from types import SimpleNamespace
 
@@ -6,9 +7,9 @@ import httpx
 import pytest
 
 pytest.importorskip("fastapi")
-pytest.importorskip("qwen_tts")
 
 from fastapi.testclient import TestClient
+
 from ulm_live import tts_service
 
 
@@ -34,7 +35,8 @@ def test_live_routes(monkeypatch):
         def text_health(self):
             return {"model": "ULM-4B", "model_path": "/models/ulm4b", "model_loaded": True}
 
-        def chat(self, prompt, history):
+        def chat(self, prompt, history, dialect_strength):
+            assert dialect_strength == 2
             assert history == []
             return "안녕하세요" if prompt != "empty" else ""
 
@@ -132,5 +134,99 @@ def test_text_backend_rejects_invalid_response(payload):
     try:
         with pytest.raises(ValueError):
             tts_service.Runtime.chat(runtime, "인사해 줘", [])
+    finally:
+        runtime.http.close()
+
+
+@pytest.mark.parametrize("strength", [None, 0, 1, 2, 3])
+def test_chat_speech_propagates_strength_without_mutating_history(monkeypatch, strength):
+    """Exercise HTTP -> speech route -> Runtime.chat -> real outgoing JSON using mocks."""
+    payloads, spoken = [], []
+
+    def respond(request):
+        payloads.append(json.loads(request.content))
+        return httpx.Response(200, json={
+            "choices": [{"finish_reason": "stop", "message": {"content": "텍스트 응답"}}],
+        })
+
+    class FakeRuntime:
+        chat = tts_service.Runtime.chat
+
+        def __init__(self):
+            self.text_backend_url = "http://text-backend/v1/chat/completions"
+            self.http = httpx.Client(transport=httpx.MockTransport(respond))
+
+        def speech(self, text):
+            spoken.append(text)
+            return _wav()
+
+        def close(self):
+            self.http.close()
+
+    monkeypatch.setattr(tts_service, "Runtime", FakeRuntime)
+    history = [
+        {"role": "user", "content": "오늘 도서관에 갔어."},
+        {"role": "assistant", "content": "어땠어요?"},
+    ]
+    body = {"prompt": "편안했어.", "history": history}
+    if strength is not None:
+        body["dialect_strength"] = strength
+    with TestClient(tts_service.app) as client:
+        response = client.post("/v1/chat/speech", json=body)
+    assert response.status_code == 200
+    assert response.content.startswith(b"RIFF")
+    assert bytes.fromhex(response.headers["x-ulm-text"]).decode() == "텍스트 응답"
+    assert payloads == [{
+        "model": "ulm-4b", "messages": history + [{"role": "user", "content": "편안했어."}],
+        "dialect_strength": 2 if strength is None else strength,
+        "stream": False, "temperature": 0.7, "top_p": 0.9, "max_tokens": 150,
+    }]
+    assert body["history"] == history
+    assert spoken == ["텍스트 응답"]  # Only generated text reaches the acoustic TTS stage.
+
+
+@pytest.mark.parametrize("strength", [-1, 4, "strong", "2", None, True, 1.5])
+def test_chat_speech_rejects_invalid_strength_before_backend(monkeypatch, strength):
+    class FakeRuntime:
+        def chat(self, *args):
+            raise AssertionError("Invalid input must not reach text backend")
+
+        def speech(self, *args):
+            raise AssertionError("Invalid input must not reach TTS")
+
+        def close(self):
+            pass
+
+    monkeypatch.setattr(tts_service, "Runtime", FakeRuntime)
+    with TestClient(tts_service.app) as client:
+        response = client.post("/v1/chat/speech", json={
+            "prompt": "안녕", "dialect_strength": strength,
+        })
+    assert response.status_code == 422
+
+
+def test_runtime_chat_keeps_history_window_and_default_strength():
+    payloads = []
+
+    def respond(request):
+        payloads.append(json.loads(request.content))
+        return httpx.Response(200, json={
+            "choices": [{"finish_reason": "stop", "message": {"content": "답변"}}],
+        })
+
+    runtime = SimpleNamespace(
+        text_backend_url="http://text-backend/v1/chat/completions",
+        http=httpx.Client(transport=httpx.MockTransport(respond)),
+    )
+    history = [tts_service.ChatMessage(role="user", content=f"발화 {i}") for i in range(20)]
+    try:
+        for strength in (0, 3):
+            assert tts_service.Runtime.chat(runtime, "마지막", history, strength) == "답변"
+        assert tts_service.Runtime.chat(runtime, "마지막", history) == "답변"
+        assert [p["dialect_strength"] for p in payloads] == [0, 3, 2]
+        assert len(history) == 20
+        assert all(p["messages"] == [m.model_dump() for m in history[-12:]] + [
+            {"role": "user", "content": "마지막"},
+        ] for p in payloads)
     finally:
         runtime.http.close()
