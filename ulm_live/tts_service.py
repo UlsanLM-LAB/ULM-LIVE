@@ -22,8 +22,6 @@ import torch.nn.functional as F
 from fastapi import FastAPI, HTTPException, Request
 from fastapi.responses import HTMLResponse, Response
 from pydantic import BaseModel, Field
-from qwen_tts import Qwen3TTSModel
-
 
 TTS_MODEL = "Qwen/Qwen3-TTS-12Hz-1.7B-CustomVoice"
 ASR_MODEL = "openai/whisper-small"
@@ -43,10 +41,13 @@ class ChatMessage(BaseModel):
 class ChatRequest(BaseModel):
     prompt: str = Field(min_length=1, max_length=1000)
     history: list[ChatMessage] = Field(default_factory=list, max_length=20)
+    dialect_strength: int = Field(default=2, ge=0, le=3, strict=True)
 
 
 class Runtime:
     def __init__(self) -> None:
+        from qwen_tts import Qwen3TTSModel
+
         self.text_backend_url = os.environ.get("ULM_BACKEND_URL", ULM_BACKEND_URL)
         self.tts_model_name = os.environ.get("ULM_TTS_MODEL", TTS_MODEL)
         self.tts_adapter_path = os.environ.get("ULM_TTS_ADAPTER_PATH", "").strip()
@@ -94,7 +95,7 @@ class Runtime:
         talker.eval()
         self.tts_adapter_loaded = True
 
-    def chat(self, prompt: str, history: list[ChatMessage]) -> str:
+    def chat(self, prompt: str, history: list[ChatMessage], dialect_strength: int = 2) -> str:
         messages = [
             {"role": item.role, "content": item.content}
             for item in history[-12:]
@@ -105,6 +106,7 @@ class Runtime:
             json={
                 "model": "ulm-4b",
                 "messages": messages,
+                "dialect_strength": dialect_strength,
                 "stream": False,
                 "temperature": 0.7,
                 "top_p": 0.9,
@@ -274,7 +276,7 @@ async def chat_speech(request: ChatRequest) -> Response:
     async with app.state.gpu_lock:
         try:
             answer = await asyncio.to_thread(
-                app.state.runtime.chat, request.prompt, request.history
+                app.state.runtime.chat, request.prompt, request.history, request.dialect_strength
             )
         except (httpx.HTTPError, ValueError, KeyError, IndexError) as exc:
             raise HTTPException(status_code=502, detail="ULM text backend failed") from exc
