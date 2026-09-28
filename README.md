@@ -104,20 +104,19 @@ curl http://127.0.0.1:8001/v1/chat/speech \
 
 ## Dialect Strength (사투리 강도)
 
-웹 UI의 작은 선택기로 대화의 기본 말투를 바꿀 수 있습니다.
+웹 UI의 작은 선택기로 대화의 기본 말투를 바꿀 수 있습니다. 제품 UI에서는 ULM의 방언 모델 성격을 유지하기 위해 3단계만 노출합니다.
 
 | 값 | 이름 | 말투 |
 |---|---|---|
-| 0 | Standard / 표준어 | 사투리를 의도적으로 사용하지 않음 |
 | 1 | Mild / 약하게 | 표준어 중심 + 가벼운 울산 표현 |
 | 2 | Ulsan / 보통 | 자연스러운 울산 일상 말투 (기본값) |
 | 3 | Strong / 강하게 | 울산 어휘·어미를 적극 사용하되 과장과 반복을 피함 |
 
 선택값은 `ulm_dialect_strength` localStorage에 저장되어 새로고침 후에도 유지됩니다.
-잘못된 저장값이나 storage 접근 오류는 2로 처리하며, storage 저장이 불가능해도 현재 페이지에서는 선택이 작동합니다.
+웹에서 이전에 저장된 0을 포함해 1–3 이외의 값이나 storage 접근 오류는 2로 처리하며, storage 저장이 불가능해도 현재 페이지에서는 선택이 작동합니다.
 선택 변경은 다음 chat 요청에 적용됩니다. 대화를 지워도 선택값은 유지합니다.
 
-`POST /v1/chat/speech`의 선택적 `dialect_strength` 필드는 **정수 0–3**, 미지정 시 **2**입니다.
+`POST /v1/chat/speech`의 선택적 `dialect_strength` 필드는 **정수 0–3**, 미지정 시 **2**입니다. 웹 UI는 1–3만 노출하며, API의 0(Standard)은 호환성·직접 호출용으로 유지합니다.
 음수·4·문자열·null·boolean·실수는 422로 거부합니다. Live는 이 값을 text backend payload에 그대로 전달하며,
 기존 multi-turn user/assistant history에는 강도 지시를 추가하지 않습니다.
 Text backend도 `dialect_strength`를 지원하는 버전으로 업데이트되어야 합니다.

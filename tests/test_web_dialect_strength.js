@@ -13,7 +13,7 @@ function page(saved = null, unavailable = false) {
   function element() {
     return { textContent: '', innerHTML: '', setAttribute() {}, appendChild() {}, querySelector() { return element(); } };
   }
-  const options = [0, 1, 2, 3].map(value => ({
+  const options = [1, 2, 3].map(value => ({
     value: String(value), checked: false,
     addEventListener(event, handler) { this[event] = handler; },
   }));
@@ -46,7 +46,7 @@ function payload(context, history = []) {
   return JSON.parse(JSON.stringify(context.buildChatSpeechPayload('오늘 뭐하노?', history)));
 }
 
-for (const strength of [0, 1, 2, 3]) {
+for (const strength of [1, 2, 3]) {
   test(`restores saved strength ${strength} and includes it in request`, () => {
     const { context, options } = page(String(strength));
     assert.equal(payload(context).dialect_strength, strength);
@@ -54,7 +54,7 @@ for (const strength of [0, 1, 2, 3]) {
   });
 }
 
-for (const saved of [null, '', '-1', '4', 'strong', 'null', '2.0', ' 2', '1e0']) {
+for (const saved of [null, '', '0', '-1', '4', 'strong', 'null', '2.0', ' 2', '1e0']) {
   test(`invalid/missing localStorage ${JSON.stringify(saved)} falls back to 2`, () => {
     assert.equal(payload(page(saved).context).dialect_strength, 2);
   });
@@ -63,8 +63,8 @@ for (const saved of [null, '', '-1', '4', 'strong', 'null', '2.0', ' 2', '1e0'])
 test('storage errors preserve default and allow in-memory selection', () => {
   const { context, options } = page(null, true);
   assert.equal(payload(context).dialect_strength, 2);
-  context.setDialectStrength(0);
-  assert.equal(payload(context).dialect_strength, 0);
+  context.setDialectStrength(1);
+  assert.equal(payload(context).dialect_strength, 1);
   assert.ok(options[0].checked);
 });
 
@@ -81,15 +81,15 @@ test('radio changes affect the next payload, persist across reload and preserve 
   assert.equal(payload(page(storage.saved).context).dialect_strength, 3);
   options[0].checked = true;
   options[0].change();
-  assert.equal(payload(context, history).dialect_strength, 0);
+  assert.equal(payload(context, history).dialect_strength, 1);
   assert.equal(options.filter(o => o.checked).length, 1);
   elements.get('clear').onclick();
-  assert.equal(payload(context).dialect_strength, 0);
+  assert.equal(payload(context).dialect_strength, 1);
 });
 
 test('native radio controls have accessible descriptions', () => {
-  assert.equal((html.match(/<input[^>]*name="dialect-strength"/g) || []).length, 4);
-  assert.equal((html.match(/aria-label="(?:표준어|약하게|보통|강하게):/g) || []).length, 4);
+  assert.equal((html.match(/<input[^>]*name="dialect-strength"/g) || []).length, 3);
+  assert.equal((html.match(/aria-label="(?:약하게|보통|강하게):/g) || []).length, 3);
   assert.match(html, /<legend>사투리 강도<\/legend>/);
 });
 
@@ -110,12 +110,12 @@ test('microphone completion sends the current strength and clean multi-turn hist
       blob: async () => new Blob(['mock wav']),
     };
   };
-  for (const strength of [3, 0]) {
+  for (const strength of [3, 1]) {
     context.setDialectStrength(strength);
     vm.runInContext("chunks=[];recorder={mimeType:'audio/webm',stop(){this.onstop();}}", context);
     await context.stopListening();
   }
-  assert.deepEqual(requests.map(request => request.dialect_strength), [3, 0]);
+  assert.deepEqual(requests.map(request => request.dialect_strength), [3, 1]);
   assert.equal(requests[0].prompt, '새 발화');
   assert.deepEqual(requests[0].history, initialHistory);
   assert.deepEqual(requests[1].history, initialHistory.concat([
